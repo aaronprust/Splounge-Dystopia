@@ -31,15 +31,10 @@ The Space Lounge is a room. The description of the Space Lounge is "You are in t
 
 The Veranda Walkway is a room. "Outside the Space Lounge you look out into the larger Raditree Building to see the pool under a high ceiling. Consuite lies beyond the pool in the main courtyard. Boffers beat each other up in the fenced in section of the courtyard. There's a floating platform above the pool."
 
-[
-After going to the Veranda Walkway:
-	if the player wears a stealthing:
-		say "You are wearing a [list of stealthings worn by the player]." 
-]
 After going to the Veranda Walkway:
 	say "As you enter the Veranda Walkway you see a floating dolphin surveillance pod.";
 	if the player is not wearing a stealthing, say "Uh oh, you aren't wearing any kind of stealthing, there is a good chance that surveillance pod saw you.";
-	otherwise say "Sweet it seems like your [a list of stealthings worn by the player] shielded you from detection. [paragraph break]";
+	otherwise say "Sweet, it seems like your [a list of stealthings worn by the player] shielded you from detection. [paragraph break]";
 	now the player is in the Veranda Walkway.
 
 The Secret Room is a room. The description of the secret room is "You are in the Secret Room. DON'T TELL ANYONE YOU WERE EVER HERE! It's really dark, you can't see much."
@@ -147,9 +142,10 @@ Every turn:
 	
 Table of ComfyChairThoughts
 thought
-"Oooh yes, this is a wonderful world. What a luxuriously decadent and beautiful reality to be in' you think as you nestle further within the folds of the chair"
-"'What was I trying to do?' you think for a sec before you realize how comfy the chair you are in is. It's kind of incredible, you feel like you've accomlished enough in life."
+"Oooh yes, this is a wonderful world. 'What a luxuriously decadent and beautiful reality to be in' you think as you nestle further within the folds of the chair."
+"'What was I trying to do?' you think for a sec before you realize how comfy the chair you are in is. It's kind of incredible, you feel like you've accomplished enough in life."
 "Sooooo comfy. So sooooo comfy. Mmmmm..."
+"'I remember another life once, I think my name was [player's full name] or [player's forename] or smthg', you think. Whateeeevs...this chair though...you look around the room entranced by the activity around you. Good thing you're not expending that much energy."
 
 [Qualities: Friendship]
 A person can be a co-conspirator, neutralla or an enemy.
@@ -609,23 +605,72 @@ Persuasion rule for asking the boffer to try doing something:
 		persuasion succeeds.
 
 Instead of attacking something:
-	let a be the maximum damage of the weapon the player carries;
-	let the damage be a random number between 4 and 10; 
-	decrease the current hit points of the noun by the damage;
-	say "You attack [the noun], causing [damage] points of damage! [The noun] has [current hit points of the noun] hit points";
-	if the current hit points of the noun is less than 0: 
-		now the current hit points of the noun is 0;
-		say "[line break][The noun] is defeated! He stands up and gives you his staff, 'Nobody has defeated me in a long time. This is yours now.'"; 
-		now the noun is defeated; 
-		now the noun is neutralla;
-		move the nanocarbon staff to the player;
-		stop the action; 
-	let the enemy damage be a random number between 2 and 8; 
-	decrease the current hit points of the player by the enemy damage; 
-	say "[line break][The noun] attacks you, causing [enemy damage] points of damage! You have [current hit points of the player] hit points";
-	if the current hit points of the player is less than 0: 
-		say "[line break]You die in battle, like a warrior!"; 
-		end the story.
+	If the noun is a boffer:
+		let the damage be a random number between 4 and 10; 
+		decrease the current hit points of the noun by the damage;
+		say "You attack [the noun], causing [damage] points of damage! [The noun] has [current hit points of the noun] hit points";
+		if the current hit points of the noun is less than 0: 
+			now the current hit points of the noun is 0;		
+			say "[line break][The noun] is defeated! He stands up and gives you his staff, 'Nobody has defeated me in a long time. This is yours now.'"; 
+			now the noun is defeated; 
+			now the noun is neutralla;
+			move the nanocarbon staff to the player;
+			stop the action; 
+		let the enemy damage be a random number between 2 and 8; 
+		decrease the current hit points of the player by the enemy damage; 
+		say "[line break][The noun] attacks you, causing [enemy damage] points of damage! You have [current hit points of the player] hit points";
+		if the current hit points of the player is less than 0: 
+			say "[line break]You die in battle, like a warrior!"; 
+			end the story;
+	Otherwise:
+		say "Whoa this is not the time or place to be attacking people. Chill dudetron.";
+		stop the action.
+		
+[attack with weapon]
+[Understand the commands "attack" and "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as something new.
+
+Attacking it with is an action applying to one visible thing and one carried thing. Understand "attack [someone] with [something preferably held]" as attacking it with.
+
+Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
+
+The attacking it with action has a number called the damage inflicted.
+Setting action variables for attacking something with something: 
+    if the second noun is a weapon: 
+        let the maximum attack be the maximum damage of the second noun; 
+        now the damage inflicted is a random number between 1 and the maximum attack.
+Check an actor attacking something with something (this is the can't attack with something that isn't a weapon rule): 
+    if the second noun is not a weapon: 
+        if the actor is the player, say "[The second noun] does not qualify as a weapon."; 
+        stop the action.
+Check an actor attacking something with something (this is the can't attack a non-person rule): 
+    if the noun is not a person: 
+        if the actor is the player, say "[The noun] has no life to lose."; 
+        stop the action.
+Carry out an actor attacking something with something (this is the standard attacking it with a weapon rule): 
+    decrease the current hit points of the noun by the damage inflicted; 
+    if the noun is dead: 
+        now the noun is nowhere.
+
+Report attacking a dead person with something (this is the death-report priority rule): 
+    say "You attack with [the second noun], killing [the noun]!" instead.
+Report attacking someone with something (this is the normal attacking report rule): 
+    say "You attack [the noun] with [the second noun], causing [damage inflicted] point[s] of damage!" instead.
+Report someone attacking the player with something when the player is dead (this is the player's-death priority rule): 
+    say "[The actor] attacks you with [the second noun], finishing you off!"; 
+    end the story; 
+    stop the action
+Report someone attacking the player with something (this is the standard report someone attacking the player with rule): 
+    say "[The actor] attacks you with [the second noun], causing [damage inflicted] point[s] of damage!" instead.
+Report someone attacking something with something (this is the standard report attacking it with rule): 
+    say "[The actor] attacks [the noun] with [the second noun], causing [damage inflicted] point[s] of damage!" instead.
+When play begins: 
+    now the left hand status line is "You: [current hit points of player]"; 
+    now the right hand status line is "Gladiator: [current hit points of gladiator]".
+[Every turn (this is the gladiator-attack rule): 
+    if the gladiator is not dead, try the gladiator attacking the player with a random weapon which is carried by the gladiator.
+Test me with "hit gladiator with mace / kill gladiator / drop mace / attack gladiator / attack gladiator with mace / g / g".]
+[END attack with weapon]
+]
 
 An person can be active or defeated.
 
@@ -737,6 +782,10 @@ Who are you? Are you your memories? Are you what you have done? Are you what you
 
 The Round1 is southeast of the Upper Southside Hallway.
 
+Rule for listing exits while the player is in The Round1: do nothing instead.
+
+[Instead of listing exits in The Round1, say "nothing".]
+
 Before looking for the first time:
 	follow the pub1 rule.
 
@@ -781,6 +830,8 @@ A text question rule (this is the pub answer rule):
 
 The Round2 is a room. "Now onto Round Two where the questions are worth ten points a piece. The subject of this round is Interactive Fiction! M(meta)E(meta)T(meta)A"
 
+Rule for listing exits while the player is in The Round2: do nothing instead.
+
 Table of quiz questions2
 Qn2	Correct2               
 "Around 1975, a programmer and amateur caver wrote the first text adventure game whose name originally was all caps and only six characters long because of filename length limitations of that time. What is the name of this game (the all-caps six letter version)"	"ADVENT"
@@ -821,6 +872,8 @@ A text question rule (this is the pub2 answer rule):
 				follow the pub3 rule.      
             
 The Round3 is a room. "Round Three is here! The questions are harder but now worth fifteen points a piece. These ones are about going INSIDE THE COMPUTER!"
+
+Rule for listing exits while the player is in The Round3: do nothing instead.
 
 Table of quiz questions3
 Qn3	Correct3               
@@ -867,6 +920,8 @@ This round is about choices, random forces and what they lead to...which is of c
 
 Every imagined-not-taken choice spawned from every individual's mind throughout time and space creating entire universes with every passing thought. The vast sea of thought embracing the infinite seeds of thought; the birth of what-ifs reflecting infinitely.
 "
+
+Rule for listing exits while the player is in The Round4: do nothing instead.
 
 Table of quiz questions4
 Qn4	Correct4               
