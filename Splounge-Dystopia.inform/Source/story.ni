@@ -29,7 +29,7 @@ Describing the interior of something is an activity.
 [Room Descriptions. See Individual Room Section for items, people, and rules.]
 The Space Lounge is a room. The description of the Space Lounge is "You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds."
 
-The Veranda Walkway is a room. "Outside the Space Lounge you look out into the larger Raditree Building to see the pool under a high ceiling. Consuite lies beyond the pool in the main courtyard. Boffers beat each other up in the fenced in section of the courtyard."
+The Veranda Walkway is a room. "Outside the Space Lounge you look out into the larger Raditree Building to see the pool under a high ceiling. Consuite lies beyond the pool in the main courtyard. Boffers beat each other up in the fenced in section of the courtyard. There's a floating platform above the pool."
 
 [
 After going to the Veranda Walkway:
@@ -44,7 +44,7 @@ After going to the Veranda Walkway:
 
 The Secret Room is a room. The description of the secret room is "You are in the Secret Room. DON'T TELL ANYONE YOU WERE EVER HERE! It's really dark, you can't see much."
 
-The Floating Courtyard is a room. "This is amazing - you are up above everything and can see so much up here! There's a pool down below, and a fenced in courtyard with some kind of security gate system surrounding it, and Consuite."
+The Floating Courtyard is a room. "This is amazing - you are up above everything and can see so much up here! There's a pool down below, and a fenced in courtyard with some kind of securityGate system surrounding it, and Consuite."
 
 The Upper Southside Hallway is a room. "This hallway is NUTS - there are signs everywhere and lights and sounds flashing. From this hallway you can get into a bunch of Party Rooms"
 
@@ -91,14 +91,14 @@ Mainstage is a room. "Mainstage"
 The Staging Area is a room. 
 
 [Doors and Backdrops]
-The airlock is a door. The airlock is lockable and unlocked. The security key unlocks the airlock. The description of the airlock is "The airlock has a small window through which you can see a vast open space - is that a pool? Sweet!. It looks like the door only opens with a security key."
+The airlock is a door. The airlock is lockable and unlocked. The securityKey unlocks the airlock. The description of the airlock is "The airlock has a small window through which you can see a vast open space - is that a pool? Sweet!. It looks like the door has a lock mechanism that looks like it could be manipulated by a standard tetral-inverse double helix securityKey."
 
 The Ceiling is a backdrop. "The ceiling with lights rises over the whole crazy convention." It is in the Veranda Walkway.
 
 Consuitesuckmybigd is a backdrop. "You can make out the basic forms of the people in Consuite but it is so far away that you can't see anything well without some kind of badass miniature spy eyepiece or something." It is in the Veranda Walkway.
 
 [Objects]
-The description of a thing is usually "[The noun] is kind of unremarkable, not really exciting like some cool crazy gun would be or something."
+The description of a thing is usually "[The noun] is kind of an average looking [noun]."
 
 A bench is a kind of supporter. A bench is always enterable.
 
@@ -107,7 +107,7 @@ A chair is a kind of supporter. A chair is always enterable.
 A pocket is a kind of container. The carrying capacity of a pocket is always 2.
 
 A ninja outfit is a kind of thing. A ninja outfit is always wearable. 
-[*]Two pockets are part of every ninja outfit. 
+[*]One pocket is part of every ninja outfit. 
 The black ninja outfit is a ninja outfit.
 [*]The black ninja outfit's pocket contains a throwing star and a smoke bomb.
 
@@ -117,61 +117,77 @@ After examining a ninja outfit:
 
 [Qualities: Softness]
 Texture is a kind of value. The textures are normal, rough, soft and smooth. Everything has a texture.
-
-Every turn:
-	if the player	is on a soft thing, say "'What a lovely soft and dreamy world', you think. Nothing is wrong and everything is right. Right and soft. Sooooo sooooofffft.";
 	
-Instead of getting off a soft thing for the first time, say "You just can't get up, you are way too comfortable! Maybe if you just stayed here in this [noun] forever you would be better off than whatever else you were going to do. Does it really matter?".
+Instead of getting off the comfy chair for the first time, say "You just can't get up, you are way too comfortable! Maybe if you just stayed here in this [noun] forever you would be better off than whatever else you were going to do. Does it really matter?".
 
-Instead of getting off a soft thing for the second time: 
+Instead of getting off the comfy chair for the second time: 
 	say "You try to heave yourself up, but the soft lusciousness of the [noun] envelopes you and pulls you back into its comfy folds. Oooooo...so comfy...so sooooooofffffft...";
 	now the test-variable is true.
 	
-Instead of doing something other than looking or getting off when the player is on a soft thing, say "You'd rather be asleep. Whatever other thing you would do besides being in this [noun] is a bad idea and not really that good of an option compared to being in this insanely comfy [noun]."
+Instead of doing something other than looking or getting off when the player is on the comfy looking chair, say "You'd rather be asleep. Whatever other thing you would do besides being in this chair is a bad idea and not really that good of an option compared to being in this insanely comfy chair."
 
-Instead of entering a soft thing the second time, say "'Hey Wait!' your subconscious jumps forth remembering the tempting softness - you decide not not to sit on that [noun], it's so comfy you might never get up again! It looks seriously comfy though...maybe just for a little tiny sliver of a moment you could get kinda comfy..."
+Instead of entering the comfy looking chair the second time, unless the player is on the comfy looking chair, say "'Hey Wait!' your subconscious jumps forth remembering the tempting softness - you decide not not to sit on that [noun], it's so comfy you might never get up again! It looks seriously comfy though...maybe just for a little tiny sliver of a moment you could get kinda comfy..."
 
-Instead of entering a soft thing the third time, say "Don't you remember the last time you were in that [noun]? It almost ATE YOU! What is your deal? Don't sit in this [noun], it's too dangerous! Only a master of mental projection could sit on this [noun] without its super soft comfy-ness obliterating and subsuming your soul to its dark desires (whatever they might be)."
+Instead of entering the comfy looking chair the third time, unless the player is on the comfy looking chair, say "Don't you remember the last time you were in that [noun]? It almost ATE YOU! What is your deal? Don't sit in this [noun], it's too dangerous! Only a master of mental projection could sit on this [noun] without its super soft comfy-ness obliterating and subsuming your soul to its dark comfy desires."
 
-After getting off a soft thing:
+Instead of entering the comfy looking chair the fourth time, unless the player is on the comfy looking chair,
+end the story saying "You sit on the chair again and sink forever into its comfyness. You never rise again."
+
+After getting off the comfy looking chair:
 	say "Whew! You just barely escaped that [noun], it's so comfy you could get stuck in it forever!";
 	now the description of the noun is "Watch out for that [noun], it's so comfy you could get stuck in it forever! Like LITERALLY foreverandever.".
+
+Every turn:
+	If the player is on the comfy looking chair:
+		choose a random row from the Table of ComfyChairThoughts;
+		say "[thought entry] [paragraph break]".
+
+[choose a random row from the Table of Comfy Chair Thoughts;
+		say "[thought entry][paragraph break]".]
 	
+Table of ComfyChairThoughts
+thought
+"Oooh yes, this is a wonderful world. What a luxuriously decadent and beautiful reality to be in' you think as you nestle further within the folds of the chair"
+"'What was I trying to do?' you think for a sec before you realize how comfy the chair you are in is. It's kind of incredible, you feel like you've accomlished enough in life."
+"Sooooo comfy. So sooooo comfy. Mmmmm..."
+
 [Qualities: Friendship]
 A person can be a co-conspirator, neutralla or an enemy.
 
 [Space Lounge]
-There is a bar inside the Space Lounge. The bar is fixed in place. The bar is a supporter.
+There is a bar inside the Space Lounge. The bar is fixed in place. The bar is a supporter. The description of the bar is "The bar is black and long, covered in some sort of non-stick nano-surface."
 
-The Glowing Sphere is an object. The security key is part of the glowing sphere. The description of the glowing sphere is "OOOOoooo glowy-sphere thingie! Its purple soft glow makes you feel safe and secure. It looks like there's some sort of helix-key as a component to the glowy-ness but it's unclear how you would remove it." The glowing sphere is on the bar.
+The Glowing Sphere is an object. The securityKey is part of the glowing sphere. The description of the glowing sphere is "OOOOoooo glowy-sphere thingie! Its purple soft glow makes you feel safe and secure. It looks like there's some sort of encased helix-key as a component to the glowy-ness." The glowing sphere is on the bar.
 
 The glowing sphere is fixed in place.
 
-A security key is an object.
-The description of the security key is "This looks like a standard tetral-inverse double helix security key with triple-blind encryption. Probably used to access airlocks n-schtoff."
+A securityKey is an object.
+The description of the securityKey is "This looks like a standard tetral-inverse double helix securityKey with triple-blind encryption. Probably used to access airlocks n-schtoff."
 
 There is a smooth bench inside the Space Lounge. The description of the bench is "Cool smooth bench."
 
-There is a soft chair inside the Space Lounge. The description of the chair is "The [texture] chair looks seriously comfortable, it's all soft and squishy looking. 'SPYUMMY', your butt thinks.".
+There is a comfy looking chair inside the Space Lounge.  The comfy looking chair is a soft chair.
 
-Before entering the chair, say "Oh boy this chair looks really soft and comfy! Ooooh ya you are totally gonna sit on this chair big time."
+[The description of the comfy looking chair is "The chair looks seriously comfortable, it's all soft and squishy looking. 'SPYUMMY', your butt thinks.".]
+
+Before entering the comfy looking chair, unless the player is on the comfy looking chair, say "Oh boy this chair looks really soft and comfy! Ooooh ya you are totally gonna sit on this chair big time."
 
 The black ninja outfit is in the Space Lounge
 
-A glittery box is on the bar. The description of the glittery box is "Time slows down, you feel as if you gazing into the cosmos itself. Your eyeballs can hardly stay on it, it's like your gaze just keeps sliding off."
+A glittery box is on the bar. The description of the glittery box is "Time slows down, you feel as if you are gazing into the cosmos itself. Your eyeballs can hardly stay on it, it's like your gaze just keeps sliding off."
 
 The box is an openable container. The box is closed.
 
 Instead of taking the glittery box, say "OOOHhhhhhh! You get a funny tingle when you try to pick the box up, the sides are so slippery it almost feels COMPLETELY FRICTIONLESS. You can't seem to grab it all, it's really weird."
 
-The security readout is in the glittery box.
+The securityReadout is in the glittery box.
 
 In the box is a bowl. In the bowl is a note. The description of the note is "Cast the secret spell xyzzy"
 
 The crazy looking gun is in the glittery box. The description of the crazy looking gun is "That gun is so crazy looking! It's kind of like totally blowing your mind."
 
-The security readout is a device. The description of the readout is "The screen is blank."
-Instead of examining the switched on security readout:
+The securityReadout is a device. The description of the securityReadout is "The screen is blank."
+Instead of examining the switched on securityReadout:
 	say "The screen reads: [fixed letter spacing]"; 
 	say line break; 
 	repeat with item running through doors: 
@@ -231,7 +247,7 @@ Table of Random Statements
 statement
 "[player's full name]? Interesting, nice."
 "[player's full name]!? Aaaah, that's a good one."
-"Oh [player's full name] eh!? I've heard a you."
+"Oh, [player's full name] eh!? I've heard a you."
 "[player's full name]!? Har har har! Musta been one-a them vat babies huh?"
 
 After reading a command when collecting names:
@@ -306,6 +322,7 @@ Instead of shooting the airlock with the gun: say "The crazy gun's ray just boun
 
 [Instead of shooting: say "Uhm are you nuts? You don't even know what this gun thing does and besides if you draw too much attention to yourself you'll be swarmed by security in seconds. It's probably out of batteries anyway. In a pinch you might be able to use it to scare the crap out of someone though, this gun is so crazy looking anyone would do anything rather than get shot by something like it."
 ]
+
 [Spellcasting]
 Understand "xyzzy" or "say xyzzy" or "cast xyzzy" as casting xyzzy.
 
@@ -366,28 +383,28 @@ Instead of drinking a smoothie (called the drink):
 Instead of drinking a RocketBlaster: 
     now the RocketBlaster is nowhere; 
     say "You quaff the RocketBlaster. It goes down beautifully.";
-	now the player is in the Secret Room.
+	now the player is in Round1.
 
 
 Table 1.2
 smoothie	description
-ShinyUnicorn	"This thing is like taking a bath in frozen unicorn snot. Amazing."
-RocketBlaster	"Neon Yellow. Glows and bubbles. It's gonna shoot you into SPACE!"
-anther	"anther"
-thisas	"thisas"
+shinyUnicorn	"This thing is like taking a bath in frozen unicorn snot. Amazing."
+rocketBlaster	"Neon Yellow. Glows and bubbles. It's gonna shoot you into SPACE!"
+anther	"anther kinda smoothie here eh"
+thisas	"thisas another smoothie eh"
 
 
 A description of a smoothie usually is "This thing is like taking a bath in frozen unicorn snot. Amazing."
 
 
 Instead of giving the coin to the bartender: 
-	move the coin to the bartender;
+	move the coin to the bartender; 
 	let the target smoothie be a random smoothie in the BehindtheBar;
 	now the player has the target smoothie;
 	say "She accepts with a smile and slides you a smoothie. It looks friggin delicious."
 
 Instead of asking Aframe about "xx":
-	say "When you mention xx, Aframe's eyes light up. He smiles and looks around the room for a second before stepping closer to you. 'How do you know aobut xx?', he says - well it doesn't matter now - just remember yy when you get to the zz okay? DON'T FORGET ABOUT THE YY! Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero.";
+	say "When you mention xx, Aframe's eyes light up. He smiles and looks around the room for a second before stepping closer to you. 'How do you know aobut xx?', he says - well it doesn't matter now - just remember yy when you get to the zz okay? DON'T FORGET ABOUT THE YY! Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
 	now Aframe is a co-conspirator;
 	now Aframe is in the Secret Room.
 
@@ -408,13 +425,13 @@ Instead of going to the Floating Courtyard when the player is not in the floatin
 
 Definition: a direction (called thataway) is viable if the room thataway from the location is a room. 
 
-After looking:
+[After looking:
 	let count of exits be the number of viable directions;
 	if the count of exits is 0:
 		say "(There are no routes out of this room.)";
 	else:
 		say "(From here, you can move to [list of viable directions].)";
-		continue the action;
+		continue the action;]
 
 The Upper Southside Hallway is southeast of the Veranda Walkway. 
 
@@ -542,11 +559,15 @@ Persuasion rule for asking AFrame to try doing something:
 
 Aframe is wearing a pin-striped suit and a pink thong. Rule for deciding the concealed possessions of Aframe: if the particular possession is the thong and Aframe is wearing the suit, yes; otherwise no.
 Test me with "aframe, remove suit / look / aframe, remove thong / look".
-[
+
 Instead of shooting Aframe with the gun: 
 	say "This weird ray comes out of your gun but it's like it's moving in slow-motion...as the beam wiggles toward Aframe super duper slow he steps out of the way of it. The wiggling intensifies and disappears. Aframe is looking at you with this annoyed look. Like he doesn't totally trust you anymore because you just tried to twinkle him out of existence.";
 	now Aframe is an enemy.
-	]
+	
+Aframe has a number called maximum hit points. 
+Aframe has a number called current hit points. 
+The maximum hit points of Aframe is 1000.
+The current hit points of the Aframe is 1000.
 
 A weapon is a kind of thing. 
 A weapon has a number called the maximum damage. 
@@ -557,6 +578,10 @@ The boffer carries a weapon called a nanocarbon staff. The description of the na
 A nanocarbon blade is a kind of weapon. The maximum damage of the nanocarbon blade is 6. 
 
 A dagger is a kind of weapon. The maximum damage of a dagger is 30.
+
+A pin is a kind of weapon. The maximum damage of a pin is 1.
+
+AFrame carries a pin.
 
 The player carries a dagger. 
 
@@ -582,11 +607,12 @@ Persuasion rule for asking the boffer to try doing something:
 	Otherwise if the boffer is a co-conspirator:
 		say "Looks like you need some help, here take this.";
 		persuasion succeeds.
-[
-Instead of attacking something: 
+
+Instead of attacking something:
+	let a be the maximum damage of the weapon the player carries;
 	let the damage be a random number between 4 and 10; 
-	say "You attack [the noun], causing [damage] points of damage!"; 
-	decrease the current hit points of the noun by the damage; 
+	decrease the current hit points of the noun by the damage;
+	say "You attack [the noun], causing [damage] points of damage! [The noun] has [current hit points of the noun] hit points";
 	if the current hit points of the noun is less than 0: 
 		now the current hit points of the noun is 0;
 		say "[line break][The noun] is defeated! He stands up and gives you his staff, 'Nobody has defeated me in a long time. This is yours now.'"; 
@@ -595,18 +621,15 @@ Instead of attacking something:
 		move the nanocarbon staff to the player;
 		stop the action; 
 	let the enemy damage be a random number between 2 and 8; 
-	say "[line break][The noun] attacks you, causing [enemy damage] points of damage!"; 
 	decrease the current hit points of the player by the enemy damage; 
+	say "[line break][The noun] attacks you, causing [enemy damage] points of damage! You have [current hit points of the player] hit points";
 	if the current hit points of the player is less than 0: 
-		say "[line break]Your cool ninja body expires from the attack! As you lose consciousness you use your mystical ninja abilities to become an incredibly powerful ninja ghost - even death cannot stop your thirst for VENGEANCE, though that is another story."; 
+		say "[line break]You die in battle, like a warrior!"; 
 		end the story.
 
-]
+An person can be active or defeated.
 
-An boffer can be active or defeated.
-
-
-The description of the black ninja outfit is "This is a ninja outfit, it's black and has a hood that covers your face. It has pockets in it to store cool ninja gear. It has these sweet built in booties that muffle your footsteps as if you were a total ninja, which you totally are if you are wearing this outfit. You could sneak around a place with shadows without being detected if you were wearing this thing. You'd be so ninja."
+The description of the black ninja outfit is "This is a ninja outfit, it's black and has a hood that covers your face. It has a nice pocket in it to store cool ninja gear. It has these sweet built in booties that muffle your footsteps as if you were a total ninja, which you totally are if you are wearing this outfit. You could sneak around a place with shadows without being detected if you were wearing this thing. You'd be so ninja."
 
 After wearing the black ninja outfit:
 	say "You are a ninja! It feels like you could blend into the shadows, or maybe you ARE the shadows, this ninja outfit makes you feel super ninja-like";
@@ -614,11 +637,27 @@ After wearing the black ninja outfit:
 Carry out wearing the black ninja outfit for the first time:
   now the current ninja points of the player is 50.
 
-A Security bot is a person. The description of the Security bot is "Looks like a standard security bot."
+A securityBot is a person. The description of the securityBot is "Looks like a standard securityBot. A floating ball of plastimetal about 3 feet in diameter with a bunch of creepy robot arms sticking out all over with cameras and sensors and whatever else all those things are. Is that a toothbrush? It's pretty unnerving to look at."
 
-There is a security bot in the Space Lounge.
+There is a securityBot in the Space Lounge.
 
-Persuasion rule for asking Security bot to try doing something: persuasion fails.
+securityBotPissed is a number that varies. securityBotPissed is 1.
+
+This is the securityBotPissed rule:
+    if securityBotPissed is 2 begin;
+	say "you pissed off the securityBot one too many times, it precisely pulses a beam of pure energy all over your beautiful body and now you are dead";
+	end the story; 
+      stop;
+   end if;
+
+Persuasion rule for asking securityBot to try doing something: 
+	if securityBotPissed is 2:
+		say "You pissed off the securityBot one too many times. The securityBot's large and small and micro arms unfurl like a lotus made of cobras.  It's central power unit glows briefly and precisely pulses a beam of pure energy all over your beautiful body and now you're dead";
+		end the story; 
+	otherwise:
+		Say "The securityBot looks pissed. Maybe you outta not mess with securityBots...[securityBotPissed]";
+		now the securityBotPissed is 2;
+		persuasion fails.
 Persuasion rule for asking someone to try doing something: persuasion succeeds.
 
 When play begins:
@@ -680,21 +719,31 @@ AdBlaster2000	"A little robot that follows you around projecting fragmented imag
 ]
 [---------quiz----------]
 
-The Round1 is a room. "Welcome to Trivia, I'm your host, a computer program just chock full of useless information. We have only one rule; please don't cheat - no looking stuff up using centralized data stores. Asking people around you is okay though I suppose. Questions will be simple this round being worth five points a piece, but will increase in both difficulty and value as the game goes on. 
+The Round1 is a room. "Welcome to Trivia, I'm your host, a computer program super full of useless information. You will be rewarded with an object based on your score at the end of the quiz.
 
-This first section is on films involving simulated realities and questionable memories. 
+Wrong answers will not be rewarded with correct answers - I'm not telling you the right answer. 
+
+I have ONE singular accepted ABSOLUTELY CORRECT answer it's in a table and it is EXACT and PERFECT - I am the ULTIMATE IMPARTIAL QUIZ JUDGE. If you don't like it...cry me a spriver! OH also you are trapped within my quizzy embrace until the end so just accept your fate. Srsly don't try to leave or anything you'll just waste your answer-chances. The quiz is only four rounds of four questions each - just relax you're not stuck in a Quiz Vortex or anything...(I hope...) 
+
+Questions in the first round are worth 5 points a piece, but will increase in value as the game goes on.
+
+Answers must be given with Capitalization and exact spelling. 
+
+-----------
+
+The first section is on films involving simulated realities and questionable memories. 
 
 Who are you? Are you your memories? Are you what you have done? Are you what you will do? Or are you nothing at all but a wisp...or maybe 'just' a program? "
 
 The Round1 is southeast of the Upper Southside Hallway.
 
-After looking for the first time:
+Before looking for the first time:
 	follow the pub1 rule.
 
 Table of quiz questions
 Qn	Correct               
 "In which film did someone get offered a choice between two pills and then didn't take both of them like they should have?"	"The Matrix"
-"In which movie did the main character die from super disturbing eye bulging decompression after helmet face plate breakage in the opening scene then but it turned it was just a dream? (or was it a premonition? or was it an implanted memory?)"	"Total Recall"
+"In which movie did the main character die from super disturbing eye bulging decompression after helmet face plate breakage in the opening scene then but it turned out was just a dream? (or was it a premonition? or was it an implanted memory?)"	"Total Recall"
 "This movie has a sail boat smash into the end of a fake world. Everyone watching just goes totally nuts."	"The Truman Show"
 "This film has annoying gothy villians but a super cool reveal that everyone was in a giant space habitat the WHOLE TIME?! (btw foreshadowing...)"	"Dark City"
 
@@ -730,14 +779,14 @@ A text question rule (this is the pub answer rule):
 				exit;
 				follow the pub2 rule.      
 
-The Round2 is a room. "Now onto Round Two where the questions get slightly harder but are worth ten points a piece."
+The Round2 is a room. "Now onto Round Two where the questions are worth ten points a piece. The subject of this round is Interactive Fiction! M(meta)E(meta)T(meta)A"
 
 Table of quiz questions2
 Qn2	Correct2               
-"Get a Mac was an ad slogan for what company from 2006 to 2009? "	"Apple"
-"What is the capital of Egypt?"	"Cairo"
-"In the contract version of what card game are players identified by points on the compass?"	"Bridge"
-"What movie has the Highland Games, a Witch, and Craig Ferguson as Lord Macintosh?"	"Brave"
+"Around 1975, a programmer and amateur caver wrote the first text adventure game whose name originally was all caps and only six characters long because of filename length limitations of that time. What is the name of this game (the all-caps six letter version)"	"ADVENT"
+"Colossal Cave Adventure featured a 'magic word' that caused teleportation and has shown up again and again in video games ever since.  It enables cheat modes, opens Easter Eggs and has inspired many silly programs. Type this magic word in lowercase now."	"xyzzy"
+"In what game series are you likely to be eaten by a grue if you travel into dark places without a light source?"	"Zork"
+"This Apple II game features a game play element where the player is given a three-digit code at the beginning of play and is instructed to never reveal this code to anyone. At one point the game appears to crash as a way of tricking the player into revealing their code, in which case they lose the game. What is the name of this game?"	"The Prisoner"
 
 The expected answer is a text that varies.
 
@@ -762,7 +811,7 @@ A text question rule (this is the pub2 answer rule):
 				exit;
 				follow the pub3 rule;
 		otherwise:
-			if the table of quiz questions is not empty:
+			if the table of quiz questions2 is not empty:
 				say "Incorrect. Next question.";
 				exit;
 			otherwise:
@@ -771,14 +820,14 @@ A text question rule (this is the pub2 answer rule):
 				exit;
 				follow the pub3 rule.      
             
-The Round3 is a room. "Round Three is here! The questions are harder but now worth fifteen points a piece."
+The Round3 is a room. "Round Three is here! The questions are harder but now worth fifteen points a piece. These ones are about going INSIDE THE COMPUTER!"
 
 Table of quiz questions3
 Qn3	Correct3               
-"In 1908, what Ford Model was first produced, eventually being named the Car of the Century?"	"Model T"
-"The Original Ritz Hotel is located in what European City?"	"Paris"
-"Ebony and Ivory was a duet performed by Stevie Wonder and what former Beatle?"	"Paul McCartney"
-"In what year did Spongebob Squarepants premier on television, Wide Open Spaces by the Dixie Chicks won a Grammy, and the Sixth Sense premiered in theaters?"	"1999"
+"What is the name of the anime about a VRMMORPG where the players have to play until they either die or someone beats the game? No logging out. WHAAaaaa? Wicked eh?"	"Sword Art Online"
+"Who is the actor who played the program Crom in Tron - you might also know him as Londo..."	"Peter Jurasik"
+"This 1980's movie about Virtual Reality was such garbage that it basically halted research and tech development in VR for about 20 years."	"The Lawnmower Man"
+"This character started out as a real-life-human-reporter but after someone tried to kill him he ended up in a coma and then got his mind uploaded TO A COMPUTER. The transition altered his personality forever."	"Max Headroom"
 
 The expected answer is a text that varies.
 
@@ -803,7 +852,7 @@ A text question rule (this is the pub3 answer rule):
 				exit;
 				follow the pub4 rule;
 		otherwise:
-			if the table of quiz questions is not empty:
+			if the table of quiz questions3 is not empty:
 				say "Incorrect. Next question.";
 				exit;
 			otherwise:
@@ -812,14 +861,19 @@ A text question rule (this is the pub3 answer rule):
 				exit;
 				follow the pub4 rule.      
             
-The Round4 is a room. "This is it, the final round. Europe's The Final Countdown is now playing on loop in your head and the questions are worth a whopping twenty points a piece."
+The Round4 is a room. "This is it, the final round. You're so close to escaping this quiz that not even a Quiz Vortex could keep you from exiting the quiz-field. The questions are worth twenty points a piece.
+
+This round is about choices, random forces and what they lead to...which is of course PARALLEL UNIVERSES! 
+
+Every imagined-not-taken choice spawned from every individual's mind throughout time and space creating entire universes with every passing thought. The vast sea of thought embracing the infinite seeds of thought; the birth of what-ifs reflecting infinitely.
+"
 
 Table of quiz questions4
 Qn4	Correct4               
-"Who wrote a series of stories about children travelling between parallel worlds with a powerful knife?"	"Philip Pullman"
-"What is the name of the author who wrote about Sir Luther of Arkwright?"	"Brian Talbot"
-"What movie about parallel universes involves a good version of Jet Li trying to stop an evil version of Jet Li?"	"The One"
-"Who wrote The Coming of the Quantam Cats?"	"Frederick Pohl"
+"Who wrote a series of stories about children travelling between parallel worlds with a powerful knife, and has book titles inspired by Paradise Lost?"	"Philip Pullman"
+"What is the name of the author who wrote about Sir Luther of Arkwright - a hero who can travel through the parallels at will?"	"Bryan Talbot"
+"What movie about parallel universes involves a good version of Jet Li trying to stop an evil version of Jet Li who is determined to gain ultimate power by being the only version of himself throughout all universes?"	"The One"
+"Who wrote The Coming of the Quantum Cats, which includes a parallel universe prison planet, and a triad -relationship including three different versions of the same person? (OMG that is so hawt!)"	"Frederik Pohl"
 
 The expected answer is a text that varies.
 
@@ -856,17 +910,17 @@ A text question rule (this is the pub4 answer rule):
             
 The End is a room. "Final Score: [score]/200".
 
-The quizinator1 is a thing. The description of the quizinator1 is "You got this for good quizinating!"
+The quizzinator1 is a thing. The description of the quizzinator1 is "You got this for good quizinating!"
 
-The quizinator2 is a thing. The description of the quizinator2 is "You got this for bad quizinating."
+The quizzinator2 is a thing. The description of the quizzinator2 is "You got this for bad quizinating."
 
 
 Every turn when the location is The End (this is the end1 rule):
 	now the closed question mode is false;
 	If the score is greater than 50:
-		now the player has the quizinator1;
+		now the player has the quizzinator1;
 	otherwise:
-		now the player has the quizinator2.
+		now the player has the quizzinator2.
 	
 
 [Every turn:
