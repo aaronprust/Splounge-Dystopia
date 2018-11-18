@@ -45,6 +45,8 @@ The Upper Southside Hallway is a room. "This hallway is NUTS - there are signs e
 
 The Upper Northside Hallway is a room. "A hallway filled with freaks and nerds."
 
+MyRoom is a room. "This is your place! You got a bunch of nice junk around here, all kinds of old comics and fun figures from all the best neuroHolos. A 3D printer sits in the corner."
+
 Room 233 is a room. "Room 233"
 
 Consuite is a room. "Consuiiiiiiite, woah ohhhhh consuuuuiiiiite. Gawkers and geeks, drinking so much soda the air feels fizzy."
@@ -145,7 +147,7 @@ thought
 "Oooh yes, this is a wonderful world. 'What a luxuriously decadent and beautiful reality to be in' you think as you nestle further within the folds of the chair."
 "'What was I trying to do?' you think for a sec before you realize how comfy the chair you are in is. It's kind of incredible, you feel like you've accomplished enough in life."
 "Sooooo comfy. So sooooo comfy. Mmmmm..."
-"'I remember another life once, I think my name was [player's full name] or [player's forename] or smthg', you think. Whateeeevs...this chair though...you look around the room entranced by the activity around you. Good thing you're not expending that much energy."
+"'I remember another life once, I think my name was [player's forename] or [player's full name] or smthg', you think. Whateeeevs...this chair though...you look around the room entranced by the activity around you. Good thing you're not expending that much energy."
 
 [Qualities: Friendship]
 A person can be a co-conspirator, neutralla or an enemy.
@@ -573,7 +575,7 @@ The boffer carries a weapon called a nanocarbon staff. The description of the na
 
 A nanocarbon blade is a kind of weapon. The maximum damage of the nanocarbon blade is 6. 
 
-A dagger is a kind of weapon. The maximum damage of a dagger is 30.
+A dagger is a kind of weapon. The maximum damage of a dagger is 10.
 
 A pin is a kind of weapon. The maximum damage of a pin is 1.
 
@@ -585,7 +587,7 @@ The boffer is a person.
 The boffer is in the Garden Court.
 The boffer has a number called maximum hit points. 
 The boffer has a number called current hit points. 
-The maximum hit points of the boffer is 20.
+The maximum hit points of the boffer is 30.
 The current hit points of the boffer is 5.
 The boffer is an enemy.
 The boffer carries a nanocarbon blade.
