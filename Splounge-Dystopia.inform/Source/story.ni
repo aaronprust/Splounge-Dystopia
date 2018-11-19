@@ -49,13 +49,9 @@ MyRoom is a room. "This is your place! You got a bunch of nice junk around here,
 
 Room 233 is a room. "Room 233"
 
-Consuite is a room. "Consuiiiiiiite, woah ohhhhh consuuuuiiiiite. Gawkers and geeks, drinking so much soda the air feels fizzy."
-
 The Floor Changer is a room. "Elevators, escalators, and stairwell."
 
 Lower Southside Hallway is a room. "Lower Southside Hallway (party rooms)"
-
-Under Consuite is a room. "Under Consuite"
 
 The Lower Floor Changer is a room. "Lower elevators, escalators and stairwell lower level"
 
@@ -82,8 +78,6 @@ The Lower Tower Connector is a room. "The Lower Tower Connector - connection bet
 The Upper Tower Connector is a room. "The Upper Tower Connector - connection between the short and tall towers."
 
 The Dealer's Room is a room. "Dealer's Room"
-
-Mainstage is a room. "Mainstage"
 
 The Staging Area is a room. 
 
@@ -430,79 +424,6 @@ Definition: a direction (called thataway) is viable if the room thataway from th
 	else:
 		say "(From here, you can move to [list of viable directions].)";
 		continue the action;]
-
-The Upper Southside Hallway is southeast of the Veranda Walkway. 
-
-Room 233 is north of the Upper Southside Hallway.
-
-Consuite is northeast of the Upper Southside Hallway.
-
-The Staging Area is south of the Upper Southside Hallway.
-
-The End is southwest of the Upper Southside Hallway.
-
-Consuite is southeast of the Upper Northside Hallway.
-
-The Upper Northside Hallway is northeast of the Veranda Walkway. 
-
-[Room 232 is southeast of the Upper Southside Hallway.]
-
-The Bridge is northwest of the Veranda Walkway. "The Bridge"
-
-The Floor Changer is north of the Veranda Walkway.
-
-The Floor Changer is west of the Upper Northside Hallway.
-
-Convergence Central is west of the Floor Changer. "Convergence Central"
-
-Under the Veranda Walkway is below the Veranda Walkway.
-
-Lower Southside Hallway is southeast of Under the Veranda Walkway.
-
-Lower Northside Hallway is northwest of Under Consuite.
-
-Lower Northside Hallway is northeast of Under the Veranda Walkway.
-
-Under Consuite is northeast of Lower Southside Hallway. Consuite is above Under Consuite.
-
-The Lower Floor Changer is north of Under the Veranda Walkway.
-
-The Elevator Line is north of the Lower Floor Changer.
-
-The Stairwell Floor 1 is below The Stairwell Floor 2.
-
-The Stairwell Floor 1 is northeast of the Lower Floor Changer.
-
-The Stairwell Floor 2 is northeast of the Floor Changer.
-
-The Lower Floor Changer is below the Floor Changer.
-
-The Pool Area is west of Under Consuite.
-
-The Garden Court is east of Under the Veranda Walkway.
-
-Room 205 is south of Upper Northside Hallway.
-
-Room 107 is north of the Lower Northside Hallway.
-
-Room 128 is south of the Lower Southside Hallway.
-
-Crescent Kitchen is west of Under the Veranda Walkway.
-
-Crescent Kitchen is southwest of the Lower Floor Changer.
-
-The Front Desk is west of the Lower Floor Changer.
-
-The Lower Tower Connector is northwest of the Lower Floor Changer.
-
-The Upper Tower Connector is northwest of the Floor Changer.
-
-The Upper Tower Connector is northeast of Convergence Central.
-
-The Dealer's Room is southwest of Convergence Central.
-
-Mainstage is south of Convergence Central.
-
 
 The Floating Courtyard is above the Veranda Walkway.
 
@@ -983,4 +904,125 @@ Every turn when the location is The End (this is the end1 rule):
 [Every turn:
 	if the player is in Room 233:
 		now the player is in Round1.]
+		
+[Floor 2]
+
+Convergence Central is a room. "There are people all over this large open room."
+Mainstage is a room. "There are a bunch of ravers in here, the lights are low and the music is bumping!"
+The Green Room is a room. "Greenroom"
+
+H2F is a room. "Hallway2F"
+
+Elevator2 is a room. "Elevator 2"
+
+H2G is a room. "Hallway2G"
+
+H2A is a room. "Hallway2A"
+
+H2B is a room. "Hallway2B"
+
+H2C is a room. "Hallway2C"
+
+H2D is a room. "Hallway2D"
+
+H2E is a room. "Hallway2E"
+
+H2H is a room. "Hallway2H"
+
+P2B is a room. "Partyroom2B"
+
+P2C is a room. "Partyroom2C"
+
+P2D is a room. "Partyroom2D"
+
+H2J is a room. "Hallway2J"
+
+H2L is a room. "Hallway2L"
+
+Consuite is a room. "Consuite"
+
+H2Q is a room. "Hallway2Q"
+
+H2P is a room. "Hallway2P"
+
+H2O is a room. "Hallway2O"
+
+H2N is a room. "Hallway2N"
+
+H2M is a room. "Hallway2M"
+
+H2K is a room. "Hallway2K"
+
+H2I is a room. "Hallway2I"
+
+Registration is a room. "Registration"
+
+Elevator3 is a room. "Elevator3"
+
+Elevator1 is a room. "Elevator1"
+
+H1G is a room. "H1G"
+
+H1H is a room. "H1H"
+
+H1L is a room. "H1L"
+
+H1M is a room. "H1M"
+
+Mainstage is south of Convergence Central.
+H2F is east of Convergence Central.
+Convergence Central is north of Mainstage.
+The Green Room is east of Mainstage.
+Mainstage is west of the Green Room.
+Elevator2 is north of H2F.
+H2G is east of H2F.
+Convergence Central is west of H2F.
+H2F is south of Elevator2.
+Elevator3 is up from Elevator2.
+Elevator1 is down from Elevator2.
+H2A is north of H2G.
+H2I is south of H2G.
+H2F is west of H2G.
+H1G is down from H2G.
+H2G is south of H2A.
+H2B is east of H2A.
+P2B is south of H2B.
+H2C is east of H2B.
+H2A is west of H2B.
+P2C is south of H2C.
+H2D is east of H2C.
+H2B is west of H2C.
+P2D is south of H2D.
+H2E is east of H2D.
+H2C is west of H2D.
+H2H is south of H2E.
+H2D is west of H2E.
+H2E is north of H2H.
+H2J is south of H2H.
+H1H is down from H2H.
+
+H2B is north of P2B.
+H2C is north of P2C.
+H2D is north of P2D.
+H2H is north of H2J.
+H2L is south of H2J.
+Consuite is east of H2J.
+H2J is north of H2L.
+H2Q is south of H2L.
+H1L is down from H2L.
+H2J is west of Consuite.
+H2L is north of H2Q.
+H2P is west of H2Q.
+P2P is north of H2P.
+H2Q is east of H2P.
+H2O is west of H2P.
+P2O is north of H2O.
+H2N is west of H2O.
+P2N is north of H2N.
+H2M is west of H2N.
+H2K is north of H2M.
+H1M is down from H2M.
+H2I is north of H2K.
+
+
 
