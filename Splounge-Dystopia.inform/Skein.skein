@@ -13,7 +13,7 @@ Whatevs. Feels like just another day in the MASSIVE HIVE KNOWN as CONvergence.
 
 BTW, you sure have made quite the number of enemies.
 
-Today's magic number is 969.
+Today's magic number is 383.
 
 
 What is your name? &gt; </result>
@@ -28529,11 +28529,14 @@ You can see an airlock, a chair, and a bartender here.
 Space Lounge
 You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.
 
-You can see an airlock, a black ninja outfit, a bar (on which are a Glowing Sphere and a glittery box (closed)), a bench, a chair, a bartender, AFrame, and a securityBot here.
+You can see an airlock, a black ninja outfit, a bar (on which are a Glowing Sphere and a glittery box (closed)), a bench, a comfy looking chair, a bartender, AFrame, and a securityBot here.
+
+You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3511"></child>
+        <children><child nodeId="node-3735"></child>
+            <child nodeId="node-3511"></child>
         </children>
     </item>
     <item nodeId="node-3511">
@@ -28738,6 +28741,59 @@ The securityReadout is currently switched off.
         <result xml:space="preserve">The bowl is kind of unremarkable, not really exciting like some cool crazy gun would be or something.
 
 In the bowl is a note.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3735">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">(first opening the airlock)
+
+H2K
+Hallway2K
+
+You can see an airlock here.
+
+You can go north, south, and west through the airlock to the Space Lounge from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3736"></child>
+        </children>
+    </item>
+    <item nodeId="node-3736">
+        <command xml:space="preserve">n</command>
+        <result xml:space="preserve">
+H2I
+Hallway2I
+
+You can go north, south to H2K, and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3737"></child>
+        </children>
+    </item>
+    <item nodeId="node-3737">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Registration
+Registration
+
+You can go east to H2I from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3738"></child>
+        </children>
+    </item>
+    <item nodeId="node-3738">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+H2I
+Hallway2I
+
+You can go north, south to H2K, and west to Registration from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>

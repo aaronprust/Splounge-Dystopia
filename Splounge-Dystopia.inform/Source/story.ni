@@ -63,8 +63,6 @@ The Stairwell Floor 1 is a room. "Stairwell Floor 1"
 
 The Stairwell Floor 2 is a room. "Stairwell Floor 2"
 
-The Pool Area is a room. "Pool Area - VIP ONLY"
-
 The Garden Court is a room. "Garden Court"
 
 Room 205 is a room. "Room 205"
@@ -426,8 +424,6 @@ Definition: a direction (called thataway) is viable if the room thataway from th
 		continue the action;]
 
 The Floating Courtyard is above the Veranda Walkway.
-
-The airlock is east of the Space Lounge and west of the Veranda Walkway. 
 
 [Jerseys]
 [*]A jersey is a kind of thing. A jersey is wearable. Some jerseys in the Staging Area are defined by the Table of Honorary Jerseys. The description of a jersey is "Since [year established], the Tour de France has awarded this jersey to the [citation]."
@@ -969,6 +965,43 @@ H1L is a room. "H1L"
 
 H1M is a room. "H1M"
 
+Engine Room is a room. "Engine Room".
+H1F is a room. "H1F".
+
+H1A is a room. "H1A".
+H1B is a room. "H1B".
+H1C is a room. "H1C".
+H1D is a room. "H1D".
+H1E is a room. "H1E".
+P1B is a room. "P1B".
+P1C is a room. "P1C".
+P1D is a room. "P1D".
+H1J is a room. "H1J".
+H1Q is a room. "H1Q".
+F2E2 is a room. "F2E2".
+The Pool is a room. "Pool".
+Quantam Sandbox is a room. "Quantam Sandbox".
+Volden is a room. "Volden".
+
+H1P is a room. "H1P".
+H1O is a room. "H1O".
+H1N is a room. "H1N".
+P1N is a room. "P1N".
+P1O is a room. "P1O".
+H1K is a room. "H1K".
+H1I is a room. "H1I".
+GA is a room. "GA".
+GB is a room. "GB".
+GC is a room. "GC".
+Cinema Rex is a room. "Cinema Rex".
+The Art Show is a room. "Art Show".
+
+H3A is a room. "H3A".
+H3B is a room. "H3B".
+H3C is a room. "H3C".
+
+
+
 Mainstage is south of Convergence Central.
 H2F is east of Convergence Central.
 Convergence Central is north of Mainstage.
@@ -1023,6 +1056,45 @@ H2M is west of H2N.
 H2K is north of H2M.
 H1M is down from H2M.
 H2I is north of H2K.
+The airlock is east of the Space Lounge and west of H2K. 
+Registration is west of H2I.
+
+The Engine Room is west of H1F.
+Elevator1 is north of H1F.
+H1G is east of H1F.
+The Engine Room is west of H1F.
+H1F is south of Elevator1.
+H1A is north of H1G.
+H1I is south of H1G.
+GA is east of H1G.
+H1F is west of H1G.
+H2G is up from H1G.
+H1G is south of H1A.
+H1B is east of H1A.
+P1B is north of H1B.
+GA is south of H1B.
+H1C is east of H1B.
+H1A is west of H1B.
+P1C is north of H1C.
+H1D is south of H1C.
+H1B is east of H1C.
+P1D is north of H1D.
+H1E is east of H1D.
+H1C is west of H1D.
+H1H is south of H1E.
+H1D is west of H1E.
+H1B is south of P1B.
+H1C is south of P1C.
+H1D is south of P1D.
+H1E is north of H1H.
+H1J is south of H1H.
+F2E2 is east of H1H.
+H1H is north of H1J.
+H1L is south of H1J.
+The Quantam Sandbox is east of H1J.
+The Pool is west of H1J.
+
+
 
 
 
