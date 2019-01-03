@@ -261,7 +261,7 @@ The player carries a message receiver. The description of the message receiver i
 The player carries a coin. 
 
 [The player is in the Garden Court.]
-The player is in the Space Lounge.
+The player is in MyRoom.
 
 [
 	Let playerstealth be a random device from the Table of Stealth Devices;
@@ -1000,8 +1000,6 @@ H3A is a room. "H3A".
 H3B is a room. "H3B".
 H3C is a room. "H3C".
 
-
-
 Mainstage is south of Convergence Central.
 H2F is east of Convergence Central.
 Convergence Central is north of Mainstage.
@@ -1093,8 +1091,25 @@ H1H is north of H1J.
 H1L is south of H1J.
 The Quantam Sandbox is east of H1J.
 The Pool is west of H1J.
-
-
-
-
-
+H1J is west of QS.
+H1L is west of Volden.
+P1P is south of H1P.
+H1Q is east of H1P.
+P1O is south of H1O.
+H1I is north of H1K.
+H1K is north of H1M.
+H1N is east of H1M.
+P1P is south of H1P.
+H1P is east of H1O.
+P1N is south of H1N.
+H1N is west of H1O.
+H1Q is south of H1L.
+GB is south of GA.
+GC is south of GB.
+H1K is west of GC.
+H1I is west of GB.
+H1N is south of GC.
+H3A is south of Elevator3.
+H3B is south of H3A.
+MyRoom is east of H3A.
+H3C is south of H3B.

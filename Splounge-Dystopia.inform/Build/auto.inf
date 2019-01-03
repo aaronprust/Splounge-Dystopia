@@ -43,7 +43,7 @@ Global Story = BC_0;
 Constant Headline BC_1;
 Constant Story_Author BC_2;
 Release 1;
-Serial "181125";
+Serial "190102";
 
 Default Story 0;
 Default Headline 0;
@@ -4430,7 +4430,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*156;
+Constant REQUISITION_STACK_SIZE = 3*158;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -9215,7 +9215,7 @@ Constant START_ROOM_INIS = 2;
 Constant START_TIME_INIS = 3;
 Constant DONE_INIS = 4;
 
-Array InitialSituation --> selfobj I142_space_lounge I142_space_lounge 540 0;
+Array InitialSituation --> selfobj I148_myroom I148_myroom 540 0;
 
 
 
@@ -10963,13 +10963,13 @@ Constant RBNO_15 = "parse";
 
 Array KindHierarchy --> K0_kind (0) K1_room (0) K2_thing (0) K3_direction (0) K4_door (2) K5_container (2) K6_supporter (2) K7_backdrop (2) K8_person (2) K9_region (0) K10_man (8) K11_woman (8) K12_animal (8) K13_device (2) K14_vehicle (5) K15_player_s_holdall (5) K16_passkey (2) K17_keychain (6) K18_subject (2) K19_bench (6) K20_chair (6) K21_pocket (5) K22_ninja_outfit (2) K23_smoothie (2) K24_jersey (2) K25_weapon (2) K26_nanocarbon_blade (25) K27_dagger (25) K28_pin (25) K29_stealthing (2) ;
 Constant IK1_First = I142_space_lounge;
-Constant IK2_First = selfobj;
+Constant IK2_First = I173_black_ninja_outfit;
 Constant IK3_First = I51_north;
 Constant IK4_First = I165_airlock;
 Constant IK5_First = I190_glittery_box;
 Constant IK6_First = I186_bar;
 Constant IK7_First = I167_ceiling;
-Constant IK8_First = selfobj;
+Constant IK8_First = I201_bartender;
 Constant IK9_First = nothing;
 Constant IK10_First = nothing;
 Constant IK11_First = nothing;
@@ -10986,7 +10986,7 @@ Constant IK21_First = I174_black_ninja_outfit_s_po;
 Constant IK22_First = I173_black_ninja_outfit;
 Constant IK23_First = I203_blah;
 Constant IK24_First = I210_yellow_jersey;
-Constant IK25_First = X225;
+Constant IK25_First = X224;
 Constant IK26_First = X226;
 Constant IK27_First = X225;
 Constant IK28_First = X224;
@@ -11012,7 +11012,7 @@ Array Map_Storage -->
  0 0 0 0 0 0 0 0 0 I143_veranda_walkway 0 0 ! Exits from: I145_floating_courtyard
  0 0 0 0 I232_round1 0 0 0 0 0 0 0 ! Exits from: I146_upper_southside_hallway
  0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I147_upper_northside_hallway
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I148_myroom
+ 0 0 0 0 0 0 0 I299_h3a 0 0 0 0 ! Exits from: I148_myroom
  0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I149_room_233
  0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I150_floor_changer
  0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I151_lower_southside_hallway
@@ -11061,12 +11061,12 @@ Array Map_Storage -->
  I263_h2i 0 0 I261_h2m 0 0 0 I165_airlock 0 0 0 0 ! Exits from: I262_h2k
  I244_h2g 0 0 I262_h2k 0 0 0 I264_registration 0 0 0 0 ! Exits from: I263_h2i
  0 0 0 0 0 0 I263_h2i 0 0 0 0 0 ! Exits from: I264_registration
- 0 0 0 0 0 0 0 0 0 I243_elevator2 0 0 ! Exits from: I265_elevator3
+ 0 0 0 I299_h3a 0 0 0 0 0 I243_elevator2 0 0 ! Exits from: I265_elevator3
  0 0 0 I272_h1f 0 0 0 0 I243_elevator2 0 0 0 ! Exits from: I266_elevator1
  I273_h1a 0 0 I293_h1i 0 0 I294_ga I272_h1f I244_h2g 0 0 0 ! Exits from: I267_h1g
  I277_h1e 0 0 I281_h1j 0 0 I283_f2e2 0 I250_h2h 0 0 0 ! Exits from: I268_h1h
- I281_h1j 0 0 0 0 0 0 0 I255_h2l 0 0 0 ! Exits from: I269_h1l
- 0 0 0 0 0 0 0 0 I261_h2m 0 0 0 ! Exits from: I270_h1m
+ I281_h1j 0 0 I282_h1q 0 0 I286_volden 0 I255_h2l 0 0 0 ! Exits from: I269_h1l
+ I292_h1k 0 0 0 0 0 I289_h1n 0 I261_h2m 0 0 0 ! Exits from: I270_h1m
  0 0 0 0 0 0 I272_h1f 0 0 0 0 0 ! Exits from: I271_engine_room
  I266_elevator1 0 0 0 0 0 I267_h1g I271_engine_room 0 0 0 0 ! Exits from: I272_h1f
  0 0 0 I267_h1g 0 0 I274_h1b 0 0 0 0 0 ! Exits from: I273_h1a
@@ -11078,29 +11078,31 @@ Array Map_Storage -->
  0 0 0 I275_h1c 0 0 0 0 0 0 0 0 ! Exits from: I279_p1c
  0 0 0 I276_h1d 0 0 0 0 0 0 0 0 ! Exits from: I280_p1d
  I268_h1h 0 0 I269_h1l 0 0 I285_quantam_sandbox I284_pool 0 0 0 0 ! Exits from: I281_h1j
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I282_h1q
+ I269_h1l 0 0 0 0 0 0 I287_h1p 0 0 0 0 ! Exits from: I282_h1q
  0 0 0 0 0 0 0 I268_h1h 0 0 0 0 ! Exits from: I283_f2e2
  0 0 0 0 0 0 I281_h1j 0 0 0 0 0 ! Exits from: I284_pool
  0 0 0 0 0 0 0 I281_h1j 0 0 0 0 ! Exits from: I285_quantam_sandbox
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I286_volden
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I287_h1p
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I288_h1o
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I289_h1n
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I290_p1n
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I291_p1o
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I292_h1k
- I267_h1g 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I293_h1i
- I274_h1b 0 0 0 0 0 0 I267_h1g 0 0 0 0 ! Exits from: I294_ga
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I295_gb
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I296_gc
+ 0 0 0 0 0 0 0 I269_h1l 0 0 0 0 ! Exits from: I286_volden
+ 0 0 0 I306_p1p 0 0 I282_h1q I288_h1o 0 0 0 0 ! Exits from: I287_h1p
+ 0 0 0 I291_p1o 0 0 I287_h1p I289_h1n 0 0 0 0 ! Exits from: I288_h1o
+ I296_gc 0 0 I290_p1n 0 0 I288_h1o I270_h1m 0 0 0 0 ! Exits from: I289_h1n
+ I289_h1n 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I290_p1n
+ I288_h1o 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I291_p1o
+ I293_h1i 0 0 I270_h1m 0 0 I296_gc 0 0 0 0 0 ! Exits from: I292_h1k
+ I267_h1g 0 0 I292_h1k 0 0 I295_gb 0 0 0 0 0 ! Exits from: I293_h1i
+ I274_h1b 0 0 I295_gb 0 0 0 I267_h1g 0 0 0 0 ! Exits from: I294_ga
+ I294_ga 0 0 I296_gc 0 0 0 I293_h1i 0 0 0 0 ! Exits from: I295_gb
+ I295_gb 0 0 I289_h1n 0 0 0 I292_h1k 0 0 0 0 ! Exits from: I296_gc
  0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I297_cinema_rex
  0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I298_art_show
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I299_h3a
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I300_h3b
- 0 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I301_h3c
+ I265_elevator3 0 0 I300_h3b 0 0 I148_myroom 0 0 0 0 0 ! Exits from: I299_h3a
+ I299_h3a 0 0 I301_h3c 0 0 0 0 0 0 0 0 ! Exits from: I300_h3b
+ I300_h3b 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I301_h3c
  0 0 0 I258_h2p 0 0 0 0 0 0 0 0 ! Exits from: I302_p2p
  0 0 0 I259_h2o 0 0 0 0 0 0 0 0 ! Exits from: I303_p2o
  0 0 0 I260_h2n 0 0 0 0 0 0 0 0 ! Exits from: I304_p2n
+ 0 0 0 0 0 0 0 I281_h1j 0 0 0 0 ! Exits from: I305_qs
+ I287_h1p 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I306_p1p
 ;
 
 Class VPH_Class;
@@ -11779,102 +11781,10 @@ Object I142_space_lounge ""
     with p77_citation BC_289
 ;
 
-Object -> selfobj ""
-    class K8_person
-
-    	with saved_short_name TX_L_50,
-     
-    with short_name BC_290
-    with description BC_291
-    with p17_maximum_hit_points 100
-    with p18_current_hit_points 10
-    with p19_maximum_ninja_points 100
-    with p20_current_ninja_points 0
-    has proper
-    has privately_named
-    has concealed
-    with vector 0
-    with cap_short_name BC_292
-    has mark_as_thing
-    with IK2_Count 0
-    with IK2_Link I199_message_receiver
-    with IK8_Count 0
-    with IK8_Link I201_bartender
-    with KD_Count 8
-    with parse_name Parse_Name_GV13
-    with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_293
-    with list_together BC_294
-    with plural BC_295
-    with article BC_296
-    with p77_citation BC_297
-;
-
-Object -> -> I199_message_receiver ""
-    class K2_thing
-    with short_name BC_298
-    with description BC_299
-    has ~static
-    with vector 0
-    has mark_as_thing
-    with IK2_Count 22
-    with IK2_Link I200_coin
-    with KD_Count 2
-    with name 'message' 'receiver' 'things//p' 
-    with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_300
-    with list_together BC_301
-    with plural BC_302
-    with article BC_303
-    with p77_citation BC_304
-;
-
-Object -> -> I200_coin ""
-    class K2_thing
-    with short_name BC_305
-    has ~static
-    with vector 0
-    has mark_as_thing
-    with IK2_Count 23
-    with IK2_Link X225
-    with KD_Count 2
-    with name 'coin' 'things//p' 
-    with action_bitmap 0 0 0 0 0 0 0 
-    with description BC_306
-    with initial BC_307
-    with list_together BC_308
-    with plural BC_309
-    with article BC_310
-    with p77_citation BC_311
-;
-
-Object -> -> X225 ""
-    class K27_dagger
-    with short_name BC_312
-    has ~static
-    with vector 0
-    has mark_as_thing
-    with IK2_Count 41
-    with IK2_Link I173_black_ninja_outfit
-    with IK25_Count 2
-    with IK25_Link X224
-    with IK27_Count 0
-    with IK27_Link nothing
-    with KD_Count 27
-    with name 'dagger' 'daggers//p' 
-    with action_bitmap 0 0 0 0 0 0 0 
-    with description BC_313
-    with initial BC_314
-    with list_together BC_315
-    with plural BC_316
-    with article BC_317
-    with p77_citation BC_318
-;
-
 Object -> I173_black_ninja_outfit ""
     class K22_ninja_outfit
-    with short_name BC_319
-    with description BC_320
+    with short_name BC_290
+    with description BC_291
     with vector 0
     has mark_as_thing
     with component_child I174_black_ninja_outfit_s_po
@@ -11885,17 +11795,17 @@ Object -> I173_black_ninja_outfit ""
     with KD_Count 22
     with name 'black' 'ninja' 'outfit'  'outfits//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_321
-    with list_together BC_322
-    with plural BC_323
-    with article BC_324
-    with p77_citation BC_325
+    with initial BC_292
+    with list_together BC_293
+    with plural BC_294
+    with article BC_295
+    with p77_citation BC_296
 ;
 
 Object -> I186_bar ""
     class K6_supporter
-    with short_name BC_326
-    with description BC_327
+    with short_name BC_297
+    with description BC_298
     has static
     with vector 0
     has mark_as_thing
@@ -11906,17 +11816,17 @@ Object -> I186_bar ""
     with KD_Count 6
     with name 'bar' 'supporters//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_328
-    with list_together BC_329
-    with plural BC_330
-    with article BC_331
-    with p77_citation BC_332
+    with initial BC_299
+    with list_together BC_300
+    with plural BC_301
+    with article BC_302
+    with p77_citation BC_303
 ;
 
 Object -> -> I187_glowing_sphere ""
     class K2_thing
-    with short_name BC_333
-    with description BC_334
+    with short_name BC_304
+    with description BC_305
     has static
     with vector 0
     has mark_as_thing
@@ -11926,17 +11836,17 @@ Object -> -> I187_glowing_sphere ""
     with KD_Count 2
     with name 'glowing' 'sphere' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_335
-    with list_together BC_336
-    with plural BC_337
-    with article BC_338
-    with p77_citation BC_339
+    with initial BC_306
+    with list_together BC_307
+    with plural BC_308
+    with article BC_309
+    with p77_citation BC_310
 ;
 
 Object -> -> I190_glittery_box ""
     class K5_container
-    with short_name BC_340
-    with description BC_341
+    with short_name BC_311
+    with description BC_312
     has ~open
     has openable
     with vector 0
@@ -11948,17 +11858,17 @@ Object -> -> I190_glittery_box ""
     with KD_Count 5
     with name 'glittery' 'box' 'containers//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_342
-    with list_together BC_343
-    with plural BC_344
-    with article BC_345
-    with p77_citation BC_346
+    with initial BC_313
+    with list_together BC_314
+    with plural BC_315
+    with article BC_316
+    with p77_citation BC_317
 ;
 
 Object -> -> -> I191_securityreadout ""
     class K13_device
-    with short_name BC_347
-    with description BC_348
+    with short_name BC_318
+    with description BC_319
     with vector 0
     has mark_as_thing
     with IK2_Count 14
@@ -11968,16 +11878,16 @@ Object -> -> -> I191_securityreadout ""
     with KD_Count 13
     with name 'securityreadout' 'devices//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_349
-    with list_together BC_350
-    with plural BC_351
-    with article BC_352
-    with p77_citation BC_353
+    with initial BC_320
+    with list_together BC_321
+    with plural BC_322
+    with article BC_323
+    with p77_citation BC_324
 ;
 
 Object -> -> -> I192_bowl ""
     class K5_container
-    with short_name BC_354
+    with short_name BC_325
     with vector 0
     has mark_as_thing
     with IK2_Count 15
@@ -11987,18 +11897,18 @@ Object -> -> -> I192_bowl ""
     with KD_Count 5
     with name 'bowl' 'containers//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with description BC_355
-    with initial BC_356
-    with list_together BC_357
-    with plural BC_358
-    with article BC_359
-    with p77_citation BC_360
+    with description BC_326
+    with initial BC_327
+    with list_together BC_328
+    with plural BC_329
+    with article BC_330
+    with p77_citation BC_331
 ;
 
 Object -> -> -> -> I193_note ""
     class K2_thing
-    with short_name BC_361
-    with description BC_362
+    with short_name BC_332
+    with description BC_333
     with vector 0
     has mark_as_thing
     with IK2_Count 16
@@ -12006,17 +11916,17 @@ Object -> -> -> -> I193_note ""
     with KD_Count 2
     with name 'note' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_363
-    with list_together BC_364
-    with plural BC_365
-    with article BC_366
-    with p77_citation BC_367
+    with initial BC_334
+    with list_together BC_335
+    with plural BC_336
+    with article BC_337
+    with p77_citation BC_338
 ;
 
 Object -> -> -> I194_crazy_looking_gun ""
     class K2_thing
-    with short_name BC_368
-    with description BC_369
+    with short_name BC_339
+    with description BC_340
     with vector 0
     has mark_as_thing
     with IK2_Count 17
@@ -12024,16 +11934,16 @@ Object -> -> -> I194_crazy_looking_gun ""
     with KD_Count 2
     with name 'crazy' 'looking' 'gun' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_370
-    with list_together BC_371
-    with plural BC_372
-    with article BC_373
-    with p77_citation BC_374
+    with initial BC_341
+    with list_together BC_342
+    with plural BC_343
+    with article BC_344
+    with p77_citation BC_345
 ;
 
 Object -> X188 ""
     class K19_bench
-    with short_name BC_375
+    with short_name BC_346
     with p72_texture I181_smooth
     with vector 0
     has mark_as_thing
@@ -12046,17 +11956,17 @@ Object -> X188 ""
     with KD_Count 19
     with name 'bench' 'benches//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with description BC_376
-    with initial BC_377
-    with list_together BC_378
-    with plural BC_379
-    with article BC_380
-    with p77_citation BC_381
+    with description BC_347
+    with initial BC_348
+    with list_together BC_349
+    with plural BC_350
+    with article BC_351
+    with p77_citation BC_352
 ;
 
 Object -> I189_comfy_looking_chair ""
     class K20_chair
-    with short_name BC_382
+    with short_name BC_353
     with p72_texture I180_soft
     with vector 0
     has mark_as_thing
@@ -12069,18 +11979,18 @@ Object -> I189_comfy_looking_chair ""
     with KD_Count 20
     with name 'comfy' 'looking' 'chair' 'chairs//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with description BC_383
-    with initial BC_384
-    with list_together BC_385
-    with plural BC_386
-    with article BC_387
-    with p77_citation BC_388
+    with description BC_354
+    with initial BC_355
+    with list_together BC_356
+    with plural BC_357
+    with article BC_358
+    with p77_citation BC_359
 ;
 
 Object -> I201_bartender ""
     class K8_person
-    with short_name BC_389
-    with description BC_390
+    with short_name BC_360
+    with description BC_361
     has female
     with vector 0
     has mark_as_thing
@@ -12091,17 +12001,17 @@ Object -> I201_bartender ""
     with KD_Count 8
     with name 'bartender' 'people//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_391
-    with list_together BC_392
-    with plural BC_393
-    with article BC_394
-    with p77_citation BC_395
+    with initial BC_362
+    with list_together BC_363
+    with plural BC_364
+    with article BC_365
+    with p77_citation BC_366
 ;
 
 Object -> I215_aframe ""
     class K8_person
-    with short_name BC_396
-    with description BC_397
+    with short_name BC_367
+    with description BC_368
     with p17_maximum_hit_points 1000
     with p18_current_hit_points 1000
     has proper
@@ -12116,16 +12026,16 @@ Object -> I215_aframe ""
     with KD_Count 8
     with name 'aframe' 'people//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_398
-    with list_together BC_399
-    with plural BC_400
-    with article BC_401
-    with p77_citation BC_402
+    with initial BC_369
+    with list_together BC_370
+    with plural BC_371
+    with article BC_372
+    with p77_citation BC_373
 ;
 
 Object -> -> I216_pin_striped_suit ""
     class K2_thing
-    with short_name BC_403
+    with short_name BC_374
     has ~static
     has clothing
     has worn
@@ -12136,17 +12046,17 @@ Object -> -> I216_pin_striped_suit ""
     with KD_Count 2
     with name 'pin-striped' 'suit' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with description BC_404
-    with initial BC_405
-    with list_together BC_406
-    with plural BC_407
-    with article BC_408
-    with p77_citation BC_409
+    with description BC_375
+    with initial BC_376
+    with list_together BC_377
+    with plural BC_378
+    with article BC_379
+    with p77_citation BC_380
 ;
 
 Object -> -> I217_pink_thong ""
     class K2_thing
-    with short_name BC_410
+    with short_name BC_381
     has ~static
     has clothing
     has worn
@@ -12157,61 +12067,61 @@ Object -> -> I217_pink_thong ""
     with KD_Count 2
     with name 'pink' 'thong' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with description BC_411
-    with initial BC_412
-    with list_together BC_413
-    with plural BC_414
-    with article BC_415
-    with p77_citation BC_416
+    with description BC_382
+    with initial BC_383
+    with list_together BC_384
+    with plural BC_385
+    with article BC_386
+    with p77_citation BC_387
 ;
 
 Object -> -> X224 ""
     class K28_pin
-    with short_name BC_417
+    with short_name BC_388
     has ~static
     with vector 0
     has mark_as_thing
     with IK2_Count 40
     with IK2_Link I227_securitybot
     with IK25_Count 1
-    with IK25_Link I220_nanocarbon_staff
+    with IK25_Link X225
     with IK28_Count 0
     with IK28_Link nothing
     with KD_Count 28
     with name 'pin' 'pins//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with description BC_418
-    with initial BC_419
-    with list_together BC_420
-    with plural BC_421
-    with article BC_422
-    with p77_citation BC_423
+    with description BC_389
+    with initial BC_390
+    with list_together BC_391
+    with plural BC_392
+    with article BC_393
+    with p77_citation BC_394
 ;
 
 Object -> I227_securitybot ""
     class K8_person
-    with short_name BC_424
-    with description BC_425
+    with short_name BC_395
+    with description BC_396
     with vector 0
     has mark_as_thing
     with IK2_Count 43
     with IK2_Link I195_black_rod
     with IK8_Count 4
-    with IK8_Link I219_boffer
+    with IK8_Link selfobj
     with KD_Count 8
     with name 'securitybot' 'people//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_426
-    with list_together BC_427
-    with plural BC_428
-    with article BC_429
-    with p77_citation BC_430
+    with initial BC_397
+    with list_together BC_398
+    with plural BC_399
+    with article BC_400
+    with p77_citation BC_401
 ;
 
 Object I143_veranda_walkway ""
     class K1_room
-    with short_name BC_431
-    with description BC_432
+    with short_name BC_402
+    with description BC_403
     with vector 0
     with room_index -1
     has mark_as_room
@@ -12219,16 +12129,16 @@ Object I143_veranda_walkway ""
     with IK1_Link I144_secret_room
     with KD_Count 1
     with name 'veranda' 'walkway' 'rooms//p' 
-    with list_together BC_433
-    with plural BC_434
-    with article BC_435
-    with p77_citation BC_436
+    with list_together BC_404
+    with plural BC_405
+    with article BC_406
+    with p77_citation BC_407
 ;
 
 Object -> I195_black_rod ""
     class K2_thing
-    with short_name BC_437
-    with description BC_438
+    with short_name BC_408
+    with description BC_409
     with vector 0
     has mark_as_thing
     with IK2_Count 18
@@ -12236,17 +12146,17 @@ Object -> I195_black_rod ""
     with KD_Count 2
     with name 'black' 'rod' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_439
-    with list_together BC_440
-    with plural BC_441
-    with article BC_442
-    with p77_citation BC_443
+    with initial BC_410
+    with list_together BC_411
+    with plural BC_412
+    with article BC_413
+    with p77_citation BC_414
 ;
 
 Object -> I196_floating_dolphin ""
     class K14_vehicle
-    with short_name BC_444
-    with description BC_445
+    with short_name BC_415
+    with description BC_416
     with with_key I197_dolphin_code
     has ~open
     has openable
@@ -12263,17 +12173,17 @@ Object -> I196_floating_dolphin ""
     with KD_Count 14
     with name 'floating' 'dolphin' 'vehicles//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_446
-    with list_together BC_447
-    with plural BC_448
-    with article BC_449
-    with p77_citation BC_450
+    with initial BC_417
+    with list_together BC_418
+    with plural BC_419
+    with article BC_420
+    with p77_citation BC_421
 ;
 
 Object I144_secret_room ""
     class K1_room
-    with short_name BC_451
-    with description BC_452
+    with short_name BC_422
+    with description BC_423
     with vector 0
     with room_index -1
     has mark_as_room
@@ -12281,16 +12191,16 @@ Object I144_secret_room ""
     with IK1_Link I145_floating_courtyard
     with KD_Count 1
     with name 'secret' 'room' 'rooms//p' 
-    with list_together BC_453
-    with plural BC_454
-    with article BC_455
-    with p77_citation BC_456
+    with list_together BC_424
+    with plural BC_425
+    with article BC_426
+    with p77_citation BC_427
 ;
 
 Object -> I197_dolphin_code ""
     class K2_thing
-    with short_name BC_457
-    with description BC_458
+    with short_name BC_428
+    with description BC_429
     with vector 0
     has mark_as_thing
     with IK2_Count 20
@@ -12298,35 +12208,35 @@ Object -> I197_dolphin_code ""
     with KD_Count 2
     with name 'dolphin' 'code' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_459
-    with list_together BC_460
-    with plural BC_461
-    with article BC_462
-    with p77_citation BC_463
+    with initial BC_430
+    with list_together BC_431
+    with plural BC_432
+    with article BC_433
+    with p77_citation BC_434
 ;
 
 Object -> I198_book ""
     class K2_thing
-    with short_name BC_464
-    with description BC_465
+    with short_name BC_435
+    with description BC_436
     with vector 0
     has mark_as_thing
     with IK2_Count 21
-    with IK2_Link I219_boffer
+    with IK2_Link selfobj
     with KD_Count 2
     with name 'book' 'things//p' 
     with action_bitmap 0 0 0 0 0 0 0 
-    with initial BC_466
-    with list_together BC_467
-    with plural BC_468
-    with article BC_469
-    with p77_citation BC_470
+    with initial BC_437
+    with list_together BC_438
+    with plural BC_439
+    with article BC_440
+    with p77_citation BC_441
 ;
 
 Object I145_floating_courtyard ""
     class K1_room
-    with short_name BC_471
-    with description BC_472
+    with short_name BC_442
+    with description BC_443
     with vector 0
     with room_index -1
     has mark_as_room
@@ -12334,16 +12244,16 @@ Object I145_floating_courtyard ""
     with IK1_Link I146_upper_southside_hallway
     with KD_Count 1
     with name 'floating' 'courtyard' 'rooms//p' 
-    with list_together BC_473
-    with plural BC_474
-    with article BC_475
-    with p77_citation BC_476
+    with list_together BC_444
+    with plural BC_445
+    with article BC_446
+    with p77_citation BC_447
 ;
 
 Object I146_upper_southside_hallway ""
     class K1_room
-    with short_name BC_477
-    with description BC_478
+    with short_name BC_448
+    with description BC_449
     with vector 0
     with room_index -1
     has mark_as_room
@@ -12351,16 +12261,16 @@ Object I146_upper_southside_hallway ""
     with IK1_Link I147_upper_northside_hallway
     with KD_Count 1
     with name 'upper' 'southside' 'hallway' 'rooms//p' 
-    with list_together BC_479
-    with plural BC_480
-    with article BC_481
-    with p77_citation BC_482
+    with list_together BC_450
+    with plural BC_451
+    with article BC_452
+    with p77_citation BC_453
 ;
 
 Object I147_upper_northside_hallway ""
     class K1_room
-    with short_name BC_483
-    with description BC_484
+    with short_name BC_454
+    with description BC_455
     with vector 0
     with room_index -1
     has mark_as_room
@@ -12368,16 +12278,16 @@ Object I147_upper_northside_hallway ""
     with IK1_Link I148_myroom
     with KD_Count 1
     with name 'upper' 'northside' 'hallway' 'rooms//p' 
-    with list_together BC_485
-    with plural BC_486
-    with article BC_487
-    with p77_citation BC_488
+    with list_together BC_456
+    with plural BC_457
+    with article BC_458
+    with p77_citation BC_459
 ;
 
 Object I148_myroom ""
     class K1_room
-    with short_name BC_489
-    with description BC_490
+    with short_name BC_460
+    with description BC_461
     has proper
     with vector 0
     with room_index -1
@@ -12386,6 +12296,98 @@ Object I148_myroom ""
     with IK1_Link I149_room_233
     with KD_Count 1
     with name 'myroom' 'rooms//p' 
+    with list_together BC_462
+    with plural BC_463
+    with article BC_464
+    with p77_citation BC_465
+;
+
+Object -> selfobj ""
+    class K8_person
+
+    	with saved_short_name TX_L_94,
+     
+    with short_name BC_466
+    with description BC_467
+    with p17_maximum_hit_points 100
+    with p18_current_hit_points 10
+    with p19_maximum_ninja_points 100
+    with p20_current_ninja_points 0
+    has proper
+    has privately_named
+    has concealed
+    with vector 0
+    with cap_short_name BC_468
+    has mark_as_thing
+    with IK2_Count 0
+    with IK2_Link I199_message_receiver
+    with IK8_Count 0
+    with IK8_Link I219_boffer
+    with KD_Count 8
+    with parse_name Parse_Name_GV13
+    with action_bitmap 0 0 0 0 0 0 0 
+    with initial BC_469
+    with list_together BC_470
+    with plural BC_471
+    with article BC_472
+    with p77_citation BC_473
+;
+
+Object -> -> I199_message_receiver ""
+    class K2_thing
+    with short_name BC_474
+    with description BC_475
+    has ~static
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 22
+    with IK2_Link I200_coin
+    with KD_Count 2
+    with name 'message' 'receiver' 'things//p' 
+    with action_bitmap 0 0 0 0 0 0 0 
+    with initial BC_476
+    with list_together BC_477
+    with plural BC_478
+    with article BC_479
+    with p77_citation BC_480
+;
+
+Object -> -> I200_coin ""
+    class K2_thing
+    with short_name BC_481
+    has ~static
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 23
+    with IK2_Link X225
+    with KD_Count 2
+    with name 'coin' 'things//p' 
+    with action_bitmap 0 0 0 0 0 0 0 
+    with description BC_482
+    with initial BC_483
+    with list_together BC_484
+    with plural BC_485
+    with article BC_486
+    with p77_citation BC_487
+;
+
+Object -> -> X225 ""
+    class K27_dagger
+    with short_name BC_488
+    has ~static
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 41
+    with IK2_Link I219_boffer
+    with IK25_Count 2
+    with IK25_Link I220_nanocarbon_staff
+    with IK27_Count 0
+    with IK27_Link nothing
+    with KD_Count 27
+    with name 'dagger' 'daggers//p' 
+    with action_bitmap 0 0 0 0 0 0 0 
+    with description BC_489
+    with initial BC_490
     with list_together BC_491
     with plural BC_492
     with article BC_493
@@ -14481,7 +14483,7 @@ Object I304_p2n ""
     with room_index -1
     has mark_as_room
     with IK1_Count 94
-    with IK1_Link nothing
+    with IK1_Link I305_qs
     with KD_Count 1
     with name 'p2n' 'rooms//p' 
     with description BC_1199
@@ -14489,6 +14491,42 @@ Object I304_p2n ""
     with plural BC_1201
     with article BC_1202
     with p77_citation BC_1203
+;
+
+Object I305_qs ""
+    class K1_room
+    with short_name BC_1204
+    has proper
+    with vector 0
+    with room_index -1
+    has mark_as_room
+    with IK1_Count 95
+    with IK1_Link I306_p1p
+    with KD_Count 1
+    with name 'qs' 'rooms//p' 
+    with description BC_1205
+    with list_together BC_1206
+    with plural BC_1207
+    with article BC_1208
+    with p77_citation BC_1209
+;
+
+Object I306_p1p ""
+    class K1_room
+    with short_name BC_1210
+    has proper
+    with vector 0
+    with room_index -1
+    has mark_as_room
+    with IK1_Count 96
+    with IK1_Link nothing
+    with KD_Count 1
+    with name 'p1p' 'rooms//p' 
+    with description BC_1211
+    with list_together BC_1212
+    with plural BC_1213
+    with article BC_1214
+    with p77_citation BC_1215
 ;
 
 Constant I71_german_language = 1;
@@ -14559,12 +14597,12 @@ Constant I184_neutralla = 2;
 Constant I185_an_enemy = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_1204) ! 25 command prompt
+  (BC_1216) ! 25 command prompt
   (I73_english_language) ! 29 language of play
-  (BC_1205) ! 32 story author
-  (BC_1206) ! 33 story headline
-  (BC_1207) ! 34 story genre
-  (BC_1208) ! 35 story description
+  (BC_1217) ! 32 story author
+  (BC_1218) ! 33 story headline
+  (BC_1219) ! 34 story genre
+  (BC_1220) ! 35 story description
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -14572,7 +14610,7 @@ Array Global_Vars -->
   (14) ! 63 right alignment depth
   (0) ! 64 menu depth
   (0) ! 65 endnode flag
-  (BC_1209) ! 66 current menu title
+  (BC_1221) ! 66 current menu title
   (T3_sample_options) ! 67 current menu
   (1) ! 68 current menu selection
   (1) ! 69 list exits
@@ -14580,23 +14618,23 @@ Array Global_Vars -->
   (1) ! 71 room memory
   (1) ! 72 darkness memory
   (1) ! 73 mentioning unvisited rooms
-  (BC_1210) ! 74 current question
-  (BC_1211) ! 75 current prompt
-  (BC_1212) ! 76 saved prompt
-  (BC_1213) ! 77 current question menu
-  (BC_1214) ! 78 current answer
-  (BC_1215) ! 79 closed number prompt
-  (BC_1216) ! 80 open number prompt
-  (BC_1217) ! 81 closed real number prompt
-  (BC_1218) ! 82 open real number prompt
-  (BC_1219) ! 83 closed menu prompt
-  (BC_1220) ! 84 open menu prompt
-  (BC_1221) ! 85 closed yes/no prompt
-  (BC_1222) ! 86 open yes/no prompt
-  (BC_1223) ! 87 closed gender prompt
-  (BC_1224) ! 88 open gender prompt
-  (BC_1225) ! 89 closed text prompt
-  (BC_1226) ! 90 open text prompt
+  (BC_1222) ! 74 current question
+  (BC_1223) ! 75 current prompt
+  (BC_1224) ! 76 saved prompt
+  (BC_1225) ! 77 current question menu
+  (BC_1226) ! 78 current answer
+  (BC_1227) ! 79 closed number prompt
+  (BC_1228) ! 80 open number prompt
+  (BC_1229) ! 81 closed real number prompt
+  (BC_1230) ! 82 open real number prompt
+  (BC_1231) ! 83 closed menu prompt
+  (BC_1232) ! 84 open menu prompt
+  (BC_1233) ! 85 closed yes/no prompt
+  (BC_1234) ! 86 open yes/no prompt
+  (BC_1235) ! 87 closed gender prompt
+  (BC_1236) ! 88 open gender prompt
+  (BC_1237) ! 89 closed text prompt
+  (BC_1238) ! 90 open text prompt
   (false) ! 91 closed question mode
   (false) ! 92 number question mode
   (false) ! 93 real number question mode
@@ -14608,11 +14646,11 @@ Array Global_Vars -->
   (nothing) ! 99 current interlocutor
   (I141_explicit) ! 100 greeting type
   (I141_explicit) ! 101 farewell type
-  (BC_1227) ! 102 player's forename
-  (BC_1228) ! 103 player's full name
+  (BC_1239) ! 102 player's forename
+  (BC_1240) ! 103 player's full name
   (0) ! 104 test-variable
   (1) ! 105 securitybotpissed
-  (BC_1229) ! 106 expected answer
+  (BC_1241) ! 106 expected answer
 ;
 
 
@@ -14624,7 +14662,7 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_1230) (BC_1231) (BC_1232) (BC_1233) (BC_1234) ;
+Array tab_0_0 table $0664 0 (BC_1242) (BC_1243) (BC_1244) (BC_1245) (BC_1246) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
 Array tab_0_2 table $2066 2 (Consult_Grammar_121) (Consult_Grammar_122) (Consult_Grammar_123) (Consult_Grammar_124) (Consult_Grammar_125) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
@@ -14633,83 +14671,83 @@ Array T1_locale_priorities table  tab_1_0 tab_1_1;
 Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array T2_ordinary_status table  tab_2_0 tab_2_1 tab_2_2;
-Array tab_2_0 table $066b 12 (BC_1235) ;
-Array tab_2_1 table $066c 13 (BC_1236) ;
-Array tab_2_2 table $066d 14 (BC_1237) ;
+Array tab_2_0 table $066b 12 (BC_1247) ;
+Array tab_2_1 table $066c 13 (BC_1248) ;
+Array tab_2_2 table $066d 14 (BC_1249) ;
 Array T3_sample_options table  tab_3_0 tab_3_1 tab_3_2 tab_3_3;
-Array tab_3_0 table $066e 15 (BC_1238) ;
+Array tab_3_0 table $066e 15 (BC_1250) ;
 Array tab_3_1 table $006f 16 ( TABLE_NOVALUE) ;
-Array tab_3_2 table $0670 17 (BC_1239) ;
+Array tab_3_2 table $0670 17 (BC_1251) ;
 Array tab_3_3 table $0071 18 ( TABLE_NOVALUE) ;
 Array T4_menu_commands table  tab_4_0 tab_4_1;
 Array tab_4_0 table $4472 19 (78) (110) (80) (112) (81) (113) (13) (32) (130) (129) (27) (-8) (-6) (-5) (-4) ;
 Array tab_4_1 table $0073 21 (R_856) (R_856) (R_857) (R_857) (R_855) (R_855) (R_858) (R_858) (R_856) (R_857) (R_855) (R_855) (R_858) (R_856) (R_857) ;
 Array T5_shallow_menu_status table  tab_5_0 tab_5_1 tab_5_2;
-Array tab_5_0 table $066b 23 (BC_1240) ;
-Array tab_5_1 table $066c 24 (BC_1241) ;
-Array tab_5_2 table $066d 25 (BC_1242) ;
+Array tab_5_0 table $066b 23 (BC_1252) ;
+Array tab_5_1 table $066c 24 (BC_1253) ;
+Array tab_5_2 table $066d 25 (BC_1254) ;
 Array T6_deep_menu_status table  tab_6_0 tab_6_1 tab_6_2;
-Array tab_6_0 table $066b 26 (BC_1243) (BC_1244) (BC_1245) (BC_1246) ;
-Array tab_6_1 table $066c 27 (BC_1247) (BC_1248) (BC_1249) (BC_1250) ;
-Array tab_6_2 table $066d 28 (BC_1251) (BC_1252) (BC_1253) (BC_1254) ;
+Array tab_6_0 table $066b 26 (BC_1255) (BC_1256) (BC_1257) (BC_1258) ;
+Array tab_6_1 table $066c 27 (BC_1259) (BC_1260) (BC_1261) (BC_1262) ;
+Array tab_6_2 table $066d 28 (BC_1263) (BC_1264) (BC_1265) (BC_1266) ;
 Array T7_sample_hints table  tab_7_0 tab_7_1;
-Array tab_7_0 table $0674 29 (BC_1255) ;
+Array tab_7_0 table $0674 29 (BC_1267) ;
 Array tab_7_1 table $4475 30 ( TABLE_NOVALUE) ;
 Array T9_basic_help_options table  tab_9_0 tab_9_1 tab_9_2 tab_9_3;
-Array tab_9_0 table $066e 31 (BC_1256) (BC_1257) ;
+Array tab_9_0 table $066e 31 (BC_1268) (BC_1269) ;
 Array tab_9_1 table $006f 32 ( TABLE_NOVALUE) (T10_instruction_options) ;
-Array tab_9_2 table $0670 33 (BC_1258) ( TABLE_NOVALUE) ;
+Array tab_9_2 table $0670 33 (BC_1270) ( TABLE_NOVALUE) ;
 Array tab_9_3 table $0071 34 ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T10_instruction_options table  tab_10_0 tab_10_1 tab_10_2 tab_10_3;
-Array tab_10_0 table $066e 35 (BC_1259) (BC_1260) (BC_1261) (BC_1262) (BC_1263) (BC_1264) (BC_1265) (BC_1266) ;
+Array tab_10_0 table $066e 35 (BC_1271) (BC_1272) (BC_1273) (BC_1274) (BC_1275) (BC_1276) (BC_1277) (BC_1278) ;
 Array tab_10_1 table $006f 36 ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) (T12_if_elements) (T11_stuckness_advice) ;
-Array tab_10_2 table $0670 37 (BC_1267) (BC_1268) (BC_1269) (BC_1270) (BC_1271) (BC_1272) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
+Array tab_10_2 table $0670 37 (BC_1279) (BC_1280) (BC_1281) (BC_1282) (BC_1283) (BC_1284) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array tab_10_3 table $0071 38 ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T11_stuckness_advice table  tab_11_0 tab_11_1 tab_11_2 tab_11_3;
-Array tab_11_0 table $066e 39 (BC_1273) (BC_1274) (BC_1275) (BC_1276) ;
+Array tab_11_0 table $066e 39 (BC_1285) (BC_1286) (BC_1287) (BC_1288) ;
 Array tab_11_1 table $006f 40 ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
-Array tab_11_2 table $0670 41 (BC_1277) (BC_1278) (BC_1279) (BC_1280) ;
+Array tab_11_2 table $0670 41 (BC_1289) (BC_1290) (BC_1291) (BC_1292) ;
 Array tab_11_3 table $0071 42 ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T12_if_elements table  tab_12_0 tab_12_1 tab_12_2 tab_12_3;
-Array tab_12_0 table $066e 43 (BC_1281) (BC_1282) (BC_1283) (BC_1284) ;
+Array tab_12_0 table $066e 43 (BC_1293) (BC_1294) (BC_1295) (BC_1296) ;
 Array tab_12_1 table $006f 44 ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
-Array tab_12_2 table $0670 45 (BC_1285) (BC_1286) (BC_1287) (BC_1288) ;
+Array tab_12_2 table $0670 45 (BC_1297) (BC_1298) (BC_1299) (BC_1300) ;
 Array tab_12_3 table $0071 46 ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T13_setting_options table  tab_13_0 tab_13_1 tab_13_2 tab_13_3;
-Array tab_13_0 table $066e 47 (BC_1289) (BC_1290) ;
+Array tab_13_0 table $066e 47 (BC_1301) (BC_1302) ;
 Array tab_13_1 table $006f 48 ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array tab_13_2 table $0670 49 ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array tab_13_3 table $0071 50 (R_869) (R_868) ;
 Array T14_comfychairthoughts --> 1 tab_14_0;
-Array tab_14_0 table $0676 51 (BC_1291) (BC_1292) (BC_1293) (BC_1294) ;
+Array tab_14_0 table $0676 51 (BC_1303) (BC_1304) (BC_1305) (BC_1306) ;
 Array T15_random_statements --> 1 tab_15_0;
-Array tab_15_0 table $0677 52 (BC_1295) (BC_1296) (BC_1297) (BC_1298) ;
+Array tab_15_0 table $0677 52 (BC_1307) (BC_1308) (BC_1309) (BC_1310) ;
 Array T16 table  tab_16_0 tab_16_1;
 Array tab_16_0 table $0878 NULL (I205_shinyunicorn) (I206_rocketblaster) (I207_anther) (I208_thisas) ;
-Array tab_16_1 table $0670 53 (BC_1299) (BC_1300) (BC_1301) (BC_1302) ;
+Array tab_16_1 table $0670 53 (BC_1311) (BC_1312) (BC_1313) (BC_1314) ;
 Array T17_honorary_jerseys table  tab_17_0 tab_17_1 tab_17_2;
 Array tab_17_0 table $0879 NULL (I210_yellow_jersey) (I211_polkadot_jersey) (I212_green_jersey) (I213_white_jersey) ;
 Array tab_17_1 table $447a 54 (1919) (1933) (1953) (1975) ;
-Array tab_17_2 table $067b 55 (BC_1303) (BC_1304) (BC_1305) (BC_1306) ;
+Array tab_17_2 table $067b 55 (BC_1315) (BC_1316) (BC_1317) (BC_1318) ;
 Array T18_status table  tab_18_0 tab_18_1 tab_18_2;
-Array tab_18_0 table $066b 56 (BC_1307) ;
-Array tab_18_1 table $066c 57 (BC_1308) ;
-Array tab_18_2 table $066d 58 (BC_1309) ;
+Array tab_18_0 table $066b 56 (BC_1319) ;
+Array tab_18_1 table $066c 57 (BC_1320) ;
+Array tab_18_2 table $066d 58 (BC_1321) ;
 Array T19 table  tab_19_0 tab_19_1;
 Array tab_19_0 table $087c NULL (I229_discowig) (I230_electromisdirector) (I231_adblaster2000) ;
-Array tab_19_1 table $0670 59 (BC_1310) (BC_1311) (BC_1312) ;
+Array tab_19_1 table $0670 59 (BC_1322) (BC_1323) (BC_1324) ;
 Array T20_quiz_questions table  tab_20_0 tab_20_1;
-Array tab_20_0 table $067d 60 (BC_1313) (BC_1314) (BC_1315) (BC_1316) ;
-Array tab_20_1 table $067e 61 (BC_1317) (BC_1318) (BC_1319) (BC_1320) ;
+Array tab_20_0 table $067d 60 (BC_1325) (BC_1326) (BC_1327) (BC_1328) ;
+Array tab_20_1 table $067e 61 (BC_1329) (BC_1330) (BC_1331) (BC_1332) ;
 Array T21_quiz_questions2 table  tab_21_0 tab_21_1;
-Array tab_21_0 table $067f 62 (BC_1321) (BC_1322) (BC_1323) (BC_1324) ;
-Array tab_21_1 table $0680 63 (BC_1325) (BC_1326) (BC_1327) (BC_1328) ;
+Array tab_21_0 table $067f 62 (BC_1333) (BC_1334) (BC_1335) (BC_1336) ;
+Array tab_21_1 table $0680 63 (BC_1337) (BC_1338) (BC_1339) (BC_1340) ;
 Array T22_quiz_questions3 table  tab_22_0 tab_22_1;
-Array tab_22_0 table $0681 64 (BC_1329) (BC_1330) (BC_1331) (BC_1332) ;
-Array tab_22_1 table $0682 65 (BC_1333) (BC_1334) (BC_1335) (BC_1336) ;
+Array tab_22_0 table $0681 64 (BC_1341) (BC_1342) (BC_1343) (BC_1344) ;
+Array tab_22_1 table $0682 65 (BC_1345) (BC_1346) (BC_1347) (BC_1348) ;
 Array T23_quiz_questions4 table  tab_23_0 tab_23_1;
-Array tab_23_0 table $0683 66 (BC_1337) (BC_1338) (BC_1339) (BC_1340) ;
-Array tab_23_1 table $0684 67 (BC_1341) (BC_1342) (BC_1343) (BC_1344) ;
+Array tab_23_0 table $0683 66 (BC_1349) (BC_1350) (BC_1351) (BC_1352) ;
+Array tab_23_1 table $0684 67 (BC_1353) (BC_1354) (BC_1355) (BC_1356) ;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -15811,7 +15849,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0;
 [ R_989 ;
     if (debug_rules) DB_Rule(R_989, 989);
     ! [2: now the command prompt is ~What is your name? > ~]
-    BlkValueCopy((Global_Vars-->1), TX_L_350);
+    BlkValueCopy((Global_Vars-->1), TX_L_352);
     rfalse;
 ];
 ! No specific request
@@ -17464,7 +17502,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0;
     ! [2: unless the player is on the comfy looking chair]
     if (~~(((I189_comfy_looking_chair == SupporterOf(player)))))
     {! [3: end the story saying ~You sit on the chair again and sink forever into its comfyness. You never rise again.~]
-        deadflag=TX_L_351; story_complete=false;
+        deadflag=TX_L_353; story_complete=false;
         }
         RulebookFails(); rtrue;
         } else if (debug_rules > 1) DB_Rule(R_980, 980, 'action');
@@ -18667,7 +18705,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0;
     ! [2: now the current answer is the player's command]
     BlkValueCast((Global_Vars-->26), SNIPPET_TY, players_command);
     ! [3: replace the regular expression ~@@94say ~ in the current answer with ~~ , case insensitively]
-    TEXT_TY_Replace_RE(REGEXP_BLOB, (Global_Vars-->26), TX_L_352,
+    TEXT_TY_Replace_RE(REGEXP_BLOB, (Global_Vars-->26), TX_L_354,
     		EMPTY_TEXT_VALUE, 1);
     ! [4: follow the text question rules]
     FollowRulebook(RULEBOOK_TY_to_RULE_TY(420));
@@ -18729,7 +18767,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0;
     ! [8: now the player's forename is word number 1 in the player's command]
     BlkValueCopy((Global_Vars-->50), TEXT_TY_GetBlob((I7SFRAME+WORDSIZE*2), SNIPPET_TY_to_TEXT_TY((I7SFRAME+WORDSIZE*4),players_command), 1, WORD_BLOB));
     ! [9: now the command prompt is ~>~]
-    BlkValueCopy((Global_Vars-->1), TX_L_274);
+    BlkValueCopy((Global_Vars-->1), TX_L_276);
     ! [10: choose a random row in the table of random statements]
     ct_0 = T15_random_statements; ct_1 = TableRandomRow(ct_0);
     ! [11: say ~[statement entry][paragraph break]~]
@@ -26451,7 +26489,7 @@ Array ActionHappened --> 0 0 0 0 0 0 0;
     ! [2: if punctuation removal is true]
     if (((((Global_Vars-->46) && true) == (1 && true))))
     {! [3: replace the regular expression ~@{5C}p~ in the current answer with ~~]
-        TEXT_TY_Replace_RE(REGEXP_BLOB, (Global_Vars-->26), TX_L_353,
+        TEXT_TY_Replace_RE(REGEXP_BLOB, (Global_Vars-->26), TX_L_355,
         		EMPTY_TEXT_VALUE, 0);
         }
         rfalse;
@@ -38685,7 +38723,7 @@ Constant SLOW_ROUTE_FINDING;
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 Constant NUM_DOORS = 1;
-Constant NUM_ROOMS = 95;
+Constant NUM_ROOMS = 97;
 
 Array DoorRoutingViable -> NUM_DOORS+1;
 
@@ -38887,7 +38925,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 156 + 32;
+Constant MAX_ROUTE_LENGTH = 158 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -48204,7 +48242,7 @@ Verb meta 'tree'
 ! To decide whether collecting names:
 [ PHR_990_r3  ;
     ! [2: if the command prompt is ~What is your name? > ~]
-    if ((( BlkValueCompare((Global_Vars-->1), TX_L_350) == 0)))
+    if ((( BlkValueCompare((Global_Vars-->1), TX_L_352) == 0)))
     {! [3: yes]
         rtrue;
         }
@@ -52980,15 +53018,14 @@ Array TX_R_408 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_408_R;
     ParaContent(); @push self; print (TEXT_TY_Say) GProperty(OBJECT_TY, self=self,description);@pull self;  .L_Say649; .L_SayX645;rtrue;
 ];
 [ R_TX_S_159 ;
-    #ifdef DEBUG; if (suppress_text_substitution) { print "~Dear [player's forename], [paragraph break]You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame~"; rtrue; }
+    #ifdef DEBUG; if (suppress_text_substitution) { print "~[The noun] is kind of an average looking [noun].~"; rtrue; }
     #endif; ! DEBUG
-    ! [1: ~Dear [player's forename], [paragraph break]You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame~]
-    say__p=1;! [2: ~Dear ~]
-    ParaContent(); print "Dear ";! [3: player's forename]
-    ParaContent(); print (TEXT_TY_Say) (Global_Vars-->50);! [4: ~, ~]
-    ParaContent(); print ", ";! [5: paragraph break]
-    ParaContent(); DivideParagraphPoint(); new_line;! [6: ~You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame~]
-    ParaContent(); print "You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame"; .L_Say650; .L_SayX646;rtrue;
+    ! [1: ~[The noun] is kind of an average looking [noun].~]
+    say__p=1;! [2: the noun]
+    ParaContent(); print (The) noun;! [3: ~ is kind of an average looking ~]
+    ParaContent(); print " is kind of an average looking ";! [4: noun]
+    ParaContent(); PrintShortName(noun);! [5: ~.~]
+    ParaContent(); print "."; .L_Say650; .L_SayX646;rtrue;
 ];
 [ R_TX_S_160 ;
     #ifdef DEBUG; if (suppress_text_substitution) { print "~[The noun] is kind of an average looking [noun].~"; rtrue; }
@@ -53001,36 +53038,6 @@ Array TX_R_408 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_408_R;
     ParaContent(); print "."; .L_Say651; .L_SayX647;rtrue;
 ];
 [ R_TX_S_161 ;
-    #ifdef DEBUG; if (suppress_text_substitution) { print "~[The noun] is kind of an average looking [noun].~"; rtrue; }
-    #endif; ! DEBUG
-    ! [1: ~[The noun] is kind of an average looking [noun].~]
-    say__p=1;! [2: the noun]
-    ParaContent(); print (The) noun;! [3: ~ is kind of an average looking ~]
-    ParaContent(); print " is kind of an average looking ";! [4: noun]
-    ParaContent(); PrintShortName(noun);! [5: ~.~]
-    ParaContent(); print "."; .L_Say652; .L_SayX648;rtrue;
-];
-[ R_TX_S_162 ;
-    #ifdef DEBUG; if (suppress_text_substitution) { print "~[The noun] is kind of an average looking [noun].~"; rtrue; }
-    #endif; ! DEBUG
-    ! [1: ~[The noun] is kind of an average looking [noun].~]
-    say__p=1;! [2: the noun]
-    ParaContent(); print (The) noun;! [3: ~ is kind of an average looking ~]
-    ParaContent(); print " is kind of an average looking ";! [4: noun]
-    ParaContent(); PrintShortName(noun);! [5: ~.~]
-    ParaContent(); print "."; .L_Say653; .L_SayX649;rtrue;
-];
-[ R_TX_S_163 ;
-    #ifdef DEBUG; if (suppress_text_substitution) { print "~[The noun] is kind of an average looking [noun].~"; rtrue; }
-    #endif; ! DEBUG
-    ! [1: ~[The noun] is kind of an average looking [noun].~]
-    say__p=1;! [2: the noun]
-    ParaContent(); print (The) noun;! [3: ~ is kind of an average looking ~]
-    ParaContent(); print " is kind of an average looking ";! [4: noun]
-    ParaContent(); PrintShortName(noun);! [5: ~.~]
-    ParaContent(); print "."; .L_Say654; .L_SayX650;rtrue;
-];
-[ R_TX_S_164 ;
     #ifdef DEBUG; if (suppress_text_substitution) { print "~The bartender is [one of]serving some smoothies[or]cleaning the blender[or]making a neon yellow smoothie[or]making a glow in the dark smoothie[or]standing there looking you over[or]talking with a friend[or]dancing[at random].~"; rtrue; }
     #endif; ! DEBUG
     ! [1: ~The bartender is [one of]serving some smoothies[or]cleaning the blender[or]making a neon yellow smoothie[or]making a glow in the dark smoothie[or]standing there looking you over[or]talking with a friend[or]dancing[at random].~]
@@ -53062,9 +53069,9 @@ Array TX_R_408 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_408_R;
     ParaContent(); @nop; 6:! [16: ~dancing~]
     ParaContent(); print "dancing";! [17: at random]
     ParaContent(); }! [18: ~.~]
-    ParaContent(); print "."; .L_Say655; .L_SayX651;rtrue;
+    ParaContent(); print "."; .L_Say652; .L_SayX648;rtrue;
 ];
-[ R_TX_S_165 
+[ R_TX_S_162 
     tmp_0 ! Let/loop value (deallocated by end of phrase)
     ;
     #ifdef DEBUG; if (suppress_text_substitution) { print "~Aframe is looking pretty sharp there wearing [a list of unconcealed things worn by Aframe] with his usual aplomb.~"; rtrue; }
@@ -53078,9 +53085,9 @@ Array TX_R_408 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_408_R;
     			else
     				give tmp_0 ~workflag2;
     		WriteListOfMarkedObjects(ENGLISH_BIT);! [4: ~ with his usual aplomb.~]
-    ParaContent(); print " with his usual aplomb."; .L_Say656; .L_SayX652;rtrue;
+    ParaContent(); print " with his usual aplomb."; .L_Say653; .L_SayX649;rtrue;
 ];
-[ R_TX_S_166 ;
+[ R_TX_S_163 ;
     #ifdef DEBUG; if (suppress_text_substitution) { print "~[The noun] is kind of an average looking [noun].~"; rtrue; }
     #endif; ! DEBUG
     ! [1: ~[The noun] is kind of an average looking [noun].~]
@@ -53088,7 +53095,38 @@ Array TX_R_408 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_408_R;
     ParaContent(); print (The) noun;! [3: ~ is kind of an average looking ~]
     ParaContent(); print " is kind of an average looking ";! [4: noun]
     ParaContent(); PrintShortName(noun);! [5: ~.~]
-    ParaContent(); print "."; .L_Say657; .L_SayX653;rtrue;
+    ParaContent(); print "."; .L_Say654; .L_SayX650;rtrue;
+];
+[ R_TX_S_164 ;
+    #ifdef DEBUG; if (suppress_text_substitution) { print "~[The noun] is kind of an average looking [noun].~"; rtrue; }
+    #endif; ! DEBUG
+    ! [1: ~[The noun] is kind of an average looking [noun].~]
+    say__p=1;! [2: the noun]
+    ParaContent(); print (The) noun;! [3: ~ is kind of an average looking ~]
+    ParaContent(); print " is kind of an average looking ";! [4: noun]
+    ParaContent(); PrintShortName(noun);! [5: ~.~]
+    ParaContent(); print "."; .L_Say655; .L_SayX651;rtrue;
+];
+[ R_TX_S_165 ;
+    #ifdef DEBUG; if (suppress_text_substitution) { print "~[The noun] is kind of an average looking [noun].~"; rtrue; }
+    #endif; ! DEBUG
+    ! [1: ~[The noun] is kind of an average looking [noun].~]
+    say__p=1;! [2: the noun]
+    ParaContent(); print (The) noun;! [3: ~ is kind of an average looking ~]
+    ParaContent(); print " is kind of an average looking ";! [4: noun]
+    ParaContent(); PrintShortName(noun);! [5: ~.~]
+    ParaContent(); print "."; .L_Say656; .L_SayX652;rtrue;
+];
+[ R_TX_S_166 ;
+    #ifdef DEBUG; if (suppress_text_substitution) { print "~Dear [player's forename], [paragraph break]You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame~"; rtrue; }
+    #endif; ! DEBUG
+    ! [1: ~Dear [player's forename], [paragraph break]You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame~]
+    say__p=1;! [2: ~Dear ~]
+    ParaContent(); print "Dear ";! [3: player's forename]
+    ParaContent(); print (TEXT_TY_Say) (Global_Vars-->50);! [4: ~, ~]
+    ParaContent(); print ", ";! [5: paragraph break]
+    ParaContent(); DivideParagraphPoint(); new_line;! [6: ~You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame~]
+    ParaContent(); print "You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame"; .L_Say657; .L_SayX653;rtrue;
 ];
 [ R_TX_S_167 ;
     #ifdef DEBUG; if (suppress_text_substitution) { print "~[The noun] is kind of an average looking [noun].~"; rtrue; }
@@ -53278,7 +53316,7 @@ Array TX_R_408 --> CONSTANT_PACKED_TEXT_STORAGE TX_R_408_R;
     ! [1: ~This is a simple demonstration [story genre] game.~]
     say__p=1;! [2: ~This is a simple demonstration ~]
     ParaContent(); print "This is a simple demonstration ";! [3: story genre]
-    ParaContent(); print (TEXT_TY_Say) TX_L_275;! [4: ~ game.~]
+    ParaContent(); print (TEXT_TY_Say) TX_L_277;! [4: ~ game.~]
     ParaContent(); print " game."; .L_Say679; .L_SayX674;rtrue;
 ];
 [ R_TX_S_187 ;
@@ -63756,45 +63794,45 @@ Verb 'yzxxy'
 
 
 
-Constant TX_PS_290 = " ";
-Constant TX_PS_288 = " N = Next";
-Constant TX_PS_289 = " P = Previous";
-Constant TX_PS_316 = "~What was I trying to do?~ you think for a sec before you realize how comfy the chair you are in is. It's kind of incredible, you feel like you've accomplished enough in life.";
-Constant TX_PS_91 = "~yzxxy~ is the title, and the contents just say ~Your Future Lies in Space~ over and over again.";
-Constant TX_PS_274 = ">";
-Array TX_L_274 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_274;
-Constant TX_PS_97 = "A hallway filled with freaks and nerds.";
+Constant TX_PS_292 = " ";
+Constant TX_PS_290 = " N = Next";
+Constant TX_PS_291 = " P = Previous";
+Constant TX_PS_318 = "~What was I trying to do?~ you think for a sec before you realize how comfy the chair you are in is. It's kind of incredible, you feel like you've accomplished enough in life.";
+Constant TX_PS_85 = "~yzxxy~ is the title, and the contents just say ~Your Future Lies in Space~ over and over again.";
+Constant TX_PS_276 = ">";
+Array TX_L_276 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_276;
+Constant TX_PS_91 = "A hallway filled with freaks and nerds.";
 Constant TX_PS_145 = "A little robot that follows you around projecting fragmented images of the Yummy Little Fingers Yum Yum Brand (hereby licensed). Effectively shrouds your own identity by covering it with constantly moving Little Fingers ads. It is kind of annoying for anyone you try to talk to though. (Tends to make people hungry).";
 Constant TX_PS_143 = "A small device shaped like a horseshoe worn as a hat that misdirects any light coming towards your face upward. Kinda makes it look like you have no head. Totally legal (as long as you have the licensure information correctly processed of course). (Which you don't.)";
-Constant TX_PS_83 = "A three foot black rod with a rusty star on one end lies nearby.";
-Constant TX_PS_330 = "ADVENT";
-Constant TX_PS_74 = "AFrame";
+Constant TX_PS_77 = "A three foot black rod with a rusty star on one end lies nearby.";
+Constant TX_PS_332 = "ADVENT";
+Constant TX_PS_68 = "AFrame";
 Constant TX_PS_4 = "Aaron Prust";
-Constant TX_PS_294 = "About Interactive Fiction";
+Constant TX_PS_296 = "About Interactive Fiction";
 Constant TX_PS_144 = "AdBlaster2000";
 Constant TX_PS_167 = "Anther";
-Constant TX_PS_326 = "Around 1975, a programmer and amateur caver wrote the first text adventure game whose name originally was all caps and only six characters long because of filename length limitations of that time. What is the name of this game (the all-caps six letter version)";
+Constant TX_PS_328 = "Around 1975, a programmer and amateur caver wrote the first text adventure game whose name originally was all caps and only six characters long because of filename length limitations of that time. What is the name of this game (the all-caps six letter version)";
 Constant TX_PS_267 = "Art Show";
-Constant TX_PS_51 = "As good-looking as ever.";
-Constant TX_PS_304 = "Be creative";
+Constant TX_PS_95 = "As good-looking as ever.";
+Constant TX_PS_306 = "Be creative";
 Constant TX_PS_158 = "BehindtheBar";
-Constant TX_PS_347 = "Bryan Talbot";
-Constant TX_PS_68 = "Cast the secret spell xyzzy";
+Constant TX_PS_349 = "Bryan Talbot";
+Constant TX_PS_62 = "Cast the secret spell xyzzy";
 Constant TX_PS_150 = "Ceiling";
 Constant TX_PS_266 = "Cinema Rex";
-Constant TX_PS_327 = "Colossal Cave Adventure featured a ~magic word~ that caused teleportation and has shown up again and again in video games ever since.  It enables cheat modes, opens Easter Eggs and has inspired many silly programs. Type this magic word in lowercase now.";
+Constant TX_PS_329 = "Colossal Cave Adventure featured a ~magic word~ that caused teleportation and has shown up again and again in video games ever since.  It enables cheat modes, opens Easter Eggs and has inspired many silly programs. Type this magic word in lowercase now.";
 Constant TX_PS_218 = "Consuite";
 Constant TX_PS_152 = "Consuitesuckmybigd";
-Constant TX_PS_308 = "Containment";
-Constant TX_PS_298 = "Controlling the Game";
+Constant TX_PS_310 = "Containment";
+Constant TX_PS_300 = "Controlling the Game";
 Constant TX_PS_184 = "Convergence Central";
 Constant TX_PS_8 = "Cool smooth bench.";
-Constant TX_PS_305 = "Cooperate";
+Constant TX_PS_307 = "Cooperate";
 Constant TX_PS_122 = "Crescent Kitchen";
-Constant TX_PS_325 = "Dark City";
+Constant TX_PS_327 = "Dark City";
 Constant TX_PS_128 = "Dealer's Room";
 Constant TX_PS_140 = "DiscoWig";
-Constant TX_PS_291 = "ENTER = Select";
+Constant TX_PS_293 = "ENTER = Select";
 Constant TX_PS_142 = "ElectroMisdirector";
 Constant TX_PS_193 = "Elevator 2";
 Constant TX_PS_109 = "Elevator Line";
@@ -63804,21 +63842,21 @@ Constant TX_PS_234 = "Elevator3";
 Constant TX_PS_102 = "Elevators, escalators, and stairwell.";
 Constant TX_PS_179 = "End";
 Constant TX_PS_240 = "Engine Room";
-Constant TX_PS_302 = "Explore";
+Constant TX_PS_304 = "Explore";
 Constant TX_PS_252 = "F2E2";
-Constant TX_PS_275 = "Fiction";
-Array TX_L_275 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_275;
-Constant TX_PS_92 = "Floating Courtyard";
+Constant TX_PS_277 = "Fiction";
+Array TX_L_277 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_277;
+Constant TX_PS_86 = "Floating Courtyard";
 Constant TX_PS_101 = "Floor Changer";
 Constant TX_PS_123 = "Food and Beer for sale";
-Constant TX_PS_349 = "Frederik Pohl";
+Constant TX_PS_351 = "Frederik Pohl";
 Constant TX_PS_120 = "Front Desk";
 Constant TX_PS_263 = "GA";
 Constant TX_PS_264 = "GB";
 Constant TX_PS_265 = "GC";
 Constant TX_PS_113 = "Garden Court";
-Constant TX_PS_295 = "Getting Started";
-Constant TX_PS_60 = "Glowing Sphere";
+Constant TX_PS_297 = "Getting Started";
+Constant TX_PS_54 = "Glowing Sphere";
 Constant TX_PS_188 = "Green Room";
 Constant TX_PS_189 = "Greenroom";
 Constant TX_PS_242 = "H1A";
@@ -63875,16 +63913,16 @@ Constant TX_PS_226 = "Hallway2N";
 Constant TX_PS_224 = "Hallway2O";
 Constant TX_PS_222 = "Hallway2P";
 Constant TX_PS_220 = "Hallway2Q";
-Constant TX_PS_299 = "How the World is Assembled";
-Constant TX_PS_300 = "If You Get Stuck";
-Constant TX_PS_328 = "In what game series are you likely to be eaten by a grue if you travel into dark places without a light source?";
-Constant TX_PS_318 = "In which film did someone get offered a choice between two pills and then didn't take both of them like they should have?";
-Constant TX_PS_319 = "In which movie did the main character die from super disturbing eye bulging decompression after helmet face plate breakage in the opening scene then but it turned out was just a dream? (or was it a premonition? or was it an implanted memory?)";
-Constant TX_PS_293 = "Instructions for Play";
-Constant TX_PS_276 = "Instructions";
-Constant TX_PS_89 = "It is fish shaped, and vibrates - readout screen says ~Status optimal~.";
+Constant TX_PS_301 = "How the World is Assembled";
+Constant TX_PS_302 = "If You Get Stuck";
+Constant TX_PS_330 = "In what game series are you likely to be eaten by a grue if you travel into dark places without a light source?";
+Constant TX_PS_320 = "In which film did someone get offered a choice between two pills and then didn't take both of them like they should have?";
+Constant TX_PS_321 = "In which movie did the main character die from super disturbing eye bulging decompression after helmet face plate breakage in the opening scene then but it turned out was just a dream? (or was it a premonition? or was it an implanted memory?)";
+Constant TX_PS_295 = "Instructions for Play";
+Constant TX_PS_278 = "Instructions";
+Constant TX_PS_83 = "It is fish shaped, and vibrates - readout screen says ~Status optimal~.";
 Constant TX_PS_133 = "King of the Mountains";
-Constant TX_PS_79 = "Looks like a standard securityBot. A floating ball of plastimetal about 3 feet in diameter with a bunch of creepy robot arms sticking out all over with cameras and sensors and whatever else all those things are. Is that a toothbrush? It's pretty unnerving to look at.";
+Constant TX_PS_73 = "Looks like a standard securityBot. A floating ball of plastimetal about 3 feet in diameter with a bunch of creepy robot arms sticking out all over with cameras and sensors and whatever else all those things are. Is that a toothbrush? It's pretty unnerving to look at.";
 Constant TX_PS_105 = "Lower Floor Changer";
 Constant TX_PS_108 = "Lower Northside Hallway (party rooms)";
 Constant TX_PS_107 = "Lower Northside Hallway";
@@ -63893,26 +63931,27 @@ Constant TX_PS_103 = "Lower Southside Hallway";
 Constant TX_PS_124 = "Lower Tower Connector";
 Constant TX_PS_106 = "Lower elevators, escalators and stairwell lower level";
 Constant TX_PS_186 = "Mainstage";
-Constant TX_PS_341 = "Max Headroom";
-Constant TX_PS_311 = "Most IF games are set in a world made up of rooms without internal division. Movement between rooms is possible; movement within a room does not always amount to anything. >WALK OVER TO THE DESK is rarely a useful sort of command. On the other hand, if something is described as being high or out of reach, it is sometimes relevant to stand on an object to increase your height. This kind of activity tends to be important only if prompted by the game text.";
-Constant TX_PS_313 = "Most of the actions you can perform in the world of IF are brief and specific. >WALK WEST or >OPEN DOOR are likely to be provided. >TAKE A JOURNEY or >BUILD A TABLE are not. Things like >GO TO THE HOTEL are on the borderline: some games allow them, but most do not. In general, abstract, multi-stage behavior usually has to be broken down in order for the game to understand it. ";
-Constant TX_PS_98 = "MyRoom";
+Constant TX_PS_343 = "Max Headroom";
+Constant TX_PS_313 = "Most IF games are set in a world made up of rooms without internal division. Movement between rooms is possible; movement within a room does not always amount to anything. >WALK OVER TO THE DESK is rarely a useful sort of command. On the other hand, if something is described as being high or out of reach, it is sometimes relevant to stand on an object to increase your height. This kind of activity tends to be important only if prompted by the game text.";
+Constant TX_PS_315 = "Most of the actions you can perform in the world of IF are brief and specific. >WALK WEST or >OPEN DOOR are likely to be provided. >TAKE A JOURNEY or >BUILD A TABLE are not. Things like >GO TO THE HOTEL are on the borderline: some games allow them, but most do not. In general, abstract, multi-stage behavior usually has to be broken down in order for the game to understand it. ";
+Constant TX_PS_92 = "MyRoom";
 Constant TX_PS_117 = "Nanocarbon staff, looks just like oldwood. Looks like it can be switched between stun and realdammo.";
 Constant TX_PS_163 = "Neon Yellow. Glows and bubbles. It's gonna shoot you into SPACE!";
 Constant TX_PS_174 = "Now onto Round Two where the questions are worth ten points a piece. The subject of this round is Interactive Fiction! M(meta)E(meta)T(meta)A";
-Constant TX_PS_61 = "OOOOoooo glowy-sphere thingie! Its purple soft glow makes you feel safe and secure. It looks like there's some sort of encased helix-key as a component to the glowy-ness.";
-Constant TX_PS_297 = "Objects";
-Constant TX_PS_85 = "Oh crap - the floating dolphin's survellance cam is honing in on you! You better get out of here, somewhere where the floating dolphin camera can't see you.";
-Constant TX_PS_312 = "One thing that IF does tend to model thoroughly is containment. Is something in or on something else? The game keeps track of this, and many puzzles have to do with where things are -- in the player's possession, lying on the floor of the room, on a table, in a box, etc.";
-Constant TX_PS_315 = "Oooh yes, this is a wonderful world. ~What a luxuriously decadent and beautiful reality to be in~ you think as you nestle further within the folds of the chair.";
-Constant TX_PS_310 = "Other Characters";
-Constant TX_PS_314 = "Other characters in IF games are sometimes rather limited. On the other hand, there are also games in which character interaction is the main point of the game. You should be able to get a feel early on for the characters -- if they seem to respond to a lot of questions, remember what they're told, move around on their own, etc., then they may be fairly important. If they have a lot of stock responses and don't seem to have been the game designer's main concern, then they are most likely present either as local color or to provide the solution to a specific puzzle or set of puzzles. Characters in very puzzle-oriented games often have to be bribed, threatened, or cajoled into doing something that the player cannot do -- giving up a piece of information or an object, reaching something high, allowing the player into a restricted area, and so on.";
-Constant TX_PS_81 = "Outside the Space Lounge you look out into the larger Raditree Building to see the pool under a high ceiling. Consuite lies beyond the pool in the main courtyard. Boffers beat each other up in the fenced in section of the courtyard. There's a floating platform above the pool.";
+Constant TX_PS_55 = "OOOOoooo glowy-sphere thingie! Its purple soft glow makes you feel safe and secure. It looks like there's some sort of encased helix-key as a component to the glowy-ness.";
+Constant TX_PS_299 = "Objects";
+Constant TX_PS_79 = "Oh crap - the floating dolphin's survellance cam is honing in on you! You better get out of here, somewhere where the floating dolphin camera can't see you.";
+Constant TX_PS_314 = "One thing that IF does tend to model thoroughly is containment. Is something in or on something else? The game keeps track of this, and many puzzles have to do with where things are -- in the player's possession, lying on the floor of the room, on a table, in a box, etc.";
+Constant TX_PS_317 = "Oooh yes, this is a wonderful world. ~What a luxuriously decadent and beautiful reality to be in~ you think as you nestle further within the folds of the chair.";
+Constant TX_PS_312 = "Other Characters";
+Constant TX_PS_316 = "Other characters in IF games are sometimes rather limited. On the other hand, there are also games in which character interaction is the main point of the game. You should be able to get a feel early on for the characters -- if they seem to respond to a lot of questions, remember what they're told, move around on their own, etc., then they may be fairly important. If they have a lot of stock responses and don't seem to have been the game designer's main concern, then they are most likely present either as local color or to provide the solution to a specific puzzle or set of puzzles. Characters in very puzzle-oriented games often have to be bribed, threatened, or cajoled into doing something that the player cannot do -- giving up a piece of information or an object, reaching something high, allowing the player into a restricted area, and so on.";
+Constant TX_PS_75 = "Outside the Space Lounge you look out into the larger Raditree Building to see the pool under a high ceiling. Consuite lies beyond the pool in the main courtyard. Boffers beat each other up in the fenced in section of the courtyard. There's a floating platform above the pool.";
 Constant TX_PS_247 = "P1B";
 Constant TX_PS_248 = "P1C";
 Constant TX_PS_249 = "P1D";
 Constant TX_PS_259 = "P1N";
 Constant TX_PS_260 = "P1O";
+Constant TX_PS_275 = "P1P";
 Constant TX_PS_208 = "P2B";
 Constant TX_PS_210 = "P2C";
 Constant TX_PS_212 = "P2D";
@@ -63922,149 +63961,150 @@ Constant TX_PS_271 = "P2P";
 Constant TX_PS_209 = "Partyroom2B";
 Constant TX_PS_211 = "Partyroom2C";
 Constant TX_PS_213 = "Partyroom2D";
-Constant TX_PS_339 = "Peter Jurasik";
-Constant TX_PS_346 = "Philip Pullman";
-Constant TX_PS_306 = "Play with someone else. Two heads are often better than one. If that doesn't work, try emailing the author or (better yet) posting a request for hints on the newsgroup rec.games.int-fiction.  For best results, put the name of the game you want help with in the subject line; then leave a page or so of blank spoiler space (so that no one will read about where you got to in the game unless they've already played it), and describe your problem as clearly as possible.  Someone will probably be able to tell you how to get around it.";
-Constant TX_PS_280 = "Please enter M, F or N (Male or Female or Neuter) >";
-Constant TX_PS_279 = "Please enter Y or N (Yes or No) >";
-Constant TX_PS_278 = "Please enter a number >";
-Constant TX_PS_277 = "Please enter a whole number >";
-Constant TX_PS_281 = "Please enter your answer >";
+Constant TX_PS_341 = "Peter Jurasik";
+Constant TX_PS_348 = "Philip Pullman";
+Constant TX_PS_308 = "Play with someone else. Two heads are often better than one. If that doesn't work, try emailing the author or (better yet) posting a request for hints on the newsgroup rec.games.int-fiction.  For best results, put the name of the game you want help with in the subject line; then leave a page or so of blank spoiler space (so that no one will read about where you got to in the game unless they've already played it), and describe your problem as clearly as possible.  Someone will probably be able to tell you how to get around it.";
+Constant TX_PS_282 = "Please enter M, F or N (Male or Female or Neuter) >";
+Constant TX_PS_281 = "Please enter Y or N (Yes or No) >";
+Constant TX_PS_280 = "Please enter a number >";
+Constant TX_PS_279 = "Please enter a whole number >";
+Constant TX_PS_283 = "Please enter your answer >";
 Constant TX_PS_253 = "Pool";
-Constant TX_PS_285 = "QUIT";
+Constant TX_PS_274 = "QS";
+Constant TX_PS_287 = "QUIT";
 Constant TX_PS_254 = "Quantam Sandbox";
-Constant TX_PS_282 = "RESTART";
-Constant TX_PS_283 = "RESTORE a saved game";
-Constant TX_PS_303 = "Read carefully";
+Constant TX_PS_284 = "RESTART";
+Constant TX_PS_285 = "RESTORE a saved game";
+Constant TX_PS_305 = "Read carefully";
 Constant TX_PS_233 = "Registration";
 Constant TX_PS_164 = "RocketBlaster";
 Constant TX_PS_119 = "Room 205";
 Constant TX_PS_100 = "Room 233";
-Constant TX_PS_296 = "Rooms and Travel";
+Constant TX_PS_298 = "Rooms and Travel";
 Constant TX_PS_176 = "Round Three is here! The questions are harder but now worth fifteen points a piece. These ones are about going INSIDE THE COMPUTER!";
 Constant TX_PS_171 = "Round1";
 Constant TX_PS_173 = "Round2";
 Constant TX_PS_175 = "Round3";
 Constant TX_PS_177 = "Round4";
-Constant TX_PS_292 = "Sample Hint";
-Constant TX_PS_86 = "Secret Room";
+Constant TX_PS_294 = "Sample Hint";
+Constant TX_PS_80 = "Secret Room";
 Constant TX_PS_161 = "ShinyUnicorn";
-Constant TX_PS_317 = "Sooooo comfy. So sooooo comfy. Mmmmm...";
+Constant TX_PS_319 = "Sooooo comfy. So sooooo comfy. Mmmmm...";
 Constant TX_PS_48 = "Space Lounge";
-Constant TX_PS_307 = "Space";
+Constant TX_PS_309 = "Space";
 Constant TX_PS_2 = "Splounge-Dystopia";
 Array TX_L_2 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_2;
 Constant TX_PS_129 = "Staging Area";
 Constant TX_PS_111 = "Stairwell Floor 1";
 Constant TX_PS_112 = "Stairwell Floor 2";
 Constant TX_PS_115 = "Standard boffer looking bloke, wearing simple leather armor and wielding a staff and smiling at you menacingly.";
-Constant TX_PS_338 = "Sword Art Online";
-Constant TX_PS_70 = "That gun is so crazy looking! It's kind of like totally blowing your mind.";
+Constant TX_PS_340 = "Sword Art Online";
+Constant TX_PS_64 = "That gun is so crazy looking! It's kind of like totally blowing your mind.";
 Constant TX_PS_121 = "The Front Desk";
-Constant TX_PS_340 = "The Lawnmower Man";
+Constant TX_PS_342 = "The Lawnmower Man";
 Constant TX_PS_125 = "The Lower Tower Connector - connection between the short and tall towers.";
-Constant TX_PS_322 = "The Matrix";
-Constant TX_PS_348 = "The One";
-Constant TX_PS_333 = "The Prisoner";
-Constant TX_PS_324 = "The Truman Show";
+Constant TX_PS_324 = "The Matrix";
+Constant TX_PS_350 = "The One";
+Constant TX_PS_335 = "The Prisoner";
+Constant TX_PS_326 = "The Truman Show";
 Constant TX_PS_127 = "The Upper Tower Connector - connection between the short and tall towers.";
 Constant TX_PS_147 = "The airlock has a small window through which you can see a vast open space - is that a pool? Sweet!. It looks like the door has a lock mechanism that looks like it could be manipulated by a standard tetral-inverse double helix securityKey.";
-Constant TX_PS_59 = "The bar is black and long, covered in some sort of non-stick nano-surface.";
+Constant TX_PS_53 = "The bar is black and long, covered in some sort of non-stick nano-surface.";
 Constant TX_PS_151 = "The ceiling with lights rises over the whole crazy convention.";
-Constant TX_PS_301 = "The game you are playing is a work of Interactive Fiction.  In interactive fiction you play the main character of a story.  You type commands which determine the actions of the character and the flow of the plot.  Some IF games include graphics, but most do not: the imagery is provided courtesy of your imagination.  On the other hand, there's a wide range of action available: whereas in other games you may be restricted to shooting, movement, or searching items you can click on with a mouse, IF allows you a wide range of verbs.";
-Constant TX_PS_65 = "The screen is blank.";
+Constant TX_PS_303 = "The game you are playing is a work of Interactive Fiction.  In interactive fiction you play the main character of a story.  You type commands which determine the actions of the character and the flow of the plot.  Some IF games include graphics, but most do not: the imagery is provided courtesy of your imagination.  On the other hand, there's a wide range of action available: whereas in other games you may be restricted to shooting, movement, or searching items you can click on with a mouse, IF allows you a wide range of verbs.";
+Constant TX_PS_59 = "The screen is blank.";
 Constant TX_PS_187 = "There are a bunch of ravers in here, the lights are low and the music is bumping!";
 Constant TX_PS_185 = "There are people all over this large open room.";
-Constant TX_PS_336 = "This 1980~s movie about Virtual Reality was such garbage that it basically halted research and tech development in VR for about 20 years.";
-Constant TX_PS_329 = "This Apple II game features a game play element where the player is given a three-digit code at the beginning of play and is instructed to never reveal this code to anyone. At one point the game appears to crash as a way of tricking the player into revealing their code, in which case they lose the game. What is the name of this game?";
-Constant TX_PS_337 = "This character started out as a real-life-human-reporter but after someone tried to kill him he ended up in a coma and then got his mind uploaded TO A COMPUTER. The transition altered his personality forever.";
-Constant TX_PS_321 = "This film has annoying gothy villians but a super cool reveal that everyone was in a giant space habitat the WHOLE TIME?! (btw foreshadowing...)";
-Constant TX_PS_95 = "This hallway is NUTS - there are signs everywhere and lights and sounds flashing. From this hallway you can get into a bunch of Party Rooms";
-Constant TX_PS_57 = "This is a ninja outfit, it's black and has a hood that covers your face. It has a nice pocket in it to store cool ninja gear. It has these sweet built in booties that muffle your footsteps as if you were a total ninja, which you totally are if you are wearing this outfit. You could sneak around a place with shadows without being detected if you were wearing this thing. You'd be so ninja.";
-Constant TX_PS_93 = "This is amazing - you are up above everything and can see so much up here! There's a pool down below, and a fenced in courtyard with some kind of securityGate system surrounding it, and Consuite.";
+Constant TX_PS_338 = "This 1980~s movie about Virtual Reality was such garbage that it basically halted research and tech development in VR for about 20 years.";
+Constant TX_PS_331 = "This Apple II game features a game play element where the player is given a three-digit code at the beginning of play and is instructed to never reveal this code to anyone. At one point the game appears to crash as a way of tricking the player into revealing their code, in which case they lose the game. What is the name of this game?";
+Constant TX_PS_339 = "This character started out as a real-life-human-reporter but after someone tried to kill him he ended up in a coma and then got his mind uploaded TO A COMPUTER. The transition altered his personality forever.";
+Constant TX_PS_323 = "This film has annoying gothy villians but a super cool reveal that everyone was in a giant space habitat the WHOLE TIME?! (btw foreshadowing...)";
+Constant TX_PS_89 = "This hallway is NUTS - there are signs everywhere and lights and sounds flashing. From this hallway you can get into a bunch of Party Rooms";
+Constant TX_PS_51 = "This is a ninja outfit, it's black and has a hood that covers your face. It has a nice pocket in it to store cool ninja gear. It has these sweet built in booties that muffle your footsteps as if you were a total ninja, which you totally are if you are wearing this outfit. You could sneak around a place with shadows without being detected if you were wearing this thing. You'd be so ninja.";
+Constant TX_PS_87 = "This is amazing - you are up above everything and can see so much up here! There's a pool down below, and a fenced in courtyard with some kind of securityGate system surrounding it, and Consuite.";
 Constant TX_PS_178 = "This is it, the final round. You're so close to escaping this quiz that not even a Quiz Vortex could keep you from exiting the quiz-field. The questions are worth twenty points a piece.^^This round is about choices, random forces and what they lead to...which is of course PARALLEL UNIVERSES!^^Every imagined-not-taken choice spawned from every individual's mind throughout time and space creating entire universes with every passing thought. The vast sea of thought embracing the infinite seeds of thought; the birth of what-ifs reflecting infinitely. ";
-Constant TX_PS_99 = "This is your place! You got a bunch of nice junk around here, all kinds of old comics and fun figures from all the best neuroHolos. A 3D printer sits in the corner.";
+Constant TX_PS_93 = "This is your place! You got a bunch of nice junk around here, all kinds of old comics and fun figures from all the best neuroHolos. A 3D printer sits in the corner.";
 Constant TX_PS_149 = "This looks like a standard tetral-inverse double helix securityKey with triple-blind encryption. Probably used to access airlocks n-schtoff.";
-Constant TX_PS_320 = "This movie has a sail boat smash into the end of a fake world. Everyone watching just goes totally nuts.";
+Constant TX_PS_322 = "This movie has a sail boat smash into the end of a fake world. Everyone watching just goes totally nuts.";
 Constant TX_PS_26 = "This thing is like taking a bath in frozen unicorn snot. Amazing.";
 Constant TX_PS_141 = "This wig is all sproingy and is made of tons of tiny pieces of holographic metallic rainbow shards. As you move about the light around you is refracted into a million directions, making face recog almost impossible.";
 Constant TX_PS_170 = "Thisas";
-Constant TX_PS_63 = "Time slows down, you feel as if you are gazing into the cosmos itself. Your eyeballs can hardly stay on it, it's like your gaze just keeps sliding off.";
-Constant TX_PS_323 = "Total Recall";
-Constant TX_PS_309 = "Types of Action";
-Constant TX_PS_286 = "UNDO the last command";
-Constant TX_PS_96 = "Upper Northside Hallway";
-Constant TX_PS_94 = "Upper Southside Hallway";
+Constant TX_PS_57 = "Time slows down, you feel as if you are gazing into the cosmos itself. Your eyeballs can hardly stay on it, it's like your gaze just keeps sliding off.";
+Constant TX_PS_325 = "Total Recall";
+Constant TX_PS_311 = "Types of Action";
+Constant TX_PS_288 = "UNDO the last command";
+Constant TX_PS_90 = "Upper Northside Hallway";
+Constant TX_PS_88 = "Upper Southside Hallway";
 Constant TX_PS_126 = "Upper Tower Connector";
-Constant TX_PS_80 = "Veranda Walkway";
+Constant TX_PS_74 = "Veranda Walkway";
 Constant TX_PS_255 = "Volden";
 Constant TX_PS_3 = "Watch your back, and don't let the cams spy your face.";
 Constant TX_PS_172 = "Welcome to Trivia, I'm your host, a computer program super full of useless information. You will be rewarded with an object based on your score at the end of the quiz.^^Wrong answers will not be rewarded with correct answers - I'm not telling you the right answer.^^I have ONE singular accepted ABSOLUTELY CORRECT answer it's in a table and it is EXACT and PERFECT - I am the ULTIMATE IMPARTIAL QUIZ JUDGE. If you don't like it...cry me a spriver! OH also you are trapped within my quizzy embrace until the end so just accept your fate. Srsly don't try to leave or anything you'll just waste your answer-chances. The quiz is only four rounds of four questions each - just relax you're not stuck in a Quiz Vortex or anything...(I hope...)^^Questions in the first round are worth 5 points a piece, but will increase in value as the game goes on.^^Answers must be given with Capitalization and exact spelling.^^-----------^^The first section is on films involving simulated realities and questionable memories.^^Who are you? Are you your memories? Are you what you have done? Are you what you will do? Or are you nothing at all but a wisp...or maybe ~just~ a program? ";
-Constant TX_PS_334 = "What is the name of the anime about a VRMMORPG where the players have to play until they either die or someone beats the game? No logging out. WHAAaaaa? Wicked eh?";
-Constant TX_PS_343 = "What is the name of the author who wrote about Sir Luther of Arkwright - a hero who can travel through the parallels at will?";
-Constant TX_PS_350 = "What is your name? > ";
-Array TX_L_350 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_350;
-Constant TX_PS_344 = "What movie about parallel universes involves a good version of Jet Li trying to stop an evil version of Jet Li who is determined to gain ultimate power by being the only version of himself throughout all universes?";
-Constant TX_PS_335 = "Who is the actor who played the program Crom in Tron - you might also know him as Londo...";
-Constant TX_PS_345 = "Who wrote The Coming of the Quantum Cats, which includes a parallel universe prison planet, and a triad -relationship including three different versions of the same person? (OMG that is so hawt!)";
-Constant TX_PS_342 = "Who wrote a series of stories about children travelling between parallel worlds with a powerful knife, and has book titles inspired by Paradise Lost?";
-Constant TX_PS_87 = "You are in the Secret Room. DON'T TELL ANYONE YOU WERE EVER HERE! It's really dark, you can't see much.";
+Constant TX_PS_336 = "What is the name of the anime about a VRMMORPG where the players have to play until they either die or someone beats the game? No logging out. WHAAaaaa? Wicked eh?";
+Constant TX_PS_345 = "What is the name of the author who wrote about Sir Luther of Arkwright - a hero who can travel through the parallels at will?";
+Constant TX_PS_352 = "What is your name? > ";
+Array TX_L_352 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_352;
+Constant TX_PS_346 = "What movie about parallel universes involves a good version of Jet Li trying to stop an evil version of Jet Li who is determined to gain ultimate power by being the only version of himself throughout all universes?";
+Constant TX_PS_337 = "Who is the actor who played the program Crom in Tron - you might also know him as Londo...";
+Constant TX_PS_347 = "Who wrote The Coming of the Quantum Cats, which includes a parallel universe prison planet, and a triad -relationship including three different versions of the same person? (OMG that is so hawt!)";
+Constant TX_PS_344 = "Who wrote a series of stories about children travelling between parallel worlds with a powerful knife, and has book titles inspired by Paradise Lost?";
+Constant TX_PS_81 = "You are in the Secret Room. DON'T TELL ANYONE YOU WERE EVER HERE! It's really dark, you can't see much.";
 Constant TX_PS_49 = "You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.";
 Constant TX_PS_110 = "You are waiting for an elevator!";
 Constant TX_PS_153 = "You can make out the basic forms of the people in Consuite but it is so far away that you can't see anything well without some kind of badass miniature spy eyepiece or something.";
 Constant TX_PS_183 = "You got this for bad quizinating.";
 Constant TX_PS_181 = "You got this for good quizinating!";
 Constant TX_PS_159 = "You shouldn't be here, it's behind the bar.";
-Constant TX_PS_351 = "You sit on the chair again and sink forever into its comfyness. You never rise again.";
-Array TX_L_351 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_351;
-Constant TX_PS_52 = "Yourself";
-Constant TX_PS_332 = "Zork";
-Constant TX_PS_353 = "@{5C}p";
+Constant TX_PS_353 = "You sit on the chair again and sink forever into its comfyness. You never rise again.";
 Array TX_L_353 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_353;
-Constant TX_PS_352 = "@@94say ";
-Array TX_L_352 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_352;
+Constant TX_PS_96 = "Yourself";
+Constant TX_PS_334 = "Zork";
+Constant TX_PS_355 = "@{5C}p";
+Array TX_L_355 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_355;
+Constant TX_PS_354 = "@@94say ";
+Array TX_L_354 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_354;
 Constant TX_PS_146 = "airlock";
 Constant TX_PS_13 = "animals";
 Constant TX_PS_166 = "anther kinda smoothie here eh";
 Constant TX_PS_165 = "anther";
 Constant TX_PS_20 = "backdrops";
-Constant TX_PS_58 = "bar";
-Constant TX_PS_73 = "bartender";
-Constant TX_PS_71 = "bench";
+Constant TX_PS_52 = "bar";
+Constant TX_PS_67 = "bartender";
+Constant TX_PS_65 = "bench";
 Constant TX_PS_7 = "benches";
 Constant TX_PS_137 = "best cyclist aged 25 or less";
-Constant TX_PS_56 = "black ninja outfit";
+Constant TX_PS_50 = "black ninja outfit";
 Constant TX_PS_154 = "black ninja outfit's pocket";
-Constant TX_PS_82 = "black rod";
+Constant TX_PS_76 = "black rod";
 Constant TX_PS_157 = "blah";
 Constant TX_PS_139 = "blue jersaaaay";
 Constant TX_PS_138 = "blue jersey";
 Constant TX_PS_114 = "boffer";
-Constant TX_PS_90 = "book";
-Constant TX_PS_66 = "bowl";
+Constant TX_PS_84 = "book";
+Constant TX_PS_60 = "bowl";
 Constant TX_PS_9 = "chairs";
-Constant TX_PS_54 = "coin";
-Constant TX_PS_72 = "comfy looking chair";
+Constant TX_PS_98 = "coin";
+Constant TX_PS_66 = "comfy looking chair";
 Constant TX_PS_16 = "containers";
-Constant TX_PS_69 = "crazy looking gun";
-Constant TX_PS_55 = "dagger";
+Constant TX_PS_63 = "crazy looking gun";
+Constant TX_PS_99 = "dagger";
 Constant TX_PS_30 = "daggers";
 Constant TX_PS_21 = "devices";
 Constant TX_PS_34 = "directions";
-Constant TX_PS_88 = "dolphin code";
+Constant TX_PS_82 = "dolphin code";
 Constant TX_PS_14 = "doors";
 Constant TX_PS_45 = "down";
 Constant TX_PS_42 = "east";
-Constant TX_PS_84 = "floating dolphin";
-Constant TX_PS_287 = "foo";
-Constant TX_PS_62 = "glittery box";
+Constant TX_PS_78 = "floating dolphin";
+Constant TX_PS_289 = "foo";
+Constant TX_PS_56 = "glittery box";
 Constant TX_PS_134 = "green jersey";
 Constant TX_PS_135 = "highest point scorer on sprints";
 Constant TX_PS_46 = "inside";
 Constant TX_PS_27 = "jerseys";
 Constant TX_PS_6 = "keychains";
 Constant TX_PS_11 = "men";
-Constant TX_PS_53 = "message receiver";
+Constant TX_PS_97 = "message receiver";
 Constant TX_PS_118 = "nanocarbon blade";
 Constant TX_PS_29 = "nanocarbon blades";
 Constant TX_PS_116 = "nanocarbon staff";
@@ -64072,13 +64112,13 @@ Constant TX_PS_24 = "ninja outfits";
 Constant TX_PS_35 = "north";
 Constant TX_PS_37 = "northeast";
 Constant TX_PS_38 = "northwest";
-Constant TX_PS_67 = "note";
+Constant TX_PS_61 = "note";
 Constant TX_PS_47 = "outside";
 Constant TX_PS_22 = "passkeys";
 Constant TX_PS_10 = "people";
-Constant TX_PS_77 = "pin";
-Constant TX_PS_75 = "pin-striped suit";
-Constant TX_PS_76 = "pink thong";
+Constant TX_PS_71 = "pin";
+Constant TX_PS_69 = "pin-striped suit";
+Constant TX_PS_70 = "pink thong";
 Constant TX_PS_31 = "pins";
 Constant TX_PS_18 = "player's holdalls";
 Constant TX_PS_19 = "pockets";
@@ -64088,10 +64128,10 @@ Constant TX_PS_182 = "quizzinator2";
 Constant TX_PS_131 = "race leader";
 Constant TX_PS_33 = "regions";
 Constant TX_PS_162 = "rocketBlaster";
-Constant TX_PS_78 = "securityBot";
+Constant TX_PS_72 = "securityBot";
 Constant TX_PS_148 = "securityKey";
-Constant TX_PS_64 = "securityReadout";
-Constant TX_PS_284 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_58 = "securityReadout";
+Constant TX_PS_286 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_160 = "shinyUnicorn";
 Constant TX_PS_156 = "smoke bomb";
 Constant TX_PS_25 = "smoothies";
@@ -64112,10 +64152,10 @@ Constant TX_PS_28 = "weapons";
 Constant TX_PS_43 = "west";
 Constant TX_PS_136 = "white jersey";
 Constant TX_PS_12 = "women";
-Constant TX_PS_331 = "xyzzy";
+Constant TX_PS_333 = "xyzzy";
 Constant TX_PS_130 = "yellow jersey";
-Constant TX_PS_50 = "yourself";
-Array TX_L_50 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_50;
+Constant TX_PS_94 = "yourself";
+Array TX_L_94 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_94;
 
 #ifndef p0_specification; Constant p0_specification = 0; #endif;
 #ifndef p1_indefinite_appearance_tex; Constant p1_indefinite_appearance_tex = 0; #endif;
@@ -71616,207 +71656,207 @@ Array BC_288 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_289 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_290 --> PACKED_TEXT_STORAGE TX_PS_50;
 Array BC_291 --> PACKED_TEXT_STORAGE TX_PS_51;
-Array BC_292 --> PACKED_TEXT_STORAGE TX_PS_52;
+Array BC_292 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_293 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_294 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_295 --> PACKED_TEXT_STORAGE TX_PS_10;
+Array BC_294 --> PACKED_TEXT_STORAGE TX_PS_24;
+Array BC_295 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_296 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_297 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_297 --> PACKED_TEXT_STORAGE TX_PS_52;
 Array BC_298 --> PACKED_TEXT_STORAGE TX_PS_53;
-Array BC_299 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_159;
+Array BC_299 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_300 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_301 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_301 --> PACKED_TEXT_STORAGE TX_PS_5;
 Array BC_302 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_303 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_304 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_305 --> PACKED_TEXT_STORAGE TX_PS_54;
-Array BC_306 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_160;
+Array BC_304 --> PACKED_TEXT_STORAGE TX_PS_54;
+Array BC_305 --> PACKED_TEXT_STORAGE TX_PS_55;
+Array BC_306 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_307 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_308 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_309 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_310 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_311 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_312 --> PACKED_TEXT_STORAGE TX_PS_55;
-Array BC_313 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_161;
+Array BC_311 --> PACKED_TEXT_STORAGE TX_PS_56;
+Array BC_312 --> PACKED_TEXT_STORAGE TX_PS_57;
+Array BC_313 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_314 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_315 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_316 --> PACKED_TEXT_STORAGE TX_PS_30;
+Array BC_315 --> PACKED_TEXT_STORAGE TX_PS_16;
+Array BC_316 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_317 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_318 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_319 --> PACKED_TEXT_STORAGE TX_PS_56;
-Array BC_320 --> PACKED_TEXT_STORAGE TX_PS_57;
+Array BC_318 --> PACKED_TEXT_STORAGE TX_PS_58;
+Array BC_319 --> PACKED_TEXT_STORAGE TX_PS_59;
+Array BC_320 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_321 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_322 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_323 --> PACKED_TEXT_STORAGE TX_PS_24;
+Array BC_322 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_323 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_324 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_325 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_326 --> PACKED_TEXT_STORAGE TX_PS_58;
-Array BC_327 --> PACKED_TEXT_STORAGE TX_PS_59;
+Array BC_325 --> PACKED_TEXT_STORAGE TX_PS_60;
+Array BC_326 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_159;
+Array BC_327 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_328 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_329 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_330 --> PACKED_TEXT_STORAGE TX_PS_5;
+Array BC_329 --> PACKED_TEXT_STORAGE TX_PS_16;
+Array BC_330 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_331 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_332 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_333 --> PACKED_TEXT_STORAGE TX_PS_60;
-Array BC_334 --> PACKED_TEXT_STORAGE TX_PS_61;
+Array BC_332 --> PACKED_TEXT_STORAGE TX_PS_61;
+Array BC_333 --> PACKED_TEXT_STORAGE TX_PS_62;
+Array BC_334 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_335 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_336 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_337 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_338 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_339 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_340 --> PACKED_TEXT_STORAGE TX_PS_62;
-Array BC_341 --> PACKED_TEXT_STORAGE TX_PS_63;
+Array BC_339 --> PACKED_TEXT_STORAGE TX_PS_63;
+Array BC_340 --> PACKED_TEXT_STORAGE TX_PS_64;
+Array BC_341 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_342 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_343 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_344 --> PACKED_TEXT_STORAGE TX_PS_16;
+Array BC_344 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_345 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_346 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_347 --> PACKED_TEXT_STORAGE TX_PS_64;
-Array BC_348 --> PACKED_TEXT_STORAGE TX_PS_65;
+Array BC_346 --> PACKED_TEXT_STORAGE TX_PS_65;
+Array BC_347 --> PACKED_TEXT_STORAGE TX_PS_8;
+Array BC_348 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_349 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_350 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_351 --> PACKED_TEXT_STORAGE TX_PS_21;
+Array BC_350 --> PACKED_TEXT_STORAGE TX_PS_7;
+Array BC_351 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_352 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_353 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_354 --> PACKED_TEXT_STORAGE TX_PS_66;
-Array BC_355 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_162;
+Array BC_353 --> PACKED_TEXT_STORAGE TX_PS_66;
+Array BC_354 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_160;
+Array BC_355 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_356 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_357 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_358 --> PACKED_TEXT_STORAGE TX_PS_16;
+Array BC_357 --> PACKED_TEXT_STORAGE TX_PS_9;
+Array BC_358 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_359 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_360 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_361 --> PACKED_TEXT_STORAGE TX_PS_67;
-Array BC_362 --> PACKED_TEXT_STORAGE TX_PS_68;
+Array BC_360 --> PACKED_TEXT_STORAGE TX_PS_67;
+Array BC_361 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_161;
+Array BC_362 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_363 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_364 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_364 --> PACKED_TEXT_STORAGE TX_PS_10;
 Array BC_365 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_366 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_367 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_368 --> PACKED_TEXT_STORAGE TX_PS_69;
-Array BC_369 --> PACKED_TEXT_STORAGE TX_PS_70;
+Array BC_367 --> PACKED_TEXT_STORAGE TX_PS_68;
+Array BC_368 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_162;
+Array BC_369 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_370 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_371 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_371 --> PACKED_TEXT_STORAGE TX_PS_10;
 Array BC_372 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_373 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_374 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_375 --> PACKED_TEXT_STORAGE TX_PS_71;
-Array BC_376 --> PACKED_TEXT_STORAGE TX_PS_8;
+Array BC_374 --> PACKED_TEXT_STORAGE TX_PS_69;
+Array BC_375 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_163;
+Array BC_376 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_377 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_378 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_379 --> PACKED_TEXT_STORAGE TX_PS_7;
+Array BC_379 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_380 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_381 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_382 --> PACKED_TEXT_STORAGE TX_PS_72;
-Array BC_383 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_163;
+Array BC_381 --> PACKED_TEXT_STORAGE TX_PS_70;
+Array BC_382 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_164;
+Array BC_383 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_384 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_385 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_386 --> PACKED_TEXT_STORAGE TX_PS_9;
+Array BC_386 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_387 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_388 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_389 --> PACKED_TEXT_STORAGE TX_PS_73;
-Array BC_390 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_164;
+Array BC_388 --> PACKED_TEXT_STORAGE TX_PS_71;
+Array BC_389 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_165;
+Array BC_390 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_391 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_392 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_393 --> PACKED_TEXT_STORAGE TX_PS_10;
+Array BC_392 --> PACKED_TEXT_STORAGE TX_PS_31;
+Array BC_393 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_394 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_395 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_396 --> PACKED_TEXT_STORAGE TX_PS_74;
-Array BC_397 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_165;
+Array BC_395 --> PACKED_TEXT_STORAGE TX_PS_72;
+Array BC_396 --> PACKED_TEXT_STORAGE TX_PS_73;
+Array BC_397 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_398 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_399 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_400 --> PACKED_TEXT_STORAGE TX_PS_10;
+Array BC_399 --> PACKED_TEXT_STORAGE TX_PS_10;
+Array BC_400 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_401 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_402 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_402 --> PACKED_TEXT_STORAGE TX_PS_74;
 Array BC_403 --> PACKED_TEXT_STORAGE TX_PS_75;
-Array BC_404 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_166;
+Array BC_404 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_405 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_406 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_407 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_408 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_409 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_410 --> PACKED_TEXT_STORAGE TX_PS_76;
-Array BC_411 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_167;
+Array BC_408 --> PACKED_TEXT_STORAGE TX_PS_76;
+Array BC_409 --> PACKED_TEXT_STORAGE TX_PS_77;
+Array BC_410 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_411 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_412 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_413 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_414 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_415 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_416 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_417 --> PACKED_TEXT_STORAGE TX_PS_77;
-Array BC_418 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_168;
-Array BC_419 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_415 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_416 --> PACKED_TEXT_STORAGE TX_PS_79;
+Array BC_417 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_418 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_419 --> PACKED_TEXT_STORAGE TX_PS_17;
 Array BC_420 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_421 --> PACKED_TEXT_STORAGE TX_PS_31;
-Array BC_422 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_423 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_424 --> PACKED_TEXT_STORAGE TX_PS_78;
-Array BC_425 --> PACKED_TEXT_STORAGE TX_PS_79;
+Array BC_421 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_422 --> PACKED_TEXT_STORAGE TX_PS_80;
+Array BC_423 --> PACKED_TEXT_STORAGE TX_PS_81;
+Array BC_424 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_425 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_426 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_427 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_428 --> PACKED_TEXT_STORAGE TX_PS_10;
-Array BC_429 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_428 --> PACKED_TEXT_STORAGE TX_PS_82;
+Array BC_429 --> PACKED_TEXT_STORAGE TX_PS_83;
 Array BC_430 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_431 --> PACKED_TEXT_STORAGE TX_PS_80;
-Array BC_432 --> PACKED_TEXT_STORAGE TX_PS_81;
+Array BC_431 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_432 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_433 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_434 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_435 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_436 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_437 --> PACKED_TEXT_STORAGE TX_PS_82;
-Array BC_438 --> PACKED_TEXT_STORAGE TX_PS_83;
+Array BC_435 --> PACKED_TEXT_STORAGE TX_PS_84;
+Array BC_436 --> PACKED_TEXT_STORAGE TX_PS_85;
+Array BC_437 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_438 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_439 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_440 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_441 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_442 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_443 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_444 --> PACKED_TEXT_STORAGE TX_PS_84;
-Array BC_445 --> PACKED_TEXT_STORAGE TX_PS_85;
+Array BC_442 --> PACKED_TEXT_STORAGE TX_PS_86;
+Array BC_443 --> PACKED_TEXT_STORAGE TX_PS_87;
+Array BC_444 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_445 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_446 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_447 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_448 --> PACKED_TEXT_STORAGE TX_PS_17;
-Array BC_449 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_448 --> PACKED_TEXT_STORAGE TX_PS_88;
+Array BC_449 --> PACKED_TEXT_STORAGE TX_PS_89;
 Array BC_450 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_451 --> PACKED_TEXT_STORAGE TX_PS_86;
-Array BC_452 --> PACKED_TEXT_STORAGE TX_PS_87;
+Array BC_451 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_452 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_453 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_454 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_455 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_454 --> PACKED_TEXT_STORAGE TX_PS_90;
+Array BC_455 --> PACKED_TEXT_STORAGE TX_PS_91;
 Array BC_456 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_457 --> PACKED_TEXT_STORAGE TX_PS_88;
-Array BC_458 --> PACKED_TEXT_STORAGE TX_PS_89;
+Array BC_457 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_458 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_459 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_460 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_461 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_460 --> PACKED_TEXT_STORAGE TX_PS_92;
+Array BC_461 --> PACKED_TEXT_STORAGE TX_PS_93;
 Array BC_462 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_463 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_464 --> PACKED_TEXT_STORAGE TX_PS_90;
-Array BC_465 --> PACKED_TEXT_STORAGE TX_PS_91;
-Array BC_466 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_467 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_468 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_464 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_465 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_466 --> PACKED_TEXT_STORAGE TX_PS_94;
+Array BC_467 --> PACKED_TEXT_STORAGE TX_PS_95;
+Array BC_468 --> PACKED_TEXT_STORAGE TX_PS_96;
 Array BC_469 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_470 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_471 --> PACKED_TEXT_STORAGE TX_PS_92;
-Array BC_472 --> PACKED_TEXT_STORAGE TX_PS_93;
+Array BC_471 --> PACKED_TEXT_STORAGE TX_PS_10;
+Array BC_472 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_473 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_474 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_475 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_474 --> PACKED_TEXT_STORAGE TX_PS_97;
+Array BC_475 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_166;
 Array BC_476 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_477 --> PACKED_TEXT_STORAGE TX_PS_94;
-Array BC_478 --> PACKED_TEXT_STORAGE TX_PS_95;
+Array BC_477 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_478 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_479 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_480 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_481 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_482 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_483 --> PACKED_TEXT_STORAGE TX_PS_96;
-Array BC_484 --> PACKED_TEXT_STORAGE TX_PS_97;
+Array BC_481 --> PACKED_TEXT_STORAGE TX_PS_98;
+Array BC_482 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_167;
+Array BC_483 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_484 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_485 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_486 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_487 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_488 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_489 --> PACKED_TEXT_STORAGE TX_PS_98;
-Array BC_490 --> PACKED_TEXT_STORAGE TX_PS_99;
+Array BC_488 --> PACKED_TEXT_STORAGE TX_PS_99;
+Array BC_489 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_168;
+Array BC_490 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_491 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_492 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_492 --> PACKED_TEXT_STORAGE TX_PS_30;
 Array BC_493 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_494 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_495 --> PACKED_TEXT_STORAGE TX_PS_100;
@@ -72529,146 +72569,158 @@ Array BC_1201 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_1202 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_1203 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_1204 --> PACKED_TEXT_STORAGE TX_PS_274;
-Array BC_1205 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_1206 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_1207 --> PACKED_TEXT_STORAGE TX_PS_275;
+Array BC_1205 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1206 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1207 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_1208 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1209 --> PACKED_TEXT_STORAGE TX_PS_276;
-Array BC_1210 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1209 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1210 --> PACKED_TEXT_STORAGE TX_PS_275;
 Array BC_1211 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_1212 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1213 --> Default_Value_0 0;
+Array BC_1213 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_1214 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1215 --> PACKED_TEXT_STORAGE TX_PS_277;
-Array BC_1216 --> PACKED_TEXT_STORAGE TX_PS_274;
-Array BC_1217 --> PACKED_TEXT_STORAGE TX_PS_278;
-Array BC_1218 --> PACKED_TEXT_STORAGE TX_PS_274;
-Array BC_1219 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_179;
-Array BC_1220 --> PACKED_TEXT_STORAGE TX_PS_274;
-Array BC_1221 --> PACKED_TEXT_STORAGE TX_PS_279;
-Array BC_1222 --> PACKED_TEXT_STORAGE TX_PS_274;
-Array BC_1223 --> PACKED_TEXT_STORAGE TX_PS_280;
-Array BC_1224 --> PACKED_TEXT_STORAGE TX_PS_274;
-Array BC_1225 --> PACKED_TEXT_STORAGE TX_PS_281;
-Array BC_1226 --> PACKED_TEXT_STORAGE TX_PS_274;
-Array BC_1227 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1228 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1229 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1230 --> PACKED_TEXT_STORAGE TX_PS_282;
-Array BC_1231 --> PACKED_TEXT_STORAGE TX_PS_283;
-Array BC_1232 --> PACKED_TEXT_STORAGE TX_PS_284;
-Array BC_1233 --> PACKED_TEXT_STORAGE TX_PS_285;
-Array BC_1234 --> PACKED_TEXT_STORAGE TX_PS_286;
-Array BC_1235 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_180;
-Array BC_1236 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1237 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_181;
-Array BC_1238 --> PACKED_TEXT_STORAGE TX_PS_287;
-Array BC_1239 --> PACKED_TEXT_STORAGE TX_PS_58;
+Array BC_1215 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1216 --> PACKED_TEXT_STORAGE TX_PS_276;
+Array BC_1217 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_1218 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_1219 --> PACKED_TEXT_STORAGE TX_PS_277;
+Array BC_1220 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1221 --> PACKED_TEXT_STORAGE TX_PS_278;
+Array BC_1222 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1223 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1224 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1225 --> Default_Value_0 0;
+Array BC_1226 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1227 --> PACKED_TEXT_STORAGE TX_PS_279;
+Array BC_1228 --> PACKED_TEXT_STORAGE TX_PS_276;
+Array BC_1229 --> PACKED_TEXT_STORAGE TX_PS_280;
+Array BC_1230 --> PACKED_TEXT_STORAGE TX_PS_276;
+Array BC_1231 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_179;
+Array BC_1232 --> PACKED_TEXT_STORAGE TX_PS_276;
+Array BC_1233 --> PACKED_TEXT_STORAGE TX_PS_281;
+Array BC_1234 --> PACKED_TEXT_STORAGE TX_PS_276;
+Array BC_1235 --> PACKED_TEXT_STORAGE TX_PS_282;
+Array BC_1236 --> PACKED_TEXT_STORAGE TX_PS_276;
+Array BC_1237 --> PACKED_TEXT_STORAGE TX_PS_283;
+Array BC_1238 --> PACKED_TEXT_STORAGE TX_PS_276;
+Array BC_1239 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_1240 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1241 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_182;
-Array BC_1242 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1243 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1244 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1245 --> PACKED_TEXT_STORAGE TX_PS_288;
-Array BC_1246 --> PACKED_TEXT_STORAGE TX_PS_289;
-Array BC_1247 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_183;
+Array BC_1241 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1242 --> PACKED_TEXT_STORAGE TX_PS_284;
+Array BC_1243 --> PACKED_TEXT_STORAGE TX_PS_285;
+Array BC_1244 --> PACKED_TEXT_STORAGE TX_PS_286;
+Array BC_1245 --> PACKED_TEXT_STORAGE TX_PS_287;
+Array BC_1246 --> PACKED_TEXT_STORAGE TX_PS_288;
+Array BC_1247 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_180;
 Array BC_1248 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1249 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1250 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1251 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_1252 --> PACKED_TEXT_STORAGE TX_PS_290;
-Array BC_1253 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_184;
-Array BC_1254 --> PACKED_TEXT_STORAGE TX_PS_291;
-Array BC_1255 --> PACKED_TEXT_STORAGE TX_PS_292;
-Array BC_1256 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_185;
-Array BC_1257 --> PACKED_TEXT_STORAGE TX_PS_293;
-Array BC_1258 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_186;
-Array BC_1259 --> PACKED_TEXT_STORAGE TX_PS_294;
-Array BC_1260 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_187;
-Array BC_1261 --> PACKED_TEXT_STORAGE TX_PS_295;
-Array BC_1262 --> PACKED_TEXT_STORAGE TX_PS_296;
-Array BC_1263 --> PACKED_TEXT_STORAGE TX_PS_297;
-Array BC_1264 --> PACKED_TEXT_STORAGE TX_PS_298;
-Array BC_1265 --> PACKED_TEXT_STORAGE TX_PS_299;
-Array BC_1266 --> PACKED_TEXT_STORAGE TX_PS_300;
-Array BC_1267 --> PACKED_TEXT_STORAGE TX_PS_301;
-Array BC_1268 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_188;
-Array BC_1269 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_189;
-Array BC_1270 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_190;
-Array BC_1271 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_191;
-Array BC_1272 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_192;
-Array BC_1273 --> PACKED_TEXT_STORAGE TX_PS_302;
-Array BC_1274 --> PACKED_TEXT_STORAGE TX_PS_303;
-Array BC_1275 --> PACKED_TEXT_STORAGE TX_PS_304;
-Array BC_1276 --> PACKED_TEXT_STORAGE TX_PS_305;
-Array BC_1277 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_193;
-Array BC_1278 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_194;
-Array BC_1279 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_195;
-Array BC_1280 --> PACKED_TEXT_STORAGE TX_PS_306;
-Array BC_1281 --> PACKED_TEXT_STORAGE TX_PS_307;
-Array BC_1282 --> PACKED_TEXT_STORAGE TX_PS_308;
-Array BC_1283 --> PACKED_TEXT_STORAGE TX_PS_309;
-Array BC_1284 --> PACKED_TEXT_STORAGE TX_PS_310;
-Array BC_1285 --> PACKED_TEXT_STORAGE TX_PS_311;
-Array BC_1286 --> PACKED_TEXT_STORAGE TX_PS_312;
-Array BC_1287 --> PACKED_TEXT_STORAGE TX_PS_313;
-Array BC_1288 --> PACKED_TEXT_STORAGE TX_PS_314;
-Array BC_1289 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_196;
-Array BC_1290 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_197;
-Array BC_1291 --> PACKED_TEXT_STORAGE TX_PS_315;
-Array BC_1292 --> PACKED_TEXT_STORAGE TX_PS_316;
-Array BC_1293 --> PACKED_TEXT_STORAGE TX_PS_317;
-Array BC_1294 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_198;
-Array BC_1295 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_199;
-Array BC_1296 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_200;
-Array BC_1297 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_201;
-Array BC_1298 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_202;
-Array BC_1299 --> PACKED_TEXT_STORAGE TX_PS_26;
-Array BC_1300 --> PACKED_TEXT_STORAGE TX_PS_163;
-Array BC_1301 --> PACKED_TEXT_STORAGE TX_PS_166;
-Array BC_1302 --> PACKED_TEXT_STORAGE TX_PS_169;
-Array BC_1303 --> PACKED_TEXT_STORAGE TX_PS_131;
-Array BC_1304 --> PACKED_TEXT_STORAGE TX_PS_133;
-Array BC_1305 --> PACKED_TEXT_STORAGE TX_PS_135;
-Array BC_1306 --> PACKED_TEXT_STORAGE TX_PS_137;
-Array BC_1307 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_203;
-Array BC_1308 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_204;
-Array BC_1309 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_205;
-Array BC_1310 --> PACKED_TEXT_STORAGE TX_PS_141;
-Array BC_1311 --> PACKED_TEXT_STORAGE TX_PS_143;
-Array BC_1312 --> PACKED_TEXT_STORAGE TX_PS_145;
-Array BC_1313 --> PACKED_TEXT_STORAGE TX_PS_318;
-Array BC_1314 --> PACKED_TEXT_STORAGE TX_PS_319;
-Array BC_1315 --> PACKED_TEXT_STORAGE TX_PS_320;
-Array BC_1316 --> PACKED_TEXT_STORAGE TX_PS_321;
-Array BC_1317 --> PACKED_TEXT_STORAGE TX_PS_322;
-Array BC_1318 --> PACKED_TEXT_STORAGE TX_PS_323;
-Array BC_1319 --> PACKED_TEXT_STORAGE TX_PS_324;
-Array BC_1320 --> PACKED_TEXT_STORAGE TX_PS_325;
-Array BC_1321 --> PACKED_TEXT_STORAGE TX_PS_326;
-Array BC_1322 --> PACKED_TEXT_STORAGE TX_PS_327;
-Array BC_1323 --> PACKED_TEXT_STORAGE TX_PS_328;
-Array BC_1324 --> PACKED_TEXT_STORAGE TX_PS_329;
-Array BC_1325 --> PACKED_TEXT_STORAGE TX_PS_330;
-Array BC_1326 --> PACKED_TEXT_STORAGE TX_PS_331;
-Array BC_1327 --> PACKED_TEXT_STORAGE TX_PS_332;
-Array BC_1328 --> PACKED_TEXT_STORAGE TX_PS_333;
-Array BC_1329 --> PACKED_TEXT_STORAGE TX_PS_334;
-Array BC_1330 --> PACKED_TEXT_STORAGE TX_PS_335;
-Array BC_1331 --> PACKED_TEXT_STORAGE TX_PS_336;
-Array BC_1332 --> PACKED_TEXT_STORAGE TX_PS_337;
-Array BC_1333 --> PACKED_TEXT_STORAGE TX_PS_338;
-Array BC_1334 --> PACKED_TEXT_STORAGE TX_PS_339;
-Array BC_1335 --> PACKED_TEXT_STORAGE TX_PS_340;
-Array BC_1336 --> PACKED_TEXT_STORAGE TX_PS_341;
-Array BC_1337 --> PACKED_TEXT_STORAGE TX_PS_342;
-Array BC_1338 --> PACKED_TEXT_STORAGE TX_PS_343;
-Array BC_1339 --> PACKED_TEXT_STORAGE TX_PS_344;
-Array BC_1340 --> PACKED_TEXT_STORAGE TX_PS_345;
-Array BC_1341 --> PACKED_TEXT_STORAGE TX_PS_346;
-Array BC_1342 --> PACKED_TEXT_STORAGE TX_PS_347;
-Array BC_1343 --> PACKED_TEXT_STORAGE TX_PS_348;
-Array BC_1344 --> PACKED_TEXT_STORAGE TX_PS_349;
+Array BC_1249 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_181;
+Array BC_1250 --> PACKED_TEXT_STORAGE TX_PS_289;
+Array BC_1251 --> PACKED_TEXT_STORAGE TX_PS_52;
+Array BC_1252 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1253 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_182;
+Array BC_1254 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1255 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1256 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1257 --> PACKED_TEXT_STORAGE TX_PS_290;
+Array BC_1258 --> PACKED_TEXT_STORAGE TX_PS_291;
+Array BC_1259 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_183;
+Array BC_1260 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1261 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1262 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1263 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_1264 --> PACKED_TEXT_STORAGE TX_PS_292;
+Array BC_1265 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_184;
+Array BC_1266 --> PACKED_TEXT_STORAGE TX_PS_293;
+Array BC_1267 --> PACKED_TEXT_STORAGE TX_PS_294;
+Array BC_1268 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_185;
+Array BC_1269 --> PACKED_TEXT_STORAGE TX_PS_295;
+Array BC_1270 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_186;
+Array BC_1271 --> PACKED_TEXT_STORAGE TX_PS_296;
+Array BC_1272 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_187;
+Array BC_1273 --> PACKED_TEXT_STORAGE TX_PS_297;
+Array BC_1274 --> PACKED_TEXT_STORAGE TX_PS_298;
+Array BC_1275 --> PACKED_TEXT_STORAGE TX_PS_299;
+Array BC_1276 --> PACKED_TEXT_STORAGE TX_PS_300;
+Array BC_1277 --> PACKED_TEXT_STORAGE TX_PS_301;
+Array BC_1278 --> PACKED_TEXT_STORAGE TX_PS_302;
+Array BC_1279 --> PACKED_TEXT_STORAGE TX_PS_303;
+Array BC_1280 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_188;
+Array BC_1281 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_189;
+Array BC_1282 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_190;
+Array BC_1283 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_191;
+Array BC_1284 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_192;
+Array BC_1285 --> PACKED_TEXT_STORAGE TX_PS_304;
+Array BC_1286 --> PACKED_TEXT_STORAGE TX_PS_305;
+Array BC_1287 --> PACKED_TEXT_STORAGE TX_PS_306;
+Array BC_1288 --> PACKED_TEXT_STORAGE TX_PS_307;
+Array BC_1289 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_193;
+Array BC_1290 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_194;
+Array BC_1291 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_195;
+Array BC_1292 --> PACKED_TEXT_STORAGE TX_PS_308;
+Array BC_1293 --> PACKED_TEXT_STORAGE TX_PS_309;
+Array BC_1294 --> PACKED_TEXT_STORAGE TX_PS_310;
+Array BC_1295 --> PACKED_TEXT_STORAGE TX_PS_311;
+Array BC_1296 --> PACKED_TEXT_STORAGE TX_PS_312;
+Array BC_1297 --> PACKED_TEXT_STORAGE TX_PS_313;
+Array BC_1298 --> PACKED_TEXT_STORAGE TX_PS_314;
+Array BC_1299 --> PACKED_TEXT_STORAGE TX_PS_315;
+Array BC_1300 --> PACKED_TEXT_STORAGE TX_PS_316;
+Array BC_1301 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_196;
+Array BC_1302 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_197;
+Array BC_1303 --> PACKED_TEXT_STORAGE TX_PS_317;
+Array BC_1304 --> PACKED_TEXT_STORAGE TX_PS_318;
+Array BC_1305 --> PACKED_TEXT_STORAGE TX_PS_319;
+Array BC_1306 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_198;
+Array BC_1307 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_199;
+Array BC_1308 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_200;
+Array BC_1309 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_201;
+Array BC_1310 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_202;
+Array BC_1311 --> PACKED_TEXT_STORAGE TX_PS_26;
+Array BC_1312 --> PACKED_TEXT_STORAGE TX_PS_163;
+Array BC_1313 --> PACKED_TEXT_STORAGE TX_PS_166;
+Array BC_1314 --> PACKED_TEXT_STORAGE TX_PS_169;
+Array BC_1315 --> PACKED_TEXT_STORAGE TX_PS_131;
+Array BC_1316 --> PACKED_TEXT_STORAGE TX_PS_133;
+Array BC_1317 --> PACKED_TEXT_STORAGE TX_PS_135;
+Array BC_1318 --> PACKED_TEXT_STORAGE TX_PS_137;
+Array BC_1319 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_203;
+Array BC_1320 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_204;
+Array BC_1321 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_205;
+Array BC_1322 --> PACKED_TEXT_STORAGE TX_PS_141;
+Array BC_1323 --> PACKED_TEXT_STORAGE TX_PS_143;
+Array BC_1324 --> PACKED_TEXT_STORAGE TX_PS_145;
+Array BC_1325 --> PACKED_TEXT_STORAGE TX_PS_320;
+Array BC_1326 --> PACKED_TEXT_STORAGE TX_PS_321;
+Array BC_1327 --> PACKED_TEXT_STORAGE TX_PS_322;
+Array BC_1328 --> PACKED_TEXT_STORAGE TX_PS_323;
+Array BC_1329 --> PACKED_TEXT_STORAGE TX_PS_324;
+Array BC_1330 --> PACKED_TEXT_STORAGE TX_PS_325;
+Array BC_1331 --> PACKED_TEXT_STORAGE TX_PS_326;
+Array BC_1332 --> PACKED_TEXT_STORAGE TX_PS_327;
+Array BC_1333 --> PACKED_TEXT_STORAGE TX_PS_328;
+Array BC_1334 --> PACKED_TEXT_STORAGE TX_PS_329;
+Array BC_1335 --> PACKED_TEXT_STORAGE TX_PS_330;
+Array BC_1336 --> PACKED_TEXT_STORAGE TX_PS_331;
+Array BC_1337 --> PACKED_TEXT_STORAGE TX_PS_332;
+Array BC_1338 --> PACKED_TEXT_STORAGE TX_PS_333;
+Array BC_1339 --> PACKED_TEXT_STORAGE TX_PS_334;
+Array BC_1340 --> PACKED_TEXT_STORAGE TX_PS_335;
+Array BC_1341 --> PACKED_TEXT_STORAGE TX_PS_336;
+Array BC_1342 --> PACKED_TEXT_STORAGE TX_PS_337;
+Array BC_1343 --> PACKED_TEXT_STORAGE TX_PS_338;
+Array BC_1344 --> PACKED_TEXT_STORAGE TX_PS_339;
+Array BC_1345 --> PACKED_TEXT_STORAGE TX_PS_340;
+Array BC_1346 --> PACKED_TEXT_STORAGE TX_PS_341;
+Array BC_1347 --> PACKED_TEXT_STORAGE TX_PS_342;
+Array BC_1348 --> PACKED_TEXT_STORAGE TX_PS_343;
+Array BC_1349 --> PACKED_TEXT_STORAGE TX_PS_344;
+Array BC_1350 --> PACKED_TEXT_STORAGE TX_PS_345;
+Array BC_1351 --> PACKED_TEXT_STORAGE TX_PS_346;
+Array BC_1352 --> PACKED_TEXT_STORAGE TX_PS_347;
+Array BC_1353 --> PACKED_TEXT_STORAGE TX_PS_348;
+Array BC_1354 --> PACKED_TEXT_STORAGE TX_PS_349;
+Array BC_1355 --> PACKED_TEXT_STORAGE TX_PS_350;
+Array BC_1356 --> PACKED_TEXT_STORAGE TX_PS_351;
 
 
 

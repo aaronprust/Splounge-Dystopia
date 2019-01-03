@@ -20,7 +20,7 @@ picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover
 
 placeholder [IFID] = "6B187FD7-6886-4453-A47E-46CD277BC3A5"
 placeholder [RELEASE] = "1"
-placeholder [YEAR] = "2018"
+placeholder [YEAR] = "2019"
 placeholder [TITLE] = "Splounge-Dystopia"
 placeholder [AUTHOR] = "Aaron Prust"
 placeholder [BLURB] = "A work of interactive fiction."

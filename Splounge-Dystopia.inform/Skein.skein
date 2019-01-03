@@ -13,7 +13,7 @@ Whatevs. Feels like just another day in the MASSIVE HIVE KNOWN as CONvergence.
 
 BTW, you sure have made quite the number of enemies.
 
-Today's magic number is 383.
+Today's magic number is 882.
 
 
 What is your name? &gt; </result>
@@ -31,37 +31,38 @@ You can see a bar (on which is a glittery box (closed)), many chairs, a black ro
 
 &gt;take box
 </commentary>
-        <children><child nodeId="node-3731"></child>
+        <children><child nodeId="node-3735"></child>
+            <child nodeId="node-3731"></child>
+            <child nodeId="node-3738"></child>
             <child nodeId="node-3727"></child>
-            <child nodeId="node-3723"></child>
-            <child nodeId="node-3713"></child>
+            <child nodeId="node-3717"></child>
+            <child nodeId="node-3700"></child>
             <child nodeId="node-3696"></child>
-            <child nodeId="node-3692"></child>
-            <child nodeId="node-3691"></child>
+            <child nodeId="node-3695"></child>
+            <child nodeId="node-3682"></child>
             <child nodeId="node-3678"></child>
-            <child nodeId="node-3674"></child>
-            <child nodeId="node-3661"></child>
+            <child nodeId="node-3665"></child>
+            <child nodeId="node-3664"></child>
+            <child nodeId="node-3662"></child>
             <child nodeId="node-3660"></child>
-            <child nodeId="node-3658"></child>
-            <child nodeId="node-3656"></child>
-            <child nodeId="node-3644"></child>
-            <child nodeId="node-3619"></child>
-            <child nodeId="node-3618"></child>
-            <child nodeId="node-3611"></child>
+            <child nodeId="node-3648"></child>
+            <child nodeId="node-3623"></child>
+            <child nodeId="node-3622"></child>
+            <child nodeId="node-3615"></child>
+            <child nodeId="node-3614"></child>
+            <child nodeId="node-3612"></child>
             <child nodeId="node-3610"></child>
-            <child nodeId="node-3608"></child>
-            <child nodeId="node-3606"></child>
-            <child nodeId="node-3593"></child>
-            <child nodeId="node-3584"></child>
+            <child nodeId="node-3597"></child>
+            <child nodeId="node-3588"></child>
+            <child nodeId="node-3586"></child>
             <child nodeId="node-3582"></child>
-            <child nodeId="node-3578"></child>
+            <child nodeId="node-3554"></child>
+            <child nodeId="node-3552"></child>
             <child nodeId="node-3550"></child>
             <child nodeId="node-3548"></child>
-            <child nodeId="node-3546"></child>
-            <child nodeId="node-3544"></child>
-            <child nodeId="node-3543"></child>
-            <child nodeId="node-3538"></child>
-            <child nodeId="node-3530"></child>
+            <child nodeId="node-3547"></child>
+            <child nodeId="node-3542"></child>
+            <child nodeId="node-3534"></child>
             <child nodeId="node-3510"></child>
             <child nodeId="node-3479"></child>
             <child nodeId="node-3459"></child>
@@ -28535,7 +28536,7 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3735"></child>
+        <children><child nodeId="node-3530"></child>
             <child nodeId="node-3511"></child>
         </children>
     </item>
@@ -28745,7 +28746,7 @@ In the bowl is a note.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3735">
+    <item nodeId="node-3530">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">(first opening the airlock)
 
@@ -28758,10 +28759,10 @@ You can go north, south, and west through the airlock to the Space Lounge from h
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3736"></child>
+        <children><child nodeId="node-3531"></child>
         </children>
     </item>
-    <item nodeId="node-3736">
+    <item nodeId="node-3531">
         <command xml:space="preserve">n</command>
         <result xml:space="preserve">
 H2I
@@ -28771,10 +28772,10 @@ You can go north, south to H2K, and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3737"></child>
+        <children><child nodeId="node-3532"></child>
         </children>
     </item>
-    <item nodeId="node-3737">
+    <item nodeId="node-3532">
         <command xml:space="preserve">w</command>
         <result xml:space="preserve">
 Registration
@@ -28784,10 +28785,10 @@ You can go east to H2I from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3738"></child>
+        <children><child nodeId="node-3533"></child>
         </children>
     </item>
-    <item nodeId="node-3738">
+    <item nodeId="node-3533">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 H2I
@@ -28798,7 +28799,7 @@ You can go north, south to H2K, and west to Registration from here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3530">
+    <item nodeId="node-3534">
         <command xml:space="preserve">aaron</command>
         <result xml:space="preserve">aaron!? Aaaah, that's a good one.
 
@@ -28809,50 +28810,14 @@ You can see an airlock, a black ninja outfit, a bar (on which are a Glowing Sphe
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3531"></child>
-        </children>
-    </item>
-    <item nodeId="node-3531">
-        <command xml:space="preserve">look black ninja outfit</command>
-        <result xml:space="preserve">This is a ninja outfit, it's black and has a hood that covers your face. It has pockets in it to store cool ninja gear. It has these sweet built in booties that muffle your footsteps as if you were a total ninja, which you totally are if you are wearing this outfit. You could sneak around a place with shadows without being detected if you were wearing this thing. You'd be so ninja.
-
-The pocket contains nothing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3532"></child>
-        </children>
-    </item>
-    <item nodeId="node-3532">
-        <command xml:space="preserve">wear ninja outfit</command>
-        <result xml:space="preserve">(first taking the black ninja outfit)
-You are a ninja! It feels like you could blend into the shadows, or maybe you ARE the shadows, this ninja outfit makes you feel super ninja-like
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3533"></child>
-        </children>
-    </item>
-    <item nodeId="node-3533">
-        <command xml:space="preserve">look pocket</command>
-        <result xml:space="preserve">The pocket is kind of unremarkable, not really exciting like some cool crazy gun would be or something.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3534"></child>
-        </children>
-    </item>
-    <item nodeId="node-3534">
-        <command xml:space="preserve">look inside pockets</command>
-        <result xml:space="preserve">You can't use multiple objects with that verb.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3535"></child>
         </children>
     </item>
     <item nodeId="node-3535">
-        <command xml:space="preserve">inv</command>
-        <result xml:space="preserve">You're carrying a message receiver, a coin, and a dagger. You're wearing a black ninja outfit and ElectroMisdirector.
+        <command xml:space="preserve">look black ninja outfit</command>
+        <result xml:space="preserve">This is a ninja outfit, it's black and has a hood that covers your face. It has pockets in it to store cool ninja gear. It has these sweet built in booties that muffle your footsteps as if you were a total ninja, which you totally are if you are wearing this outfit. You could sneak around a place with shadows without being detected if you were wearing this thing. You'd be so ninja.
+
+The pocket contains nothing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -28860,6 +28825,42 @@ You are a ninja! It feels like you could blend into the shadows, or maybe you AR
         </children>
     </item>
     <item nodeId="node-3536">
+        <command xml:space="preserve">wear ninja outfit</command>
+        <result xml:space="preserve">(first taking the black ninja outfit)
+You are a ninja! It feels like you could blend into the shadows, or maybe you ARE the shadows, this ninja outfit makes you feel super ninja-like
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3537"></child>
+        </children>
+    </item>
+    <item nodeId="node-3537">
+        <command xml:space="preserve">look pocket</command>
+        <result xml:space="preserve">The pocket is kind of unremarkable, not really exciting like some cool crazy gun would be or something.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3538"></child>
+        </children>
+    </item>
+    <item nodeId="node-3538">
+        <command xml:space="preserve">look inside pockets</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3539"></child>
+        </children>
+    </item>
+    <item nodeId="node-3539">
+        <command xml:space="preserve">inv</command>
+        <result xml:space="preserve">You're carrying a message receiver, a coin, and a dagger. You're wearing a black ninja outfit and ElectroMisdirector.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3540"></child>
+        </children>
+    </item>
+    <item nodeId="node-3540">
         <command xml:space="preserve">look ninja outfit</command>
         <result xml:space="preserve">This is a ninja outfit, it's black and has a hood that covers your face. It has pockets in it to store cool ninja gear. It has these sweet built in booties that muffle your footsteps as if you were a total ninja, which you totally are if you are wearing this outfit. You could sneak around a place with shadows without being detected if you were wearing this thing. You'd be so ninja.
 
@@ -28867,10 +28868,10 @@ The pocket contains nothing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3537"></child>
+        <children><child nodeId="node-3541"></child>
         </children>
     </item>
-    <item nodeId="node-3537">
+    <item nodeId="node-3541">
         <command xml:space="preserve">look black ninja outfit</command>
         <result xml:space="preserve">This is a ninja outfit, it's black and has a hood that covers your face. It has pockets in it to store cool ninja gear. It has these sweet built in booties that muffle your footsteps as if you were a total ninja, which you totally are if you are wearing this outfit. You could sneak around a place with shadows without being detected if you were wearing this thing. You'd be so ninja.
 
@@ -28879,7 +28880,7 @@ The pocket contains nothing.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3538">
+    <item nodeId="node-3542">
         <command xml:space="preserve">a-ron</command>
         <result xml:space="preserve">a-ron!? Aaaah, that's a good one.
 
@@ -28892,19 +28893,19 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3539"></child>
+        <children><child nodeId="node-3543"></child>
         </children>
     </item>
-    <item nodeId="node-3539">
+    <item nodeId="node-3543">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You're carrying a message receiver, a coin, and a dagger. You're wearing AdBlaster2000.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3540"></child>
+        <children><child nodeId="node-3544"></child>
         </children>
     </item>
-    <item nodeId="node-3540">
+    <item nodeId="node-3544">
         <command xml:space="preserve">look message</command>
         <result xml:space="preserve">Dear a, 
 
@@ -28912,19 +28913,19 @@ You really should meet me tonight in the Space Lounge...you're gonna be pumped! 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3541"></child>
+        <children><child nodeId="node-3545"></child>
         </children>
     </item>
-    <item nodeId="node-3541">
+    <item nodeId="node-3545">
         <command xml:space="preserve">ask aframe about xx</command>
         <result xml:space="preserve">When you mention xx, Aframe's eyes light up. He smiles and looks around the room for a second before stepping closer to you. "How do you know aobut xx?", he says - well it doesn't matter now - just remember yy when you get to the zz okay? DON'T FORGET ABOUT THE YY! Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3542"></child>
+        <children><child nodeId="node-3546"></child>
         </children>
     </item>
-    <item nodeId="node-3542">
+    <item nodeId="node-3546">
         <command xml:space="preserve">attack bartender</command>
         <result xml:space="preserve">You attack the bartender, causing 10 points of damage! The bartender has -10 hit points
 The bartender is defeated! He stands up and gives you his staff, "Nobody has defeated me in a long time. This is yours now."
@@ -28932,7 +28933,7 @@ The bartender is defeated! He stands up and gives you his staff, "Nobody has def
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3543">
+    <item nodeId="node-3547">
         <command xml:space="preserve">Super Duper</command>
         <result xml:space="preserve">Super Duper!? Har har har! Musta been one-a them vat babies huh?
 
@@ -28948,7 +28949,7 @@ You can go east through the airlock (closed) from here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3544">
+    <item nodeId="node-3548">
         <command xml:space="preserve">Super Dupe</command>
         <result xml:space="preserve">Super Dupe!? Har har har! Musta been one-a them vat babies huh?
 
@@ -28963,10 +28964,10 @@ You can go east through the airlock (closed) from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3545"></child>
+        <children><child nodeId="node-3549"></child>
         </children>
     </item>
-    <item nodeId="node-3545">
+    <item nodeId="node-3549">
         <command xml:space="preserve">look letter</command>
         <result xml:space="preserve">Dear Super, 
 
@@ -28975,7 +28976,7 @@ You really should meet me tonight in the Space Lounge...you're gonna be pumped! 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3546">
+    <item nodeId="node-3550">
         <command xml:space="preserve">Super</command>
         <result xml:space="preserve">Super? Interesting, nice.
 
@@ -28990,10 +28991,10 @@ You can go east through the airlock (closed) from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3547"></child>
+        <children><child nodeId="node-3551"></child>
         </children>
     </item>
-    <item nodeId="node-3547">
+    <item nodeId="node-3551">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying: 
 DiscoWig
@@ -29005,7 +29006,7 @@ a dagger
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3548">
+    <item nodeId="node-3552">
         <command xml:space="preserve">Sue May Shuringhousen the 5th and stuff</command>
         <result xml:space="preserve">
 
@@ -29013,10 +29014,10 @@ Who are you, a member of the British royal family? No one has that many names. L
 
 What is your name? &gt; </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3549"></child>
+        <children><child nodeId="node-3553"></child>
         </children>
     </item>
-    <item nodeId="node-3549">
+    <item nodeId="node-3553">
         <command xml:space="preserve">Kelly Anne Elizabeth Shaw</command>
         <result xml:space="preserve">Kelly Anne Elizabeth Shaw!? Har har har! Musta been one-a them vat babies huh?
 
@@ -29032,7 +29033,7 @@ You can go east through the airlock (closed) from here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3550">
+    <item nodeId="node-3554">
         <command xml:space="preserve">Reginald Bartholemew Johansen Brauwnshittinger the 5th</command>
         <result xml:space="preserve">
 
@@ -29040,10 +29041,10 @@ Who are you, a member of the British royal family? No one has that many names. L
 
 What is your name? &gt; </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3551"></child>
+        <children><child nodeId="node-3555"></child>
         </children>
     </item>
-    <item nodeId="node-3551">
+    <item nodeId="node-3555">
         <command xml:space="preserve">Han Solo</command>
         <result xml:space="preserve">Oh Han Solo eh!? I've heard a you..
 
@@ -29058,10 +29059,10 @@ You can go east through the airlock (closed) from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3552"></child>
+        <children><child nodeId="node-3556"></child>
         </children>
     </item>
-    <item nodeId="node-3552">
+    <item nodeId="node-3556">
         <command xml:space="preserve">look letter</command>
         <result xml:space="preserve">Dear Han Solo, 
 
@@ -29069,10 +29070,10 @@ You really should meet me tonight in the Space Lounge...you're gonna be pumped! 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3553"></child>
+        <children><child nodeId="node-3557"></child>
         </children>
     </item>
-    <item nodeId="node-3553">
+    <item nodeId="node-3557">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">(first opening the airlock)
 
@@ -29087,10 +29088,10 @@ You can go north, northeast, northwest, southeast, west through the airlock to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3554"></child>
+        <children><child nodeId="node-3558"></child>
         </children>
     </item>
-    <item nodeId="node-3554">
+    <item nodeId="node-3558">
         <command xml:space="preserve">down</command>
         <result xml:space="preserve">
 Under the Veranda Walkway
@@ -29100,10 +29101,10 @@ You can go north, northeast, southeast, east, west, and up to the Veranda Walkwa
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3555"></child>
+        <children><child nodeId="node-3559"></child>
         </children>
     </item>
-    <item nodeId="node-3555">
+    <item nodeId="node-3559">
         <command xml:space="preserve">ne</command>
         <result xml:space="preserve">
 Lower Northside Hallway
@@ -29115,10 +29116,10 @@ You can go north, southeast, and southwest to Under the Veranda Walkway from her
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3556"></child>
+        <children><child nodeId="node-3560"></child>
         </children>
     </item>
-    <item nodeId="node-3556">
+    <item nodeId="node-3560">
         <command xml:space="preserve">sw</command>
         <result xml:space="preserve">
 Under the Veranda Walkway
@@ -29128,10 +29129,10 @@ You can go north, northeast to Lower Northside Hallway, southeast, east, west, a
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3557"></child>
+        <children><child nodeId="node-3561"></child>
         </children>
     </item>
-    <item nodeId="node-3557">
+    <item nodeId="node-3561">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Garden Court
@@ -29147,10 +29148,10 @@ The boffer stabs you! (Health: 91)
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3558"></child>
+        <children><child nodeId="node-3562"></child>
         </children>
     </item>
-    <item nodeId="node-3558">
+    <item nodeId="node-3562">
         <command xml:space="preserve">attack boffer</command>
         <result xml:space="preserve">Violence isn't the answer to this one.
 
@@ -29158,54 +29159,12 @@ The boffer stabs you! (Health: 84)
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3559"></child>
-        </children>
-    </item>
-    <item nodeId="node-3559">
-        <command xml:space="preserve">stab boffer</command>
-        <result xml:space="preserve">What do you want to stab the boffer with?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3560"></child>
-        </children>
-    </item>
-    <item nodeId="node-3560">
-        <command xml:space="preserve">stab boffer with dagger</command>
-        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 90)
-
-The boffer stabs you! (Health: 76)
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3561"></child>
-        </children>
-    </item>
-    <item nodeId="node-3561">
-        <command xml:space="preserve">stab boffer</command>
-        <result xml:space="preserve">What do you want to stab the boffer with?
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3562"></child>
-        </children>
-    </item>
-    <item nodeId="node-3562">
-        <command xml:space="preserve">stab boffer with dagger</command>
-        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 68)
-
-The boffer stabs you! (Health: 69)
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3563"></child>
         </children>
     </item>
     <item nodeId="node-3563">
-        <command xml:space="preserve">stab boffer with dagger</command>
-        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 56)
-
-The boffer stabs you! (Health: 62)
+        <command xml:space="preserve">stab boffer</command>
+        <result xml:space="preserve">What do you want to stab the boffer with?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29214,9 +29173,9 @@ The boffer stabs you! (Health: 62)
     </item>
     <item nodeId="node-3564">
         <command xml:space="preserve">stab boffer with dagger</command>
-        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 41)
+        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 90)
 
-The boffer stabs you! (Health: 55)
+The boffer stabs you! (Health: 76)
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29224,10 +29183,8 @@ The boffer stabs you! (Health: 55)
         </children>
     </item>
     <item nodeId="node-3565">
-        <command xml:space="preserve">stab boffer with dagger</command>
-        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 29)
-
-The boffer stabs you! (Health: 47)
+        <command xml:space="preserve">stab boffer</command>
+        <result xml:space="preserve">What do you want to stab the boffer with?
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29236,9 +29193,9 @@ The boffer stabs you! (Health: 47)
     </item>
     <item nodeId="node-3566">
         <command xml:space="preserve">stab boffer with dagger</command>
-        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 5)
+        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 68)
 
-The boffer stabs you! (Health: 37)
+The boffer stabs you! (Health: 69)
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29247,7 +29204,9 @@ The boffer stabs you! (Health: 37)
     </item>
     <item nodeId="node-3567">
         <command xml:space="preserve">stab boffer with dagger</command>
-        <result xml:space="preserve">With one final thrust of your dagger, the boffer's dead body drops to the ground, dead.
+        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 56)
+
+The boffer stabs you! (Health: 62)
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29255,8 +29214,10 @@ The boffer stabs you! (Health: 37)
         </children>
     </item>
     <item nodeId="node-3568">
-        <command xml:space="preserve">look boffer</command>
-        <result xml:space="preserve">boffer's dead body is a gruesome sight.
+        <command xml:space="preserve">stab boffer with dagger</command>
+        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 41)
+
+The boffer stabs you! (Health: 55)
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29264,8 +29225,10 @@ The boffer stabs you! (Health: 37)
         </children>
     </item>
     <item nodeId="node-3569">
-        <command xml:space="preserve">search boffer</command>
-        <result xml:space="preserve">You search the boffer's dead body and find the nanocarbon staff and the nanocarbon blade.
+        <command xml:space="preserve">stab boffer with dagger</command>
+        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 29)
+
+The boffer stabs you! (Health: 47)
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29273,8 +29236,10 @@ The boffer stabs you! (Health: 37)
         </children>
     </item>
     <item nodeId="node-3570">
-        <command xml:space="preserve">look nanocarbon staff</command>
-        <result xml:space="preserve">Nanocarbon staff, looks just like oldwood. Looks like it can be switched between stun and realdammo.
+        <command xml:space="preserve">stab boffer with dagger</command>
+        <result xml:space="preserve">You stab the boffer with your the dagger. The boffer yells out in pain.  (The boffer's health: 5)
+
+The boffer stabs you! (Health: 37)
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29282,8 +29247,8 @@ The boffer stabs you! (Health: 37)
         </children>
     </item>
     <item nodeId="node-3571">
-        <command xml:space="preserve">look nanocarbon blade</command>
-        <result xml:space="preserve">The nanocarbon blade is kind of unremarkable, not really exciting like some cool crazy gun would be or something.
+        <command xml:space="preserve">stab boffer with dagger</command>
+        <result xml:space="preserve">With one final thrust of your dagger, the boffer's dead body drops to the ground, dead.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29291,6 +29256,42 @@ The boffer stabs you! (Health: 37)
         </children>
     </item>
     <item nodeId="node-3572">
+        <command xml:space="preserve">look boffer</command>
+        <result xml:space="preserve">boffer's dead body is a gruesome sight.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3573"></child>
+        </children>
+    </item>
+    <item nodeId="node-3573">
+        <command xml:space="preserve">search boffer</command>
+        <result xml:space="preserve">You search the boffer's dead body and find the nanocarbon staff and the nanocarbon blade.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3574"></child>
+        </children>
+    </item>
+    <item nodeId="node-3574">
+        <command xml:space="preserve">look nanocarbon staff</command>
+        <result xml:space="preserve">Nanocarbon staff, looks just like oldwood. Looks like it can be switched between stun and realdammo.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3575"></child>
+        </children>
+    </item>
+    <item nodeId="node-3575">
+        <command xml:space="preserve">look nanocarbon blade</command>
+        <result xml:space="preserve">The nanocarbon blade is kind of unremarkable, not really exciting like some cool crazy gun would be or something.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3576"></child>
+        </children>
+    </item>
+    <item nodeId="node-3576">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying: 
 a letter
@@ -29301,28 +29302,28 @@ a dagger
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3573"></child>
+        <children><child nodeId="node-3577"></child>
         </children>
     </item>
-    <item nodeId="node-3573">
+    <item nodeId="node-3577">
         <command xml:space="preserve">take nanocarbon staff</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3574"></child>
+        <children><child nodeId="node-3578"></child>
         </children>
     </item>
-    <item nodeId="node-3574">
+    <item nodeId="node-3578">
         <command xml:space="preserve">take nanocarbon blade</command>
         <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3575"></child>
+        <children><child nodeId="node-3579"></child>
         </children>
     </item>
-    <item nodeId="node-3575">
+    <item nodeId="node-3579">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying: 
 a nanocarbon blade
@@ -29335,26 +29336,26 @@ a dagger
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3576"></child>
+        <children><child nodeId="node-3580"></child>
         </children>
     </item>
-    <item nodeId="node-3576">
+    <item nodeId="node-3580">
         <command xml:space="preserve">look coin</command>
         <result xml:space="preserve">The coin is kind of unremarkable, not really exciting like some cool crazy gun would be or something.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3577"></child>
+        <children><child nodeId="node-3581"></child>
         </children>
     </item>
-    <item nodeId="node-3577">
+    <item nodeId="node-3581">
         <command xml:space="preserve">look wig</command>
         <result xml:space="preserve">This wig is super shiny and silvery, reflecting light off in all directions, it helps you avoid being face-detected by the intero-pods.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3578">
+    <item nodeId="node-3582">
         <command xml:space="preserve">Me</command>
         <result xml:space="preserve">Me? Interesting, nice.
 
@@ -29367,10 +29368,10 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3579"></child>
+        <children><child nodeId="node-3583"></child>
         </children>
     </item>
-    <item nodeId="node-3579">
+    <item nodeId="node-3583">
         <command xml:space="preserve">sit in chair</command>
         <result xml:space="preserve">Oh boy this chair looks really soft and comfy! Ooooh ya you are totally gonna sit on this chair big time.
 
@@ -29380,10 +29381,10 @@ Oooh yes, this is a wonderful world. "What a luxuriously decadent and beautiful 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3580"></child>
+        <children><child nodeId="node-3584"></child>
         </children>
     </item>
-    <item nodeId="node-3580">
+    <item nodeId="node-3584">
         <command xml:space="preserve">get off chair</command>
         <result xml:space="preserve">You just can't get up, you are way too comfortable! Maybe if you just stayed here in this comfy looking chair forever you would be better off than whatever else you were going to do. Does it really matter?
 
@@ -29391,10 +29392,10 @@ Sooooo comfy. So sooooo comfy. Mmmmm...
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3581"></child>
+        <children><child nodeId="node-3585"></child>
         </children>
     </item>
-    <item nodeId="node-3581">
+    <item nodeId="node-3585">
         <command xml:space="preserve">get off chair</command>
         <result xml:space="preserve">You try to heave yourself up, but the soft lusciousness of the comfy looking chair envelopes you and pulls you back into its comfy folds. Oooooo...so comfy...so sooooooofffffft...
 
@@ -29403,7 +29404,7 @@ Sooooo comfy. So sooooo comfy. Mmmmm...
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3582">
+    <item nodeId="node-3586">
         <command xml:space="preserve">Looky Dear</command>
         <result xml:space="preserve">Oh Looky Dear eh!? I've heard a you.
 
@@ -29418,17 +29419,17 @@ You can go east through the airlock (closed) from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3583"></child>
+        <children><child nodeId="node-3587"></child>
         </children>
     </item>
-    <item nodeId="node-3583">
+    <item nodeId="node-3587">
         <command xml:space="preserve">talk AFrame</command>
         <result xml:space="preserve">I didn't understand that sentence.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3584">
+    <item nodeId="node-3588">
         <command xml:space="preserve">Kiss My Assimus</command>
         <result xml:space="preserve">Kiss My Assimus! Aaaah, that's a good one.
 
@@ -29443,10 +29444,10 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3585"></child>
+        <children><child nodeId="node-3589"></child>
         </children>
     </item>
-    <item nodeId="node-3585">
+    <item nodeId="node-3589">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">(first opening the airlock)
 As you enter the Veranda Walkway you see a floating dolphin surveillance pod.
@@ -29463,19 +29464,19 @@ You can go north, northeast, northwest, southeast, west through the airlock to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3586"></child>
+        <children><child nodeId="node-3590"></child>
         </children>
     </item>
-    <item nodeId="node-3586">
+    <item nodeId="node-3590">
         <command xml:space="preserve">open floating dophin</command>
         <result xml:space="preserve">I only understood you as far as wanting to open the floating dolphin.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3587"></child>
+        <children><child nodeId="node-3591"></child>
         </children>
     </item>
-    <item nodeId="node-3587">
+    <item nodeId="node-3591">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Upper Southside Hallway
@@ -29487,10 +29488,10 @@ You can go north, northeast, northwest to the Veranda Walkway, south, southeast,
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3588"></child>
+        <children><child nodeId="node-3592"></child>
         </children>
     </item>
-    <item nodeId="node-3588">
+    <item nodeId="node-3592">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Round1
@@ -29508,10 +29509,10 @@ In which film did someone get offered a choice between two pills and then didn't
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3589"></child>
+        <children><child nodeId="node-3593"></child>
         </children>
     </item>
-    <item nodeId="node-3589">
+    <item nodeId="node-3593">
         <command xml:space="preserve">nw</command>
         <result xml:space="preserve">Incorrect. Next question.
 
@@ -29519,10 +29520,10 @@ This movie has a sail boat smash into the end of a fake world. Everyone watching
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3590"></child>
+        <children><child nodeId="node-3594"></child>
         </children>
     </item>
-    <item nodeId="node-3590">
+    <item nodeId="node-3594">
         <command xml:space="preserve">The Truman Show</command>
         <result xml:space="preserve">Well done.  Next question.
 
@@ -29530,10 +29531,10 @@ This film has annoying gothy villians but a super cool reveal that everyone was 
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3591"></child>
+        <children><child nodeId="node-3595"></child>
         </children>
     </item>
-    <item nodeId="node-3591">
+    <item nodeId="node-3595">
         <command xml:space="preserve">Dark City</command>
         <result xml:space="preserve">Well done.  Next question.
 
@@ -29541,10 +29542,10 @@ In which movie did the main character die from super disturbing eye bulging deco
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3592"></child>
+        <children><child nodeId="node-3596"></child>
         </children>
     </item>
-    <item nodeId="node-3592">
+    <item nodeId="node-3596">
         <command xml:space="preserve">Total Recall</command>
         <result xml:space="preserve">That was Round One, now onto Round Two!
 
@@ -29560,7 +29561,7 @@ In the contract version of what card game are players identified by points on th
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3593">
+    <item nodeId="node-3597">
         <command xml:space="preserve">Hey Dude</command>
         <result xml:space="preserve">h, Hey Dude eh!? I've heard a you.
 
@@ -29573,10 +29574,10 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3594"></child>
+        <children><child nodeId="node-3598"></child>
         </children>
     </item>
-    <item nodeId="node-3594">
+    <item nodeId="node-3598">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">(first opening the airlock)
 As you enter the Veranda Walkway you see a floating dolphin surveillance pod.
@@ -29591,10 +29592,10 @@ You can go north, northeast, northwest, southeast, west through the airlock to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3595"></child>
+        <children><child nodeId="node-3599"></child>
         </children>
     </item>
-    <item nodeId="node-3595">
+    <item nodeId="node-3599">
         <command xml:space="preserve">nw</command>
         <result xml:space="preserve">
 Bridge
@@ -29604,10 +29605,10 @@ You can go southeast to the Veranda Walkway from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3596"></child>
+        <children><child nodeId="node-3600"></child>
         </children>
     </item>
-    <item nodeId="node-3596">
+    <item nodeId="node-3600">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">As you enter the Veranda Walkway you see a floating dolphin surveillance pod.
 Sweet it seems like your DiscoWig shielded you from detection. 
@@ -29621,10 +29622,10 @@ You can go north, northeast, northwest to the Bridge, southeast, west through th
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3597"></child>
+        <children><child nodeId="node-3601"></child>
         </children>
     </item>
-    <item nodeId="node-3597">
+    <item nodeId="node-3601">
         <command xml:space="preserve">d</command>
         <result xml:space="preserve">
 Under the Veranda Walkway
@@ -29632,10 +29633,10 @@ You can go north, northeast, southeast, east, west, and up to the Veranda Walkwa
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3598"></child>
+        <children><child nodeId="node-3602"></child>
         </children>
     </item>
-    <item nodeId="node-3598">
+    <item nodeId="node-3602">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">
 Garden Court
@@ -29647,48 +29648,12 @@ You can go west to Under the Veranda Walkway from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3599"></child>
-        </children>
-    </item>
-    <item nodeId="node-3599">
-        <command xml:space="preserve">talk boffer</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3600"></child>
-        </children>
-    </item>
-    <item nodeId="node-3600">
-        <command xml:space="preserve">hit boffer</command>
-        <result xml:space="preserve">Violence isn't the answer to this one.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3601"></child>
-        </children>
-    </item>
-    <item nodeId="node-3601">
-        <command xml:space="preserve">stab boffer</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3602"></child>
-        </children>
-    </item>
-    <item nodeId="node-3602">
-        <command xml:space="preserve">stab boffer with knife</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3603"></child>
         </children>
     </item>
     <item nodeId="node-3603">
-        <command xml:space="preserve">i</command>
-        <result xml:space="preserve">You're carrying a message receiver, a coin, and a dagger. You're wearing DiscoWig.
+        <command xml:space="preserve">talk boffer</command>
+        <result xml:space="preserve">I didn't understand that sentence.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29696,8 +29661,8 @@ You can go west to Under the Veranda Walkway from here.
         </children>
     </item>
     <item nodeId="node-3604">
-        <command xml:space="preserve">stab boffer with dagger</command>
-        <result xml:space="preserve">I didn't understand that sentence.
+        <command xml:space="preserve">hit boffer</command>
+        <result xml:space="preserve">Violence isn't the answer to this one.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29705,13 +29670,49 @@ You can go west to Under the Veranda Walkway from here.
         </children>
     </item>
     <item nodeId="node-3605">
+        <command xml:space="preserve">stab boffer</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3606"></child>
+        </children>
+    </item>
+    <item nodeId="node-3606">
+        <command xml:space="preserve">stab boffer with knife</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3607"></child>
+        </children>
+    </item>
+    <item nodeId="node-3607">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You're carrying a message receiver, a coin, and a dagger. You're wearing DiscoWig.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3608"></child>
+        </children>
+    </item>
+    <item nodeId="node-3608">
+        <command xml:space="preserve">stab boffer with dagger</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3609"></child>
+        </children>
+    </item>
+    <item nodeId="node-3609">
         <command xml:space="preserve">look DiscoWig</command>
         <result xml:space="preserve">This wig is all sproingy and is made of tons of tiny pieces of holographic metallic rainbow shards. As you move about the light around you is refracted into a million directions, making face recog almost impossible.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3606">
+    <item nodeId="node-3610">
         <command xml:space="preserve">Fuck My Face</command>
         <result xml:space="preserve">Oh, Fuck My Face eh!? I've heard a you.
 
@@ -29724,15 +29725,15 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3607"></child>
+        <children><child nodeId="node-3611"></child>
         </children>
     </item>
-    <item nodeId="node-3607">
+    <item nodeId="node-3611">
         <command xml:space="preserve">sit on chair</command>
         <result xml:space="preserve"></result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3608">
+    <item nodeId="node-3612">
         <command xml:space="preserve">Fancy footwork</command>
         <result xml:space="preserve">Oh Fancy footwork eh!? I've heard a you.
 
@@ -29747,10 +29748,10 @@ You can go east through the airlock (closed) from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3609"></child>
+        <children><child nodeId="node-3613"></child>
         </children>
     </item>
-    <item nodeId="node-3609">
+    <item nodeId="node-3613">
         <command xml:space="preserve">look letter</command>
         <result xml:space="preserve">Dear Fancy, 
 
@@ -29759,7 +29760,7 @@ You really should meet me tonight in the Space Lounge...you're gonna be pumped! 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3610">
+    <item nodeId="node-3614">
         <command xml:space="preserve">Dumbshit Shitterwithers</command>
         <result xml:space="preserve">Hi, Dumbshit!
 
@@ -29777,46 +29778,8 @@ You can go east through the airlock (closed) from here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3611">
-        <command xml:space="preserve">Dipshit</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-What is your name? &gt; </result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3612"></child>
-        </children>
-    </item>
-    <item nodeId="node-3612">
-        <command xml:space="preserve">Dipshit Hafflelnsauce</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-What is your name? &gt; </result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3613"></child>
-        </children>
-    </item>
-    <item nodeId="node-3613">
-        <command xml:space="preserve">asdf asdf asdf asdf asd fa dsfas dfas dfa sdf asdf</command>
-        <result xml:space="preserve">
-
-Who are you, a member of the British royal family? No one has that many names. Let's try this again.
-
-What is your name? &gt; </result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3614"></child>
-        </children>
-    </item>
-    <item nodeId="node-3614">
-        <command xml:space="preserve">asdf asdf</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-What is your name? &gt; </result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3615"></child>
-        </children>
-    </item>
     <item nodeId="node-3615">
-        <command xml:space="preserve">asdf asdf asdf</command>
+        <command xml:space="preserve">Dipshit</command>
         <result xml:space="preserve">I didn't understand that sentence.
 
 What is your name? &gt; </result>
@@ -29825,7 +29788,7 @@ What is your name? &gt; </result>
         </children>
     </item>
     <item nodeId="node-3616">
-        <command xml:space="preserve">asdf asdf asdf asdf asdf</command>
+        <command xml:space="preserve">Dipshit Hafflelnsauce</command>
         <result xml:space="preserve">I didn't understand that sentence.
 
 What is your name? &gt; </result>
@@ -29834,6 +29797,44 @@ What is your name? &gt; </result>
         </children>
     </item>
     <item nodeId="node-3617">
+        <command xml:space="preserve">asdf asdf asdf asdf asd fa dsfas dfas dfa sdf asdf</command>
+        <result xml:space="preserve">
+
+Who are you, a member of the British royal family? No one has that many names. Let's try this again.
+
+What is your name? &gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3618"></child>
+        </children>
+    </item>
+    <item nodeId="node-3618">
+        <command xml:space="preserve">asdf asdf</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+What is your name? &gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3619"></child>
+        </children>
+    </item>
+    <item nodeId="node-3619">
+        <command xml:space="preserve">asdf asdf asdf</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+What is your name? &gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3620"></child>
+        </children>
+    </item>
+    <item nodeId="node-3620">
+        <command xml:space="preserve">asdf asdf asdf asdf asdf</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+What is your name? &gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3621"></child>
+        </children>
+    </item>
+    <item nodeId="node-3621">
         <command xml:space="preserve">asdf asdf asdf asfd asfd asdf</command>
         <result xml:space="preserve">
 
@@ -29842,7 +29843,7 @@ Who are you, a member of the British royal family? No one has that many names. L
 What is your name? &gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3618">
+    <item nodeId="node-3622">
         <command xml:space="preserve">Dick Pusher</command>
         <result xml:space="preserve">Dick Pusher!? Har har har! Musta been one-a them vat babies huh?
 
@@ -29858,7 +29859,7 @@ You can go east through the airlock (closed) from here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3619">
+    <item nodeId="node-3623">
         <command xml:space="preserve">Cole</command>
         <result xml:space="preserve">Cole!? Har har har! Musta been one-a them vat babies huh?
 
@@ -29873,19 +29874,19 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3620"></child>
+        <children><child nodeId="node-3624"></child>
         </children>
     </item>
-    <item nodeId="node-3620">
+    <item nodeId="node-3624">
         <command xml:space="preserve">open the airlock</command>
         <result xml:space="preserve">You open the airlock.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3621"></child>
+        <children><child nodeId="node-3625"></child>
         </children>
     </item>
-    <item nodeId="node-3621">
+    <item nodeId="node-3625">
         <command xml:space="preserve">east</command>
         <result xml:space="preserve">As you enter the Veranda Walkway you see a floating dolphin surveillance pod.
 Sweet it seems like your DiscoWig shielded you from detection. 
@@ -29901,10 +29902,10 @@ You can go north, northeast, northwest, southeast, west through the airlock to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3622"></child>
+        <children><child nodeId="node-3626"></child>
         </children>
     </item>
-    <item nodeId="node-3622">
+    <item nodeId="node-3626">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Upper Southside Hallway
@@ -29916,10 +29917,10 @@ You can go north, northeast, northwest to the Veranda Walkway, south, southeast,
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3623"></child>
+        <children><child nodeId="node-3627"></child>
         </children>
     </item>
-    <item nodeId="node-3623">
+    <item nodeId="node-3627">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Round1
@@ -29945,10 +29946,10 @@ In which movie did the main character die from super disturbing eye bulging deco
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3624"></child>
+        <children><child nodeId="node-3628"></child>
         </children>
     </item>
-    <item nodeId="node-3624">
+    <item nodeId="node-3628">
         <command xml:space="preserve">mars movie</command>
         <result xml:space="preserve">Incorrect. Next question.
 
@@ -29956,10 +29957,10 @@ This movie has a sail boat smash into the end of a fake world. Everyone watching
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3625"></child>
+        <children><child nodeId="node-3629"></child>
         </children>
     </item>
-    <item nodeId="node-3625">
+    <item nodeId="node-3629">
         <command xml:space="preserve">Dark City</command>
         <result xml:space="preserve">Incorrect. Next question.
 
@@ -29967,10 +29968,10 @@ In which film did someone get offered a choice between two pills and then didn't
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3626"></child>
+        <children><child nodeId="node-3630"></child>
         </children>
     </item>
-    <item nodeId="node-3626">
+    <item nodeId="node-3630">
         <command xml:space="preserve">The Matrix</command>
         <result xml:space="preserve">Well done.  Next question.
 
@@ -29978,10 +29979,10 @@ This film has annoying gothy villians but a super cool reveal that everyone was 
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3627"></child>
+        <children><child nodeId="node-3631"></child>
         </children>
     </item>
-    <item nodeId="node-3627">
+    <item nodeId="node-3631">
         <command xml:space="preserve">Dune</command>
         <result xml:space="preserve">That was Round One, now onto Round Two!
 
@@ -29996,10 +29997,10 @@ This Apple II game features a game play element where the player is given a thre
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3628"></child>
+        <children><child nodeId="node-3632"></child>
         </children>
     </item>
-    <item nodeId="node-3628">
+    <item nodeId="node-3632">
         <command xml:space="preserve">The Prisoner</command>
         <result xml:space="preserve">Well done.  Next question.
 
@@ -30007,10 +30008,10 @@ In what game series are you likely to be eaten by a grue if you travel into dark
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3629"></child>
+        <children><child nodeId="node-3633"></child>
         </children>
     </item>
-    <item nodeId="node-3629">
+    <item nodeId="node-3633">
         <command xml:space="preserve">Zork</command>
         <result xml:space="preserve">Well done.  Next question.
 
@@ -30018,10 +30019,10 @@ Colossal Cave Adventure featured a "magic word" that caused teleportation and ha
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3630"></child>
+        <children><child nodeId="node-3634"></child>
         </children>
     </item>
-    <item nodeId="node-3630">
+    <item nodeId="node-3634">
         <command xml:space="preserve">xyzzy</command>
         <result xml:space="preserve">Well done.  Next question.
 
@@ -30029,10 +30030,10 @@ Around 1975, a programmer and amateur caver wrote the first text adventure game 
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3631"></child>
+        <children><child nodeId="node-3635"></child>
         </children>
     </item>
-    <item nodeId="node-3631">
+    <item nodeId="node-3635">
         <command xml:space="preserve">ADVENT</command>
         <result xml:space="preserve">That was Round Two, now onto Round Three where things get a bit more difficult!
 
@@ -30047,10 +30048,10 @@ What is the name of the anime about a VRMMORPG where the players have to play un
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3632"></child>
+        <children><child nodeId="node-3636"></child>
         </children>
     </item>
-    <item nodeId="node-3632">
+    <item nodeId="node-3636">
         <command xml:space="preserve">Sword Art Online</command>
         <result xml:space="preserve">Well done.  Next question.
 
@@ -30058,10 +30059,10 @@ This character started out as a real-life-human-reporter but after someone tried
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3633"></child>
+        <children><child nodeId="node-3637"></child>
         </children>
     </item>
-    <item nodeId="node-3633">
+    <item nodeId="node-3637">
         <command xml:space="preserve">Max Headroom</command>
         <result xml:space="preserve">Well done.  Next question.
 
@@ -30069,10 +30070,10 @@ This 80"s movie about Virtual Reality was such garbage that it basically halted 
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3634"></child>
+        <children><child nodeId="node-3638"></child>
         </children>
     </item>
-    <item nodeId="node-3634">
+    <item nodeId="node-3638">
         <command xml:space="preserve">The Lawnmower Man</command>
         <result xml:space="preserve">Well done.  Next question.
 
@@ -30080,10 +30081,10 @@ Who is the actor who played the program Crom in Tron - you might also know him a
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3635"></child>
+        <children><child nodeId="node-3639"></child>
         </children>
     </item>
-    <item nodeId="node-3635">
+    <item nodeId="node-3639">
         <command xml:space="preserve">Peter Jurasik</command>
         <result xml:space="preserve">That was Round Three, now onto Round Four!
 
@@ -30102,10 +30103,10 @@ Who wrote a series of stories about children travelling between parallel worlds 
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3636"></child>
+        <children><child nodeId="node-3640"></child>
         </children>
     </item>
-    <item nodeId="node-3636">
+    <item nodeId="node-3640">
         <command xml:space="preserve">Philip Pullman</command>
         <result xml:space="preserve">Well done.  Next question.
 
@@ -30113,10 +30114,10 @@ Who wrote The Coming of the Quantam Cats, which includes a parallel universe pri
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3637"></child>
+        <children><child nodeId="node-3641"></child>
         </children>
     </item>
-    <item nodeId="node-3637">
+    <item nodeId="node-3641">
         <command xml:space="preserve">Frederik Pohl</command>
         <result xml:space="preserve">Well done.  Next question.
 
@@ -30124,10 +30125,10 @@ What is the name of the author who wrote about Sir Luther of Arkwright - a hero 
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3638"></child>
+        <children><child nodeId="node-3642"></child>
         </children>
     </item>
-    <item nodeId="node-3638">
+    <item nodeId="node-3642">
         <command xml:space="preserve">Bryan Talbot</command>
         <result xml:space="preserve">Incorrect. Next question.
 
@@ -30135,10 +30136,10 @@ What movie about parallel universes involves a good version of Jet Li trying to 
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3639"></child>
+        <children><child nodeId="node-3643"></child>
         </children>
     </item>
-    <item nodeId="node-3639">
+    <item nodeId="node-3643">
         <command xml:space="preserve">The One</command>
         <result xml:space="preserve">Well done. That was the end of Round Four.
 
@@ -30153,10 +30154,10 @@ I didn't understand that sentence.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3640"></child>
+        <children><child nodeId="node-3644"></child>
         </children>
     </item>
-    <item nodeId="node-3640">
+    <item nodeId="node-3644">
         <command xml:space="preserve">inv</command>
         <result xml:space="preserve">You're carrying a quizinator1, a message receiver, a coin, and a dagger. You're wearing DiscoWig.
 
@@ -30164,35 +30165,35 @@ I didn't understand that sentence.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3641"></child>
+        <children><child nodeId="node-3645"></child>
         </children>
     </item>
-    <item nodeId="node-3641">
+    <item nodeId="node-3645">
         <command xml:space="preserve">look quizinator I</command>
         <result xml:space="preserve">I only understood you as far as wanting to look the quizinator1.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3642"></child>
+        <children><child nodeId="node-3646"></child>
         </children>
     </item>
-    <item nodeId="node-3642">
+    <item nodeId="node-3646">
         <command xml:space="preserve">quizinator</command>
         <result xml:space="preserve">I didn't understand that sentence.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3643"></child>
+        <children><child nodeId="node-3647"></child>
         </children>
     </item>
-    <item nodeId="node-3643">
+    <item nodeId="node-3647">
         <command xml:space="preserve">look quizinator</command>
         <result xml:space="preserve">You got this for good quizinating!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3644">
+    <item nodeId="node-3648">
         <command xml:space="preserve">Borovik Shevarra</command>
         <result xml:space="preserve">Borovik Shevarra!? Aaaah, that's a good one.
 
@@ -30203,50 +30204,12 @@ You can see an airlock, a black ninja outfit, a bar (on which are a Glowing Sphe
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3645"></child>
-        </children>
-    </item>
-    <item nodeId="node-3645">
-        <command xml:space="preserve">look AFrame</command>
-        <result xml:space="preserve">Aframe is looking pretty sharp there wearing a pin-striped suit with his usual aplomb.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3646"></child>
-        </children>
-    </item>
-    <item nodeId="node-3646">
-        <command xml:space="preserve">AFrame, take off suit</command>
-        <result xml:space="preserve">He says "sure, anything for a laugh!"
-AFrame takes off the pin-striped suit.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3647"></child>
-        </children>
-    </item>
-    <item nodeId="node-3647">
-        <command xml:space="preserve">AFrame, drop suit</command>
-        <result xml:space="preserve">He says "sure, anything for a laugh!"
-AFrame puts down the pin-striped suit.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3648"></child>
-        </children>
-    </item>
-    <item nodeId="node-3648">
-        <command xml:space="preserve">pick suit</command>
-        <result xml:space="preserve">I didn't understand that sentence.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3649"></child>
         </children>
     </item>
     <item nodeId="node-3649">
-        <command xml:space="preserve">pick up suit</command>
-        <result xml:space="preserve">Taken.
+        <command xml:space="preserve">look AFrame</command>
+        <result xml:space="preserve">Aframe is looking pretty sharp there wearing a pin-striped suit with his usual aplomb.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30254,8 +30217,9 @@ AFrame puts down the pin-striped suit.
         </children>
     </item>
     <item nodeId="node-3650">
-        <command xml:space="preserve">inv</command>
-        <result xml:space="preserve">You're carrying a pin-striped suit, a message receiver, a coin, and a dagger. You're wearing ElectroMisdirector.
+        <command xml:space="preserve">AFrame, take off suit</command>
+        <result xml:space="preserve">He says "sure, anything for a laugh!"
+AFrame takes off the pin-striped suit.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30263,8 +30227,9 @@ AFrame puts down the pin-striped suit.
         </children>
     </item>
     <item nodeId="node-3651">
-        <command xml:space="preserve">look security</command>
-        <result xml:space="preserve">You can't see any such thing.
+        <command xml:space="preserve">AFrame, drop suit</command>
+        <result xml:space="preserve">He says "sure, anything for a laugh!"
+AFrame puts down the pin-striped suit.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30272,8 +30237,8 @@ AFrame puts down the pin-striped suit.
         </children>
     </item>
     <item nodeId="node-3652">
-        <command xml:space="preserve">look securityBot</command>
-        <result xml:space="preserve">Looks like a standard securityBot. A floating ball of plastimetal about 3 feet in diameter with a bunch of creepy robot arms sticking out all over with cameras and sensors and whatever else all those things are. Is that a toothbrush? It's pretty unnerving to look at.
+        <command xml:space="preserve">pick suit</command>
+        <result xml:space="preserve">I didn't understand that sentence.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30281,8 +30246,8 @@ AFrame puts down the pin-striped suit.
         </children>
     </item>
     <item nodeId="node-3653">
-        <command xml:space="preserve">look electromisdirector</command>
-        <result xml:space="preserve">A small device shaped like a horseshoe worn as a hat that misdirects any light coming towards your face upward. Kinda makes it look like you have no head. Totally legal (as long as you have the licensure information correctly processed of course). (Which you don't.)
+        <command xml:space="preserve">pick up suit</command>
+        <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30290,15 +30255,51 @@ AFrame puts down the pin-striped suit.
         </children>
     </item>
     <item nodeId="node-3654">
-        <command xml:space="preserve">securityBot, take suit</command>
-        <result xml:space="preserve">The securityBot looks pissed. Maybe you outta not mess with securityBots...
-1
+        <command xml:space="preserve">inv</command>
+        <result xml:space="preserve">You're carrying a pin-striped suit, a message receiver, a coin, and a dagger. You're wearing ElectroMisdirector.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3655"></child>
         </children>
     </item>
     <item nodeId="node-3655">
+        <command xml:space="preserve">look security</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3656"></child>
+        </children>
+    </item>
+    <item nodeId="node-3656">
+        <command xml:space="preserve">look securityBot</command>
+        <result xml:space="preserve">Looks like a standard securityBot. A floating ball of plastimetal about 3 feet in diameter with a bunch of creepy robot arms sticking out all over with cameras and sensors and whatever else all those things are. Is that a toothbrush? It's pretty unnerving to look at.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3657"></child>
+        </children>
+    </item>
+    <item nodeId="node-3657">
+        <command xml:space="preserve">look electromisdirector</command>
+        <result xml:space="preserve">A small device shaped like a horseshoe worn as a hat that misdirects any light coming towards your face upward. Kinda makes it look like you have no head. Totally legal (as long as you have the licensure information correctly processed of course). (Which you don't.)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3658"></child>
+        </children>
+    </item>
+    <item nodeId="node-3658">
+        <command xml:space="preserve">securityBot, take suit</command>
+        <result xml:space="preserve">The securityBot looks pissed. Maybe you outta not mess with securityBots...
+1
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3659"></child>
+        </children>
+    </item>
+    <item nodeId="node-3659">
         <command xml:space="preserve">securityBot, take suit</command>
         <result xml:space="preserve">You pissed off the securityBot one too many times. The securityBot's large and small and micro arms unfurl like a lotus made of cobras.  It's central power unit glows briefly and precisely pulses a beam of pure energy all over your beautiful body and now you're dead
 
@@ -30313,7 +30314,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3656">
+    <item nodeId="node-3660">
         <command xml:space="preserve">Bla Di Bla</command>
         <result xml:space="preserve">Oh Bla Di Bla eh!? I've heard a you.
 
@@ -30328,10 +30329,10 @@ You can go east through the airlock (closed) from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3657"></child>
+        <children><child nodeId="node-3661"></child>
         </children>
     </item>
-    <item nodeId="node-3657">
+    <item nodeId="node-3661">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying: 
 DiscoWig
@@ -30343,7 +30344,7 @@ a dagger
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3658">
+    <item nodeId="node-3662">
         <command xml:space="preserve">Big Dummy</command>
         <result xml:space="preserve">Big Dummy!? Har har har! Musta been one-a them vat babies huh?.
 
@@ -30358,10 +30359,10 @@ You can go east through the airlock (closed) from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3659"></child>
+        <children><child nodeId="node-3663"></child>
         </children>
     </item>
-    <item nodeId="node-3659">
+    <item nodeId="node-3663">
         <command xml:space="preserve">look letter</command>
         <result xml:space="preserve">Dear Big Dummy, 
 
@@ -30370,7 +30371,7 @@ You really should meet me tonight in the Space Lounge...you're gonna be pumped! 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3660">
+    <item nodeId="node-3664">
         <command xml:space="preserve">Appleseed Dizzywitz</command>
         <result xml:space="preserve">Hi, Appleseed!
 
@@ -30388,7 +30389,7 @@ You can go east through the airlock (closed) from here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3661">
+    <item nodeId="node-3665">
         <command xml:space="preserve">Aaron The Greatest Man Who Ever Lived</command>
         <result xml:space="preserve">
 
@@ -30396,10 +30397,10 @@ Uh okay, and I'm Leeloo Minai Lekarariba-Laminai-Tchai Ekbat De Sebat. I can't h
 
 What is your name? &gt; </result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3662"></child>
+        <children><child nodeId="node-3666"></child>
         </children>
     </item>
-    <item nodeId="node-3662">
+    <item nodeId="node-3666">
         <command xml:space="preserve">Aaron The Greatest</command>
         <result xml:space="preserve">Oh, Aaron The Greatest eh!? I've heard a you.
 
@@ -30412,19 +30413,19 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3663"></child>
+        <children><child nodeId="node-3667"></child>
         </children>
     </item>
-    <item nodeId="node-3663">
+    <item nodeId="node-3667">
         <command xml:space="preserve">sit chair</command>
         <result xml:space="preserve">I didn't understand that sentence.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3664"></child>
+        <children><child nodeId="node-3668"></child>
         </children>
     </item>
-    <item nodeId="node-3664">
+    <item nodeId="node-3668">
         <command xml:space="preserve">sit on chair</command>
         <result xml:space="preserve">Oh boy this chair looks really soft and comfy! Ooooh ya you are totally gonna sit on this chair big time.
 
@@ -30434,58 +30435,14 @@ Oooh yes, this is a wonderful world. "What a luxuriously decadent and beautiful 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3665"></child>
-        </children>
-    </item>
-    <item nodeId="node-3665">
-        <command xml:space="preserve">stand up</command>
-        <result xml:space="preserve">You'd rather be asleep. Whatever other thing you would do besides being in this chair is a bad idea and not really that good of an option compared to being in this insanely comfy chair.
-
-Oooh yes, this is a wonderful world. "What a luxuriously decadent and beautiful reality to be in" you think as you nestle further within the folds of the chair. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3666"></child>
-        </children>
-    </item>
-    <item nodeId="node-3666">
-        <command xml:space="preserve">stand up</command>
-        <result xml:space="preserve">You'd rather be asleep. Whatever other thing you would do besides being in this chair is a bad idea and not really that good of an option compared to being in this insanely comfy chair.
-
-Oooh yes, this is a wonderful world. "What a luxuriously decadent and beautiful reality to be in" you think as you nestle further within the folds of the chair. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3667"></child>
-        </children>
-    </item>
-    <item nodeId="node-3667">
-        <command xml:space="preserve">stand up</command>
-        <result xml:space="preserve">You'd rather be asleep. Whatever other thing you would do besides being in this chair is a bad idea and not really that good of an option compared to being in this insanely comfy chair.
-
-"What was I trying to do?" you think for a sec before you realize how comfy the chair you are in is. It's kind of incredible, you feel like you've accomplished enough in life. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3668"></child>
-        </children>
-    </item>
-    <item nodeId="node-3668">
-        <command xml:space="preserve">get off chair</command>
-        <result xml:space="preserve">You just can't get up, you are way too comfortable! Maybe if you just stayed here in this comfy looking chair forever you would be better off than whatever else you were going to do. Does it really matter?
-
-"I remember another life once, I think my name was Aaron or Aaron The Greatest or smthg", you think. Whateeeevs...this chair though...you look around the room entranced by the activity around you. Good thing you're not expending that much energy. 
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3669"></child>
         </children>
     </item>
     <item nodeId="node-3669">
-        <command xml:space="preserve">get off chair</command>
-        <result xml:space="preserve">You try to heave yourself up, but the soft lusciousness of the comfy looking chair envelopes you and pulls you back into its comfy folds. Oooooo...so comfy...so sooooooofffffft...
+        <command xml:space="preserve">stand up</command>
+        <result xml:space="preserve">You'd rather be asleep. Whatever other thing you would do besides being in this chair is a bad idea and not really that good of an option compared to being in this insanely comfy chair.
 
-"I remember another life once, I think my name was Aaron or Aaron The Greatest or smthg", you think. Whateeeevs...this chair though...you look around the room entranced by the activity around you. Good thing you're not expending that much energy. 
+Oooh yes, this is a wonderful world. "What a luxuriously decadent and beautiful reality to be in" you think as you nestle further within the folds of the chair. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30493,8 +30450,10 @@ Oooh yes, this is a wonderful world. "What a luxuriously decadent and beautiful 
         </children>
     </item>
     <item nodeId="node-3670">
-        <command xml:space="preserve">get off chair</command>
-        <result xml:space="preserve">Whew! You just barely escaped that comfy looking chair, it's so comfy you could get stuck in it forever!
+        <command xml:space="preserve">stand up</command>
+        <result xml:space="preserve">You'd rather be asleep. Whatever other thing you would do besides being in this chair is a bad idea and not really that good of an option compared to being in this insanely comfy chair.
+
+Oooh yes, this is a wonderful world. "What a luxuriously decadent and beautiful reality to be in" you think as you nestle further within the folds of the chair. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30502,8 +30461,10 @@ Oooh yes, this is a wonderful world. "What a luxuriously decadent and beautiful 
         </children>
     </item>
     <item nodeId="node-3671">
-        <command xml:space="preserve">securityBot, say hello</command>
-        <result xml:space="preserve">You say hello to the securityBot.
+        <command xml:space="preserve">stand up</command>
+        <result xml:space="preserve">You'd rather be asleep. Whatever other thing you would do besides being in this chair is a bad idea and not really that good of an option compared to being in this insanely comfy chair.
+
+"What was I trying to do?" you think for a sec before you realize how comfy the chair you are in is. It's kind of incredible, you feel like you've accomplished enough in life. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30511,8 +30472,10 @@ Oooh yes, this is a wonderful world. "What a luxuriously decadent and beautiful 
         </children>
     </item>
     <item nodeId="node-3672">
-        <command xml:space="preserve">securityBot, give me your lunch money</command>
-        <result xml:space="preserve">There is no reply.
+        <command xml:space="preserve">get off chair</command>
+        <result xml:space="preserve">You just can't get up, you are way too comfortable! Maybe if you just stayed here in this comfy looking chair forever you would be better off than whatever else you were going to do. Does it really matter?
+
+"I remember another life once, I think my name was Aaron or Aaron The Greatest or smthg", you think. Whateeeevs...this chair though...you look around the room entranced by the activity around you. Good thing you're not expending that much energy. 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30520,13 +30483,51 @@ Oooh yes, this is a wonderful world. "What a luxuriously decadent and beautiful 
         </children>
     </item>
     <item nodeId="node-3673">
+        <command xml:space="preserve">get off chair</command>
+        <result xml:space="preserve">You try to heave yourself up, but the soft lusciousness of the comfy looking chair envelopes you and pulls you back into its comfy folds. Oooooo...so comfy...so sooooooofffffft...
+
+"I remember another life once, I think my name was Aaron or Aaron The Greatest or smthg", you think. Whateeeevs...this chair though...you look around the room entranced by the activity around you. Good thing you're not expending that much energy. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3674"></child>
+        </children>
+    </item>
+    <item nodeId="node-3674">
+        <command xml:space="preserve">get off chair</command>
+        <result xml:space="preserve">Whew! You just barely escaped that comfy looking chair, it's so comfy you could get stuck in it forever!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3675"></child>
+        </children>
+    </item>
+    <item nodeId="node-3675">
+        <command xml:space="preserve">securityBot, say hello</command>
+        <result xml:space="preserve">You say hello to the securityBot.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3676"></child>
+        </children>
+    </item>
+    <item nodeId="node-3676">
+        <command xml:space="preserve">securityBot, give me your lunch money</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3677"></child>
+        </children>
+    </item>
+    <item nodeId="node-3677">
         <command xml:space="preserve">look securityBot</command>
         <result xml:space="preserve">Looks like a standard securityBot. A floating ball of plastimetal about 3 feet in diameter with a bunch of creepy robot arms sticking out all over with cameras and sensors and whatever else all those things are. Is that a toothbrush? It's pretty unnerving to look at.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3674">
+    <item nodeId="node-3678">
         <command xml:space="preserve">Aaron McAaronson</command>
         <result xml:space="preserve">Aaron McAaronson!? Aaaah, that's a good one.
 
@@ -30539,10 +30540,10 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3675"></child>
+        <children><child nodeId="node-3679"></child>
         </children>
     </item>
-    <item nodeId="node-3675">
+    <item nodeId="node-3679">
         <command xml:space="preserve">sit in chair</command>
         <result xml:space="preserve">Oh boy this chair looks really soft and comfy! Ooooh ya you are totally gonna sit on this chair big time.
 
@@ -30552,10 +30553,10 @@ Sooooo comfy. So sooooo comfy. Mmmmm...
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3676"></child>
+        <children><child nodeId="node-3680"></child>
         </children>
     </item>
-    <item nodeId="node-3676">
+    <item nodeId="node-3680">
         <command xml:space="preserve">stand up</command>
         <result xml:space="preserve">You'd rather be asleep. Whatever other thing you would do besides being in this chair is a bad idea and not really that good of an option compared to being in this insanely comfy chair.
 
@@ -30563,10 +30564,10 @@ Sooooo comfy. So sooooo comfy. Mmmmm...
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3677"></child>
+        <children><child nodeId="node-3681"></child>
         </children>
     </item>
-    <item nodeId="node-3677">
+    <item nodeId="node-3681">
         <command xml:space="preserve">stand up</command>
         <result xml:space="preserve">You'd rather be asleep. Whatever other thing you would do besides being in this chair is a bad idea and not really that good of an option compared to being in this insanely comfy chair.
 
@@ -30575,7 +30576,7 @@ Sooooo comfy. So sooooo comfy. Mmmmm...
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3678">
+    <item nodeId="node-3682">
         <command xml:space="preserve">Aaron</command>
         <result xml:space="preserve">Aaron? Interesting, nice.
 
@@ -30586,53 +30587,14 @@ You can see an airlock, a black ninja outfit, a bar (on which are a Glowing Sphe
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3688"></child>
-            <child nodeId="node-3687"></child>
-            <child nodeId="node-3679"></child>
-        </children>
-    </item>
-    <item nodeId="node-3679">
-        <command xml:space="preserve">look securityBot</command>
-        <result xml:space="preserve">Looks like a standard securityBot.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3680"></child>
-        </children>
-    </item>
-    <item nodeId="node-3680">
-        <command xml:space="preserve">look AFrame</command>
-        <result xml:space="preserve">Aframe is looking pretty sharp there wearing a pin-striped suit with his usual aplomb.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3681"></child>
-        </children>
-    </item>
-    <item nodeId="node-3681">
-        <command xml:space="preserve">AFrame, take off suit</command>
-        <result xml:space="preserve">He says "sure, anything for a laugh!"
-AFrame takes off the pin-striped suit.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3682"></child>
-        </children>
-    </item>
-    <item nodeId="node-3682">
-        <command xml:space="preserve">AFrame, give me suit</command>
-        <result xml:space="preserve">He says "sure, anything for a laugh!"
-AFrame is unable to do that.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3683"></child>
+        <children><child nodeId="node-3692"></child>
+            <child nodeId="node-3691"></child>
+            <child nodeId="node-3683"></child>
         </children>
     </item>
     <item nodeId="node-3683">
-        <command xml:space="preserve">AFrame, drop suit</command>
-        <result xml:space="preserve">He says "sure, anything for a laugh!"
-AFrame puts down the pin-striped suit.
+        <command xml:space="preserve">look securityBot</command>
+        <result xml:space="preserve">Looks like a standard securityBot.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30640,8 +30602,8 @@ AFrame puts down the pin-striped suit.
         </children>
     </item>
     <item nodeId="node-3684">
-        <command xml:space="preserve">pick up suit</command>
-        <result xml:space="preserve">Taken.
+        <command xml:space="preserve">look AFrame</command>
+        <result xml:space="preserve">Aframe is looking pretty sharp there wearing a pin-striped suit with his usual aplomb.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30649,15 +30611,54 @@ AFrame puts down the pin-striped suit.
         </children>
     </item>
     <item nodeId="node-3685">
-        <command xml:space="preserve">securityBot, take suit</command>
-        <result xml:space="preserve">The securityBot looks pissed. Maybe you outta not mess with securityBots...
-1
+        <command xml:space="preserve">AFrame, take off suit</command>
+        <result xml:space="preserve">He says "sure, anything for a laugh!"
+AFrame takes off the pin-striped suit.
+
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3686"></child>
         </children>
     </item>
     <item nodeId="node-3686">
+        <command xml:space="preserve">AFrame, give me suit</command>
+        <result xml:space="preserve">He says "sure, anything for a laugh!"
+AFrame is unable to do that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3687"></child>
+        </children>
+    </item>
+    <item nodeId="node-3687">
+        <command xml:space="preserve">AFrame, drop suit</command>
+        <result xml:space="preserve">He says "sure, anything for a laugh!"
+AFrame puts down the pin-striped suit.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3688"></child>
+        </children>
+    </item>
+    <item nodeId="node-3688">
+        <command xml:space="preserve">pick up suit</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3689"></child>
+        </children>
+    </item>
+    <item nodeId="node-3689">
+        <command xml:space="preserve">securityBot, take suit</command>
+        <result xml:space="preserve">The securityBot looks pissed. Maybe you outta not mess with securityBots...
+1
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3690"></child>
+        </children>
+    </item>
+    <item nodeId="node-3690">
         <command xml:space="preserve">securityBot, take suit</command>
         <result xml:space="preserve">you pissed off the securityBot one too many times, it precisely pulses a beam of pure energy all over your beautiful body and now you're dead
 
@@ -30672,14 +30673,14 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 &gt; </result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3687">
+    <item nodeId="node-3691">
         <command xml:space="preserve">look airlock</command>
         <result xml:space="preserve">The airlock has a small window through which you can see a vast open space - is that a pool? Sweet!. It looks like the door only opens with a security key.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3688">
+    <item nodeId="node-3692">
         <command xml:space="preserve">i</command>
         <result xml:space="preserve">You are carrying: 
 a message receiver
@@ -30690,10 +30691,10 @@ a dagger
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3689"></child>
+        <children><child nodeId="node-3693"></child>
         </children>
     </item>
-    <item nodeId="node-3689">
+    <item nodeId="node-3693">
         <command xml:space="preserve">look message receiver</command>
         <result xml:space="preserve">Dear Aaron, 
 
@@ -30701,17 +30702,17 @@ You really should meet me tonight in the Space Lounge...you're gonna be pumped! 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3690"></child>
+        <children><child nodeId="node-3694"></child>
         </children>
     </item>
-    <item nodeId="node-3690">
+    <item nodeId="node-3694">
         <command xml:space="preserve">look device</command>
         <result xml:space="preserve">The device from The Table of Stealth Devices is kind of unremarkable, not really exciting like some cool crazy gun would be or something.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3691">
+    <item nodeId="node-3695">
         <command xml:space="preserve">Aaaaaaaron</command>
         <result xml:space="preserve">Hi, Aaaaaaaron!
 
@@ -30731,7 +30732,7 @@ You can go east through the airlock (closed) from here.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3692">
+    <item nodeId="node-3696">
         <command xml:space="preserve">ASDF</command>
         <result xml:space="preserve">ASDF? Interesting, nice.
 
@@ -30746,10 +30747,10 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3693"></child>
+        <children><child nodeId="node-3697"></child>
         </children>
     </item>
-    <item nodeId="node-3693">
+    <item nodeId="node-3697">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">(first opening the airlock)
 As you enter the Veranda Walkway you see a floating dolphin surveillance pod.
@@ -30766,10 +30767,10 @@ You can go north, northeast, northwest, southeast, west through the airlock to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3694"></child>
+        <children><child nodeId="node-3698"></child>
         </children>
     </item>
-    <item nodeId="node-3694">
+    <item nodeId="node-3698">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Upper Southside Hallway
@@ -30781,10 +30782,10 @@ You can go north, northeast, northwest to the Veranda Walkway, south, southeast,
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3695"></child>
+        <children><child nodeId="node-3699"></child>
         </children>
     </item>
-    <item nodeId="node-3695">
+    <item nodeId="node-3699">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Round1
@@ -30809,7 +30810,7 @@ This movie has a sail boat smash into the end of a fake world. Everyone watching
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3696">
+    <item nodeId="node-3700">
         <command xml:space="preserve">AFrame the Exploder</command>
         <result xml:space="preserve">Oh AFrame the Exploder eh!? I've heard a you.
 
@@ -30820,37 +30821,37 @@ You can see an airlock, a black ninja outfit, a bar (on which are a Glowing Sphe
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3697"></child>
+        <children><child nodeId="node-3701"></child>
         </children>
     </item>
-    <item nodeId="node-3697">
+    <item nodeId="node-3701">
         <command xml:space="preserve">look bench</command>
         <result xml:space="preserve">Cool smooth bench.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3698"></child>
+        <children><child nodeId="node-3702"></child>
         </children>
     </item>
-    <item nodeId="node-3698">
+    <item nodeId="node-3702">
         <command xml:space="preserve">sit bench</command>
         <result xml:space="preserve">I didn't understand that sentence.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3699"></child>
+        <children><child nodeId="node-3703"></child>
         </children>
     </item>
-    <item nodeId="node-3699">
+    <item nodeId="node-3703">
         <command xml:space="preserve">sit on bench</command>
         <result xml:space="preserve">You get onto the bench.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3700"></child>
+        <children><child nodeId="node-3704"></child>
         </children>
     </item>
-    <item nodeId="node-3700">
+    <item nodeId="node-3704">
         <command xml:space="preserve">look</command>
         <result xml:space="preserve">Space Lounge (on the bench)
 You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.
@@ -30859,10 +30860,10 @@ You can see an airlock, a black ninja outfit, a bar (on which are a Glowing Sphe
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3701"></child>
+        <children><child nodeId="node-3705"></child>
         </children>
     </item>
-    <item nodeId="node-3701">
+    <item nodeId="node-3705">
         <command xml:space="preserve">get off bench</command>
         <result xml:space="preserve">You get off the bench.
 
@@ -30873,10 +30874,10 @@ You can see an airlock, a black ninja outfit, a bar (on which are a Glowing Sphe
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3702"></child>
+        <children><child nodeId="node-3706"></child>
         </children>
     </item>
-    <item nodeId="node-3702">
+    <item nodeId="node-3706">
         <command xml:space="preserve">look ninja</command>
         <result xml:space="preserve">(the black ninja outfit)
 This is a ninja outfit, it's black and has a hood that covers your face. It has a nice pocket in it to store cool ninja gear. It has these sweet built in booties that muffle your footsteps as if you were a total ninja, which you totally are if you are wearing this outfit. You could sneak around a place with shadows without being detected if you were wearing this thing. You'd be so ninja.
@@ -30885,28 +30886,28 @@ The black ninja outfit's pocket contains a throwing star and a smoke bomb.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3703"></child>
+        <children><child nodeId="node-3707"></child>
         </children>
     </item>
-    <item nodeId="node-3703">
+    <item nodeId="node-3707">
         <command xml:space="preserve">take ninja</command>
         <result xml:space="preserve">(the black ninja outfit)
 Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3704"></child>
+        <children><child nodeId="node-3708"></child>
         </children>
     </item>
-    <item nodeId="node-3704">
+    <item nodeId="node-3708">
         <command xml:space="preserve">put on ninja outfit</command>
         <result xml:space="preserve">You are a ninja! It feels like you could blend into the shadows, or maybe you ARE the shadows, this ninja outfit makes you feel super ninja-like
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3705"></child>
+        <children><child nodeId="node-3709"></child>
         </children>
     </item>
-    <item nodeId="node-3705">
+    <item nodeId="node-3709">
         <command xml:space="preserve">look</command>
         <result xml:space="preserve">Space Lounge
 You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.
@@ -30915,50 +30916,12 @@ You can see an airlock, a bar (on which are a Glowing Sphere and a glittery box 
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3706"></child>
-        </children>
-    </item>
-    <item nodeId="node-3706">
-        <command xml:space="preserve">pick up smoke bomb</command>
-        <result xml:space="preserve">Taken.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3707"></child>
-        </children>
-    </item>
-    <item nodeId="node-3707">
-        <command xml:space="preserve">pick up ninja star</command>
-        <result xml:space="preserve">You can't see any such thing.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3708"></child>
-        </children>
-    </item>
-    <item nodeId="node-3708">
-        <command xml:space="preserve">look pocket</command>
-        <result xml:space="preserve">The black ninja outfit's pocket is kind of unremarkable, not really exciting like some cool crazy gun would be or something.
-
-In the black ninja outfit's pocket is a throwing star.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3709"></child>
-        </children>
-    </item>
-    <item nodeId="node-3709">
-        <command xml:space="preserve">inventory</command>
-        <result xml:space="preserve">You're carrying a smoke bomb, a message receiver, a coin, and a dagger. You're wearing a black ninja outfit and ElectroMisdirector.
-
-&gt;</result>
-        <commentary xml:space="preserve"></commentary>
         <children><child nodeId="node-3710"></child>
         </children>
     </item>
     <item nodeId="node-3710">
-        <command xml:space="preserve">look electromisdirector</command>
-        <result xml:space="preserve">A small device shaped like a horseshoe worn as a hat that misdirects any light coming towards your face upward. Kinda makes it look like you have no head. Totally legal (as long as you have the licensure information correctly processed of course). (Which you don't.)
+        <command xml:space="preserve">pick up smoke bomb</command>
+        <result xml:space="preserve">Taken.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30966,8 +30929,8 @@ In the black ninja outfit's pocket is a throwing star.
         </children>
     </item>
     <item nodeId="node-3711">
-        <command xml:space="preserve">points</command>
-        <result xml:space="preserve">I didn't understand that sentence.
+        <command xml:space="preserve">pick up ninja star</command>
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -30975,13 +30938,51 @@ In the black ninja outfit's pocket is a throwing star.
         </children>
     </item>
     <item nodeId="node-3712">
+        <command xml:space="preserve">look pocket</command>
+        <result xml:space="preserve">The black ninja outfit's pocket is kind of unremarkable, not really exciting like some cool crazy gun would be or something.
+
+In the black ninja outfit's pocket is a throwing star.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3713"></child>
+        </children>
+    </item>
+    <item nodeId="node-3713">
+        <command xml:space="preserve">inventory</command>
+        <result xml:space="preserve">You're carrying a smoke bomb, a message receiver, a coin, and a dagger. You're wearing a black ninja outfit and ElectroMisdirector.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3714"></child>
+        </children>
+    </item>
+    <item nodeId="node-3714">
+        <command xml:space="preserve">look electromisdirector</command>
+        <result xml:space="preserve">A small device shaped like a horseshoe worn as a hat that misdirects any light coming towards your face upward. Kinda makes it look like you have no head. Totally legal (as long as you have the licensure information correctly processed of course). (Which you don't.)
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3715"></child>
+        </children>
+    </item>
+    <item nodeId="node-3715">
+        <command xml:space="preserve">points</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3716"></child>
+        </children>
+    </item>
+    <item nodeId="node-3716">
         <command xml:space="preserve">look dagger</command>
         <result xml:space="preserve">The dagger is kind of unremarkable, not really exciting like some cool crazy gun would be or something.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3713">
+    <item nodeId="node-3717">
         <command xml:space="preserve">AF</command>
         <result xml:space="preserve">AF!? Aaaah, that's a good one.
 
@@ -30996,10 +30997,10 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3714"></child>
+        <children><child nodeId="node-3718"></child>
         </children>
     </item>
-    <item nodeId="node-3714">
+    <item nodeId="node-3718">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">(first opening the airlock)
 As you enter the Veranda Walkway you see a floating dolphin surveillance pod.
@@ -31016,10 +31017,10 @@ You can go north, northeast, northwest, southeast, west through the airlock to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3715"></child>
+        <children><child nodeId="node-3719"></child>
         </children>
     </item>
-    <item nodeId="node-3715">
+    <item nodeId="node-3719">
         <command xml:space="preserve">SE</command>
         <result xml:space="preserve">
 Upper Southside Hallway
@@ -31031,10 +31032,10 @@ You can go north, northeast, northwest to the Veranda Walkway, south, southeast,
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3716"></child>
+        <children><child nodeId="node-3720"></child>
         </children>
     </item>
-    <item nodeId="node-3716">
+    <item nodeId="node-3720">
         <command xml:space="preserve">SE</command>
         <result xml:space="preserve">
 Round1
@@ -31060,10 +31061,10 @@ In which movie did the main character die from super disturbing eye bulging deco
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3717"></child>
+        <children><child nodeId="node-3721"></child>
         </children>
     </item>
-    <item nodeId="node-3717">
+    <item nodeId="node-3721">
         <command xml:space="preserve">afds</command>
         <result xml:space="preserve">Incorrect. Next question.
 
@@ -31071,10 +31072,10 @@ This movie has a sail boat smash into the end of a fake world. Everyone watching
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3718"></child>
+        <children><child nodeId="node-3722"></child>
         </children>
     </item>
-    <item nodeId="node-3718">
+    <item nodeId="node-3722">
         <command xml:space="preserve">asdf</command>
         <result xml:space="preserve">Incorrect. Next question.
 
@@ -31082,10 +31083,10 @@ This film has annoying gothy villians but a super cool reveal that everyone was 
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3719"></child>
+        <children><child nodeId="node-3723"></child>
         </children>
     </item>
-    <item nodeId="node-3719">
+    <item nodeId="node-3723">
         <command xml:space="preserve">afds</command>
         <result xml:space="preserve">Incorrect. Next question.
 
@@ -31093,10 +31094,10 @@ In which film did someone get offered a choice between two pills and then didn't
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3720"></child>
+        <children><child nodeId="node-3724"></child>
         </children>
     </item>
-    <item nodeId="node-3720">
+    <item nodeId="node-3724">
         <command xml:space="preserve">asdf</command>
         <result xml:space="preserve">That was Round One, now onto Round Two!
 
@@ -31111,10 +31112,10 @@ What movie has the Highland Games, a Witch, and Craig Ferguson as Lord Macintosh
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3721"></child>
+        <children><child nodeId="node-3725"></child>
         </children>
     </item>
-    <item nodeId="node-3721">
+    <item nodeId="node-3725">
         <command xml:space="preserve">adsf</command>
         <result xml:space="preserve">That was Round Two, now onto Round Three!
 
@@ -31129,10 +31130,10 @@ In 1908, what Ford Model was first produced, eventually being named the Car of t
 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3722"></child>
+        <children><child nodeId="node-3726"></child>
         </children>
     </item>
-    <item nodeId="node-3722">
+    <item nodeId="node-3726">
         <command xml:space="preserve">asdf</command>
         <result xml:space="preserve">That was Round Three, now onto Round Four!
 
@@ -31152,7 +31153,7 @@ Who wrote The Coming of the Quantam Cats, which includes a parallel universe pri
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3723">
+    <item nodeId="node-3727">
         <command xml:space="preserve">A-frame</command>
         <result xml:space="preserve">A-frame!? Aaaah, that's a good one.
 
@@ -31167,10 +31168,10 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3724"></child>
+        <children><child nodeId="node-3728"></child>
         </children>
     </item>
-    <item nodeId="node-3724">
+    <item nodeId="node-3728">
         <command xml:space="preserve">e</command>
         <result xml:space="preserve">(first opening the airlock)
 As you enter the Veranda Walkway you see a floating dolphin surveillance pod.
@@ -31187,10 +31188,10 @@ You can go north, northeast, northwest, southeast, west through the airlock to t
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3725"></child>
+        <children><child nodeId="node-3729"></child>
         </children>
     </item>
-    <item nodeId="node-3725">
+    <item nodeId="node-3729">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Upper Southside Hallway
@@ -31202,10 +31203,10 @@ You can go north, northeast, northwest to the Veranda Walkway, south, southeast,
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3726"></child>
+        <children><child nodeId="node-3730"></child>
         </children>
     </item>
-    <item nodeId="node-3726">
+    <item nodeId="node-3730">
         <command xml:space="preserve">se</command>
         <result xml:space="preserve">
 Round1
@@ -31230,39 +31231,62 @@ This film has annoying gothy villians but a super cool reveal that everyone was 
 Please enter your answer &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3727">
+    <item nodeId="node-3738">
+        <command xml:space="preserve">A-Frame! McGullicutty</command>
+        <result xml:space="preserve">Oh, A-Frame! McGullicutty eh!? I've heard a you.
+
+Space Lounge
+You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.
+
+You can see an airlock, a black ninja outfit, a bar (on which are a Glowing Sphere and a glittery box (closed)), a bench, a comfy looking chair, a bartender, AFrame, and a securityBot here.
+
+You can go east through the airlock (closed) and west from here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3739"></child>
+        </children>
+    </item>
+    <item nodeId="node-3739">
+        <command xml:space="preserve">ls</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3731">
         <command xml:space="preserve"> look sphere</command>
         <result xml:space="preserve">OOOOoooo glowy-sphere thingie! Its purple soft glow makes you feel safe and secure. It looks like there's some sort of helix-key as a component to the glowy-ness but it's unclear how you would remove it.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3728"></child>
+        <children><child nodeId="node-3732"></child>
         </children>
     </item>
-    <item nodeId="node-3728">
+    <item nodeId="node-3732">
         <command xml:space="preserve">take key</command>
         <result xml:space="preserve">That seems to be a part of the Glowing Sphere.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3729"></child>
+        <children><child nodeId="node-3733"></child>
         </children>
     </item>
-    <item nodeId="node-3729">
+    <item nodeId="node-3733">
         <command xml:space="preserve">take sphere</command>
         <result xml:space="preserve">That's fixed in place.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-3730"></child>
+        <children><child nodeId="node-3734"></child>
         </children>
     </item>
-    <item nodeId="node-3730">
+    <item nodeId="node-3734">
         <command xml:space="preserve">look key</command>
         <result xml:space="preserve"></result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-3731">
+    <item nodeId="node-3735">
         <command xml:space="preserve"></command>
         <result xml:space="preserve">I beg your pardon?
 
