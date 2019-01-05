@@ -11,9 +11,9 @@ In the early 2000s, mewonkind's folly led to the breakdown of society and the re
 
 Whatevs. Feels like just another day in the MASSIVE HIVE KNOWN as CONvergence.
 
-BTW, you sure have made quite the number of enemies.
+You have more than a couple enemies.
 
-Today's magic number is 882.
+Today's magic number is 901.
 
 
 What is your name? &gt; </result>
@@ -454,7 +454,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
     </item>
     <item nodeId="node-1032">
         <command xml:space="preserve">test</command>
-        <result xml:space="preserve">test? Interesting, nice.
+        <result xml:space="preserve">test!? Har har har! Musta been one-a them vat babies huh?
 
 Space Lounge
 You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.
@@ -465,7 +465,9 @@ You can go east through the airlock (closed) and west from here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1033"></child>
+        <children><child nodeId="node-3743"></child>
+            <child nodeId="node-3747"></child>
+            <child nodeId="node-1033"></child>
         </children>
     </item>
     <item nodeId="node-1033">
@@ -573,6 +575,76 @@ In that game you scored 0 out of a possible 0, in 8 turns.
 
 Would you like to RESTART, RESTORE a saved game, QUIT, or UNDO the last command?
 &gt; </result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3747">
+        <command xml:space="preserve">say hello to aframe</command>
+        <result xml:space="preserve">"Hi, there, Aframe old fellow!" you exclaim
+
+"Well, hello there!" he grins.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3748"></child>
+        </children>
+    </item>
+    <item nodeId="node-3748">
+        <command xml:space="preserve">say bye to aframe</command>
+        <result xml:space="preserve">"Well, see you layter," you say.
+
+"Not if I see you first!" he replies.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3749"></child>
+        </children>
+    </item>
+    <item nodeId="node-3749">
+        <command xml:space="preserve">say sorry to aframe</command>
+        <result xml:space="preserve">"Hi, there, Aframe old fellow!" you exclaim
+
+"Well, hello there!" he grins.
+
+Oh, don't apologize.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3750"></child>
+        </children>
+    </item>
+    <item nodeId="node-3750">
+        <command xml:space="preserve">ask aframe about the black rod</command>
+        <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3743">
+        <command xml:space="preserve">say hello</command>
+        <result xml:space="preserve">(addressing the bartender)
+You say hello to the bartender.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3744"></child>
+        </children>
+    </item>
+    <item nodeId="node-3744">
+        <command xml:space="preserve">say hello to aframe</command>
+        <result xml:space="preserve">"Hi, there, Aframe old fellow!" you exclaim
+
+"Well, hello there!" he grins.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-3745"></child>
+        </children>
+    </item>
+    <item nodeId="node-3745">
+        <command xml:space="preserve">ask aframe about xx</command>
+        <result xml:space="preserve">When you mention xx, Aframe's eyes light up. He smiles and looks around the room for a second before stepping closer to you. "How do you know aobut xx?", he says - well it doesn't matter now - just remember yy when you get to the zz okay? DON'T FORGET ABOUT THE YY! Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.
+
+&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1042">

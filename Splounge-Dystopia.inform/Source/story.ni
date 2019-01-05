@@ -12,6 +12,7 @@ Include Locksmith by Emily Short.
 Include Basic Help Menu by Emily Short.
 Include Exit Lister by Gavin Lambert.
 Include Questions by Michael Callaghan.
+Include Epistemology by Eric Eve.
 Include Conversation Framework by Eric Eve.
 [Include Armed by David Ratliff.]
 
@@ -261,7 +262,7 @@ The player carries a message receiver. The description of the message receiver i
 The player carries a coin. 
 
 [The player is in the Garden Court.]
-The player is in MyRoom.
+The player is in the Space Lounge.
 
 [
 	Let playerstealth be a random device from the Table of Stealth Devices;
@@ -1113,3 +1114,20 @@ H3A is south of Elevator3.
 H3B is south of H3A.
 MyRoom is east of H3A.
 H3C is south of H3B.
+Cinema Rex is west of H1I.
+Theater Nippon is a room.
+Theater Nippon is west of H1K.
+
+After saying hello to AFrame:
+    say "'Hi, there, Aframe old fellow!' you exclaim
+    
+    'Well, hello there!' he grins."
+
+ After saying goodbye to AFrame:
+    say "'Well, see you layter,' you say.
+     
+    'Not if I see you first!' he replies."
+
+After asking AFrame about the black rod:
+    say "black rod secret"
+
