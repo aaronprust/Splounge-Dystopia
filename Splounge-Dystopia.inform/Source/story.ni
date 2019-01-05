@@ -27,65 +27,122 @@ This is the container interior rule:
 	if the actor is the player and the player is in an enterable thing (called current cage), carry out the describing the interior activity with the current cage.
 Describing the interior of something is an activity.
 
-[Room Descriptions. See Individual Room Section for items, people, and rules.]
-The Space Lounge is a room. The description of the Space Lounge is "You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds."
+[Room Descriptions. See each individual room section for items, people, and rules.]
 
-The Veranda Walkway is a room. "Outside the Space Lounge you look out into the larger Raditree Building to see the pool under a high ceiling. Consuite lies beyond the pool in the main courtyard. Boffers beat each other up in the fenced in section of the courtyard. There's a floating platform above the pool."
+[Floor 3]
+MyRoom is a room. "This is your place! You've got a bunch of nice junk around here, all kinds of old comics and fun figures from all the best neuroHolos. You've really moved in! You've got posters up everywhere- over the door, on the ceiling, over the windows.... A 3D printer sits in the corner.".
+H3A is a room. "Oh! This is the hallway outside your hotel room. Cool! It's pretty quiet here.".
+H3B is a room. "This is further down the hallway from your hotel room. You don't know who your neighbors are. You can hear them playing some sort of music game, but when you knock, they can't hear you, and don't answer.".
+H3C is a room. "This is at the end of the hallway from your hotel room. There's a pile of trash down here- you wonder why the hotel staff hasn't picked it up. Then again, you're not about to pick it up either.".
+Elevator3 is a room. "You're in an elevator. It's up on the same floor as your room.".
+The Floating Courtyard is a room. "This is amazing - you are up above everything and can see so much up here! There's a pool down below, and a fenced in courtyard with some kind of securityGate system surrounding it, and Consuite.".
 
-After going to the Veranda Walkway:
+[Floor 2]
+Elevator2 is a room. "You're in an elevator. It's up on the second floor.".
+
+The Space Lounge is a room. "You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.".
+The BehindtheBar is a room. "You shouldn't be here, it's behind the bar.".
+Consuite is a room. "The vast wasteland of the hungry: ConSuite. It's sticky and smells like centuries of soda and rice. The scavvers eye you with a hungry look in their eyes. Best not to stay too long.".
+Registration is a room. "Registration: Bureaucracy Station. Lines of congoers stand waiting to talk to Con employees. It looks like everyone has been here a long time. The signs above their stations read: Credits, Cash, Lost & Found, Info, Merch, Security, Volunteers, and Questions.".
+
+P2B is a room. "Partyroom2B".
+P2C is a room. "Partyroom2C".
+P2D is a room. "Partyroom2D".
+P2N is a room. "Partyroom2N".
+P2O is a room. "Partyroom2O".
+P2P is a room. "Partyroom2P"
+
+H2F is a room. "Hallway2F".
+H2G is a room. "Hallway2G".
+H2A is a room. "Hallway2A".
+H2B is a room. "Hallway2B".
+H2C is a room. "Hallway2C".
+H2D is a room. "Hallway2D".
+H2E is a room. "Hallway2E".
+H2H is a room. "Hallway2H".
+H2J is a room. "Hallway2J".
+H2L is a room. "Hallway2L".
+H2Q is a room. "Hallway2Q".
+H2P is a room. "Hallway2P".
+H2O is a room. "Hallway2O".
+H2N is a room. "Hallway2N".
+H2M is a room. "Hallway2M".
+H2K is a room. "Hallway2K".
+H2I is a room. "Hallway2I".
+
+[Floor 1]
+Elevator1 is a room. "You're in an elevator. It's up on the first floor.".
+
+Mainstage is a room. "There are a bunch of ravers in here, the lights are low and the music is bumping!".
+The Green Room is a room. "Greenroom".
+Convergence Central is a room. "There are people all over this large open room.".
+Engine Room is a room. "Engine Room".
+The Pool is a room. "Pool".
+QS is a room. "Quantum Sandbox".
+Volden is a room. "Volden".
+Cinema Rex is a room. "Cinema Rex".
+The Art Show is a room. "Art Show".
+Theater Nippon is a room. "Theater Nippon".
+F2E2 is a room. "F2E2".
+GA is a room. "GardencourtA".
+GB is a room. "GardencourtB".
+GC is a room. "GardencourtC".
+
+P1B is a room. "P1B".
+P1C is a room. "Campaign Convergence. They're electing a villian to be the President of Convergence. It's pretty corrupt. You can vote as many times as you like, bribe the poll workers, and stuff the ballot box outright.".
+P1D is a room. "P1D".
+P1N is a room. "House of Toast! It's a big shiny red room. It is a celebration of the The Maillard reaction on bread. You could have just about anything you could dream of on tooast. A sign above the bar says Choose Up to 3 Toppings.".
+P1O is a room. "P1O".
+P1P is a room. "Generic Favorite Video Game Room. OH. WOW. You LOVE this game. It has all of your favorite video game elements and characters. This room is now a tribute to your favorite game. They have the style pretty spot on, with items you recognize from the more popular levels. I bet they'd get an obscure joke you'd make about Generic Favorite Video Game!"
+
+H1G is a room. "H1G".
+H1H is a room. "H1H".
+H1L is a room. "H1L".
+H1M is a room. "H1M".
+H1F is a room. "H1F".
+H1A is a room. "H1A".
+H1B is a room. "H1B".
+H1C is a room. "H1C".
+H1D is a room. "H1D".
+H1E is a room. "H1E".
+H1J is a room. "H1J".
+H1Q is a room. "H1Q".
+H1P is a room. "H1P".
+H1O is a room. "H1O".
+H1N is a room. "H1N".
+H1K is a room. "H1K".
+H1I is a room. "H1I".
+
+[Unknown Floor]
+The Secret Room is a room. "You are in the Secret Room. DON'T TELL ANYONE YOU WERE EVER HERE! It's really dark, you can't see much.".
+The Staging Area is a room. "Staging Area".
+
+
+[The Floor Changer is a room. "Elevators, escalators, and stairwell.".]
+[The Upper Northside Hallway is a room. "A hallway filled with freaks and nerds.".]
+[The Upper Southside Hallway is a room. "This hallway is NUTS - there are signs everywhere and lights and sounds flashing. From this hallway you can get into a bunch of Party Rooms".]
+[The Veranda Walkway is a room. "Outside the Space Lounge you look out into the larger Raditree Building to see the pool under a high ceiling. Consuite lies beyond the pool in the main courtyard. Boffers beat each other up in the fenced in section of the courtyard. There's a floating platform above the pool.".]
+[After going to the Veranda Walkway:
 	say "As you enter the Veranda Walkway you see a floating dolphin surveillance pod.";
 	if the player is not wearing a stealthing, say "Uh oh, you aren't wearing any kind of stealthing, there is a good chance that surveillance pod saw you.";
 	otherwise say "Sweet, it seems like your [a list of stealthings worn by the player] shielded you from detection. [paragraph break]";
-	now the player is in the Veranda Walkway.
-
-The Secret Room is a room. The description of the secret room is "You are in the Secret Room. DON'T TELL ANYONE YOU WERE EVER HERE! It's really dark, you can't see much."
-
-The Floating Courtyard is a room. "This is amazing - you are up above everything and can see so much up here! There's a pool down below, and a fenced in courtyard with some kind of securityGate system surrounding it, and Consuite."
-
-The Upper Southside Hallway is a room. "This hallway is NUTS - there are signs everywhere and lights and sounds flashing. From this hallway you can get into a bunch of Party Rooms"
-
-The Upper Northside Hallway is a room. "A hallway filled with freaks and nerds."
-
-MyRoom is a room. "This is your place! You got a bunch of nice junk around here, all kinds of old comics and fun figures from all the best neuroHolos. A 3D printer sits in the corner."
-
-Room 233 is a room. "Room 233"
-
-The Floor Changer is a room. "Elevators, escalators, and stairwell."
-
-Lower Southside Hallway is a room. "Lower Southside Hallway (party rooms)"
-
-The Lower Floor Changer is a room. "Lower elevators, escalators and stairwell lower level"
-
-Lower Northside Hallway is a room. "Lower Northside Hallway (party rooms)"
-
-The Elevator Line is a room. "You are waiting for an elevator!"
-
-The Stairwell Floor 1 is a room. "Stairwell Floor 1"
-
-The Stairwell Floor 2 is a room. "Stairwell Floor 2"
-
-The Garden Court is a room. "Garden Court"
-
-Room 205 is a room. "Room 205"
-
-The Front Desk is a room. "The Front Desk"
-
-Crescent Kitchen is a room. "Food and Beer for sale"
-
-The Lower Tower Connector is a room. "The Lower Tower Connector - connection between the short and tall towers."
-
-The Upper Tower Connector is a room. "The Upper Tower Connector - connection between the short and tall towers."
-
-The Dealer's Room is a room. "Dealer's Room"
-
-The Staging Area is a room. 
+	now the player is in the Veranda Walkway.]
+[Room 233 is a room. "Room 233".
+Lower Southside Hallway is a room. "Lower Southside Hallway (party rooms)".
+The Lower Floor Changer is a room. "Lower elevators, escalators and stairwell lower level".
+Lower Northside Hallway is a room. "Lower Northside Hallway (party rooms)".
+The Elevator Line is a room. "You are waiting for an elevator!".
+The Stairwell Floor 1 is a room. "Stairwell Floor 1".
+The Stairwell Floor 2 is a room. "Stairwell Floor 2".
+The Garden Court is a room. "Garden Court".
+Room 205 is a room. "Room 205".
+The Front Desk is a room. "The Front Desk".
+Crescent Kitchen is a room. "Food and Beer for sale".
+The Lower Tower Connector is a room. "The Lower Tower Connector - connection between the short and tall towers.".
+The Upper Tower Connector is a room. "The Upper Tower Connector - connection between the short and tall towers.".]
 
 [Doors and Backdrops]
 The airlock is a door. The airlock is lockable and unlocked. The securityKey unlocks the airlock. The description of the airlock is "The airlock has a small window through which you can see a vast open space - is that a pool? Sweet!. It looks like the door has a lock mechanism that looks like it could be manipulated by a standard tetral-inverse double helix securityKey."
-
-The Ceiling is a backdrop. "The ceiling with lights rises over the whole crazy convention." It is in the Veranda Walkway.
-
-Consuitesuckmybigd is a backdrop. "You can make out the basic forms of the people in Consuite but it is so far away that you can't see anything well without some kind of badass miniature spy eyepiece or something." It is in the Veranda Walkway.
 
 [Objects]
 The description of a thing is usually "[The noun] is kind of an average looking [noun]."
@@ -191,9 +248,9 @@ Instead of examining the switched on securityReadout:
 
 The black rod is an object. The description of the black rod is "A three foot black rod with a rusty star on one end lies nearby."
 
-The black rod is in the Veranda Walkway.
+The black rod is in the H2K.
 
-The floating dolphin is a vehicle in Veranda Walkway. The description of the floating dolphin is "Oh crap - the floating dolphin's survellance cam is honing in on you! You better get out of here, somewhere where the floating dolphin camera can't see you." The dolphin is locked. The dolphin code unlocks the floating dolphin. The description of the dolphin code is "It is fish shaped, and vibrates - readout screen says 'Status optimal'."
+The floating dolphin is a vehicle in H2K. The description of the floating dolphin is "Oh crap - the floating dolphin's survellance cam is honing in on you! You better get out of here, somewhere where the floating dolphin camera can't see you." The dolphin is locked. The dolphin code unlocks the floating dolphin. The description of the dolphin code is "It is fish shaped, and vibrates - readout screen says 'Status optimal'."
 
 Rule for describing the interior of the floating dolphin: 
 	Say "The floating dolphin is transparent, but tints everything outside very faintly lavender." instead.
@@ -359,10 +416,7 @@ Instead of telling someone about something, try asking the noun about it. Instea
 A smoothie is a kind of thing.
 A blah is a smoothie.
 
-The BehindtheBar is a room. The description of the BehindtheBar is "You shouldn't be here, it's behind the bar."
 
-[The End is west of the Upper Southside Hallway.]
-The BehindtheBar is west of the Space Lounge.
 
 Some smoothies in BehindtheBar are defined by Table 1.2. The description of a smoothie is "[description]"
 	
@@ -411,9 +465,6 @@ Instead of going to the Floating Courtyard when the player is not in the floatin
 [When play begins:
 	change the library message tense to past tense;]
 	
-	
-[CONvergence map]
-
 Definition: a direction (called thataway) is viable if the room thataway from the location is a room. 
 
 [After looking:
@@ -424,7 +475,6 @@ Definition: a direction (called thataway) is viable if the room thataway from th
 		say "(From here, you can move to [list of viable directions].)";
 		continue the action;]
 
-The Floating Courtyard is above the Veranda Walkway.
 
 [Jerseys]
 [*]A jersey is a kind of thing. A jersey is wearable. Some jerseys in the Staging Area are defined by the Table of Honorary Jerseys. The description of a jersey is "Since [year established], the Tour de France has awarded this jersey to the [citation]."
@@ -700,8 +750,6 @@ The first section is on films involving simulated realities and questionable mem
 
 Who are you? Are you your memories? Are you what you have done? Are you what you will do? Or are you nothing at all but a wisp...or maybe 'just' a program? "
 
-The Round1 is southeast of the Upper Southside Hallway.
-
 Rule for listing exits while the player is in The Round1: do nothing instead.
 
 [Instead of listing exits in The Round1, say "nothing".]
@@ -901,106 +949,9 @@ Every turn when the location is The End (this is the end1 rule):
 [Every turn:
 	if the player is in Room 233:
 		now the player is in Round1.]
-		
-[Floor 2]
 
-Convergence Central is a room. "There are people all over this large open room."
-Mainstage is a room. "There are a bunch of ravers in here, the lights are low and the music is bumping!"
-The Green Room is a room. "Greenroom"
 
-H2F is a room. "Hallway2F"
-
-Elevator2 is a room. "Elevator 2"
-
-H2G is a room. "Hallway2G"
-
-H2A is a room. "Hallway2A"
-
-H2B is a room. "Hallway2B"
-
-H2C is a room. "Hallway2C"
-
-H2D is a room. "Hallway2D"
-
-H2E is a room. "Hallway2E"
-
-H2H is a room. "Hallway2H"
-
-P2B is a room. "Partyroom2B"
-
-P2C is a room. "Partyroom2C"
-
-P2D is a room. "Partyroom2D"
-
-H2J is a room. "Hallway2J"
-
-H2L is a room. "Hallway2L"
-
-Consuite is a room. "Consuite"
-
-H2Q is a room. "Hallway2Q"
-
-H2P is a room. "Hallway2P"
-
-H2O is a room. "Hallway2O"
-
-H2N is a room. "Hallway2N"
-
-H2M is a room. "Hallway2M"
-
-H2K is a room. "Hallway2K"
-
-H2I is a room. "Hallway2I"
-
-Registration is a room. "Registration"
-
-Elevator3 is a room. "Elevator3"
-
-Elevator1 is a room. "Elevator1"
-
-H1G is a room. "H1G"
-
-H1H is a room. "H1H"
-
-H1L is a room. "H1L"
-
-H1M is a room. "H1M"
-
-Engine Room is a room. "Engine Room".
-H1F is a room. "H1F".
-
-H1A is a room. "H1A".
-H1B is a room. "H1B".
-H1C is a room. "H1C".
-H1D is a room. "H1D".
-H1E is a room. "H1E".
-P1B is a room. "P1B".
-P1C is a room. "P1C".
-P1D is a room. "P1D".
-H1J is a room. "H1J".
-H1Q is a room. "H1Q".
-F2E2 is a room. "F2E2".
-The Pool is a room. "Pool".
-Quantam Sandbox is a room. "Quantam Sandbox".
-Volden is a room. "Volden".
-
-H1P is a room. "H1P".
-H1O is a room. "H1O".
-H1N is a room. "H1N".
-P1N is a room. "P1N".
-P1O is a room. "P1O".
-H1K is a room. "H1K".
-H1I is a room. "H1I".
-GA is a room. "GA".
-GB is a room. "GB".
-GC is a room. "GC".
-Cinema Rex is a room. "Cinema Rex".
-The Art Show is a room. "Art Show".
-
-H3A is a room. "H3A".
-H3B is a room. "H3B".
-H3C is a room. "H3C".
-
+[Map]
 Mainstage is south of Convergence Central.
 H2F is east of Convergence Central.
 Convergence Central is north of Mainstage.
@@ -1090,7 +1041,7 @@ H1J is south of H1H.
 F2E2 is east of H1H.
 H1H is north of H1J.
 H1L is south of H1J.
-The Quantam Sandbox is east of H1J.
+QS is east of H1J.
 The Pool is west of H1J.
 H1J is west of QS.
 H1L is west of Volden.
@@ -1100,7 +1051,6 @@ P1O is south of H1O.
 H1I is north of H1K.
 H1K is north of H1M.
 H1N is east of H1M.
-P1P is south of H1P.
 H1P is east of H1O.
 P1N is south of H1N.
 H1N is west of H1O.
@@ -1115,8 +1065,11 @@ H3B is south of H3A.
 MyRoom is east of H3A.
 H3C is south of H3B.
 Cinema Rex is west of H1I.
-Theater Nippon is a room.
 Theater Nippon is west of H1K.
+The Floating Courtyard is above the GA.
+
+[The End is west of the Upper Southside Hallway.]
+
 
 After saying hello to AFrame:
     say "'Hi, there, Aframe old fellow!' you exclaim
