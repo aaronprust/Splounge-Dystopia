@@ -1127,7 +1127,3 @@ After saying hello to AFrame:
     say "'Well, see you layter,' you say.
      
     'Not if I see you first!' he replies."
-
-After asking AFrame about the black rod:
-    say "black rod secret"
-
