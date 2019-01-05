@@ -14,6 +14,7 @@ Include Exit Lister by Gavin Lambert.
 Include Questions by Michael Callaghan.
 Include Epistemology by Eric Eve.
 Include Conversation Framework by Eric Eve.
+Include Spellcasting by Jim Aikin.
 [Include Armed by David Ratliff.]
 
 Use scoring.
@@ -38,7 +39,8 @@ Elevator3 is a room. "You're in an elevator. It's up on the same floor as your r
 The Floating Courtyard is a room. "This is amazing - you are up above everything and can see so much up here! There's a pool down below, and a fenced in courtyard with some kind of securityGate system surrounding it, and Consuite.".
 
 [Floor 2]
-Elevator2 is a room. "You're in an elevator. It's up on the second floor.".
+
+Elevator2 is a room. "[one of]Elevator description 1-1[or]Elevator description 1-2[or]Elevator description 1-3[at random] [one of]description 2-1[or]description 2-2[or]description 2-3[at random] and furthermore  [one of]description 3-1[or]description 3-2[or]description 3-3[or]description 3-4[at random]".
 
 The Space Lounge is a room. "You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.".
 The BehindtheBar is a room. "You shouldn't be here, it's behind the bar.".
@@ -405,17 +407,10 @@ Carry out casting yzxxy:
 
 The bartender is a person in the Space Lounge. The bartender is female. The description of the bartender is "The bartender is [one of]serving some smoothies[or]cleaning the blender[or]making a neon yellow smoothie[or]making a glow in the dark smoothie[or]standing there looking you over[or]talking with a friend[or]dancing[at random]."
 
-Instead of asking the bartender about something: 
-    say "'[one of]Sorry,[or]I'm afraid[or]Hm,[at random] [one of]I don't know much about that[or]you've got me there[or]I haven't the faintest[at random],' The bartender [one of]drawls[or]replies[or]comments[or]exclaims[at random]"; 
-    say "[one of][or] huskily[or] throatily[or] silkily[or] in a deep manly voice[as decreasingly likely outcomes]."
-
 Instead of telling someone about something, try asking the noun about it. Instead of answering the noun that something, try asking the noun about it.
-
-
 
 A smoothie is a kind of thing.
 A blah is a smoothie.
-
 
 
 Some smoothies in BehindtheBar are defined by Table 1.2. The description of a smoothie is "[description]"
@@ -1071,12 +1066,49 @@ The Floating Courtyard is above the GA.
 [The End is west of the Upper Southside Hallway.]
 
 
-After saying hello to AFrame:
-    say "'Hi, there, Aframe old fellow!' you exclaim
+Aframe is a man.
+A bot is a kind of person.
+The securityBot is a bot.
+The bartender is a woman.
+
+After saying hello to a person:
+    say "'Hi, there, [noun] old fellow!' you exclaim
+    
+    'Well, hello there!' they grin."
+
+After saying hello to a man:
+    say "'Hi, there, [noun] old fellow!' you exclaim
     
     'Well, hello there!' he grins."
 
- After saying goodbye to AFrame:
+After saying hello to a woman:
+    say "'Hi, there, [noun] old fellow!' you exclaim
+    
+    'Well, hello there!' she grins."
+
+After saying hello to a bot:
+    say "'Hi, there, [noun] old fellow!' you exclaim
+    
+    'Well, h3ll0 th3r3!' it modulates."
+
+
+ After saying goodbye to a woman:
     say "'Well, see you layter,' you say.
      
     'Not if I see you first!' he replies."
+
+After asking the AFrame about "love":
+	say "Ooo-la-la-you wanna be my Lady Gaga?!.";
+	now Aframe is a co-conspirator.
+
+After asking the securityBot about "love", say "The bot's camera focuses in on your face then it's speakers say, 'Please stop asking me about ridiculous human emotional content.' 
+
+Most bots hate talking about love."
+
+After asking the bartender about "smoothies", say "You got the coin I got yer smoothie, except you don't get to choose 'cause our smoothie bot is broken so it just makes random ones. The current smoothies you might get are [smoothie from Table 1.2]".
+
+
+[Instead of asking the bartender about something: 
+    say "'[one of]Sorry,[or]I'm afraid[or]Hm,[at random] [one of]I don't know much about that[or]you've got me there[or]I haven't the faintest[at random],' The bartender [one of]drawls[or]replies[or]comments[or]exclaims[at random]"; 
+    say "[one of][or] huskily[or] throatily[or] silkily[or] in a deep manly voice[as decreasingly likely outcomes]."
+]

@@ -1556,69 +1556,111 @@
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>222</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/jim aikin/spellcasting.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 2 of Spellcasting by Jim Aikin begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>223</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/jim aikin/spellcasting.i7x</string>
+        <key>Line</key><integer>5</integer>
+        <key>Title</key><string>Section 1 - Definition, Some Spells, and Table</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>224</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/jim aikin/spellcasting.i7x</string>
+        <key>Line</key><integer>15</integer>
+        <key>Title</key><string>Section 2 - Trapping Non-Allowed References to Spell Objects &amp; Spell-Casting Verb</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>225</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/jim aikin/spellcasting.i7x</string>
+        <key>Line</key><integer>58</integer>
+        <key>Title</key><string>Section 3 - New Actions</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>226</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/jim aikin/spellcasting.i7x</string>
+        <key>Line</key><integer>119</integer>
+        <key>Title</key><string>Section 4 - Supplying Information</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>227</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/jim aikin/spellcasting.i7x</string>
+        <key>Line</key><integer>138</integer>
+        <key>Title</key><string>Section 5 - Error Messages</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>228</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 3 of Menus by Emily Short begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>223</key><dict>
+    <key>229</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
         <key>Line</key><integer>9</integer>
         <key>Title</key><string>Section 1</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>224</key><dict>
+    <key>230</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
         <key>Line</key><integer>208</integer>
         <key>Title</key><string>Section 2 (for Glulx only)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>225</key><dict>
+    <key>231</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 7/140425 of Basic Screen Effects by Emily Short begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>226</key><dict>
+    <key>232</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>9</integer>
         <key>Title</key><string>Section - Clearing the screen</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>227</key><dict>
+    <key>233</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>22</integer>
         <key>Title</key><string>Section - Waiting for key-presses, quitting suddenly</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>228</key><dict>
+    <key>234</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>85</integer>
         <key>Title</key><string>Section - Showing the current quotation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>229</key><dict>
+    <key>235</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>92</integer>
         <key>Title</key><string>Section - Centering text on-screen</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>230</key><dict>
+    <key>236</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>146</integer>
         <key>Title</key><string>Section - Customizing the status line</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>231</key><dict>
+    <key>237</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>212</integer>
         <key>Title</key><string>Section - Color effects (for Z-machine only)</string>
