@@ -40,7 +40,7 @@ The Floating Courtyard is a room. "This is amazing - you are up above everything
 
 [Floor 2]
 
-Elevator2 is a room. "[one of]Elevator description 1-1[or]Elevator description 1-2[or]Elevator description 1-3[at random] [one of]description 2-1[or]description 2-2[or]description 2-3[at random] and furthermore  [one of]description 3-1[or]description 3-2[or]description 3-3[or]description 3-4[at random]".
+Elevator2 is a room. "[one of]The elevator is pretty grimy looking; there is condensation forming on the lights.[or]The walls of the elevator are covered in flyers for upcoming parties and holoPrograms coming out.[or]The elevator shudders a bit as it begins moving.[at random] [one of]There is a arnoldConanBarbarian[or]There is a bored-looking geneSpliceMinotaur[or]There are a few young Badgers[at random] [one of]and a Fire Mario in the elevator with you.[or]and a Cyborg in the elevator with you.[or]and a raverGargoyle in the elevator with you.[or]and a solarPunk in the elevator with you.[at random]".
 
 The Space Lounge is a room. "You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.".
 The BehindtheBar is a room. "You shouldn't be here, it's behind the bar.".
@@ -145,6 +145,10 @@ The Upper Tower Connector is a room. "The Upper Tower Connector - connection bet
 
 [Doors and Backdrops]
 The airlock is a door. The airlock is lockable and unlocked. The securityKey unlocks the airlock. The description of the airlock is "The airlock has a small window through which you can see a vast open space - is that a pool? Sweet!. It looks like the door has a lock mechanism that looks like it could be manipulated by a standard tetral-inverse double helix securityKey."
+
+The greenRoomDoor is a door. The greenRoomDoor is lockable and locked. The greenRoomKey unlocks the greenRoomDoor. The description of the greenRoomDoor is "This door is green and has a big thumbpad thing.".
+
+The behindTheBarDoor is a door. The behindTheBarDoor is lockable and locked. The behindTheBarKey unlocks the behindTheBarDoor. The description of the behindTheBarDoor is "Looks like an access door for Splounge workers".
 
 [Objects]
 The description of a thing is usually "[The noun] is kind of an average looking [noun]."
@@ -321,7 +325,7 @@ The player carries a message receiver. The description of the message receiver i
 The player carries a coin. 
 
 [The player is in the Garden Court.]
-The player is in the Space Lounge.
+The player is in MyRoom.
 
 [
 	Let playerstealth be a random device from the Table of Stealth Devices;
@@ -406,6 +410,8 @@ Carry out casting yzxxy:
 	move the player to The Space Lounge.
 
 The bartender is a person in the Space Lounge. The bartender is female. The description of the bartender is "The bartender is [one of]serving some smoothies[or]cleaning the blender[or]making a neon yellow smoothie[or]making a glow in the dark smoothie[or]standing there looking you over[or]talking with a friend[or]dancing[at random]."
+
+The bartender carries the behindTheBarKey.
 
 Instead of telling someone about something, try asking the noun about it. Instead of answering the noun that something, try asking the noun about it.
 
@@ -504,6 +510,8 @@ Instead of taking inventory:
 
 
 AFrame is a person in the Space Lounge. AFrame is male. The description of AFrame is "Aframe is looking pretty sharp there wearing [a list of unconcealed things worn by Aframe] with his usual aplomb." 
+
+A cosplayer is a person in Mainstage. The cosplayer is female. The cosplayer carries the greenRoomKey. The description of the cosplayer is "She's got all kinds of neon makeup or tattoos or projections - her face is like mask. It's very mesmerizing.".
 
 Aframe is neutralla.
 
@@ -950,8 +958,6 @@ Every turn when the location is The End (this is the end1 rule):
 Mainstage is south of Convergence Central.
 H2F is east of Convergence Central.
 Convergence Central is north of Mainstage.
-The Green Room is east of Mainstage.
-Mainstage is west of the Green Room.
 Elevator2 is north of H2F.
 H2G is east of H2F.
 Convergence Central is west of H2F.
@@ -1002,6 +1008,7 @@ H2K is north of H2M.
 H1M is down from H2M.
 H2I is north of H2K.
 The airlock is east of the Space Lounge and west of H2K. 
+The greenRoomDoor is east of Mainstage and west of the Green Room.
 Registration is west of H2I.
 
 The Engine Room is west of H1F.
@@ -1063,6 +1070,9 @@ Cinema Rex is west of H1I.
 Theater Nippon is west of H1K.
 The Floating Courtyard is above the GA.
 
+BehindTheBar is west of the behindTheBarDoor.
+behindTheBarDoor is west of the Space Lounge.
+
 [The End is west of the Upper Southside Hallway.]
 
 
@@ -1072,7 +1082,7 @@ The securityBot is a bot.
 The bartender is a woman.
 
 After saying hello to a person:
-    say "'Hi, there, [noun] old fellow!' you exclaim
+    say "'Hi, there, [noun]!' you exclaim
     
     'Well, hello there!' they grin."
 
@@ -1082,12 +1092,12 @@ After saying hello to a man:
     'Well, hello there!' he grins."
 
 After saying hello to a woman:
-    say "'Hi, there, [noun] old fellow!' you exclaim
+    say "'Hi, there, [noun] fine lady!' you exclaim
     
     'Well, hello there!' she grins."
 
 After saying hello to a bot:
-    say "'Hi, there, [noun] old fellow!' you exclaim
+    say "'Hi, there, [noun]!' you exclaim
     
     'Well, h3ll0 th3r3!' it modulates."
 
