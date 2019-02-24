@@ -1598,69 +1598,279 @@
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>228</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 7 of Hybrid Choices by AW Freyr begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>229</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>5</integer>
+        <key>Title</key><string>Part - CYOA Mode</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>230</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>82</integer>
+        <key>Title</key><string>Part - Pages and Choices</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>231</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>102</integer>
+        <key>Title</key><string>Part - Showing Choices</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>232</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>196</integer>
+        <key>Title</key><string>section - Suppressing Choices Depending on Conditions</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>233</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>200</integer>
+        <key>Title</key><string>section - Toggling Conditions After Selecting a Choice</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>234</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>205</integer>
+        <key>Title</key><string>section - Displaying Complex Output</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>235</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>209</integer>
+        <key>Title</key><string>Chapter - Understanding Choices</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>236</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>237</integer>
+        <key>Title</key><string>Chapter - Selecting Activity</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>237</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>258</integer>
+        <key>Title</key><string>section a - selecting a page</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>238</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>265</integer>
+        <key>Title</key><string>section b - selecting not a page</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>239</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>277</integer>
+        <key>Title</key><string>Chapter - Refresh Pages</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>240</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>290</integer>
+        <key>Title</key><string>Chapter - Page Options</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>241</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>292</integer>
+        <key>Title</key><string>section a - One-Off Pages</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>242</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>300</integer>
+        <key>Title</key><string>section b - Dead Ends</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>243</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>304</integer>
+        <key>Title</key><string>section c - Item-Dependent</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>244</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>322</integer>
+        <key>Title</key><string>section d - Page-Dependent</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>245</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>377</integer>
+        <key>Title</key><string>section e - Activating/Deactivating</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>3</integer>
+    </dict>
+    <key>246</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>419</integer>
+        <key>Title</key><string>Chapter - Item Invoking</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>247</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>432</integer>
+        <key>Title</key><string>Chapter - CYOA Teleport</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>248</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>437</integer>
+        <key>Title</key><string>Part - Cyoa Debug Mode</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>249</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>446</integer>
+        <key>Title</key><string>section a - Toggling Debug Mode (not for release)</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>250</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>460</integer>
+        <key>Title</key><string>Part - Parser</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>251</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>476</integer>
+        <key>Title</key><string>Chapter - Accept Testing Commands (not for release)</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>252</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>485</integer>
+        <key>Title</key><string>Chapter - Accept System Commands</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>253</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>490</integer>
+        <key>Title</key><string>Chapter - Accept Examining Commands</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>254</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>497</integer>
+        <key>Title</key><string>Chapter - Accept Item Commands</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>2</integer>
+    </dict>
+    <key>255</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>502</integer>
+        <key>Title</key><string>Part - Time</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>256</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>510</integer>
+        <key>Title</key><string>Part - Choice Window (for use with Flexible Windows by Jon Ingold)</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>257</key><dict>
+        <key>Filename</key><string>/Users/aaronprust/Library/Inform/Extensions/aw freyr/hybrid choices.i7x</string>
+        <key>Line</key><integer>531</integer>
+        <key>Title</key><string>Part - Windowless CYOA (for use without Flexible Windows by Jon Ingold)</string>
+        <key>Level</key><integer>3</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>258</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 3 of Menus by Emily Short begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>229</key><dict>
+    <key>259</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
         <key>Line</key><integer>9</integer>
         <key>Title</key><string>Section 1</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>230</key><dict>
+    <key>260</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/menus.i7x</string>
         <key>Line</key><integer>208</integer>
         <key>Title</key><string>Section 2 (for Glulx only)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>231</key><dict>
+    <key>261</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 7/140425 of Basic Screen Effects by Emily Short begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>232</key><dict>
+    <key>262</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>9</integer>
         <key>Title</key><string>Section - Clearing the screen</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>233</key><dict>
+    <key>263</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>22</integer>
         <key>Title</key><string>Section - Waiting for key-presses, quitting suddenly</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>234</key><dict>
+    <key>264</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>85</integer>
         <key>Title</key><string>Section - Showing the current quotation</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>235</key><dict>
+    <key>265</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>92</integer>
         <key>Title</key><string>Section - Centering text on-screen</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>236</key><dict>
+    <key>266</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>146</integer>
         <key>Title</key><string>Section - Customizing the status line</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>237</key><dict>
+    <key>267</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Internal/Extensions/emily short/basic screen effects.i7x</string>
         <key>Line</key><integer>212</integer>
         <key>Title</key><string>Section - Color effects (for Z-machine only)</string>

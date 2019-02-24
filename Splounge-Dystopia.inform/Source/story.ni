@@ -15,6 +15,7 @@ Include Questions by Michael Callaghan.
 Include Epistemology by Eric Eve.
 Include Conversation Framework by Eric Eve.
 Include Spellcasting by Jim Aikin.
+Include Hybrid Choices by AW Freyr.
 [Include Armed by David Ratliff.]
 
 Use scoring.
@@ -43,9 +44,53 @@ The Floating Courtyard is a room. "This is amazing - you are up above everything
 Elevator2 is a room. "[one of]The elevator is pretty grimy looking; there is condensation forming on the lights.[or]The walls of the elevator are covered in flyers for upcoming parties and holoPrograms coming out.[or]The elevator shudders a bit as it begins moving.[at random] [one of]There is a arnoldConanBarbarian[or]There is a bored-looking geneSpliceMinotaur[or]There are a few young Badgers[at random] [one of]and a Fire Mario in the elevator with you.[or]and a Cyborg in the elevator with you.[or]and a raverGargoyle in the elevator with you.[or]and a solarPunk in the elevator with you.[at random]".
 
 The Space Lounge is a room. "You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.".
-The BehindtheBar is a room. "You shouldn't be here, it's behind the bar.".
+The BehindtheBar is a room. "There are two chairs facing a curved glass surface. You look through the window and see a galaxy of stars spread out, vast, in front of you. You can also see spreading out to the sides the outside surface of the hotel. It appears part of it had been broken off at one point. It also appears the Space Lounge is a shuttlecraft.".
 Consuite is a room. "The vast wasteland of the hungry: ConSuite. It's sticky and smells like centuries of soda and rice. The scavvers eye you with a hungry look in their eyes. Best not to stay too long.".
 Registration is a room. "Registration: Bureaucracy Station. Lines of congoers stand waiting to talk to Con employees. It looks like everyone has been here a long time. The signs above their stations read: Credits, Cash, Lost & Found, Info, Merch, Security, Volunteers, and Questions.".
+
+The spaceLoungeEngine is a switched off device in the BehindTheBar. It is fixed in place.
+The detachmentInterface is a switched off device in the BehindTheBar. It is fixed in place.
+
+The description of the detachmentInterface is "A physical switch labeled 'Detachment Interface'."
+
+The description of the spaceLoungeEngine is "A physical switch with a two dimensional visual interface."
+
+readyToLaunch is a truth state that varies. readyToLaunch is false.
+
+Instead of examining the switched on spaceLoungeEngine:
+	say "The screen reads: [fixed letter spacing]"; 
+	say line break; 
+	if the spaceLoungeDoor is locked:
+		say "Airlock locked, ready for detachment sequence.";
+		now the readyToLaunch is true;
+	if the spaceLoungeDoor is open:
+		say "Airlock open, not ready for detachment sequence.";
+	say variable letter spacing; 
+	say paragraph break.
+
+
+Instead of switching on the detachmentInterface:
+	if the readyToLaunch is false:
+		say "You try to move this lever but it seems locked in place. [readyToLaunch]";
+	if the readyToLaunch is true:
+		say "You feel something large sliding on the other end of the Space Lounge. It suddenly feels like the whole Space Lounge bobbed a bit. The shuttecraft seems free of the hotel.";
+	switch to cyoa at AdventuresInSpacePage.
+	
+AdventuresInSpacePage is a page. 
+"Even though you didn't know until today that the entire CONvergence hotel was in space, and you also did not know that the Space Lounge was a shuttlecraft, detaching the Space Lounge has left you feeling light and happy. You're exhilarated by the options you have spread out before you. You could coast the spaceways, searching of signs of new civilizations and unknown lifeforms. Or, you could look for another hotel, find a new home (base). Or you could redock, and find out how your discoveries could affect the lives of everyone you've ever met."
+
+SearchForNewLife is a page. 
+"You search for new life. It's pretty awesome. You almost die like almost every other week. Maybe you get to play a baseball game in peace once and awhile. Most of the time even your holosuites try to kill you."
+The cdesc is "Explore.". It is for AdventuresInSpacePage.
+
+SearchForNewHotel is a page. 
+"You search for a new hotel. All you want is a new place to call home. It takes almost eight years, but eventually after a lifetime of struggle and noble stoic-ness you finally find a new hotel. Something...majestic...something new. It's name - The Hyatt."
+The cdesc is "New Home.". It is for AdventuresInSpacePage.
+
+Stay is a page. 
+"You search for new life. It's pretty awesome. You almost die like almost every other week. Maybe you get to play a baseball game in peace once and awhile. Most of the time even your holosuites try to kill you."
+The cdesc is "Stay.". It is for AdventuresInSpacePage.
+
 
 P2B is a room. "Partyroom2B".
 P2C is a room. "Partyroom2C".
@@ -144,7 +189,7 @@ The Lower Tower Connector is a room. "The Lower Tower Connector - connection bet
 The Upper Tower Connector is a room. "The Upper Tower Connector - connection between the short and tall towers.".]
 
 [Doors and Backdrops]
-The airlock is a door. The airlock is lockable and unlocked. The securityKey unlocks the airlock. The description of the airlock is "The airlock has a small window through which you can see a vast open space - is that a pool? Sweet!. It looks like the door has a lock mechanism that looks like it could be manipulated by a standard tetral-inverse double helix securityKey."
+The spaceLoungeDoor is a door. The spaceLoungeDoor is lockable and unlocked. The securityKey unlocks the spaceLoungeDoor. The description of the spaceLoungeDoor is "The spaceLoungeDoor has a small window. It looks like the door has a lock mechanism that looks like it could be manipulated by a standard tetral-inverse double helix securityKey."
 
 The greenRoomDoor is a door. The greenRoomDoor is lockable and locked. The greenRoomKey unlocks the greenRoomDoor. The description of the greenRoomDoor is "This door is green and has a big thumbpad thing.".
 
@@ -322,7 +367,8 @@ Rule for constructing the status line when collecting names: do nothing.
 
 The player carries a message receiver. The description of the message receiver is "Dear [player's forename], [paragraph break]You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame".
 
-The player carries a coin. 
+The player carries a coin.
+The player carries a specialImportantStoryLineElement. 
 
 [The player is in the Garden Court.]
 The player is in MyRoom.
@@ -372,7 +418,7 @@ Carry out shooting something with something:
 
 Instead of shooting the bartender with the gun: say "The weird ray somehow seems to bend around the bartender and disperses into a cloud of neon-swirled rainbow shards. She looks at you with a strange smirky side-eye. She must be wearing some kind of personal ray-deflector device. 'splick', you admire-think."
 
-Instead of shooting the airlock with the gun: say "The crazy gun's ray just bounces off the airlock, it doesn't seem to be able to affect it."
+Instead of shooting the spaceLoungeDoor with the gun: say "The crazy gun's ray just bounces off the spaceLoungeDoor, it doesn't seem to be able to affect it."
 
 [Instead of shooting: say "Uhm are you nuts? You don't even know what this gun thing does and besides if you draw too much attention to yourself you'll be swarmed by security in seconds. It's probably out of batteries anyway. In a pinch you might be able to use it to scare the crap out of someone though, this gun is so crazy looking anyone would do anything rather than get shot by something like it."
 ]
@@ -442,6 +488,10 @@ thisas	"thisas another smoothie eh"
 
 A description of a smoothie usually is "This thing is like taking a bath in frozen unicorn snot. Amazing."
 
+Instead of giving the specialImportantStoryLineElement to the bartender:
+	move the specialImportantStoryLineElement to the bartender;
+	move the behindTheBarKey to the player;
+	say "She looks pretty serious all the sudden. 'Wow, now that it's time to leave I'm not ready. What's it going to be like out there? What if we can't resupply our sensory stimulants or dowlod our fundoms? Anyway, whatever happens is going to be supesciting.'"
 
 Instead of giving the coin to the bartender: 
 	move the coin to the bartender; 
@@ -645,7 +695,7 @@ Test me with "hit gladiator with mace / kill gladiator / drop mace / attack glad
 [END attack with weapon]
 ]
 
-An person can be active or defeated.
+An person can be undefeated or defeated.
 
 The description of the black ninja outfit is "This is a ninja outfit, it's black and has a hood that covers your face. It has a nice pocket in it to store cool ninja gear. It has these sweet built in booties that muffle your footsteps as if you were a total ninja, which you totally are if you are wearing this outfit. You could sneak around a place with shadows without being detected if you were wearing this thing. You'd be so ninja."
 
@@ -1007,7 +1057,7 @@ H2M is west of H2N.
 H2K is north of H2M.
 H1M is down from H2M.
 H2I is north of H2K.
-The airlock is east of the Space Lounge and west of H2K. 
+The spaceLoungeDoor is east of the Space Lounge and west of H2K. 
 The greenRoomDoor is east of Mainstage and west of the Green Room.
 Registration is west of H2I.
 
