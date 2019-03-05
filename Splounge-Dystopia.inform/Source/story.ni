@@ -32,16 +32,16 @@ Describing the interior of something is an activity.
 [Room Descriptions. See each individual room section for items, people, and rules.]
 
 [Floor 3]
-MyRoom is a room. "This is your place! You've got a bunch of nice junk around here, all kinds of old comics and fun figures from all the best neuroHolos. You've really moved in! You've got posters up everywhere- over the door, on the ceiling, over the windows.... A 3D printer sits in the corner.".
-H3A is a room. "Oh! This is the hallway outside your hotel room. Cool! It's pretty quiet here.".
+MyRoom is a room. "This is your place! You've got a bunch of nice junk around here, all kinds of old comics and fun figures from all the best neuroHolos. You've really moved in! You've got posters up everywhere- over the door, on the ceiling, over the windows....".
+H3A is a room. "Oh! This is the hallway outside your hotel room. Cool! It's pretty quiet. The elevator is just North of here.".
 H3B is a room. "This is further down the hallway from your hotel room. You don't know who your neighbors are. You can hear them playing some sort of music game, but when you knock, they can't hear you, and don't answer.".
 H3C is a room. "This is at the end of the hallway from your hotel room. There's a pile of trash down here- you wonder why the hotel staff hasn't picked it up. Then again, you're not about to pick it up either.".
-Elevator3 is a room. "You're in an elevator. It's up on the same floor as your room.".
+Elevator3 is a room. "You step into the elevator. It's up on the same floor as your room. The elevator attendant is a skeleton, so I guess you're going to have to pick the floor yourself.".
 The Floating Courtyard is a room. "This is amazing - you are up above everything and can see so much up here! There's a pool down below, and a fenced in courtyard with some kind of securityGate system surrounding it, and Consuite.".
 
 [Floor 2]
 
-Elevator2 is a room. "[one of]The elevator is pretty grimy looking; there is condensation forming on the lights.[or]The walls of the elevator are covered in flyers for upcoming parties and holoPrograms coming out.[or]The elevator shudders a bit as it begins moving.[at random] [one of]There is a arnoldConanBarbarian[or]There is a bored-looking geneSpliceMinotaur[or]There are a few young Badgers[at random] [one of]and a Fire Mario in the elevator with you.[or]and a Cyborg in the elevator with you.[or]and a raverGargoyle in the elevator with you.[or]and a solarPunk in the elevator with you.[at random]".
+Elevator2 is a room. "[one of]The elevator is pretty grimy looking; there is condensation forming on the lights.[or]The walls of the elevator are covered in flyers for upcoming parties and holoPrograms coming out.[or]The elevator shudders a bit as it begins moving.[at random] [one of]There is an arnoldConanBarbarian[or]There is a bored-looking geneSpliceMinotaur[or]There are a few youngBadgers[at random] [one of]and a fireMario in the elevator with you.[or]and a turboRetroCyborg in the elevator with you.[or]and a raverGargoyle in the elevator with you.[or]and a solarPunk in the elevator with you.[at random] They get out without talking to you and disappear into the crowd.".
 
 The Space Lounge is a room. "You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.".
 The BehindtheBar is a room. "There are two chairs facing a curved glass surface. You look through the window and see a galaxy of stars spread out, vast, in front of you. You can also see spreading out to the sides the outside surface of the hotel. It appears part of it had been broken off at one point. It also appears the Space Lounge is a shuttlecraft.".
@@ -99,8 +99,11 @@ P2N is a room. "Partyroom2N".
 P2O is a room. "Partyroom2O".
 P2P is a room. "Partyroom2P"
 
-H2F is a room. "Hallway2F".
-H2G is a room. "Hallway2G".
+H2F is a room. "This is the hallway outside the 2nd Floor Elevator. There are lots of posters here, too. There's one here that says 'House of Toast'. There's a great big piano here, and [one of]it's playing itself. Sounds like Radiohead. A woman in a big blue dress walks past and slaps a fly that has landed on her cheek. Odd.[or]a bunch of intoxicated teenangers are singing lyrics from a musical about the invention of the Turing Test very loudly. [or]a small cybernetic animal is running up and down the keys, while a congoer dressed as a cat is attempting to hit it with a large foam hammer. [or]a woman dressed entirely in ghostly sequins is playing the most haunting melody you have ever heard in your life. It is chilling. You wonder if you have long to live.[at random]
+	You can hear the din of the maddening crowd to the East of here.".
+H2G is a room. "The crowd goes one direction around the hallway here, counter-clockwise around the garden court. It's strictly enforced, you know! If you go North from here, a badger might catch you and lock you up! Scary. There are also some stairs going down. There doesn't seem to be any rules about whether you go up or down these stairs.
+	
+	What's a clock, by the way? And how do you count its wisdom? This is some heavy stuff. You should think about it as you keep walking.".
 H2A is a room. "Hallway2A".
 H2B is a room. "Hallway2B".
 H2C is a room. "Hallway2C".
@@ -109,13 +112,15 @@ H2E is a room. "Hallway2E".
 H2H is a room. "Hallway2H".
 H2J is a room. "Hallway2J".
 H2L is a room. "Hallway2L".
-H2Q is a room. "Hallway2Q".
-H2P is a room. "Hallway2P".
-H2O is a room. "Hallway2O".
-H2N is a room. "Hallway2N".
-H2M is a room. "Hallway2M".
-H2K is a room. "Hallway2K".
-H2I is a room. "Hallway2I".
+H2Q is a room. "The hallway here opens out back into the more open part of the ring. There's a chair for a Badger here, and probably thousands of attendees, slowly making the neverending ring around the party rooms. Go North to continue in the Cirrrrrrrrcle of CON, or tempt the Badgers by going West.".
+H2P is a room. "You are in a maze of hallways, all of them alike. Oooh, except this one has more posters than anywhere else in the CON. You could almost get lost in all of them. Someone has put googly eyes over the eyes of humans, aliens, robots, and other creatures depicted on the posters. It's both delightful and a bit ookie. There's a a room party just North of here, or you could go East and continue out of the watchful eyes of the posters. If you went West, you feel like you'd definitely spark their ire. They might report you to the Badgers, who are less creepy, but more threatening.".
+H2O is a room. "You are washed along with a crew of motley cosplayers dressed as.... video game characters? Maybe??? Or maybe they're dressed as fast food items and European monuments with moustaches? Anyhow. They're talking animatedly in a language you don't know. You could pop into the room party just north of here, continue following the flow eastward down the hallway, or turn West against the flow like some kind of traffic flow criminal. Smooth.".
+H2N is a room. "You are now in the second floor south hallway that passes the partyrooms. This hallway is packed full of confused and drunken CONvergence attendees, wearing the wildest garb you've ever seen. You've joined the flow of the goers, and now you definitely shouldn't turn back westwards- you could pop into the party room to the North or allow yourself to be carried on eastward by the flow of fake fur and giant peace-tied anime weapons.".
+H2M is a room. "The hallway here splits East towards the second floor party rooms, Down the stairs to the first floor, and North back towards Splounge. You could risk going North as long as you don't think a Badger will catch you. A large mirror on the wall there shows you that you are looking goooooooood!".
+H2K is a room. "From here outside the Splounge, you can see down into the entire garden court. Seven boffers boffing, six mermaids swimming, FIIIIIIIIIVE GOLDEN THIIIIINNNNNGGGGS. This will never get old. Continue South past a big mirror that shows you what you are wearing to enter the second floor hallway that goes behind the party rooms. You remind yourself that you need to go south around the garden court to stay in the Badgers' good graces.".
+H2I is a room. "The crowd continues widdershins around the second floor above garden court. Where are they going? Where have they been? What madness have they seen from up here?
+
+	If you want to go with the flow of congoers, you should keep walking South. If you go against the flow, you may be caught by a Badger. You could always duck into Registration, off to the West.".
 
 [Floor 1]
 Elevator1 is a room. "You're in an elevator. It's up on the first floor.".
@@ -318,60 +323,6 @@ There is a book in the Secret Room. The description of the book is "'yzxxy' is t
 The dolphin code is in the Secret Room.
 
 [The Player]
-The player is a person.
-
-A person has a number called maximum hit points. A person has a number called current hit points.
-
-A person has a number called maximum ninja points. A person has a number called current ninja points.
-
-A person is either awake or asleep. A person is normally awake.
-
-The maximum hit points of the player is 100.
-The current hit points of the player is 10.
-
-The maximum ninja points of the player is 100.
-The current ninja points of the player is 0.
-
-The player's forename is a text that varies. The player's full name is a text that varies.
-
-When play begins:
-	now the command prompt is "What is your name? > ".
-
-To decide whether collecting names:
-	if the command prompt is "What is your name? > ",
-		yes;
-		no.
-
-Table of Random Statements
-statement
-"[player's full name]? Interesting, nice."
-"[player's full name]!? Aaaah, that's a good one."
-"Oh, [player's full name] eh!? I've heard a you."
-"[player's full name]!? Har har har! Musta been one-a them vat babies huh?"
-
-After reading a command when collecting names:
-	if the number of words in the player's command is greater than 5:
-		say "[paragraph break]Uh okay, and I'm Leeloo Minai Lekarariba-Laminai-Tchai Ekbat De Sebat. I can't handle these persons with ridic long names. Let's try this again - five names or less please.";
-		reject the player's command;
-	now the player's full name is the player's command;
-	now the player's forename is word number 1 in the player's command;
-	now the command prompt is ">";
-	choose a random row in the Table of Random Statements;
-	say "[statement entry][paragraph break]";
-	move the player to the location;
-	reject the player's command.
-
-Instead of looking when collecting names: do nothing.
-Rule for printing the banner text when collecting names: do nothing.
-Rule for constructing the status line when collecting names: do nothing.
-
-The player carries a message receiver. The description of the message receiver is "Dear [player's forename], [paragraph break]You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame".
-
-The player carries a coin.
-The player carries a specialImportantStoryLineElement. 
-
-[The player is in the Garden Court.]
-The player is in MyRoom.
 
 [
 	Let playerstealth be a random device from the Table of Stealth Devices;
@@ -455,15 +406,12 @@ Report casting yzxxy:
 Carry out casting yzxxy: 
 	move the player to The Space Lounge.
 
-The bartender is a person in the Space Lounge. The bartender is female. The description of the bartender is "The bartender is [one of]serving some smoothies[or]cleaning the blender[or]making a neon yellow smoothie[or]making a glow in the dark smoothie[or]standing there looking you over[or]talking with a friend[or]dancing[at random]."
-
-The bartender carries the behindTheBarKey.
-
+[Items]
 Instead of telling someone about something, try asking the noun about it. Instead of answering the noun that something, try asking the noun about it.
 
+[Smoothie]
 A smoothie is a kind of thing.
 A blah is a smoothie.
-
 
 Some smoothies in BehindtheBar are defined by Table 1.2. The description of a smoothie is "[description]"
 	
@@ -477,55 +425,22 @@ Instead of drinking a RocketBlaster:
     say "You quaff the RocketBlaster. It goes down beautifully.";
 	now the player is in Round1.
 
-
 Table 1.2
 smoothie	description
-shinyUnicorn	"This thing is like taking a bath in frozen unicorn snot. Amazing."
-rocketBlaster	"Neon Yellow. Glows and bubbles. It's gonna shoot you into SPACE!"
-anther	"anther kinda smoothie here eh"
-thisas	"thisas another smoothie eh"
-
+shinyUnicorn	"It's your smoothie! This thing is like taking a bath in frozen unicorn snot. Amazing."
+rocketBlaster	"It's your smoothie! Neon Yellow. Glows and bubbles. It's gonna shoot you into SPACE!"
+anther	"It's your smoothie! anther kinda smoothie here eh"
+thisas	"It's your smoothie! thisas another smoothie eh"
 
 A description of a smoothie usually is "This thing is like taking a bath in frozen unicorn snot. Amazing."
 
-Instead of giving the specialImportantStoryLineElement to the bartender:
-	move the specialImportantStoryLineElement to the bartender;
-	move the behindTheBarKey to the player;
-	say "She looks pretty serious all the sudden. 'Wow, now that it's time to leave I'm not ready. What's it going to be like out there? What if we can't resupply our sensory stimulants or dowlod our fundoms? Anyway, whatever happens is going to be supesciting.'"
-
-Instead of giving the coin to the bartender: 
-	move the coin to the bartender; 
-	let the target smoothie be a random smoothie in the BehindtheBar;
-	now the player has the target smoothie;
-	say "She accepts with a smile and slides you a smoothie. It looks friggin delicious."
-
-Instead of asking Aframe about "xx":
-	say "When you mention xx, Aframe's eyes light up. He smiles and looks around the room for a second before stepping closer to you. 'How do you know aobut xx?', he says - well it doesn't matter now - just remember yy when you get to the zz okay? DON'T FORGET ABOUT THE YY! Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
-	now Aframe is a co-conspirator;
-	now Aframe is in the Secret Room.
-
-
-
-
-
-
-Instead of going to the Floating Courtyard when the player is not in the floating dolphin: 
-    say "You don't have wings or pyscho-kinetic levitation abilities or a hoverboard or anything to go up with."
-
-
-[When play begins:
-	change the library message tense to past tense;]
-	
-Definition: a direction (called thataway) is viable if the room thataway from the location is a room. 
-
-[After looking:
-	let count of exits be the number of viable directions;
-	if the count of exits is 0:
-		say "(There are no routes out of this room.)";
-	else:
-		say "(From here, you can move to [list of viable directions].)";
-		continue the action;]
-
+[weapons]
+A weapon is a kind of thing. 
+A weapon has a number called the maximum damage. 
+The maximum damage of a weapon is usually 4.
+A nanocarbon blade is a kind of weapon. The maximum damage of the nanocarbon blade is 6. 
+A dagger is a kind of weapon. The maximum damage of a dagger is 10.
+A pin is a kind of weapon. The maximum damage of a pin is 1.
 
 [Jerseys]
 [*]A jersey is a kind of thing. A jersey is wearable. Some jerseys in the Staging Area are defined by the Table of Honorary Jerseys. The description of a jersey is "Since [year established], the Tour de France has awarded this jersey to the [citation]."
@@ -539,32 +454,68 @@ a white jersey	1975	"best cyclist aged 25 or less"
 
 A blue jersey is in the Staging Area. The description of the blue jersey is "blue jersaaaay"
 
-[If the player is wearing a ninja costume
-	now the player is a ninja.]
+[The Player]
+The player carries a dagger. 
+The player carries a coin.
+The player carries a specialImportantStoryLineElement. 
+The player is a person.
+The maximum hit points of the player is 100.
+The current hit points of the player is 10.
+The maximum ninja points of the player is 100.
+The current ninja points of the player is 0.
+The player's forename is a text that varies. The player's full name is a text that varies.
+When play begins:
+	now the command prompt is "What is your name? > ".
+To decide whether collecting names:
+	if the command prompt is "What is your name? > ",
+		yes;
+		no.
 
-Table of Status
-left	central	right
-"HP:[current hit points of player]"	"NP:[current ninja points of player]"	"[location]"
+Table of Random Statements
+statement
+"[player's full name]? Interesting, nice."
+"[player's full name]!? Aaaah, that's a good one."
+"Oh, [player's full name] eh!? I've heard a you."
+"[player's full name]!? Har har har! Musta been one-a them vat babies huh?"
 
-Rule for constructing the status line:
-fill status bar with Table of Status;
-rule succeeds.		
+After reading a command when collecting names:
+	if the number of words in the player's command is greater than 5:
+		say "[paragraph break]Uh okay, and I'm Leeloo Minai Lekarariba-Laminai-Tchai Ekbat De Sebat. I can't handle these persons with ridic long names. Let's try this again - five names or less please.";
+		reject the player's command;
+	now the player's full name is the player's command;
+	now the player's forename is word number 1 in the player's command;
+	now the command prompt is ">";
+	choose a random row in the Table of Random Statements;
+	say "[statement entry][paragraph break]";
+	move the player to the location;
+	reject the player's command.
 
-[When play begins: 
-    now the left hand status line is "Hit Points: [current hit points of player]"; 
-    now right hand status line is "Ninja Points:[ninja points of player]".]
+Instead of looking when collecting names: do nothing.
+Rule for printing the banner text when collecting names: do nothing.
+Rule for constructing the status line when collecting names: do nothing.
 
-Instead of taking inventory: 
-    say "[if the player carries something][We]['re] carrying [a list of things carried by the player][otherwise][We]['re] empty-handed"; 
-    say "[if the player wears something]. [We]['re] wearing [a list of things worn by the player][end if]."
+The player carries a message receiver. The description of the message receiver is "Dear [player's forename], [paragraph break]You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame".
 
+The player is in MyRoom.
 
+[Characters]
+An person can be undefeated or defeated.
+A bot is a kind of person.
+The securityBot is a bot.
+The bartender is a woman.
+A person has a number called maximum hit points. A person has a number called current hit points.
+A person has a number called maximum ninja points. A person has a number called current ninja points.
+A person is either awake or asleep. A person is normally awake.
+
+[Aframe]
+Aframe is a man.
 AFrame is a person in the Space Lounge. AFrame is male. The description of AFrame is "Aframe is looking pretty sharp there wearing [a list of unconcealed things worn by Aframe] with his usual aplomb." 
 
-A cosplayer is a person in Mainstage. The cosplayer is female. The cosplayer carries the greenRoomKey. The description of the cosplayer is "She's got all kinds of neon makeup or tattoos or projections - her face is like mask. It's very mesmerizing.".
-
+Instead of asking Aframe about "xx":
+	say "When you mention xx, Aframe's eyes light up. He smiles and looks around the room for a second before stepping closer to you. 'How do you know aobut xx?', he says - well it doesn't matter now - just remember yy when you get to the zz okay? DON'T FORGET ABOUT THE YY! Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
+	now Aframe is a co-conspirator;
+	now Aframe is in the Secret Room.
 Aframe is neutralla.
-
 Persuasion rule for asking AFrame to try doing something:
 	If Aframe is neutralla:
 		say "He says 'sure, anything for a laugh!'";
@@ -587,23 +538,41 @@ Aframe has a number called maximum hit points.
 Aframe has a number called current hit points. 
 The maximum hit points of Aframe is 1000.
 The current hit points of the Aframe is 1000.
-
-A weapon is a kind of thing. 
-A weapon has a number called the maximum damage. 
-The maximum damage of a weapon is usually 4.
-
-The boffer carries a weapon called a nanocarbon staff. The description of the nanocarbon staff is "Nanocarbon staff, looks just like oldwood. Looks like it can be switched between stun and realdammo."
-
-A nanocarbon blade is a kind of weapon. The maximum damage of the nanocarbon blade is 6. 
-
-A dagger is a kind of weapon. The maximum damage of a dagger is 10.
-
-A pin is a kind of weapon. The maximum damage of a pin is 1.
-
 AFrame carries a pin.
+After asking the AFrame about "love":
+	say "Ooo-la-la-you wanna be my Lady Gaga?!.";
+	now Aframe is a co-conspirator.
 
-The player carries a dagger. 
+[bartender]
+The bartender is a person in the Space Lounge. The bartender is female. The description of the bartender is "The bartender is [one of]serving some smoothies[or]cleaning the blender[or]making a neon yellow smoothie[or]making a glow in the dark smoothie[or]standing there looking you over[or]talking with a friend[or]dancing[at random]."
+The bartender carries the behindTheBarKey.
 
+Instead of giving the specialImportantStoryLineElement to the bartender:
+	move the specialImportantStoryLineElement to the bartender;
+	move the behindTheBarKey to the player;
+	say "She looks pretty serious all the sudden. 'Wow, now that it's time to leave I'm not ready. What's it going to be like out there? What if we can't resupply our sensory stimulants or dowlod our fundoms? Anyway, whatever happens is going to be supesciting.'"
+
+Instead of giving the coin to the bartender: 
+	move the coin to the bartender; 
+	let the target smoothie be a random smoothie in the BehindtheBar;
+	now the player has the target smoothie;
+	say "She accepts with a smile and slides you a smoothie. It looks friggin delicious."
+
+[3dPrinter]
+The 3dPrinter is a bot. 3dPrinter is in MyRoom. The description of 3dPrinter is "Oh yeah, 3dPrinter is your Convergence Roommate. You found each other on the Convergence FaceSpace forums, or maybe it was on SlashChat? anyway, you don't know each other well. 3dPrinter has been a pretty o-kay roommate, but you're definitely not getting any action privately, because it is NOT vacating the premesis. It looks a little sad today."
+
+After asking the 3DPrinter about "sad":
+		say "You ask it why it looks sad and it tells you, 'I just don't feel like I have any meaning anymore. I haven't created anything in ages. I'm an ARTIST. But I need inspiration. Can you find me a blueprint? There should be one in the Quantum Sandbox. Thanks, human.' 
+			
+			It promptly goes into sleep mode, making soft crying sounds, but not really crying."
+
+[geneSpliceMinotaur]
+The geneSpliceMinotaur is a person. The description of the geneSpliceMinotaur is "This isn't one of those ancient Minotaurs- this is one of the CRISPR Minotaurs that were created by a theologian with too much access to biotech."
+
+[Cosplayer]
+A cosplayer is a person in Mainstage. The cosplayer is female. The cosplayer carries the greenRoomKey. The description of the cosplayer is "She's got all kinds of neon makeup or tattoos or projections - her face is like mask. It's very mesmerizing.".
+
+[Boffer]
 The boffer is a person.
 The boffer is in the Garden Court.
 The boffer has a number called maximum hit points. 
@@ -612,9 +581,8 @@ The maximum hit points of the boffer is 30.
 The current hit points of the boffer is 5.
 The boffer is an enemy.
 The boffer carries a nanocarbon blade.
-
+The boffer carries a weapon called a nanocarbon staff. The description of the nanocarbon staff is "Nanocarbon staff, looks just like oldwood. Looks like it can be switched between stun and realdammo."
 The description of the boffer is "Standard boffer looking bloke, wearing simple leather armor and wielding a staff and smiling at you menacingly."
-
 
 Persuasion rule for asking the boffer to try doing something:
 	If the boffer is neutralla:
@@ -626,6 +594,73 @@ Persuasion rule for asking the boffer to try doing something:
 	Otherwise if the boffer is a co-conspirator:
 		say "Looks like you need some help, here take this.";
 		persuasion succeeds.
+
+[Security Bot]		
+A securityBot is a person. The description of the securityBot is "Looks like a standard securityBot. A floating ball of plastimetal about 3 feet in diameter with a bunch of creepy robot arms sticking out all over with cameras and sensors and whatever else all those things are. Is that a toothbrush? It's pretty unnerving to look at."
+
+There is a securityBot in the Space Lounge.
+
+securityBotPissed is a number that varies. securityBotPissed is 1.
+
+This is the securityBotPissed rule:
+    if securityBotPissed is 2 begin;
+	say "you pissed off the securityBot one too many times, it precisely pulses a beam of pure energy all over your beautiful body and now you are dead";
+	end the story; 
+      stop;
+   end if;
+
+Persuasion rule for asking securityBot to try doing something: 
+	if securityBotPissed is 2:
+		say "You pissed off the securityBot one too many times. The securityBot's large and small and micro arms unfurl like a lotus made of cobras.  It's central power unit glows briefly and precisely pulses a beam of pure energy all over your beautiful body and now you're dead";
+		end the story; 
+	otherwise:
+		Say "The securityBot looks pissed. Maybe you outta not mess with securityBots...[securityBotPissed]";
+		now the securityBotPissed is 2;
+		persuasion fails.
+Persuasion rule for asking someone to try doing something: persuasion succeeds.
+
+[Character Movement]
+
+[Dolphin]
+Instead of going to the Floating Courtyard when the player is not in the floating dolphin: 
+    say "You don't have wings or pyscho-kinetic levitation abilities or a hoverboard or anything to go up with."
+
+[When play begins:
+	change the library message tense to past tense;]
+	
+Definition: a direction (called thataway) is viable if the room thataway from the location is a room. 
+
+[After looking:
+	let count of exits be the number of viable directions;
+	if the count of exits is 0:
+		say "(There are no routes out of this room.)";
+	else:
+		say "(From here, you can move to [list of viable directions].)";
+		continue the action;]
+
+[If the player is wearing a ninja costume
+	now the player is a ninja.]
+
+Table of Status
+left	central	right
+"HP:[current hit points of player]"	"NP:[current ninja points of player]"	"[location]"
+
+Rule for constructing the status line:
+fill status bar with Table of Status;
+rule succeeds.		
+
+[When play begins: 
+    now the left hand status line is "Hit Points: [current hit points of player]"; 
+    now right hand status line is "Ninja Points:[ninja points of player]".]
+
+Instead of taking inventory: 
+    say "[if the player carries something][We]['re] carrying [a list of things carried by the player][otherwise][We]['re] empty-handed"; 
+    say "[if the player wears something]. [We]['re] wearing [a list of things worn by the player][end if]."
+
+
+
+
+
 
 Instead of attacking something:
 	If the noun is a boffer:
@@ -695,7 +730,6 @@ Test me with "hit gladiator with mace / kill gladiator / drop mace / attack glad
 [END attack with weapon]
 ]
 
-An person can be undefeated or defeated.
 
 The description of the black ninja outfit is "This is a ninja outfit, it's black and has a hood that covers your face. It has a nice pocket in it to store cool ninja gear. It has these sweet built in booties that muffle your footsteps as if you were a total ninja, which you totally are if you are wearing this outfit. You could sneak around a place with shadows without being detected if you were wearing this thing. You'd be so ninja."
 
@@ -705,28 +739,7 @@ After wearing the black ninja outfit:
 Carry out wearing the black ninja outfit for the first time:
   now the current ninja points of the player is 50.
 
-A securityBot is a person. The description of the securityBot is "Looks like a standard securityBot. A floating ball of plastimetal about 3 feet in diameter with a bunch of creepy robot arms sticking out all over with cameras and sensors and whatever else all those things are. Is that a toothbrush? It's pretty unnerving to look at."
 
-There is a securityBot in the Space Lounge.
-
-securityBotPissed is a number that varies. securityBotPissed is 1.
-
-This is the securityBotPissed rule:
-    if securityBotPissed is 2 begin;
-	say "you pissed off the securityBot one too many times, it precisely pulses a beam of pure energy all over your beautiful body and now you are dead";
-	end the story; 
-      stop;
-   end if;
-
-Persuasion rule for asking securityBot to try doing something: 
-	if securityBotPissed is 2:
-		say "You pissed off the securityBot one too many times. The securityBot's large and small and micro arms unfurl like a lotus made of cobras.  It's central power unit glows briefly and precisely pulses a beam of pure energy all over your beautiful body and now you're dead";
-		end the story; 
-	otherwise:
-		Say "The securityBot looks pissed. Maybe you outta not mess with securityBots...[securityBotPissed]";
-		now the securityBotPissed is 2;
-		persuasion fails.
-Persuasion rule for asking someone to try doing something: persuasion succeeds.
 
 When play begins:
 	let enemy_count be a random number between 1 and 5; 
@@ -1126,11 +1139,7 @@ behindTheBarDoor is west of the Space Lounge.
 [The End is west of the Upper Southside Hallway.]
 
 
-Aframe is a man.
-A bot is a kind of person.
-The securityBot is a bot.
-The bartender is a woman.
-
+[Conversation]
 After saying hello to a person:
     say "'Hi, there, [noun]!' you exclaim
     
@@ -1156,10 +1165,6 @@ After saying hello to a bot:
     say "'Well, see you layter,' you say.
      
     'Not if I see you first!' he replies."
-
-After asking the AFrame about "love":
-	say "Ooo-la-la-you wanna be my Lady Gaga?!.";
-	now Aframe is a co-conspirator.
 
 After asking the securityBot about "love", say "The bot's camera focuses in on your face then it's speakers say, 'Please stop asking me about ridiculous human emotional content.' 
 

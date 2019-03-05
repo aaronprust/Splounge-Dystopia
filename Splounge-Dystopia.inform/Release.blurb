@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6M62
 
-status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/aaronprust/Documents/Splounge/Space Lounge Text Adventure/Splounge-Dystopia/Splounge-Dystopia.inform/Build/StatusCblorb.html"
+status "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/CblorbModel.html" "/Users/colesarar/Documents/Splounge-Dystopia/Splounge-Dystopia.inform/Build/StatusCblorb.html"
 
 
 ! Identification
 
-project folder "/Users/aaronprust/Documents/Splounge/Space Lounge Text Adventure/Splounge-Dystopia/Splounge-Dystopia.inform"
-release to "/Users/aaronprust/Documents/Splounge/Space Lounge Text Adventure/Splounge-Dystopia/Splounge-Dystopia.materials/Release"
+project folder "/Users/colesarar/Documents/Splounge-Dystopia/Splounge-Dystopia.inform"
+release to "/Users/colesarar/Documents/Splounge-Dystopia/Splounge-Dystopia.materials/Release"
 
 ! Blorb instructions
 
 storyfile leafname "Splounge-Dystopia.gblorb"
-storyfile "/Users/aaronprust/Documents/Splounge/Space Lounge Text Adventure/Splounge-Dystopia/Splounge-Dystopia.inform/Build/output.ulx" include
-ifiction "/Users/aaronprust/Documents/Splounge/Space Lounge Text Adventure/Splounge-Dystopia/Splounge-Dystopia.inform/Metadata.iFiction" include
+storyfile "/Users/colesarar/Documents/Splounge-Dystopia/Splounge-Dystopia.inform/Build/output.ulx" include
+ifiction "/Users/colesarar/Documents/Splounge-Dystopia/Splounge-Dystopia.inform/Metadata.iFiction" include
 cover "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 picture 1 "/Applications/Inform.app/Contents/Resources/Internal/Miscellany/Cover.jpg"
 
