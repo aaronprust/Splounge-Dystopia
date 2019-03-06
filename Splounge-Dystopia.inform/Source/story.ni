@@ -133,11 +133,11 @@ H2I is a room. "The crowd continues widdershins around the second floor above ga
 Elevator1 is a room. "You're in an elevator. It's up on the first floor.".
 
 Mainstage is a room. "There are a bunch of ravers in here, the lights are low and the music is bumping!".
+QS is a room. "Quantum Sandbox. The kids are ransacking the joint for spare pinball parts.".
 The Green Room is a room. "Greenroom".
 Convergence Central is a room. "There are people all over this large open room.".
 Engine Room is a room. "Engine Room".
 The Pool is a room. "Pool".
-QS is a room. "Quantum Sandbox".
 Volden is a room. "Volden".
 Cinema Rex is a room. "Cinema Rex".
 The Art Show is a room. "Art Show".
@@ -375,6 +375,10 @@ Instead of examining the switched on securityReadout:
 The black rod is an object. The description of the black rod is "A three foot black rod with a rusty star on one end lies nearby."
 
 The black rod is in the H2K.
+
+The 3dPrinterBluePrint is an object. The description of the 3dPrinterBluePrint is "This may be what your roommate was looking for! It is blue and it has a lovely print on it. In the corner, it also explains how to add printer filament to your roommate in some detail.".
+
+The 3dPrinterBluePrint is in the QS.
 
 The floating dolphin is a vehicle in H2K. The description of the floating dolphin is "Oh crap - the floating dolphin's survellance cam is honing in on you! You better get out of here, somewhere where the floating dolphin camera can't see you." The dolphin is locked. The dolphin code unlocks the floating dolphin. The description of the dolphin code is "It is fish shaped, and vibrates - readout screen says 'Status optimal'."
 
@@ -730,7 +734,7 @@ Instead of giving the coin to the bartender:
 	say "She accepts with a smile and slides you a smoothie. It looks friggin delicious."
 
 [3dPrinter]
-The 3dPrinter is a bot. 3dPrinter is in MyRoom. The description of 3dPrinter is "Oh yeah, 3dPrinter is your Convergence Roommate. You found each other on the Convergence FaceSpace forums, or maybe it was on SlashChat? anyway, you don't know each other well. 3dPrinter has been a pretty o-kay roommate, but you're definitely not getting any action privately, because it is NOT vacating the premesis. It looks a little sad today."
+The 3dPrinter is a bot. 3dPrinter is in MyRoom. The description of 3dPrinter is "Oh yeah, 3dPrinter is your Convergence Roommate. You found each other on the Convergence FaceSpace forums, or maybe it was on SlashChat? anyway, you don't know each other well. 3dPrinter has been a pretty o-kay roommate, but you're definitely not getting any action privately, because it is NOT vacating the premesis. It looks rather sad today."
 
 After asking the 3DPrinter about "sad":
 		say "You ask it why it looks sad and it tells you, 'I just don't feel like I have any meaning anymore. I haven't created anything in ages. I'm an ARTIST. But I need inspiration. Can you find me a blueprint? There should be one in the Quantum Sandbox. Thanks, human.'
@@ -1264,7 +1268,7 @@ H1C is east of H1B.
 H1A is west of H1B.
 P1C is north of H1C.
 H1D is south of H1C.
-H1B is east of H1C.
+H1B is west of H1C.
 P1D is north of H1D.
 H1E is east of H1D.
 H1C is west of H1D.
