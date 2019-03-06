@@ -1,6 +1,6 @@
 "Splounge-Dystopia" by Aaron Prust
 
-When play begins: say "In the early 2000s, mewonkind's folly led to the breakdown of society and the restructuring of general cultural and technological vector-goals. At some point interest-tribes formed into coherent anarcho-syndicates, creating new economic models which began to isolate themselves in order to maximize survival attributes and minimize unknown variable influences. It was around that time the blast doors went down. Nobody's sure how long exactly; it's been hundreds of season renewals and a ton of spin-offs and crossovers since then though. At least that's what you were taught in data-download segment 2-histori-political info part 27A while syncing the standard edu-packets. Who the hell knows for real though, right? 
+When play begins: say "In the early 2000s, mewonkind's folly led to the breakdown of society and the restructuring of general cultural and technological vector-goals. At some point interest-tribes formed into coherent anarcho-syndicates, creating new economic models which began to isolate themselves in order to maximize survival attributes and minimize unknown variable influences. It was around that time the blast doors went down. Nobody's sure how long exactly; it's been hundreds of season renewals and a ton of spin-offs and crossovers since then though. At least that's what you were taught in data-download segment 2-histori-political info part 27A while syncing the standard edu-packets. Who the hell knows for real though, right?
 
 Whatevs. Feels like just another day in the MASSIVE HIVE KNOWN as CONvergence."
 
@@ -19,13 +19,14 @@ Include Hybrid Choices by AW Freyr.
 [Include Armed by David Ratliff.]
 
 Use scoring.
+The maximum score is 1000.
 
 [Housekeeping]
 
 Understand "get up from [thing]" as getting off.
 
 The container interior rule is listed before the room description body text rule in the carry out looking rules.
-This is the container interior rule: 
+This is the container interior rule:
 	if the actor is the player and the player is in an enterable thing (called current cage), carry out the describing the interior activity with the current cage.
 Describing the interior of something is an activity.
 
@@ -44,7 +45,7 @@ The Floating Courtyard is a room. "This is amazing - you are up above everything
 Elevator2 is a room. "[one of]The elevator is pretty grimy looking; there is condensation forming on the lights.[or]The walls of the elevator are covered in flyers for upcoming parties and holoPrograms coming out.[or]The elevator shudders a bit as it begins moving.[at random] [one of]There is an arnoldConanBarbarian[or]There is a bored-looking geneSpliceMinotaur[or]There are a few youngBadgers[at random] [one of]and a fireMario in the elevator with you.[or]and a turboRetroCyborg in the elevator with you.[or]and a raverGargoyle in the elevator with you.[or]and a solarPunk in the elevator with you.[at random] They get out without talking to you and disappear into the crowd.".
 
 The Space Lounge is a room. "You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.".
-The BehindtheBar is a room. "There are two chairs facing a curved glass surface. You look through the window and see a galaxy of stars spread out, vast, in front of you. You can also see spreading out to the sides the outside surface of the hotel. It appears part of it had been broken off at one point. It also appears the Space Lounge is a shuttlecraft.".
+The BehindtheBar is a room. "There are two chairs facing a curved glass surface. You look through the window and see a galaxy of stars spread out, vast, in front of you. To all your sides: below, above, left and right the outside surface of the hotel . It appears part of it had been broken off at one point. It also appears the Space Lounge is a shuttlecraft.".
 Consuite is a room. "The vast wasteland of the hungry: ConSuite. It's sticky and smells like centuries of soda and rice. The scavvers eye you with a hungry look in their eyes. Best not to stay too long.".
 Registration is a room. "Registration: Bureaucracy Station. Lines of congoers stand waiting to talk to Con employees. It looks like everyone has been here a long time. The signs above their stations read: Credits, Cash, Lost & Found, Info, Merch, Security, Volunteers, and Questions.".
 
@@ -58,14 +59,14 @@ The description of the spaceLoungeEngine is "A physical switch with a two dimens
 readyToLaunch is a truth state that varies. readyToLaunch is false.
 
 Instead of examining the switched on spaceLoungeEngine:
-	say "The screen reads: [fixed letter spacing]"; 
-	say line break; 
+	say "The screen reads: [fixed letter spacing]";
+	say line break;
 	if the spaceLoungeDoor is locked:
 		say "Airlock locked, ready for detachment sequence.";
 		now the readyToLaunch is true;
 	if the spaceLoungeDoor is open:
 		say "Airlock open, not ready for detachment sequence.";
-	say variable letter spacing; 
+	say variable letter spacing;
 	say paragraph break.
 
 
@@ -75,22 +76,28 @@ Instead of switching on the detachmentInterface:
 	if the readyToLaunch is true:
 		say "You feel something large sliding on the other end of the Space Lounge. It suddenly feels like the whole Space Lounge bobbed a bit. The shuttecraft seems free of the hotel.";
 	switch to cyoa at AdventuresInSpacePage.
-	
-AdventuresInSpacePage is a page. 
+
+AdventuresInSpacePage is a page.
 "Even though you didn't know until today that the entire CONvergence hotel was in space, and you also did not know that the Space Lounge was a shuttlecraft, detaching the Space Lounge has left you feeling light and happy. You're exhilarated by the options you have spread out before you. You could coast the spaceways, searching of signs of new civilizations and unknown lifeforms. Or, you could look for another hotel, find a new home (base). Or you could redock, and find out how your discoveries could affect the lives of everyone you've ever met."
 
-SearchForNewLife is a page. 
+SearchForNewLifeRoom is a room. "End of Story for Explore."
+
+SearchForNewLife is a page.
 "You search for new life. It's pretty awesome. You almost die like almost every other week. Maybe you get to play a baseball game in peace once and awhile. Most of the time even your holosuites try to kill you."
-The cdesc is "Explore.". It is for AdventuresInSpacePage.
+The cdesc is "Explore.". It is for AdventuresInSpacePage. It is an end-page.
 
-SearchForNewHotel is a page. 
-"You search for a new hotel. All you want is a new place to call home. It takes almost eight years, but eventually after a lifetime of struggle and noble stoic-ness you finally find a new hotel. Something...majestic...something new. It's name - The Hyatt."
-The cdesc is "New Home.". It is for AdventuresInSpacePage.
+SearchForNewHotel is a page.
+"You search for a new hotel. All you want is a new place to call home. It takes almost eight years, but eventually after a lifetime of struggle and noble stoic-ness you finally find a new hotel. Something...majestic...something new.."
+The cdesc is "New Home.". It is for AdventuresInSpacePage. It is an end-page. Now the player is in the Secret Room.
 
-Stay is a page. 
-"You search for new life. It's pretty awesome. You almost die like almost every other week. Maybe you get to play a baseball game in peace once and awhile. Most of the time even your holosuites try to kill you."
-The cdesc is "Stay.". It is for AdventuresInSpacePage.
+Stay is a page.
+"You decide to stay. You're not ready to leave your home, and there's some more room parties you haven't fully checked out."
+The cdesc is "Stay.". It is for AdventuresInSpacePage. It is an end-page.
+It flips to StayP2.
 
+ StayP2 is a page.
+    "...Besides, you think you had maybe a 3D printer job going that might be near finished...."
+     It is an end-page.
 
 P2B is a room. "Partyroom2B".
 P2C is a room. "Partyroom2C".
@@ -102,7 +109,7 @@ P2P is a room. "Partyroom2P"
 H2F is a room. "This is the hallway outside the 2nd Floor Elevator. There are lots of posters here, too. There's one here that says 'House of Toast'. There's a great big piano here, and [one of]it's playing itself. Sounds like Radiohead. A woman in a big blue dress walks past and slaps a fly that has landed on her cheek. Odd.[or]a bunch of intoxicated teenangers are singing lyrics from a musical about the invention of the Turing Test very loudly. [or]a small cybernetic animal is running up and down the keys, while a congoer dressed as a cat is attempting to hit it with a large foam hammer. [or]a woman dressed entirely in ghostly sequins is playing the most haunting melody you have ever heard in your life. It is chilling. You wonder if you have long to live.[at random]
 	You can hear the din of the maddening crowd to the East of here.".
 H2G is a room. "The crowd goes one direction around the hallway here, counter-clockwise around the garden court. It's strictly enforced, you know! If you go North from here, a badger might catch you and lock you up! Scary. There are also some stairs going down. There doesn't seem to be any rules about whether you go up or down these stairs.
-	
+
 	What's a clock, by the way? And how do you count its wisdom? This is some heavy stuff. You should think about it as you keep walking.".
 H2A is a room. "Hallway2A".
 H2B is a room. "Hallway2B".
@@ -209,51 +216,116 @@ A chair is a kind of supporter. A chair is always enterable.
 
 A pocket is a kind of container. The carrying capacity of a pocket is always 2.
 
-A ninja outfit is a kind of thing. A ninja outfit is always wearable. 
-[*]One pocket is part of every ninja outfit. 
+A ninja outfit is a kind of thing. A ninja outfit is always wearable.
+[*]One pocket is part of every ninja outfit.
 The black ninja outfit is a ninja outfit.
 [*]The black ninja outfit's pocket contains a throwing star and a smoke bomb.
 
-After examining a ninja outfit: 
-    let target be a random pocket which is part of the noun; 
+After examining a ninja outfit:
+    let target be a random pocket which is part of the noun;
     say "[The target] contains [a list of things in the target]."
 
 [Qualities: Softness]
 Texture is a kind of value. The textures are normal, rough, soft and smooth. Everything has a texture.
-	
-Instead of getting off the comfy chair for the first time, say "You just can't get up, you are way too comfortable! Maybe if you just stayed here in this [noun] forever you would be better off than whatever else you were going to do. Does it really matter?".
 
-Instead of getting off the comfy chair for the second time: 
-	say "You try to heave yourself up, but the soft lusciousness of the [noun] envelopes you and pulls you back into its comfy folds. Oooooo...so comfy...so sooooooofffffft...";
-	now the test-variable is true.
-	
-Instead of doing something other than looking or getting off when the player is on the comfy looking chair, say "You'd rather be asleep. Whatever other thing you would do besides being in this chair is a bad idea and not really that good of an option compared to being in this insanely comfy chair."
+Before entering the comfy looking chair:
+	say "Oh boy this chair looks really soft and comfy! Ooooh ya you are totally gonna sit on this chair big time.";
+	If meditativeMaster is true:
+		say "Yes, this is it - you can tell you are becomming a meditativeMaster!";
+		increase the score by 100;
+		move the player to the ----;
+		switch to cyoa at the MeditativeMasterPage.
 
-Instead of entering the comfy looking chair the second time, unless the player is on the comfy looking chair, say "'Hey Wait!' your subconscious jumps forth remembering the tempting softness - you decide not not to sit on that [noun], it's so comfy you might never get up again! It looks seriously comfy though...maybe just for a little tiny sliver of a moment you could get kinda comfy..."
 
-Instead of entering the comfy looking chair the third time, unless the player is on the comfy looking chair, say "Don't you remember the last time you were in that [noun]? It almost ATE YOU! What is your deal? Don't sit in this [noun], it's too dangerous! Only a master of mental projection could sit on this [noun] without its super soft comfy-ness obliterating and subsuming your soul to its dark comfy desires."
+Instead of getting off the comfy chair for the first time, unless meditativeMaster is true, say "You just can't get up, you are way too comfortable! Maybe if you just stayed here in this [noun] forever you would be better off than whatever else you were going to do. Does it really matter?".
 
-Instead of entering the comfy looking chair the fourth time, unless the player is on the comfy looking chair,
+Instead of getting off the comfy chair for the second time:
+	If meditativeMaster is false:
+		say "You try to heave yourself up, but the soft lusciousness of the [noun] envelopes you and pulls you back into its comfy folds. Oooooo...so comfy...so sooooooofffffft...";
+		now the test-variable is true.
+
+Instead of doing something other than looking or getting off when the player is on the comfy looking chair,  unless meditativeMaster is true, say "You try to do something but you can really just look around while sitting in this insanely comfy chair."
+
+Instead of entering the comfy looking chair the second time, unless the player is on the comfy looking chair,  unless meditativeMaster is true, say "'Hey Wait!' your subconscious jumps forth remembering the tempting softness - you decide not not to sit on that [noun], it's so comfy you might never get up again! It looks seriously comfy though...maybe just for a little tiny sliver of a moment you could get kinda comfy..."
+
+Instead of entering the comfy looking chair the third time, unless the player is on the comfy looking chair,  unless meditativeMaster is true, say "Don't you remember the last time you were in that [noun]? It almost ATE YOU! What is your deal? Don't sit in this [noun], it's too dangerous! Only a master of mental projection could sit on this [noun] without its super soft comfy-ness obliterating and subsuming your soul to its dark comfy desires."
+
+Instead of entering the comfy looking chair the fourth time, unless the player is on the comfy looking chair and meditativeMaster is false,
 end the story saying "You sit on the chair again and sink forever into its comfyness. You never rise again."
 
 After getting off the comfy looking chair:
-	say "Whew! You just barely escaped that [noun], it's so comfy you could get stuck in it forever!";
-	now the description of the noun is "Watch out for that [noun], it's so comfy you could get stuck in it forever! Like LITERALLY foreverandever.".
+	If meditativeMaster is false:
+		say "Whew! You just barely escaped that [noun], it's so comfy you could get stuck in it forever!";
+		now the description of the noun is "Watch out for that [noun], it's so comfy you could get stuck in it forever! Like LITERALLY foreverandever.".
 
 Every turn:
-	If the player is on the comfy looking chair:
+	If the player is on the comfy looking chair and meditativeMaster is false:
 		choose a random row from the Table of ComfyChairThoughts;
-		say "[thought entry] [paragraph break]".
+		say "[thought entry] [paragraph break]";
+	If the meditativeMaster is true and the player is on the comfy looking chair:
+		say "Your expansive mind knows getting into this extremely comfy chair that a lesser-minded lifeform would probably be overwhelmed by the comfyness of the chair and would be consumed by it rather than have their mind-forms amplified and focused.";
+		increase the score by 100;
+		move the player to the ----;
+		switch to cyoa at the MeditativeMasterPage.
+
+[CrystalizationPage is a page.
+"You relax and let your body slip away, your thoughts of this life seem distant. You begin to see flashing colors, blobs of darkness...flashes of geometry...feelings of motion. Patterns of laser like forms begin to crystalize - ordinary reality life existence to cosmic intelligence sentient perspectives. Your mind is on a crystalization trajectory you can see now.".
+The cdesc is "Crystalization". It is for MeditativeMasterPage.]
+
+[DisintegrationPage is a page.
+"You take one last look at the Splounge and the weird creatures that inhabit it. The humanoid form is beginning to look alien to you, your consciouness feels more like a tadpole than a person but even as you think that your sense of scale vanishes and your your body feels both like it is growing huge and shrinking to microscopic size at the same time. The infinitely large and unimaginably small connect here in the absence of value, you realize. You feel a sense of relaxation deeper than you've known before as you let your consciousness disconnect from your body. You close your eyes and enter the darkness behind your eyes.
+
+A Void subsumes you, your senses fizzle away and a great nothingness stretches infinitely before you.".
+The cdesc is "Disintegration.". It is for MeditativeMasterPage.]
+
+[ExpansionPage is a page.
+"Expansion description".
+The cdesc is "Expansion.". It is for MeditativeMasterPage.]
 
 [choose a random row from the Table of Comfy Chair Thoughts;
 		say "[thought entry][paragraph break]".]
-	
+
+Every turn:
+	If not in CYOA mode:
+		If the player is in ----:
+			End the Story.
+
+---- is a room.
+
+Rule for listing exits while the player is in ----: do nothing instead.
+
+The MeditativeMasterPage is a page.
+"As you let your body sink into the chair, you feel completely confident that your physical body will be safe and totally comfortable in that incredibly soft chair while you let your mind explore the limitless expanse of the innerSpace of your mind. You can feel your imagination aflame as it connects with the intersections of existence. You find a clarity of mind you have never had before spark and then begin to spread within you.
+
+You can see the paths open to you here at the cusp of this intense Lucidic Story-Reality Comprehension"
+
+ExpansionPage is a page.
+"Your mind grasps the expansive consciousness path and it is as though in an instant you can feel your senses reach beyond the ten normally accessible to humans and it as though the entire CON hotel becomes translucent to you and you can see through it as though it were an engineering cutaway - except you can control where your focus is - sweeping around it is like you have this mega-3D vision and can look at anything. You find to your surprise that the entire hotel is floating in deep space. You hadn't really thought about lay beyond the hotel walls and had assumed you were still on Earth. It's crazy - it looks like part of the hotel was chopped off and heavy blast-shielding was put there, with an enormous engine attached to the bottom. You can also see that the Space Lounge is actually a converted shuttlecraft attached to the side of the hotel."
+The cdesc is "Expansion". It is for MeditativeMasterPage. It is an end-page.
+
+CrystalizationPage is a page.
+"You relax and let your body slip away, your thoughts of this life seem distant. You begin to see flashing colors, blobs of darkness...flashes of geometry...feelings of motion. Patterns of laser-like forms begin to create structure, then more structure built upon that - from the lowest ordinary reality life existence up to cosmic intelligence sentience perspectives. Your mind is on a crystalization trajectory you can see now."
+The cdesc is "Crystalization". It is for MeditativeMasterPage. It is an end-page. Now the player is in the Secret Room.
+
+DisintegrationPage is a page.
+"You take one last look at the Splounge and the weird creatures that inhabit it. The humanoid form is beginning to look alien to you, your consciouness feels more like a tadpole than a person but even as you think that your sense of scale vanishes and your your body feels both growing huge and microscopic at the same time. The infinitely large and unimaginably small connect here where you find yourself. You feel a sense of relaxation deeper than you've known before as you let your consciousness disconnect from your body. You close your eyes and enter the darkness behind your eyes.
+
+A Void subsumes you, your senses fizzle away until nothing is left."
+The cdesc is "Disintegration.". It is for MeditativeMasterPage. It is an end-page.
+It flips to DisintegrationPage2.
+
+ DisintegrationPage2 is a page.
+    "...void further description...."
+     It is an end-page.
+
+
 Table of ComfyChairThoughts
 thought
 "Oooh yes, this is a wonderful world. 'What a luxuriously decadent and beautiful reality to be in' you think as you nestle further within the folds of the chair."
 "'What was I trying to do?' you think for a sec before you realize how comfy the chair you are in is. It's kind of incredible, you feel like you've accomplished enough in life."
 "Sooooo comfy. So sooooo comfy. Mmmmm..."
 "'I remember another life once, I think my name was [player's forename] or [player's full name] or smthg', you think. Whateeeevs...this chair though...you look around the room entranced by the activity around you. Good thing you're not expending that much energy."
+"You'd rather be asleep. Whatever other thing you would do besides being in this chair is a bad idea and not really that good of an option compared to being in this insanely comfy chair."
 
 [Qualities: Friendship]
 A person can be a co-conspirator, neutralla or an enemy.
@@ -274,8 +346,6 @@ There is a comfy looking chair inside the Space Lounge.  The comfy looking chair
 
 [The description of the comfy looking chair is "The chair looks seriously comfortable, it's all soft and squishy looking. 'SPYUMMY', your butt thinks.".]
 
-Before entering the comfy looking chair, unless the player is on the comfy looking chair, say "Oh boy this chair looks really soft and comfy! Ooooh ya you are totally gonna sit on this chair big time."
-
 The black ninja outfit is in the Space Lounge
 
 A glittery box is on the bar. The description of the glittery box is "Time slows down, you feel as if you are gazing into the cosmos itself. Your eyeballs can hardly stay on it, it's like your gaze just keeps sliding off."
@@ -292,12 +362,12 @@ The crazy looking gun is in the glittery box. The description of the crazy looki
 
 The securityReadout is a device. The description of the securityReadout is "The screen is blank."
 Instead of examining the switched on securityReadout:
-	say "The screen reads: [fixed letter spacing]"; 
-	say line break; 
-	repeat with item running through doors: 
-		say line break; 
-		say " [item] ([front side of the item]/[back side of the item]): [if the item is locked]LOCKED[otherwise]UNLOCKED[end if]"; 
-	say variable letter spacing; 
+	say "The screen reads: [fixed letter spacing]";
+	say line break;
+	repeat with item running through doors:
+		say line break;
+		say " [item] ([front side of the item]/[back side of the item]): [if the item is locked]LOCKED[otherwise]UNLOCKED[end if]";
+	say variable letter spacing;
 	say paragraph break.
 
 [Veranda Walkway]
@@ -308,7 +378,7 @@ The black rod is in the H2K.
 
 The floating dolphin is a vehicle in H2K. The description of the floating dolphin is "Oh crap - the floating dolphin's survellance cam is honing in on you! You better get out of here, somewhere where the floating dolphin camera can't see you." The dolphin is locked. The dolphin code unlocks the floating dolphin. The description of the dolphin code is "It is fish shaped, and vibrates - readout screen says 'Status optimal'."
 
-Rule for describing the interior of the floating dolphin: 
+Rule for describing the interior of the floating dolphin:
 	Say "The floating dolphin is transparent, but tints everything outside very faintly lavender." instead.
 
 Before entering the floating dolphin:
@@ -324,6 +394,61 @@ The dolphin code is in the Secret Room.
 
 [The Player]
 
+The player is a person.
+
+A person has a number called maximum hit points. A person has a number called current hit points.
+
+A person has a number called maximum ninja points. A person has a number called current ninja points.
+
+A person is either awake or asleep. A person is normally awake.
+
+The maximum hit points of the player is 100.
+The current hit points of the player is 10.
+
+The maximum ninja points of the player is 100.
+The current ninja points of the player is 0.
+
+The player's forename is a text that varies. The player's full name is a text that varies.
+
+When play begins:
+	now the command prompt is "What is your name? > ".
+
+To decide whether collecting names:
+	if the command prompt is "What is your name? > ",
+		yes;
+		no.
+
+Table of Random Statements
+statement
+"[player's full name]? Interesting, nice."
+"[player's full name]!? Aaaah, that's a good one."
+"Oh, [player's full name] eh!? I've heard a you."
+"[player's full name]!? Har har har! Musta been one-a them vat babies huh?"
+
+After reading a command when collecting names:
+	if the number of words in the player's command is greater than 5:
+		say "[paragraph break]Uh okay, and I'm Leeloo Minai Lekarariba-Laminai-Tchai Ekbat De Sebat. I can't handle these persons with ridic long names. Let's try this again - five names or less please.";
+		reject the player's command;
+	now the player's full name is the player's command;
+	now the player's forename is word number 1 in the player's command;
+	now the command prompt is ">";
+	choose a random row in the Table of Random Statements;
+	say "[statement entry][paragraph break]";
+	move the player to the location;
+	reject the player's command.
+
+Instead of looking when collecting names: do nothing.
+Rule for printing the banner text when collecting names: do nothing.
+Rule for constructing the status line when collecting names: do nothing.
+
+The player carries a message receiver. The description of the message receiver is "Dear [player's forename], [paragraph break]You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame".
+
+The player carries a coin.
+The player carries a mcGuffin.
+
+[The player is in the Garden Court.]
+The player is in MyRoom.
+
 [
 	Let playerstealth be a random device from the Table of Stealth Devices;
 	The player wears playerstealth. The description of playerstealth is "[playerstealth description]".]
@@ -332,6 +457,8 @@ The dolphin code is in the Secret Room.
 [*][States]
 
 test-variable is a truth state that varies. test-variable is false.
+
+meditativeMaster is a truth state that varies. meditativeMaster is false.
 
 This is the test-variable rule:
     if test-variable is true begin;
@@ -349,10 +476,10 @@ Before taking the gun, say "You have no idea what this gun does. You've never se
 
 Shooting it with is an action applying to two things.
 
-Check shooting something with something: 
-    if the player is not carrying the gun, say "You are pathetically unarmed!" instead; 
-    if the second noun is not the gun, say "[The second noun] does not fire." instead; 
-    if the noun is the gun, say "Nice trick if you can do it!" instead; 
+Check shooting something with something:
+    if the player is not carrying the gun, say "You are pathetically unarmed!" instead;
+    if the second noun is not the gun, say "[The second noun] does not fire." instead;
+    if the noun is the gun, say "Nice trick if you can do it!" instead;
     if the noun is the player, say "That would be disastrous!" instead.
 
 Definition: a thing is ungunlike if it is not the gun.
@@ -362,9 +489,9 @@ Understand "shoot [gun] at [something ungunlike]" as shooting it with (with noun
 Understand "shoot [something ungunlike] with [gun]" as shooting it with. Understand "shoot [something] with [something]" as shooting it with.
 Understand "shoot [something] at [something]" as shooting it with (with nouns reversed). Understand "fire [gun] at [something ungunlike]" as shooting it with (with nouns reversed). Understand "fire at [something ungunlike] with [gun]" as shooting it with. Understand "fire at [something] with [something]" as shooting it with.
 
-Carry out shooting something with something: 
-    say "ZAP! [The noun] twinkles out of existence! [if something is part of the noun][The list of things which are part of the noun] clatters to the ground! [end if][paragraph break]"; 
-    now every thing which is part of the noun is in the location; 
+Carry out shooting something with something:
+    say "ZAP! [The noun] twinkles out of existence! [if something is part of the noun][The list of things which are part of the noun] clatters to the ground! [end if][paragraph break]";
+    now every thing which is part of the noun is in the location;
     now the noun is nowhere.
 
 Instead of shooting the bartender with the gun: say "The weird ray somehow seems to bend around the bartender and disperses into a cloud of neon-swirled rainbow shards. She looks at you with a strange smirky side-eye. She must be wearing some kind of personal ray-deflector device. 'splick', you admire-think."
@@ -382,28 +509,28 @@ Understand "yzxxy" or "say yzxxy" or "cast yzxxy" as casting yzxxy.
 Casting xyzzy is an action applying to nothing.
 Casting yzxxy is an action applying to nothing.
 
-Check casting xyzzy: 
-    if the player does not have the black rod, say "You are unable to articulate the second 'z' separately from the first, and the spell fails in a disdainful puff. If only you had some sort of magical item to focus your arcane arts upon to increase your attunement to the fey realm." instead; 
+Check casting xyzzy:
+    if the player does not have the black rod, say "You are unable to articulate the second 'z' separately from the first, and the spell fails in a disdainful puff. If only you had some sort of magical item to focus your arcane arts upon to increase your attunement to the fey realm." instead;
 if the player has the black rod, say "you feel a whooshy sound enter your eyeball sockets and then your tummy flips over your groiny-place. WHOOOOOAAAA suddenly you find yourself trasported to the...
 
 ";
 
-Report casting xyzzy: 
+Report casting xyzzy:
     say "Under the influence of the black rod, you pronounced 'xyzzy' as Xhi-zee. You understand now that the purpose of the black rod is to bring people here, to the Secret Room."
 
-Carry out casting xyzzy: 
+Carry out casting xyzzy:
 	move the player to The Secret Room.
-	
-Check casting xyzzy: 
-    if the player does not have the black rod, say "You are unable to articulate the second 'x' separately from the first, and the spell fails in a disdainful puff. If only you had the black rod." instead; 
+
+Check casting xyzzy:
+    if the player does not have the black rod, say "You are unable to articulate the second 'x' separately from the first, and the spell fails in a disdainful puff. If only you had the black rod." instead;
 if the player has the black rod, say "you feel a whooshy sound enter your eyeball sockets and then your tummy flips over your groiny-place. WHOOOOOAAAA suddenly you find yourself trasported to the...
 
 ";
 
-Report casting yzxxy: 
+Report casting yzxxy:
     say "Under the influence of the black rod, you pronounced 'yzxxy' as Wizex-zi. You are glad there is some way out of that Secret Room!"
 
-Carry out casting yzxxy: 
+Carry out casting yzxxy:
 	move the player to The Space Lounge.
 
 [Items]
@@ -414,38 +541,91 @@ A smoothie is a kind of thing.
 A blah is a smoothie.
 
 Some smoothies in BehindtheBar are defined by Table 1.2. The description of a smoothie is "[description]"
-	
-Instead of drinking a smoothie (called the drink): 
-    now the drink is nowhere; 
+
+Instead of drinking a smoothie (called the drink):
+    now the drink is nowhere;
     say "You quaff [the drink]. It goes down beautifully.";
 	now the player is in the Floating Courtyard.
-	
-Instead of drinking a RocketBlaster: 
-    now the RocketBlaster is nowhere; 
-    say "You quaff the RocketBlaster. It goes down beautifully.";
+
+Instead of drinking a RocketBlaster:
+    now the RocketBlaster is nowhere;
+    say "You drink the RocketBlaster. It's fizzy and sour...but then there's a *flash*.";
 	now the player is in Round1.
+
+
+Instead of drinking a goodnightAstronaut:
+	now the goodnightAstronaut is nowhere;
+	say "You sip on the goodnightAstronaut. It is extremely delicious. It's delicate flavors cause you to think about reality, life, and the choices that are possible within a given day, hour, or second and how realities of imagination can unfold in your mind in a blink of an eye; entire awe-inspiring revelations are flipping by instantly and gone forever. If only you could swim within their great oceans for awhile...
+
+Whew! That drink was strong - you feel like if you could sit down somewhere comfy you could really get deep into some reality bending mind-fun.";
+	now the meditativeMaster is true.
+
 
 Table 1.2
 smoothie	description
-shinyUnicorn	"It's your smoothie! This thing is like taking a bath in frozen unicorn snot. Amazing."
-rocketBlaster	"It's your smoothie! Neon Yellow. Glows and bubbles. It's gonna shoot you into SPACE!"
-anther	"It's your smoothie! anther kinda smoothie here eh"
-thisas	"It's your smoothie! thisas another smoothie eh"
+shinyUnicorn	"This thing is like taking a bath in frozen unicorn snot. Amazing."
+rocketBlaster	"Neon Yellow. Glows and bubbles. It's gonna shoot you into SPACE!"
+hanShotFirst	"Coffee shot with a shot of espresso."
+lunarBurn	"It's a shadowy color swirling with moonlight. The glass is cool to the touch."
+solarFreeze	"Glowing like a sunflower on a sunny day, this drink is quite beautiful. Dazzling."
+battleStarChillactica	"It looks kind of like a Cylon, in that it looks like a regular drink. Could be any drink in fact. Even ones that would seem totally impossible continuity-wise."
+goodnightAstronaut	"It's a glass of orange juice, with a rare Spherb that has been known to induce transcendental states of being."
+escapeVelociTea	"A nice warm cup of tea. Perfection."
+
 
 A description of a smoothie usually is "This thing is like taking a bath in frozen unicorn snot. Amazing."
 
+Instead of giving the mcGuffin to the bartender:
+	move the mcGuffin to the bartender;
+	move the behindTheBarKey to the player;
+	say "She looks pretty serious all the sudden. 'Wow, now that it's time to leave I'm not ready. What's it going to be like out there? What if we can't resupply our sensory stimulants or dowlod our fundoms? Anyway, whatever happens is going to be supesciting.'"
+
+Instead of giving the coin to the bartender:
+	move the coin to the bartender;
+	let the target smoothie be a random smoothie in the BehindtheBar;
+	now the player has the target smoothie;
+	say "She accepts with a smile and slides you a [target smoothie]. It looks friggin delicious."
+
+Instead of asking Aframe about "xx":
+	say "When you mention xx, Aframe's eyes light up. He smiles and looks around the room for a second before stepping closer to you. 'How do you know aobut xx?', he says - well it doesn't matter now - just remember yy when you get to the zz okay? DON'T FORGET ABOUT THE YY! Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
+	now Aframe is a co-conspirator;
+	now Aframe is in the Secret Room.
+
+
+
+
+
+
+Instead of going to the Floating Courtyard when the player is not in the floating dolphin:
+    say "You don't have wings or pyscho-kinetic levitation abilities or a hoverboard or anything to go up with."
+
+
+[When play begins:
+	change the library message tense to past tense;]
+
+Definition: a direction (called thataway) is viable if the room thataway from the location is a room.
+
+[After looking:
+	let count of exits be the number of viable directions;
+	if the count of exits is 0:
+		say "(There are no routes out of this room.)";
+	else:
+		say "(From here, you can move to [list of viable directions].)";
+		continue the action;]
+
+
 [weapons]
-A weapon is a kind of thing. 
-A weapon has a number called the maximum damage. 
+A weapon is a kind of thing.
+A weapon has a number called the maximum damage.
 The maximum damage of a weapon is usually 4.
-A nanocarbon blade is a kind of weapon. The maximum damage of the nanocarbon blade is 6. 
+A nanocarbon blade is a kind of weapon. The maximum damage of the nanocarbon blade is 6.
 A dagger is a kind of weapon. The maximum damage of a dagger is 10.
 A pin is a kind of weapon. The maximum damage of a pin is 1.
 
 [Jerseys]
 [*]A jersey is a kind of thing. A jersey is wearable. Some jerseys in the Staging Area are defined by the Table of Honorary Jerseys. The description of a jersey is "Since [year established], the Tour de France has awarded this jersey to the [citation]."
 
-Table of Honorary Jerseys 
+Table of Honorary Jerseys
 jersey	year established	citation
 a yellow jersey	1919	"race leader"
 a polkadot jersey	1933	"King of the Mountains"
@@ -455,9 +635,9 @@ a white jersey	1975	"best cyclist aged 25 or less"
 A blue jersey is in the Staging Area. The description of the blue jersey is "blue jersaaaay"
 
 [The Player]
-The player carries a dagger. 
+The player carries a dagger.
 The player carries a coin.
-The player carries a specialImportantStoryLineElement. 
+The player carries a specialImportantStoryLineElement.
 The player is a person.
 The maximum hit points of the player is 100.
 The current hit points of the player is 10.
@@ -509,7 +689,7 @@ A person is either awake or asleep. A person is normally awake.
 
 [Aframe]
 Aframe is a man.
-AFrame is a person in the Space Lounge. AFrame is male. The description of AFrame is "Aframe is looking pretty sharp there wearing [a list of unconcealed things worn by Aframe] with his usual aplomb." 
+AFrame is a person in the Space Lounge. AFrame is male. The description of AFrame is "Aframe is looking pretty sharp there wearing [a list of unconcealed things worn by Aframe] with his usual aplomb."
 
 Instead of asking Aframe about "xx":
 	say "When you mention xx, Aframe's eyes light up. He smiles and looks around the room for a second before stepping closer to you. 'How do you know aobut xx?', he says - well it doesn't matter now - just remember yy when you get to the zz okay? DON'T FORGET ABOUT THE YY! Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
@@ -530,12 +710,12 @@ Persuasion rule for asking AFrame to try doing something:
 Aframe is wearing a pin-striped suit and a pink thong. Rule for deciding the concealed possessions of Aframe: if the particular possession is the thong and Aframe is wearing the suit, yes; otherwise no.
 Test me with "aframe, remove suit / look / aframe, remove thong / look".
 
-Instead of shooting Aframe with the gun: 
+Instead of shooting Aframe with the gun:
 	say "This weird ray comes out of your gun but it's like it's moving in slow-motion...as the beam wiggles toward Aframe super duper slow he steps out of the way of it. The wiggling intensifies and disappears. Aframe is looking at you with this annoyed look. Like he doesn't totally trust you anymore because you just tried to twinkle him out of existence.";
 	now Aframe is an enemy.
-	
-Aframe has a number called maximum hit points. 
-Aframe has a number called current hit points. 
+
+Aframe has a number called maximum hit points.
+Aframe has a number called current hit points.
 The maximum hit points of Aframe is 1000.
 The current hit points of the Aframe is 1000.
 AFrame carries a pin.
@@ -552,8 +732,8 @@ Instead of giving the specialImportantStoryLineElement to the bartender:
 	move the behindTheBarKey to the player;
 	say "She looks pretty serious all the sudden. 'Wow, now that it's time to leave I'm not ready. What's it going to be like out there? What if we can't resupply our sensory stimulants or dowlod our fundoms? Anyway, whatever happens is going to be supesciting.'"
 
-Instead of giving the coin to the bartender: 
-	move the coin to the bartender; 
+Instead of giving the coin to the bartender:
+	move the coin to the bartender;
 	let the target smoothie be a random smoothie in the BehindtheBar;
 	now the player has the target smoothie;
 	say "She accepts with a smile and slides you a smoothie. It looks friggin delicious."
@@ -562,8 +742,8 @@ Instead of giving the coin to the bartender:
 The 3dPrinter is a bot. 3dPrinter is in MyRoom. The description of 3dPrinter is "Oh yeah, 3dPrinter is your Convergence Roommate. You found each other on the Convergence FaceSpace forums, or maybe it was on SlashChat? anyway, you don't know each other well. 3dPrinter has been a pretty o-kay roommate, but you're definitely not getting any action privately, because it is NOT vacating the premesis. It looks a little sad today."
 
 After asking the 3DPrinter about "sad":
-		say "You ask it why it looks sad and it tells you, 'I just don't feel like I have any meaning anymore. I haven't created anything in ages. I'm an ARTIST. But I need inspiration. Can you find me a blueprint? There should be one in the Quantum Sandbox. Thanks, human.' 
-			
+		say "You ask it why it looks sad and it tells you, 'I just don't feel like I have any meaning anymore. I haven't created anything in ages. I'm an ARTIST. But I need inspiration. Can you find me a blueprint? There should be one in the Quantum Sandbox. Thanks, human.'
+
 			It promptly goes into sleep mode, making soft crying sounds, but not really crying."
 
 [geneSpliceMinotaur]
@@ -575,8 +755,8 @@ A cosplayer is a person in Mainstage. The cosplayer is female. The cosplayer car
 [Boffer]
 The boffer is a person.
 The boffer is in the Garden Court.
-The boffer has a number called maximum hit points. 
-The boffer has a number called current hit points. 
+The boffer has a number called maximum hit points.
+The boffer has a number called current hit points.
 The maximum hit points of the boffer is 30.
 The current hit points of the boffer is 5.
 The boffer is an enemy.
@@ -595,7 +775,7 @@ Persuasion rule for asking the boffer to try doing something:
 		say "Looks like you need some help, here take this.";
 		persuasion succeeds.
 
-[Security Bot]		
+[Security Bot]
 A securityBot is a person. The description of the securityBot is "Looks like a standard securityBot. A floating ball of plastimetal about 3 feet in diameter with a bunch of creepy robot arms sticking out all over with cameras and sensors and whatever else all those things are. Is that a toothbrush? It's pretty unnerving to look at."
 
 There is a securityBot in the Space Lounge.
@@ -605,14 +785,14 @@ securityBotPissed is a number that varies. securityBotPissed is 1.
 This is the securityBotPissed rule:
     if securityBotPissed is 2 begin;
 	say "you pissed off the securityBot one too many times, it precisely pulses a beam of pure energy all over your beautiful body and now you are dead";
-	end the story; 
+	end the story;
       stop;
    end if;
 
-Persuasion rule for asking securityBot to try doing something: 
+Persuasion rule for asking securityBot to try doing something:
 	if securityBotPissed is 2:
 		say "You pissed off the securityBot one too many times. The securityBot's large and small and micro arms unfurl like a lotus made of cobras.  It's central power unit glows briefly and precisely pulses a beam of pure energy all over your beautiful body and now you're dead";
-		end the story; 
+		end the story;
 	otherwise:
 		Say "The securityBot looks pissed. Maybe you outta not mess with securityBots...[securityBotPissed]";
 		now the securityBotPissed is 2;
@@ -622,13 +802,13 @@ Persuasion rule for asking someone to try doing something: persuasion succeeds.
 [Character Movement]
 
 [Dolphin]
-Instead of going to the Floating Courtyard when the player is not in the floating dolphin: 
+Instead of going to the Floating Courtyard when the player is not in the floating dolphin:
     say "You don't have wings or pyscho-kinetic levitation abilities or a hoverboard or anything to go up with."
 
 [When play begins:
 	change the library message tense to past tense;]
-	
-Definition: a direction (called thataway) is viable if the room thataway from the location is a room. 
+
+Definition: a direction (called thataway) is viable if the room thataway from the location is a room.
 
 [After looking:
 	let count of exits be the number of viable directions;
@@ -647,14 +827,14 @@ left	central	right
 
 Rule for constructing the status line:
 fill status bar with Table of Status;
-rule succeeds.		
+rule succeeds.
 
-[When play begins: 
-    now the left hand status line is "Hit Points: [current hit points of player]"; 
+[When play begins:
+    now the left hand status line is "Hit Points: [current hit points of player]";
     now right hand status line is "Ninja Points:[ninja points of player]".]
 
-Instead of taking inventory: 
-    say "[if the player carries something][We]['re] carrying [a list of things carried by the player][otherwise][We]['re] empty-handed"; 
+Instead of taking inventory:
+    say "[if the player carries something][We]['re] carrying [a list of things carried by the player][otherwise][We]['re] empty-handed";
     say "[if the player wears something]. [We]['re] wearing [a list of things worn by the player][end if]."
 
 
@@ -664,26 +844,26 @@ Instead of taking inventory:
 
 Instead of attacking something:
 	If the noun is a boffer:
-		let the damage be a random number between 4 and 10; 
+		let the damage be a random number between 4 and 10;
 		decrease the current hit points of the noun by the damage;
 		say "You attack [the noun], causing [damage] points of damage! [The noun] has [current hit points of the noun] hit points";
-		if the current hit points of the noun is less than 0: 
-			now the current hit points of the noun is 0;		
-			say "[line break][The noun] is defeated! He stands up and gives you his staff, 'Nobody has defeated me in a long time. This is yours now.'"; 
-			now the noun is defeated; 
+		if the current hit points of the noun is less than 0:
+			now the current hit points of the noun is 0;
+			say "[line break][The noun] is defeated! He stands up and gives you his staff, 'Nobody has defeated me in a long time. This is yours now.'";
+			now the noun is defeated;
 			now the noun is neutralla;
 			move the nanocarbon staff to the player;
-			stop the action; 
-		let the enemy damage be a random number between 2 and 8; 
-		decrease the current hit points of the player by the enemy damage; 
+			stop the action;
+		let the enemy damage be a random number between 2 and 8;
+		decrease the current hit points of the player by the enemy damage;
 		say "[line break][The noun] attacks you, causing [enemy damage] points of damage! You have [current hit points of the player] hit points";
-		if the current hit points of the player is less than 0: 
-			say "[line break]You die in battle, like a warrior!"; 
+		if the current hit points of the player is less than 0:
+			say "[line break]You die in battle, like a warrior!";
 			end the story;
 	Otherwise:
 		say "Whoa this is not the time or place to be attacking people. Chill dudetron.";
 		stop the action.
-		
+
 [attack with weapon]
 [Understand the commands "attack" and "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as something new.
 
@@ -692,39 +872,39 @@ Attacking it with is an action applying to one visible thing and one carried thi
 Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
 
 The attacking it with action has a number called the damage inflicted.
-Setting action variables for attacking something with something: 
-    if the second noun is a weapon: 
-        let the maximum attack be the maximum damage of the second noun; 
+Setting action variables for attacking something with something:
+    if the second noun is a weapon:
+        let the maximum attack be the maximum damage of the second noun;
         now the damage inflicted is a random number between 1 and the maximum attack.
-Check an actor attacking something with something (this is the can't attack with something that isn't a weapon rule): 
-    if the second noun is not a weapon: 
-        if the actor is the player, say "[The second noun] does not qualify as a weapon."; 
+Check an actor attacking something with something (this is the can't attack with something that isn't a weapon rule):
+    if the second noun is not a weapon:
+        if the actor is the player, say "[The second noun] does not qualify as a weapon.";
         stop the action.
-Check an actor attacking something with something (this is the can't attack a non-person rule): 
-    if the noun is not a person: 
-        if the actor is the player, say "[The noun] has no life to lose."; 
+Check an actor attacking something with something (this is the can't attack a non-person rule):
+    if the noun is not a person:
+        if the actor is the player, say "[The noun] has no life to lose.";
         stop the action.
-Carry out an actor attacking something with something (this is the standard attacking it with a weapon rule): 
-    decrease the current hit points of the noun by the damage inflicted; 
-    if the noun is dead: 
+Carry out an actor attacking something with something (this is the standard attacking it with a weapon rule):
+    decrease the current hit points of the noun by the damage inflicted;
+    if the noun is dead:
         now the noun is nowhere.
 
-Report attacking a dead person with something (this is the death-report priority rule): 
+Report attacking a dead person with something (this is the death-report priority rule):
     say "You attack with [the second noun], killing [the noun]!" instead.
-Report attacking someone with something (this is the normal attacking report rule): 
+Report attacking someone with something (this is the normal attacking report rule):
     say "You attack [the noun] with [the second noun], causing [damage inflicted] point[s] of damage!" instead.
-Report someone attacking the player with something when the player is dead (this is the player's-death priority rule): 
-    say "[The actor] attacks you with [the second noun], finishing you off!"; 
-    end the story; 
+Report someone attacking the player with something when the player is dead (this is the player's-death priority rule):
+    say "[The actor] attacks you with [the second noun], finishing you off!";
+    end the story;
     stop the action
-Report someone attacking the player with something (this is the standard report someone attacking the player with rule): 
+Report someone attacking the player with something (this is the standard report someone attacking the player with rule):
     say "[The actor] attacks you with [the second noun], causing [damage inflicted] point[s] of damage!" instead.
-Report someone attacking something with something (this is the standard report attacking it with rule): 
+Report someone attacking something with something (this is the standard report attacking it with rule):
     say "[The actor] attacks [the noun] with [the second noun], causing [damage inflicted] point[s] of damage!" instead.
-When play begins: 
-    now the left hand status line is "You: [current hit points of player]"; 
+When play begins:
+    now the left hand status line is "You: [current hit points of player]";
     now the right hand status line is "Gladiator: [current hit points of gladiator]".
-[Every turn (this is the gladiator-attack rule): 
+[Every turn (this is the gladiator-attack rule):
     if the gladiator is not dead, try the gladiator attacking the player with a random weapon which is carried by the gladiator.
 Test me with "hit gladiator with mace / kill gladiator / drop mace / attack gladiator / attack gladiator with mace / g / g".]
 [END attack with weapon]
@@ -742,31 +922,31 @@ Carry out wearing the black ninja outfit for the first time:
 
 
 When play begins:
-	let enemy_count be a random number between 1 and 5; 
-	if enemy_count is 0: 
-		say "You have no enemies."; 
-	if enemy_count is 1: 
-		say "You have one enemy."; 
-	otherwise if enemy_count is 2: 
-		say "You have two enemies."; 
-	otherwise if enemy_count is 3: 
-		say "You have more than a couple enemies."; 
-	otherwise: 
+	let enemy_count be a random number between 1 and 5;
+	if enemy_count is 0:
+		say "You have no enemies.";
+	if enemy_count is 1:
+		say "You have one enemy.";
+	otherwise if enemy_count is 2:
+		say "You have two enemies.";
+	otherwise if enemy_count is 3:
+		say "You have more than a couple enemies.";
+	otherwise:
 		say "BTW, you sure have made quite the number of enemies."
 
-When play begins: 
-	let Y be a random number between 1 and 1000; 
-	if Y is: 
-		-- 7: say "The magic number is seven. How fortuitous! The number of the heavens, the number of the angels."; 
-		-- 666: say "The magic number is the number of the BEAST! Uh oh, that's probably not good"; 
+When play begins:
+	let Y be a random number between 1 and 1000;
+	if Y is:
+		-- 7: say "The magic number is seven. How fortuitous! The number of the heavens, the number of the angels.";
+		-- 666: say "The magic number is the number of the BEAST! Uh oh, that's probably not good";
 		-- otherwise: say "Today's magic number is [Y]."
 [
 When play begins:
-	let X be a random number between 1 and 3; 
-		if X is a number listed in the Table of Switching, say "[output][paragraph break]"; 
+	let X be a random number between 1 and 3;
+		if X is a number listed in the Table of Switching, say "[output][paragraph break]";
 			otherwise say "X is greater than the number of your noses!"
 
-Table of Switching	
+Table of Switching
 number	output
 1	"X is eleven!"
 2	"X is twelve!"
@@ -802,17 +982,17 @@ AdBlaster2000	"A little robot that follows you around projecting fragmented imag
 
 The Round1 is a room. "Welcome to Trivia, I'm your host, a computer program super full of useless information. You will be rewarded with an object based on your score at the end of the quiz.
 
-Wrong answers will not be rewarded with correct answers - I'm not telling you the right answer. 
+Wrong answers will not be rewarded with correct answers - I'm not telling you the right answer.
 
-I have ONE singular accepted ABSOLUTELY CORRECT answer it's in a table and it is EXACT and PERFECT - I am the ULTIMATE IMPARTIAL QUIZ JUDGE. If you don't like it...cry me a spriver! OH also you are trapped within my quizzy embrace until the end so just accept your fate. Srsly don't try to leave or anything you'll just waste your answer-chances. The quiz is only four rounds of four questions each - just relax you're not stuck in a Quiz Vortex or anything...(I hope...) 
+I have ONE singular accepted ABSOLUTELY CORRECT answer it's in a table and it is EXACT and PERFECT - I am the ULTIMATE IMPARTIAL QUIZ JUDGE. If you don't like it...cry me a spriver! OH also you are trapped within my quizzy embrace until the end so just accept your fate. Srsly don't try to leave or anything you'll just waste your answer-chances. The quiz is only four rounds of four questions each - just relax you're not stuck in a Quiz Vortex or anything...(I hope...)
 
 Questions in the first round are worth 5 points a piece, but will increase in value as the game goes on.
 
-Answers must be given with Capitalization and exact spelling. 
+Answers must be given with Capitalization and exact spelling.
 
 -----------
 
-The first section is on films involving simulated realities and questionable memories. 
+The first section is on films involving simulated realities and questionable memories.
 
 Who are you? Are you your memories? Are you what you have done? Are you what you will do? Or are you nothing at all but a wisp...or maybe 'just' a program? "
 
@@ -824,11 +1004,11 @@ Before looking for the first time:
 	follow the pub1 rule.
 
 Table of quiz questions
-Qn	Correct               
+Qn	Correct
 "In which film did someone get offered a choice between two pills and then didn't take both of them like they should have?"	"The Matrix"
 "In which movie did the main character die from super disturbing eye bulging decompression after helmet face plate breakage in the opening scene then but it turned out was just a dream? (or was it a premonition? or was it an implanted memory?)"	"Total Recall"
 "This movie has a sail boat smash into the end of a fake world. Everyone watching just goes totally nuts."	"The Truman Show"
-"This film has annoying gothy villians but a super cool reveal that everyone was in a giant space habitat the WHOLE TIME?! (btw foreshadowing...)"	"Dark City"
+"This film has annoying gothy villians but a super cool reveal that everyone was in a giant space habitat the WHOLE TIME?!"	"Dark City"
 
 The expected answer is a text that varies.
 
@@ -850,7 +1030,7 @@ A text question rule (this is the pub answer rule):
 				say "That was Round One, now onto Round Two!";
  				increase score by 5;
 				move the player to The Round2;
-				exit;				
+				exit;
 				follow the pub2 rule;
 		otherwise:
 			if the table of quiz questions is not empty:
@@ -860,14 +1040,14 @@ A text question rule (this is the pub answer rule):
 				say "That was Round One, now onto Round Two!";
 				move the player to The Round2;
 				exit;
-				follow the pub2 rule.      
+				follow the pub2 rule.
 
-The Round2 is a room. "Now onto Round Two where the questions are worth ten points a piece. The subject of this round is Interactive Fiction! M(meta)E(meta)T(meta)A"
+The Round2 is a room. "Now onto Round Two where the questions are worth ten points a piece. The subject of this round is Interactive Fiction! M(meta)E(meta)T(meta)A(meta)"
 
 Rule for listing exits while the player is in The Round2: do nothing instead.
 
 Table of quiz questions2
-Qn2	Correct2               
+Qn2	Correct2
 "Around 1975, a programmer and amateur caver wrote the first text adventure game whose name originally was all caps and only six characters long because of filename length limitations of that time. What is the name of this game (the all-caps six letter version)"	"ADVENT"
 "Colossal Cave Adventure featured a 'magic word' that caused teleportation and has shown up again and again in video games ever since.  It enables cheat modes, opens Easter Eggs and has inspired many silly programs. Type this magic word in lowercase now."	"xyzzy"
 "In what game series are you likely to be eaten by a grue if you travel into dark places without a light source?"	"Zork"
@@ -903,14 +1083,14 @@ A text question rule (this is the pub2 answer rule):
 				say "That was Round Two, now onto Round Three!";
 				move the player to The Round3;
 				exit;
-				follow the pub3 rule.      
-            
+				follow the pub3 rule.
+
 The Round3 is a room. "Round Three is here! The questions are harder but now worth fifteen points a piece. These ones are about going INSIDE THE COMPUTER!"
 
 Rule for listing exits while the player is in The Round3: do nothing instead.
 
 Table of quiz questions3
-Qn3	Correct3               
+Qn3	Correct3
 "What is the name of the anime about a VRMMORPG where the players have to play until they either die or someone beats the game? No logging out. WHAAaaaa? Wicked eh?"	"Sword Art Online"
 "Who is the actor who played the program Crom in Tron - you might also know him as Londo..."	"Peter Jurasik"
 "This 1980's movie about Virtual Reality was such garbage that it basically halted research and tech development in VR for about 20 years."	"The Lawnmower Man"
@@ -946,11 +1126,11 @@ A text question rule (this is the pub3 answer rule):
 				say "That was Round Three, now onto Round Four!";
 				move the player to The Round4;
 				exit;
-				follow the pub4 rule.      
-            
+				follow the pub4 rule.
+
 The Round4 is a room. "This is it, the final round. You're so close to escaping this quiz that not even a Quiz Vortex could keep you from exiting the quiz-field. The questions are worth twenty points a piece.
 
-This round is about choices, random forces and what they lead to...which is of course PARALLEL UNIVERSES! 
+This round is about choices, random forces and what they lead to...which is of course PARALLEL UNIVERSES!
 
 Every imagined-not-taken choice spawned from every individual's mind throughout time and space creating entire universes with every passing thought. The vast sea of thought embracing the infinite seeds of thought; the birth of what-ifs reflecting infinitely.
 "
@@ -958,7 +1138,7 @@ Every imagined-not-taken choice spawned from every individual's mind throughout 
 Rule for listing exits while the player is in The Round4: do nothing instead.
 
 Table of quiz questions4
-Qn4	Correct4               
+Qn4	Correct4
 "Who wrote a series of stories about children travelling between parallel worlds with a powerful knife, and has book titles inspired by Paradise Lost?"	"Philip Pullman"
 "What is the name of the author who wrote about Sir Luther of Arkwright - a hero who can travel through the parallels at will?"	"Bryan Talbot"
 "What movie about parallel universes involves a good version of Jet Li trying to stop an evil version of Jet Li who is determined to gain ultimate power by being the only version of himself throughout all universes?"	"The One"
@@ -971,7 +1151,7 @@ Every turn when the location is The Round4 (this is the pub4 rule):
 	now current question is the Qn4 entry;
 	now expected answer is the correct4 entry;
 	blank out the whole row;
-	ask a closed question, in text mode.	
+	ask a closed question, in text mode.
 
 A text question rule (this is the pub4 answer rule):
 	if the location of the player is Round4:
@@ -996,7 +1176,7 @@ A text question rule (this is the pub4 answer rule):
 				now the current prompt is "";
 				follow the end1 rule;
 			exit.
-            
+
 The End is a room. "Final Score: [score]/200".
 
 The quizzinator1 is a thing. The description of the quizzinator1 is "You got this for good quizinating!"
@@ -1008,9 +1188,11 @@ Every turn when the location is The End (this is the end1 rule):
 	now the closed question mode is false;
 	If the score is greater than 50:
 		now the player has the quizzinator1;
+		move the player to P2D;
 	otherwise:
-		now the player has the quizzinator2.
-	
+		now the player has the quizzinator2;
+		move the player to P2D.
+
 
 [Every turn:
 	if the player is in Room 233:
@@ -1047,6 +1229,7 @@ H2D is west of H2E.
 H2E is north of H2H.
 H2J is south of H2H.
 H1H is down from H2H.
+Round1 is south of P2C.
 
 H2B is north of P2B.
 H2C is north of P2C.
@@ -1070,7 +1253,7 @@ H2M is west of H2N.
 H2K is north of H2M.
 H1M is down from H2M.
 H2I is north of H2K.
-The spaceLoungeDoor is east of the Space Lounge and west of H2K. 
+The spaceLoungeDoor is east of the Space Lounge and west of H2K.
 The greenRoomDoor is east of Mainstage and west of the Green Room.
 Registration is west of H2I.
 
@@ -1142,38 +1325,37 @@ behindTheBarDoor is west of the Space Lounge.
 [Conversation]
 After saying hello to a person:
     say "'Hi, there, [noun]!' you exclaim
-    
+
     'Well, hello there!' they grin."
 
 After saying hello to a man:
-    say "'Hi, there, [noun] old fellow!' you exclaim
-    
+    say "'Hi, there, [noun]!' you exclaim
+
     'Well, hello there!' he grins."
 
 After saying hello to a woman:
-    say "'Hi, there, [noun] fine lady!' you exclaim
-    
+    say "'Hi, there, [noun]!' you exclaim
+
     'Well, hello there!' she grins."
 
 After saying hello to a bot:
     say "'Hi, there, [noun]!' you exclaim
-    
+
     'Well, h3ll0 th3r3!' it modulates."
 
 
- After saying goodbye to a woman:
-    say "'Well, see you layter,' you say.
-     
-    'Not if I see you first!' he replies."
+After asking the AFrame about "love":
+	say "Ooo-la-la-you wanna be my Lady Gaga?!.";
+	now Aframe is a co-conspirator.
 
-After asking the securityBot about "love", say "The bot's camera focuses in on your face then it's speakers say, 'Please stop asking me about ridiculous human emotional content.' 
+After asking the securityBot about "love", say "The bot's camera focuses in on your face then it's speakers say, 'Please stop asking me about ridiculous human emotional content.'
 
 Most bots hate talking about love."
 
 After asking the bartender about "smoothies", say "You got the coin I got yer smoothie, except you don't get to choose 'cause our smoothie bot is broken so it just makes random ones. The current smoothies you might get are [smoothie from Table 1.2]".
 
 
-[Instead of asking the bartender about something: 
-    say "'[one of]Sorry,[or]I'm afraid[or]Hm,[at random] [one of]I don't know much about that[or]you've got me there[or]I haven't the faintest[at random],' The bartender [one of]drawls[or]replies[or]comments[or]exclaims[at random]"; 
+[Instead of asking the bartender about something:
+    say "'[one of]Sorry,[or]I'm afraid[or]Hm,[at random] [one of]I don't know much about that[or]you've got me there[or]I haven't the faintest[at random],' The bartender [one of]drawls[or]replies[or]comments[or]exclaims[at random]";
     say "[one of][or] huskily[or] throatily[or] silkily[or] in a deep manly voice[as decreasingly likely outcomes]."
 ]
