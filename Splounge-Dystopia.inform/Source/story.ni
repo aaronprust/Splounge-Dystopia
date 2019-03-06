@@ -552,7 +552,6 @@ Instead of drinking a RocketBlaster:
     say "You drink the RocketBlaster. It's fizzy and sour...but then there's a *flash*.";
 	now the player is in Round1.
 
-
 Instead of drinking a goodnightAstronaut:
 	now the goodnightAstronaut is nowhere;
 	say "You sip on the goodnightAstronaut. It is extremely delicious. It's delicate flavors cause you to think about reality, life, and the choices that are possible within a given day, hour, or second and how realities of imagination can unfold in your mind in a blink of an eye; entire awe-inspiring revelations are flipping by instantly and gone forever. If only you could swim within their great oceans for awhile...
@@ -613,7 +612,6 @@ Definition: a direction (called thataway) is viable if the room thataway from th
 		say "(From here, you can move to [list of viable directions].)";
 		continue the action;]
 
-
 [weapons]
 A weapon is a kind of thing.
 A weapon has a number called the maximum damage.
@@ -650,13 +648,6 @@ To decide whether collecting names:
 	if the command prompt is "What is your name? > ",
 		yes;
 		no.
-
-Table of Random Statements
-statement
-"[player's full name]? Interesting, nice."
-"[player's full name]!? Aaaah, that's a good one."
-"Oh, [player's full name] eh!? I've heard a you."
-"[player's full name]!? Har har har! Musta been one-a them vat babies huh?"
 
 After reading a command when collecting names:
 	if the number of words in the player's command is greater than 5:
@@ -807,8 +798,6 @@ Instead of going to the Floating Courtyard when the player is not in the floatin
 
 [When play begins:
 	change the library message tense to past tense;]
-
-Definition: a direction (called thataway) is viable if the room thataway from the location is a room.
 
 [After looking:
 	let count of exits be the number of viable directions;
@@ -1359,3 +1348,4 @@ After asking the bartender about "smoothies", say "You got the coin I got yer sm
     say "'[one of]Sorry,[or]I'm afraid[or]Hm,[at random] [one of]I don't know much about that[or]you've got me there[or]I haven't the faintest[at random],' The bartender [one of]drawls[or]replies[or]comments[or]exclaims[at random]";
     say "[one of][or] huskily[or] throatily[or] silkily[or] in a deep manly voice[as decreasingly likely outcomes]."
 ]
+
