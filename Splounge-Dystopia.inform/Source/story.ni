@@ -434,6 +434,7 @@ statement
 "[player's full name]!? Aaaah, that's a good one."
 "Oh, [player's full name] eh!? I've heard a you."
 "[player's full name]!? Har har har! Musta been one-a them vat babies huh?"
+"Hey, do you know [player's full name]? They have the same name as you!"
 
 After reading a command when collecting names:
 	if the number of words in the player's command is greater than 5:
@@ -740,7 +741,7 @@ Instead of giving the coin to the bartender:
 	say "She accepts with a smile and slides you a smoothie. It looks friggin delicious."
 
 [3dPrinter]
-The 3dPrinter is a bot. 3dPrinter is in MyRoom. The description of 3dPrinter is "Oh yeah, 3dPrinter is your Convergence Roommate. You found each other on the Convergence FaceSpace forums, or maybe it was on SlashChat? anyway, you don't know each other well. 3dPrinter has been a pretty o-kay roommate, but you're definitely not getting any action privately, because it is NOT vacating the premesis. It looks rather sad today."
+The 3dPrinter is a bot. 3dPrinter is in MyRoom. The description of 3dPrinter is "Oh yeah, 3dPrinter is your Convergence Roommate. You found each other on the Convergence FaceSpace forums, or maybe it was on SlashChat? Anyway, you don't know each other well.\n\n3dPrinter has been a pretty o-kay roommate, but you're definitely not getting any action privately, because it is NOT vacating the premesis. It looks rather sad today."
 
 After asking the 3DPrinter about "sad":
 		say "You ask it why it looks sad and it tells you, 'I just don't feel like I have any meaning anymore. I haven't created anything in ages. I'm an ARTIST. But I need inspiration. Can you find me a blueprint? There should be one in the Quantum Sandbox. Thanks, human.'
