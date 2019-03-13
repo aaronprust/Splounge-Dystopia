@@ -301,10 +301,12 @@ Rule for listing exits while the player is in ----: do nothing instead.
 The MeditativeMasterPage is a page.
 "As you let your body sink into the chair, you feel completely confident that your physical body will be safe and totally comfortable in that incredibly soft chair while you let your mind explore the limitless expanse of the innerSpace of your mind. You can feel your imagination aflame as it connects with the intersections of existence. You find a clarity of mind you have never had before spark and then begin to spread within you.
 
-You can see the paths open to you here at the cusp of this intense Lucidic Story-Reality Comprehension"
+You can see the paths open to you here at the cusp of this intense Lucidic Story-Reality Comprehension. 
+	
+Those paths fall into three basic realms:"
 
 ExpansionPage is a page.
-"Your mind grasps the expansive consciousness path and it is as though in an instant you can feel your senses reach beyond the ten normally accessible to humans and it as though the entire CON hotel becomes translucent to you and you can see through it as though it were an engineering cutaway - except you can control where your focus is - sweeping around it is like you have this mega-3D vision and can look at anything. You find to your surprise that the entire hotel is floating in deep space. You hadn't really thought about lay beyond the hotel walls and had assumed you were still on Earth. It's crazy - it looks like part of the hotel was chopped off and heavy blast-shielding was put there, with an enormous engine attached to the bottom. You can also see that the Space Lounge is actually a converted shuttlecraft attached to the side of the hotel."
+"Your mind grasps the expansive consciousness path and it is as though in an instant you can feel your senses reach beyond the ten normally accessible to humans. It as though the entire CON hotel becomes translucent by to you by choice - you can see through it as though it were an engineering cutaway - except you can control where your focus is - sweeping around it is like you have this mega-3D vision and can look at anything. You find to your surprise that the entire hotel is floating in deep space. You hadn't really thought about lay beyond the hotel walls and had assumed you were still on Earth. It's crazy - it looks like part of the hotel was chopped off and heavy blast-shielding was put there, with an enormous engine attached to the bottom. You can also see that the Space Lounge is actually a converted shuttlecraft attached to the side of the hotel."
 The cdesc is "Expansion". It is for MeditativeMasterPage. It is an end-page.
 
 CrystalizationPage is a page.
@@ -312,7 +314,7 @@ CrystalizationPage is a page.
 The cdesc is "Crystalization". It is for MeditativeMasterPage. It is an end-page. Now the player is in the Secret Room.
 
 DisintegrationPage is a page.
-"You take one last look at the Splounge and the weird creatures that inhabit it. The humanoid form is beginning to look alien to you, your consciouness feels more like a tadpole than a person but even as you think that your sense of scale vanishes and your your body feels both growing huge and microscopic at the same time. The infinitely large and unimaginably small connect here where you find yourself. You feel a sense of relaxation deeper than you've known before as you let your consciousness disconnect from your body. You close your eyes and enter the darkness behind your eyes.
+"You take one last look at the Splounge and the weird creatures that inhabit it. The humanoid form is beginning to look alien to you, your consciouness feels more like a tadpole than a person but even as you think that your sense of scale vanishes and your your body feels like it is both growing huge and microscopic at the same time. The infinitely large and unimaginably small connect here in this place place of meaningless numbers. You feel a sense of relaxation deeper than you've known before as you let your consciousness disconnect from your body. You close your eyes and enter the darkness behind your eyes.
 
 A Void subsumes you, your senses fizzle away until nothing is left."
 The cdesc is "Disintegration.". It is for MeditativeMasterPage. It is an end-page.
@@ -562,7 +564,7 @@ Instead of drinking a RocketBlaster:
 
 Instead of drinking a goodnightAstronaut:
 	now the goodnightAstronaut is nowhere;
-	say "You sip on the goodnightAstronaut. It is extremely delicious. It's delicate flavors cause you to think about reality, life, and the choices that are possible within a given day, hour, or second and how realities of imagination can unfold in your mind in a blink of an eye; entire awe-inspiring revelations are flipping by instantly and gone forever. If only you could swim within their great oceans for awhile...
+	say "You sip on the goodnightAstronaut. It is extremely delicious. Its delicate flavors cause you to think about reality, life, and the choices that are possible within a given day, hour, or second. You wonder how realities of imagination can unfold in your mind in a blink of an eye; in fact entire awe-inspiring revelations are flipping through your thoughts now in a series of instants and gone forever. If only you could swim within their great oceans for awhile...
 
 Whew! That drink was strong - you feel like if you could sit down somewhere comfy you could really get deep into some reality bending mind-fun.";
 	now the meditativeMaster is true.
@@ -1357,3 +1359,43 @@ After asking the bartender about "smoothies", say "You got the coin I got yer sm
     say "[one of][or] huskily[or] throatily[or] silkily[or] in a deep manly voice[as decreasingly likely outcomes]."
 ]
 
+Satan is a person. The description of Satan is "A demonic looking creature. Its pretty much naked and super evil looking.".
+
+Satan is an enemy.
+
+Satan is in Elevator3.
+
+A wanderer is a kind of person.
+
+Satan is a wanderer.
+
+The description of Beelzebub is "A demonic looking creature. It's yellow and slimy looking.".
+
+Beelzebub is an enemy.
+
+Beelzebub is in Elevator1.
+
+Beelzebub is a wanderer.
+
+every turn:
+	repeat with currentWanderer running through wanderers:
+		let currentSpace be the location of the currentWanderer;
+		let nextSpace be a random room which is adjacent to the location of the currentWanderer;
+		let path be the best route from the currentSpace to nextSpace;
+		if currentWanderer is visible, say "[currentWanderer] heads [path].";
+		move currentWanderer to the nextSpace.
+[		say "[currentWanderer] went to [nextSpace]".]
+
+[every turn:
+	if a wanderer (called the currentWanderer) is in a room (called the Current Space)
+	begin;
+	let next space be a random room which is adjacent to
+	the current space;
+	move currentWanderer to the next space;
+	if Satan is visible, say "[currentWanderer] heads to [the next
+space].";
+	move currentWanderer to next space;
+	if currentWanderer is visible, say "[currentWanderer] arrives from [the
+current space].";
+	end if.
+]
