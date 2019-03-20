@@ -306,7 +306,7 @@ You can see the paths open to you here at the cusp of this intense Lucidic Story
 Those paths fall into three basic realms:"
 
 ExpansionPage is a page.
-"Your mind grasps the expansive consciousness path and it is as though in an instant you can feel your senses reach beyond the ten normally accessible to humans. It as though the entire CON hotel becomes translucent by to you by choice - you can see through it as though it were an engineering cutaway - except you can control where your focus is - sweeping around it is like you have this mega-3D vision and can look at anything. You find to your surprise that the entire hotel is floating in deep space. You hadn't really thought about lay beyond the hotel walls and had assumed you were still on Earth. It's crazy - it looks like part of the hotel was chopped off and heavy blast-shielding was put there, with an enormous engine attached to the bottom. You can also see that the Space Lounge is actually a converted shuttlecraft attached to the side of the hotel."
+"Your mind grasps the expansive consciousness path and it is as though in an instant you can feel your senses reach beyond the ten normally accessible to humans. It as though the entire CON hotel becomes translucent by to you by choice - you can see through it as though it were an engineering cutaway - except you can control where your focus is - sweeping around it is like you have this mega-3D vision and can look at anything. You find to your surprise that the entire hotel is floating in deep space. You hadn't really thought about world beyond the hotel walls and had assumed you were still on Earth. It's crazy - it looks like part of the hotel was chopped off and heavy blast-shielding was put there, with an enormous engine attached to the bottom. You can also see that the Space Lounge is actually a converted shuttlecraft attached to the side of the hotel."
 The cdesc is "Expansion". It is for MeditativeMasterPage. It is an end-page.
 
 CrystalizationPage is a page.
@@ -1364,9 +1364,11 @@ After asking the AFrame about "love":
 	say "Ooo-la-la-you wanna be my Lady Gaga?!.";
 	now Aframe is a co-conspirator.
 
-After asking the securityBot about "love", say "The bot's camera focuses in on your face then it's speakers say, 'Please stop asking me about ridiculous human emotional content.'
+After asking the securityBot about "love":
+	say "The bot's camera focuses in on your face then it's speakers say, 'Please stop asking me about ridiculous human emotional content.' (Most bots hate talking about love)";
+	now the friendToBots is true.
 
-Most bots hate talking about love."
+
 
 After asking the bartender about "smoothies", say "You got the coin I got yer smoothie, except you don't get to choose 'cause our smoothie bot is broken so it just makes random ones. The current smoothies you might get are [smoothie from Table 1.2]".
 
@@ -1394,7 +1396,7 @@ Beelzebub is in Elevator1.
 
 Beelzebub is a wanderer.
 
-every turn:
+Every turn when the remainder after dividing the turn count by 3 is 0:
 	repeat with currentWanderer running through wanderers:
 		let currentSpace be the location of the currentWanderer;
 		let nextSpace be a random room which is adjacent to the location of the currentWanderer;
@@ -1416,3 +1418,19 @@ space].";
 current space].";
 	end if.
 ]
+
+suspiciousCleanerBot is a bot in Consuite.
+
+friendToBots is a truth state that varies. friendToBots is false.
+
+Every turn:
+	if friendToBots is true:
+		if the location of suspiciousCleanerBot is not the location of the player: 
+			let the way be the best route from the location of suspiciousCleanerBot to the location of the player, using doors; 
+			try suspiciousCleanerBot going the way; 
+		otherwise: 
+			now suspiciousCleanerBot is a co-conspirator;
+			say "You notice there is a bot following you."
+			
+
+
