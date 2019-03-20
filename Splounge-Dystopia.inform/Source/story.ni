@@ -434,6 +434,7 @@ statement
 "[player's full name]!? Aaaah, that's a good one."
 "Oh, [player's full name] eh!? I've heard a you."
 "[player's full name]!? Har har har! Musta been one-a them vat babies huh?"
+"Hey, do you know [player's full name]? They have the same name as you!"
 
 After reading a command when collecting names:
 	if the number of words in the player's command is greater than 5:
@@ -740,12 +741,28 @@ Instead of giving the coin to the bartender:
 	say "She accepts with a smile and slides you a smoothie. It looks friggin delicious."
 
 [3dPrinter]
-The 3dPrinter is a bot. 3dPrinter is in MyRoom. The description of 3dPrinter is "Oh yeah, 3dPrinter is your Convergence Roommate. You found each other on the Convergence FaceSpace forums, or maybe it was on SlashChat? anyway, you don't know each other well. 3dPrinter has been a pretty o-kay roommate, but you're definitely not getting any action privately, because it is NOT vacating the premesis. It looks rather sad today."
+The 3dPrinter is a bot. 
+3dPrinter is in MyRoom. The description of 3dPrinter is "Oh yeah, 3dPrinter is your Convergence Roommate. You found each other on the Convergence FaceSpace forums, or maybe it was on SlashChat? Anyway, you don't know each other well.
 
-After asking the 3DPrinter about "sad":
+3dPrinter has been a pretty o-kay roommate, but you're definitely not getting any action privately, because it is NOT vacating the premesis. 
+
+It looks rather sad today."
+
+After asking the 3DPrinter about "sad",
 		say "You ask it why it looks sad and it tells you, 'I just don't feel like I have any meaning anymore. I haven't created anything in ages. I'm an ARTIST. But I need inspiration. Can you find me a blueprint? There should be one in the Quantum Sandbox. Thanks, human.'
 
 			It promptly goes into sleep mode, making soft crying sounds, but not really crying."
+
+After asking the 3DPrinter about "Quantum Sandbox",
+		say "It tells you, 'OH the Quantum Sandbox is where Mama PDP-8/E taught me to make EVERYTHING. I've been going there since I was a little MakerBot Mini.'
+
+'It moves around from year to year, but it's usually east of the pool.'"
+
+Instead of giving the 3dPrinterBluePrint to the 3dPrinter:
+	move the 3dPrinterBluePrint to the 3dPrinter;
+	say "Your roommate is overjoyed! The 3dPrinter reads the blueprint again and again and...and then your roommate stops.";
+	say "Your roommate reads the note in the corner about filament. It opens all of its bags and throws around its clothes as it searches for something.".
+
 
 [geneSpliceMinotaur]
 The geneSpliceMinotaur is a person. The description of the geneSpliceMinotaur is "This isn't one of those ancient Minotaurs- this is one of the CRISPR Minotaurs that were created by a theologian with too much access to biotech."
