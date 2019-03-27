@@ -760,6 +760,7 @@ After asking the 3DPrinter about "Quantum Sandbox",
 
 Instead of giving the 3dPrinterBluePrint to the 3dPrinter:
 	move the 3dPrinterBluePrint to the 3dPrinter;
+	now friendToBots is true;
 	say "Your roommate is overjoyed! The 3dPrinter reads the blueprint again and again and...and then your roommate stops.";
 	say "Your roommate reads the note in the corner about filament. It opens all of its bags and throws around its clothes as it searches for something.".
 
