@@ -1383,7 +1383,7 @@ Satan is a person. The description of Satan is "A demonic looking creature. Its 
 
 Satan is an enemy.
 
-Satan is in Elevator3.
+Satan is in MyRoom.
 
 A wanderer is a kind of person.
 
@@ -1396,15 +1396,6 @@ Beelzebub is an enemy.
 Beelzebub is in Elevator1.
 
 Beelzebub is a wanderer.
-
-Every turn when the remainder after dividing the turn count by 3 is 0:
-	repeat with currentWanderer running through wanderers:
-		let currentSpace be the location of the currentWanderer;
-		let nextSpace be a random room which is adjacent to the location of the currentWanderer;
-		let path be the best route from the currentSpace to nextSpace;
-		if currentWanderer is visible, say "[currentWanderer] heads [path].";
-		move currentWanderer to the nextSpace.
-[		say "[currentWanderer] went to [nextSpace]".]
 
 [every turn:
 	if a wanderer (called the currentWanderer) is in a room (called the Current Space)
@@ -1434,4 +1425,136 @@ Every turn:
 			say "You notice there is a bot following you."
 			
 
+A person has a room called last location.
+Understand "follow [any person]" as following. Understand the commands "chase" and "pursue" as "follow".
+Following is an action applying to one visible thing.
+Check following: 
+    if the noun is the player, say "Wherever you go, there you are." instead; 
+    if the noun is visible, say "[The noun] is right here." instead; 
+    if the last location of the noun is not the location, say "It's not clear where [the noun] has gone." instead.
 
+Carry out following: 
+    let the destination be the location of the noun; 
+    if the destination is not a room, say "[The noun] isn't anywhere you can follow." instead; 
+    let aim be the best route from the location to the destination; 
+    say "(heading [aim])[line break]"; 
+    try going aim.
+
+To move (pawn - a person) tidily to (target - a room): 
+    now the last location of the pawn is the holder of the pawn; 
+    move the pawn to the target.
+
+Every turn: 
+    let current location be the location of Satan; 
+    let next location be a random room which is adjacent to the current location; 
+    if Satan is visible, say "Satan heads to [the next location]."; 
+    move Satan tidily to next location; 
+[    if Satan is visible, say "Satan arrives from [the current location]."]
+
+Every turn when the remainder after dividing the turn count by 3 is 0:
+	repeat with currentWanderer running through wanderers:
+		let currentSpace be the location of the currentWanderer;
+		let nextSpace be a random room which is adjacent to the location of the currentWanderer;
+		let path be the best route from the currentSpace to nextSpace;
+		if currentWanderer is visible, say "[currentWanderer] heads [path].";
+		move currentWanderer to the nextSpace.
+[		say "[currentWanderer] went to [nextSpace]".]
+
+Table of PartierSecondLevelDown Movement 
+destination
+H1A
+H1M
+H1Q
+H1E
+
+Table of PartierFirstLevelDown Movement 
+destination
+H2A
+H2M
+H2Q
+H2E
+
+Table of arnoldConanBarbarian Movement
+destination
+H1A
+H1E
+H1Q
+H1M
+
+[arnoldGoal is a location that varies.]
+
+The currentArnoldGoal is a number that varies. The currentArnoldGoal is 1.
+
+arnoldConanBarbarian is a person. 
+
+arnoldConanBarbarian is in H1B.
+
+[repeat through the Table of PartierFirstLevelDown Movement:
+	say "[destination entry]:)".]
+
+[repeat with N running from 1 to the number of rows in the PartierSecondLevelDown Movement:
+	choose row N in the Table of PartierSecondLevelDown Movement; 
+	say "[destination entry]";]
+
+[A person has a number called current goal.
+
+The value of current goal of the arnoldConanBarbarian is 1.
+
+Every turn:
+	if the current goal of arnoldConanBarbarian is greater than the number of rows in the Table of PartierSecondLevelDown Movement:
+		The current goal of arnoldConanBarbarian is 1;
+	otherwise:
+		increase current goal of arnoldConanBarbarian by 1.
+
+]
+
+A circleWanderer is a kind of person.
+
+A circleWanderer can be hangingOut or walkingAround. 
+
+arnoldConanBarbarian is a circleWanderer.
+arnoldConanBarbarian is walkingAround.
+
+Table of CircleWandererCharacters
+name	currentGoalRow	startingLocation
+geneSpliceMinotaur	2	H1N
+
+[Every turn when the remainder after dividing the turn count by 3 is 0 and a circleWanderer is hangingOut: 
+	now circleWanderer is walkingAround.]
+
+Every turn when the remainder after dividing the turn count by 3 is 0 and arnoldConanBarbarian is hangingOut: 
+	now arnoldConanBarbarian is walkingAround.
+
+Every turn when arnoldConanBarbarian is walkingAround:
+	let rowGoal be currentArnoldGoal;
+	choose row rowGoal from the Table of arnoldConanBarbarian Movement;
+	let thePlaceToGo be the destination entry;
+	let arnoldSpace be the location of arnoldConanBarbarian;
+	if arnoldSpace is not thePlaceToGo:
+		let the way be the best route from the location of arnoldConanBarbarian to the location of the destination entry, using doors;
+		try arnoldConanBarbarian going the way;
+	say "arnoldConanBarbarian is in [arnoldSpace] and heads to [the destination entry].";
+	if arnoldConanBarbarian is in the destination entry:
+		say "arnold is in the [destination entry] and the currentArnoldGoal is [currentArnoldGoal]";
+		increase the currentArnoldGoal by 1;
+		if the currentArnoldGoal is greater than three:
+			now the currentArnoldGoal is 1.	
+[
+Every turn:
+	For every row in the Table of CircleWanderers:
+		let rowGoal be currentGoalRow;
+		Every turn when a CircleWanderer is walkingAround;
+			choose row currentGoalRow from the Table of arnoldConanBarbarian Movement;
+			let thePlaceToGo be the destination entry;
+			let arnoldSpace be the location of arnoldConanBarbarian;
+			if arnoldSpace is not thePlaceToGo:
+				let the way be the best route from the location of arnoldConanBarbarian to the location of the destination entry, using doors;
+				try arnoldConanBarbarian going the way;
+			say "arnoldConanBarbarian is in [arnoldSpace] and heads to [the destination entry].";
+			if arnoldConanBarbarian is in the destination entry:
+				say "arnold is in the [destination entry] and the currentArnoldGoal is [currentArnoldGoal]";
+				increase the currentArnoldGoal by 1;
+				if the currentArnoldGoal is greater than three:
+					now the currentArnoldGoal is 1.
+					]
+				
