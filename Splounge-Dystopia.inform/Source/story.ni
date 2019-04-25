@@ -1512,8 +1512,20 @@ A circleWanderer is a kind of person.
 
 A circleWanderer can be hangingOut or walkingAround. 
 
+[A circleWanderer has a number called currentCircleWandererGoal. The currentCircleWandererGoal of a circleWanderer is usually 1.
+]
+
+
+A circleWanderer has a number called circleWandererGoal. The circleWandererGoal of a circleWanderer is usually 1.
+
+The target score is a number variable. The target score is 23.
+
 arnoldConanBarbarian is a circleWanderer.
 arnoldConanBarbarian is walkingAround.
+
+geneSpliceMinotaur is a circleWanderer.
+geneSpliceMinotaur is walkingAround.
+geneSpliceMinotaur is in H1B.
 
 Table of CircleWandererCharacters
 name	currentGoalRow	startingLocation
@@ -1539,11 +1551,26 @@ Every turn when arnoldConanBarbarian is walkingAround:
 		increase the currentArnoldGoal by 1;
 		if the currentArnoldGoal is greater than three:
 			now the currentArnoldGoal is 1.	
-[
-Every turn:
-	For every row in the Table of CircleWanderers:
-		let rowGoal be currentGoalRow;
-		Every turn when a CircleWanderer is walkingAround;
+
+[increment the circleWandererGoal of currentWanderer;
+	]
+
+Every turn when a circleWanderer (called the currentWanderer) is walkingAround:
+	say the circleWandererGoal of currentWanderer;
+	choose row circleWandererGoal of currentWanderer from the Table of PartierSecondLevelDown Movement;
+	let thePlaceToGo be the destination entry;
+	let wandererSpace be the location of currentWanderer;
+	if wandererSpace is not thePlaceToGo:
+		let the way be the best route from the location of currentWanderer to the location of the destination entry, using doors;
+		try currentWanderer going the way;
+	say "[currentWanderer] is in [wandererSpace] and heads to [the destination entry].";
+	if currentWanderer is in the destination entry:
+		say "[currentWanderer] is in the [destination entry] and the circleWandererGoal of currentWanderer is [circleWandererGoal of currentWanderer]";
+		increase the circleWandererGoal of currentWanderer by 1;
+		if the circleWandererGoal of currentWanderer is greater than three:
+			now the circleWandererGoal of currentWanderer is 1.
+
+		[Every turn when a CircleWanderer is walkingAround;
 			choose row currentGoalRow from the Table of arnoldConanBarbarian Movement;
 			let thePlaceToGo be the destination entry;
 			let arnoldSpace be the location of arnoldConanBarbarian;
@@ -1557,4 +1584,5 @@ Every turn:
 				if the currentArnoldGoal is greater than three:
 					now the currentArnoldGoal is 1.
 					]
-				
+				[	For every row in the Table of CircleWanderers:
+]
