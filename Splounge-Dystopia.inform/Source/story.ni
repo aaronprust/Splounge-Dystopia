@@ -154,27 +154,27 @@ GC is a room. "GardencourtC".
 P1B is a room. "P1B".
 P1C is a room. "Campaign Convergence. They're electing a villian to be the President of Convergence. It's pretty corrupt. You can vote as many times as you like, bribe the poll workers, and stuff the ballot box outright.".
 P1D is a room. "P1D".
-P1N is a room. "House of Toast! It's a big shiny red room. It is a celebration of the The Maillard reaction on bread. You could have just about anything you could dream of on tooast. A sign above the bar says Choose Up to 3 Toppings.".
+P1N is a room. "House of Toast! It's a big shiny red room. It is a celebration of the The Maillard reaction on bread. You could have just about anything you could dream of on toooooast. A sign above the bar says Choose Up to 3 Toppings.".
 P1O is a room. "P1O".
 P1P is a room. "Generic Favorite Video Game Room. OH. WOW. You LOVE this game. It has all of your favorite video game elements and characters. This room is now a tribute to your favorite game. They have the style pretty spot on, with items you recognize from the more popular levels. I bet they'd get an obscure joke you'd make about Generic Favorite Video Game!"
 
-H1G is a room. "H1G".
-H1H is a room. "H1H".
-H1L is a room. "H1L".
-H1M is a room. "H1M".
-H1F is a room. "H1F".
-H1A is a room. "H1A".
-H1B is a room. "H1B".
-H1C is a room. "H1C".
-H1D is a room. "H1D".
-H1E is a room. "H1E".
-H1J is a room. "H1J".
-H1Q is a room. "H1Q".
-H1P is a room. "H1P".
-H1O is a room. "H1O".
-H1N is a room. "H1N".
-H1K is a room. "H1K".
-H1I is a room. "H1I".
+H1G is a room. "You stand in this hallway with the strong sense that you've been here before. You've looked Up those stairs to the second floor, you've looked East into the Garden Court, you've seen the hallways South and West of here..... You've DONE this before. You've BEEN here before.".
+H1H is a room. "This hallway smells warm and bitter, as if aeons of coffee steam has stained the very ceiling and carpet. Oh! There's F2E2 to the East. That's probably what you're smelling. You could also go South, or North to see more of the first floor party rooms or the Pool or Garden Court, or Up the stairs to the second floor.".
+H1L is a room. "Oh, this hallway feels nice, like you're surrounded and supported by people who care about you and think that you're amazing and want you to do good work. If you went East, you would be in Volden, the place where they give Convergence Volunteers backrubs and treats and a quiet place to sit in all this madness. You could also go North or South from here, around the Garden Court circle, or you could take the stairs Up from here to the second floor.".
+H1M is a room. "Hey player. This is the Southest and the Westest of all hallways on the first floor. You're going to have to reconfigure and go East or go North or go Up from here. Re. Pro. Gram. Ming. Okay. You've got all the facilities you need to get where you're going. Good luck, player.".
+H1F is a room. "This hallway is outside of the elevators, so you could go North and then head up to one of the other floors. Alternatively, there's a hallway to the East that leads around the first floor- party rooms, programming rooms, all that. Oh, and there's a door that says 'Engine Room' to the West of here.".
+H1A is a room. "Okay. SO! The plan is we're going to 'do the circle', that is, go around the Garden Court circuit over and over again. It's more fun than it sounds. We're going to see a lot of people in costumes, we're going to peek our heads in at all the party rooms, see Garden Court and the pool, see if there's a party that we want to join. It'll be great. Go East to continue past all the party rooms, go South to maybe get to the elevator or Garden Court or whatever. WOOOOOOOOOOO!".
+H1B is a room. "This is a hallway. It's not like the other hallways. This one is poorly lit somehow, in spite of the fact that it's part of the brightly lit, open nature of the first floor of the hotel. Why is it so dark in here? You can see the light coming from the party room to the North of here, and also a dim light from Garden Court just South of here. The lights seem to be working normally in the hallways East and West of here. Weird. Someone should call maintenance.".
+H1C is a room. "The flow of geeks and nerds continues clockwise around the first floor of the con. You think you recognize someone, but you don't know where you know them from. Work? School? Church? Do you have a church? No. Convergence is the only church now. Out-of-context person has disappeared while you were asking yourself philosophical questions, and now you won't have to do that awkward 'Heyyyy...... YOU.' thing. You could go North into the Campaign Convergence party room, continue East around the first floor, or fight the flow and go West.".
+H1D is a room. "THIS IS THE BEST HALLWAY EVER! OH MY GLOB! CHECK OUT THE POOL AREA! THAT'S THE BEST POOL AREA!!! YOU CAN'T GET THERE FROM HERE. But you CAN get to the PARTYYYYYY just North of here!!! OR YOU COULD GO East to continue on THE. BEST. TOUR. OF CONVERGENCE EVARRRRRRRR!!! OH! ALSO West. But that's Not Right.".
+H1E is a room. "This is the northeasternmost corner of the first floor of Convergence. You can't go any further North or East from this point. It's sad. You'd like to see Martha's Vinyard. You hear it's beautiful this time of year. Anyhow. If you go South, you're still in the hallways, if you go West, you're still in the hallways.".
+H1J is a room. "You stand in the hallway, with other hallways to the North and South, tunnels into the depths of Convergence. To the East is Connie's Quantum Sandbox. Could you find quantum truths in there? Sand? Boxes? Who knows. To the West is the Pool, a beautiful oasis of mermaids and chlorinated water, or perhaps it's all a mirage.".
+H1Q is a room. "If Convergence was the US, this corner hallway would be Florida. Not just because people make incredibly questionable decisions here, and it's full of cyborgators and everyone here probably is carrying a lazer gun and wearing a floral shirt. It's also the southeast most of all hallways. You could head North to the Georgia of hallways or go West to the Arkansas of hallways. It's also kind of muggy in here.".
+H1P is a room. "Here in this hallway, you question your existence. Why are you here? Are you just made to walk in a circle around this endless party forever? What are we celebrating? Why? Who are you, really? What is your purpose in life? Will you go South into yet another party room? Will you continue on your endless march West? Will you take up arms against a sea of outrageous costumed characters and go East?".
+H1O is a room. "This is a hallway around the Garden Court. It's really loud here. You can go South, into a party room. WHAT? You can go West continuing along the hallway. WHAT??? Or you can go East, directly into the fray of the oncoming masses. WHATTT???? I CAN'T ACTUALLY HEAR ANYTHING YOU'RE SAYING.".
+H1N is a room. "Here we are, in a hallway around the Garden Court. In fact, if we went North, we'd be in Garden Court. If we went South, we'd be in a party room called 'House of Toast'. If we went West, we'd be in the southwest corner of the hallway circuit with access to the upstairs. If we went East, we'd continue around the party circuit, but AGAINST THE GRAIN. If we questioned why we were referring to ourselves in the second person, we wouldn't be in denial about our grandious illusions.".
+H1K is a room. "There are thousands of people standing or walking through this hallway. Where do they all live? You peer into the darkness of Theater Nippon to the West- they don't seem to all be coming from there. You look at the sea of bodies crammed into Garden Court to the East- maybe they're coming from there. Some of these people have gone North or South around Garden Court. You could go either of those directions. Does that guy have ten limbs?".
+H1I is a room. "You are the hub of hallways! It's Hallwaylicious! You could go East into the Garden Court! You could go West into Cinema Rex! You could go North or South further into hallwaylands! The world is your Hallway! This is not an excitement that deserves this many exclamation points!".
 
 [Unknown Floor]
 The Secret Room is a room. "You are in the Secret Room. DON'T TELL ANYONE YOU WERE EVER HERE! It's really dark, you can't see much.".
