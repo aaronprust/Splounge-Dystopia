@@ -1451,13 +1451,14 @@ Every turn:
     move Satan tidily to next location; 
 [    if Satan is visible, say "Satan arrives from [the current location]."]
 
+[
 Every turn when the remainder after dividing the turn count by 3 is 0:
 	repeat with currentWanderer running through wanderers:
 		let currentSpace be the location of the currentWanderer;
 		let nextSpace be a random room which is adjacent to the location of the currentWanderer;
 		let path be the best route from the currentSpace to nextSpace;
 		if currentWanderer is visible, say "[currentWanderer] heads [path].";
-		move currentWanderer to the nextSpace.
+		move currentWanderer to the nextSpace.]
 [		say "[currentWanderer] went to [nextSpace]".]
 
 Table of PartierSecondLevelDown Movement 
@@ -1509,7 +1510,7 @@ Every turn:
 
 A circleWanderer is a kind of person.
 
-A circleWanderer can be hangingOut or walkingAround. 
+A circleWanderer can be hangingOut or walkingAround.
 
 [A circleWanderer has a number called currentCircleWandererGoal. The currentCircleWandererGoal of a circleWanderer is usually 1.
 ]
@@ -1520,19 +1521,23 @@ A circleWanderer has a number called circleWandererGoal. The circleWandererGoal 
 drunkPartier is a circleWanderer.
 drunkPartier is walkingAround.
 drunkPartier is in H1K.
-The description of drunkPartier is "This guy is pretty drunk. You think you should probably not talk to him, you can tell he totally wants to talk to someone but he can barely stand up.".
+The circleWandererGoal of drunkPartier is 1.
+The description of drunkPartier is "This guy is pretty drunk. You think you should probably not talk to him. You can tell he totally wants to talk to someone too but he can barely stand up.".
 
 
 The target score is a number variable. The target score is 23.
-[
+
 arnoldConanBarbarian is a circleWanderer.
-arnoldConanBarbarian is walkingAround.
-arnoldConanBarbarian is in H1D.]
+arnoldConanBarbarian is hangingOut.
+arnoldConanBarbarian is in H1D.
+The circleWandererGoal of arnoldConanBarbarian is 2.
 The description of arnoldConanBarbarian is "You know this barbarian cosplay pretty well from watching the faded ancient Conan disks some of the early founders saved. He's ripped and has a giant sword. Looks like The Arnold too.".
 
 geneSpliceMinotaur is a circleWanderer.
 geneSpliceMinotaur is walkingAround.
-geneSpliceMinotaur is in H1B.
+geneSpliceMinotaur is in H1O.
+The circleWandererGoal of geneSpliceMinotaur is 4.
+
 [The description of geneSpliceMinotaur is "Whoa cool that's one of those CRISPR folks - all editing their own genome to cosplay all the time. Gotta respect the commitment. This one one looks like a giant minotaur! Kinda scary.".]
 
 
@@ -1564,7 +1569,25 @@ Every turn when arnoldConanBarbarian is walkingAround:
 
 [increment the circleWandererGoal of currentWanderer;
 	]
+	
+Every turn:
+	repeat with currentWanderer running through all the circleWanderers:
+		if a random chance of 1 in 5 succeeds:
+			choose row circleWandererGoal of currentWanderer from the Table of PartierSecondLevelDown Movement;
+			let thePlaceToGo be the destination entry;
+			let wandererSpace be the location of currentWanderer;
+			if wandererSpace is not thePlaceToGo:
+				let the way be the best route from the location of currentWanderer to the location of the destination entry, using doors;
+				try currentWanderer going the way;
+			if currentWanderer is visible, say "[currentWanderer] heads to [the destination entry].";
+			if currentWanderer is in the destination entry:
+				[say "[currentWanderer] is in the [destination entry] and the circleWandererGoal of currentWanderer is [circleWandererGoal of currentWanderer]";]
+				increase the circleWandererGoal of currentWanderer by 1;
+				if the circleWandererGoal of currentWanderer is greater than four:
+					now the circleWandererGoal of currentWanderer is 1.
 
+
+[
 Every turn when a circleWanderer (called the currentWanderer) is walkingAround:
 	say the circleWandererGoal of currentWanderer;
 	choose row circleWandererGoal of currentWanderer from the Table of PartierSecondLevelDown Movement;
@@ -1579,7 +1602,7 @@ Every turn when a circleWanderer (called the currentWanderer) is walkingAround:
 		increase the circleWandererGoal of currentWanderer by 1;
 		if the circleWandererGoal of currentWanderer is greater than three:
 			now the circleWandererGoal of currentWanderer is 1.
-
+]
 		[Every turn when a CircleWanderer is walkingAround;
 			choose row currentGoalRow from the Table of arnoldConanBarbarian Movement;
 			let thePlaceToGo be the destination entry;
