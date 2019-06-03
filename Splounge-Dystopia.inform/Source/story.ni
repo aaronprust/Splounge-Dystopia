@@ -384,6 +384,10 @@ The black rod is in the H2K.
 
 The 3dPrinterBluePrint is an object. The description of the 3dPrinterBluePrint is "This may be what your roommate was looking for! It is blue and it has a lovely print on it. In the corner, it also explains how to add printer filament to your roommate in some detail.".
 
+The TurboEncabulator is an object. The description of the TurboEncabulator is "This looks like a base plate of prefabulated amulite, surmounted by a malleable logarithmic casing in such a way that the two main spurving bearings were in a direct line with the panametric fan. The latter consisted simply of six hydrocoptic marzlevanes, so fitted to the ambifacient lunar waneshaft that side fumbling was effectively prevented. The main winding was of the normal lotus-o-deltoid type placed in panendermic semi-boloid slots in the stator, every seventh conductor being connected by a nonreversible tremmie pipe to the differential girdlespring on the 'up' end of the grammeters."
+
+The MisprintedTurboEncabulator is an object. The description of the MisprintedTurboEncabulator is "This looks like a base plate of prefabulated amulite, surmounted by a malleable logarithmic casing in such a way that the two main spurving bearings were in a direct line with the panametric fan. The latter consisted simply of six hydrocoptic marzlevanes, so fitted to the ambifacient lunar waneshaft that side fumbling was effectively prevented. The main winding was of the normal lotus-o-deltoid type placed in panendermic semi-boloid slots in the stator, every seventh conductor being connected by a nonreversible tremmie pipe to the differential girdlespring on the 'up' end of the grammeters. The panametric fan doesn't seem to move on this one."
+
 The 3dPrinterBluePrint is in the QS.
 
 The floating dolphin is a vehicle in H2K. The description of the floating dolphin is "Oh crap - the floating dolphin's survellance cam is honing in on you! You better get out of here, somewhere where the floating dolphin camera can't see you." The dolphin is locked. The dolphin code unlocks the floating dolphin. The description of the dolphin code is "It is fish shaped, and vibrates - readout screen says 'Status optimal'."
@@ -646,7 +650,6 @@ A blue jersey is in the Staging Area. The description of the blue jersey is "blu
 [The Player]
 The player carries a dagger.
 The player carries a coin.
-The player carries a specialImportantStoryLineElement.
 The player is a person.
 The maximum hit points of the player is 100.
 The current hit points of the player is 10.
@@ -693,8 +696,8 @@ A person is either awake or asleep. A person is normally awake.
 Aframe is a man.
 AFrame is a person in the Space Lounge. AFrame is male. The description of AFrame is "Aframe is looking pretty sharp there wearing [a list of unconcealed things worn by Aframe] with his usual aplomb."
 
-Instead of asking Aframe about "xx":
-	say "When you mention xx, Aframe's eyes light up. He smiles and looks around the room for a second before stepping closer to you. 'How do you know aobut xx?', he says - well it doesn't matter now - just remember yy when you get to the zz okay? DON'T FORGET ABOUT THE YY! Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
+Instead of asking Aframe about "DarkCity":
+	say "When you mention DarkCity, Aframe's eyes light up. He smiles and looks around the room for a second, before stepping closer to you. 'Have you seen DarkCity? That's just like what's happening here in the hotel', he says - 'except for there are no annoying floating Tim Burton aliens. The RaddiShariTree was hosting the longest CONvergence ever, 364 days, and after the collapse of civilization, we closed the blast doors and had ConstantCon. With the development of anti-grav tech, the SonTonDoubleTree was launched into space. We lost the short tower, and people forgot over time that there was anything beyond these walls. We've outgrown this building, but the shuttlecraft isn't working. But we need a TurboEncabulator or a RetroEncabulator. Honestly, even a MicroEncabulator would work. If you give one to the Bartender, she'll be able to launch the SpaceLoungeShuttle. Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
 	now Aframe is a co-conspirator;
 	now Aframe is in the Secret Room.
 Aframe is neutralla.
@@ -729,10 +732,9 @@ After asking the AFrame about "love":
 The bartender is a person in the Space Lounge. The bartender is female. The description of the bartender is "The bartender is [one of]serving some smoothies[or]cleaning the blender[or]making a neon yellow smoothie[or]making a glow in the dark smoothie[or]standing there looking you over[or]talking with a friend[or]dancing[at random]."
 The bartender carries the behindTheBarKey.
 
-Instead of giving the specialImportantStoryLineElement to the bartender:
-	move the specialImportantStoryLineElement to the bartender;
-	move the behindTheBarKey to the player;
-	say "She looks pretty serious all the sudden. 'Wow, now that it's time to leave I'm not ready. What's it going to be like out there? What if we can't resupply our sensory stimulants or dowlod our fundoms? Anyway, whatever happens is going to be supesciting.'"
+Instead of giving the TurboEncabulator to the bartender:
+	now the bartender has the TurboEncabulator;
+	say "I'll this old bucket of rust going now."
 
 Instead of giving the coin to the bartender:
 	move the coin to the bartender;
@@ -763,6 +765,14 @@ Instead of giving the 3dPrinterBluePrint to the 3dPrinter:
 	now friendToBots is true;
 	say "Your roommate is overjoyed! The 3dPrinter reads the blueprint again and again and...and then your roommate stops.";
 	say "Your roommate reads the note in the corner about filament. It opens all of its bags and throws around its clothes as it searches for something.".
+	
+The 3dPrinterFilament is an object.
+The description of the 3dPrinterFilament is "3dPrinterFilament".
+
+Instead of giving the 3dPrinterFilament to the 3dPrinter:
+	now the 3dPrinter has the 3dPrinterFilament;
+	say "The 3dPrinter says, 'I MAKEDED THIS FOR YOU!' and hands you a small item.";
+	move the MisprintedTurboEncabulator to the player.
 
 
 [geneSpliceMinotaur]
@@ -1379,23 +1389,23 @@ After asking the bartender about "smoothies", say "You got the coin I got yer sm
     say "[one of][or] huskily[or] throatily[or] silkily[or] in a deep manly voice[as decreasingly likely outcomes]."
 ]
 
-Satan is a person. The description of Satan is "A demonic looking creature. Its pretty much naked and super evil looking.".
+CardboardBoxRobot is a person. The description of CardboardBoxRobot is "This guy's costume is super old school. It looks like he's a robot made of cardboard boxes, spray painted silver. It looks like there are some LEDs in it to make light up. That's cool.".
 
-Satan is an enemy.
+CardboardBoxRobot is neutralla.
 
-Satan is in MyRoom.
+CardboardBoxRobot is in QS.
 
 A wanderer is a kind of person.
 
-Satan is a wanderer.
+CardboardBoxRobot is a wanderer.
 
-The description of Beelzebub is "A demonic looking creature. It's yellow and slimy looking.".
+The description of DungeonMaster is "A guy in cargo shorts, a t-shirt, and a stained open kimono. He's holding a big pile of ancient tomes with strange runes on it. You imagine he could easily just have all of that information on a digital device. He glares at you through his smeared glasses.".
 
-Beelzebub is an enemy.
+DungeonMaster is an enemy.
 
-Beelzebub is in Elevator1.
+DungeonMaster is in Elevator1.
 
-Beelzebub is a wanderer.
+DungeonMaster is a wanderer.
 
 [every turn:
 	if a wanderer (called the currentWanderer) is in a room (called the Current Space)
@@ -1403,7 +1413,7 @@ Beelzebub is a wanderer.
 	let next space be a random room which is adjacent to
 	the current space;
 	move currentWanderer to the next space;
-	if Satan is visible, say "[currentWanderer] heads to [the next
+	if CardboardBoxRobot is visible, say "[currentWanderer] heads to [the next
 space].";
 	move currentWanderer to next space;
 	if currentWanderer is visible, say "[currentWanderer] arrives from [the
@@ -1445,11 +1455,11 @@ To move (pawn - a person) tidily to (target - a room):
     move the pawn to the target.
 
 Every turn: 
-    let current location be the location of Satan; 
+    let current location be the location of CardboardBoxRobot; 
     let next location be a random room which is adjacent to the current location; 
-    if Satan is visible, say "Satan heads to [the next location]."; 
-    move Satan tidily to next location; 
-[    if Satan is visible, say "Satan arrives from [the current location]."]
+    if CardboardBoxRobot is visible, say "CardboardBoxRobot heads to [the next location]."; 
+    move CardboardBoxRobot tidily to next location; 
+[    if CardboardBoxRobot is visible, say "CardboardBoxRobot arrives from [the current location]."]
 
 [
 Every turn when the remainder after dividing the turn count by 3 is 0:
