@@ -1504,7 +1504,7 @@ Every turn when the remainder after dividing the turn count by 3 is 0:
 		let currentSpace be the location of the currentWanderer;
 		let nextSpace be a random room which is adjacent to the location of the currentWanderer;
 		let path be the best route from the currentSpace to nextSpace;
-		say "[currentWanderer] heads [path].";
+		if currentWanderer is visible, say "[currentWanderer] heads [path].";
 		move currentWanderer to the nextSpace.
 [		say "[currentWanderer] went to [nextSpace]".]
 
