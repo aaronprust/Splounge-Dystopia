@@ -1492,21 +1492,20 @@ To move (pawn - a person) tidily to (target - a room):
     now the last location of the pawn is the holder of the pawn; 
     move the pawn to the target.
 
-Every turn: 
+[Every turn: 
     let current location be the location of CardboardBoxRobot; 
     let next location be a random room which is adjacent to the current location; 
     if CardboardBoxRobot is visible, say "CardboardBoxRobot heads to [the next location]."; 
-    move CardboardBoxRobot tidily to next location; 
+    move CardboardBoxRobot tidily to next location; ]
 [    if CardboardBoxRobot is visible, say "CardboardBoxRobot arrives from [the current location]."]
 
-[
 Every turn when the remainder after dividing the turn count by 3 is 0:
 	repeat with currentWanderer running through wanderers:
 		let currentSpace be the location of the currentWanderer;
 		let nextSpace be a random room which is adjacent to the location of the currentWanderer;
 		let path be the best route from the currentSpace to nextSpace;
-		if currentWanderer is visible, say "[currentWanderer] heads [path].";
-		move currentWanderer to the nextSpace.]
+		say "[currentWanderer] heads [path].";
+		move currentWanderer to the nextSpace.
 [		say "[currentWanderer] went to [nextSpace]".]
 
 Table of PartierSecondLevelDown Movement 
