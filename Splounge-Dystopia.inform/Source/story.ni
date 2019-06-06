@@ -99,8 +99,8 @@ It flips to StayP2.
     "...Besides, you think you had maybe a 3D printer job going that might be near finished...."
      It is an end-page.
 
-P2B is a room. "This room is chaotic, filled to the brim with people drinking and talking and laughing. Outside the room, someone in the hallway is chanting 'Rum and Juice and Rum and Juice!' Everyone in the room seems to be having a great time.".
-P2C is a room. "This room is full of people doing lots of research. Is this a party room? They're looking in encyclopedias and dictionaries and reviewing video tape and yeah, I guess this is pretty nerdy. It looks like you could take part in a trivia contest if you went South, but it seems like the sort of thing that you can't get out of once you start.".
+P2B is a room. "Partyroom2B".
+P2C is a room. "Partyroom2C".
 P2D is a room. "Partyroom2D".
 P2N is a room. "Partyroom2N".
 P2O is a room. "Partyroom2O".
@@ -554,8 +554,6 @@ Instead of telling someone about something, try asking the noun about it. Instea
 [Smoothie]
 A smoothie is a kind of thing.
 A blah is a smoothie.
-A pineappleJuice is a smoothie.
-A rum is a smoothie.
 
 Some smoothies in BehindtheBar are defined by Table 1.2. The description of a smoothie is "[description]"
 
@@ -568,16 +566,7 @@ Instead of drinking a RocketBlaster:
     now the RocketBlaster is nowhere;
     say "You drink the RocketBlaster. It's fizzy and sour...but then there's a *flash*.";
 	now the player is in Round1.
-	
-Instead of drinking a pineappleJuice:
-	now the pineappleJuice is nowhere;
-	say "You gulp down the pineappleJuice. It's tangy and refreshing. You'll definitely not be developing scurvy tonight!"	
 
-Instead of drinking a rum:
-	now the rum is nowhere;
-	say "You drink the shot of rum. It was shitty rum, but now it's gone. But why is the rum gone?";
-	decrease the current hit points of the player by 5;
-	
 Instead of drinking a goodnightAstronaut:
 	now the goodnightAstronaut is nowhere;
 	say "You sip on the goodnightAstronaut. It is extremely delicious. Its delicate flavors cause you to think about reality, life, and the choices that are possible within a given day, hour, or second. You wonder how realities of imagination can unfold in your mind in a blink of an eye; in fact entire awe-inspiring revelations are flipping through your thoughts now in a series of instants and gone forever. If only you could swim within their great oceans for awhile...
@@ -703,33 +692,6 @@ A person has a number called maximum hit points. A person has a number called cu
 A person has a number called maximum ninja points. A person has a number called current ninja points.
 A person is either awake or asleep. A person is normally awake.
 
-[rumAndJuicer]
-rumAndJuicer is a woman.
-rumAndJuicer is a person in P2B. The description of rumAndJuicer is "There's a lady dressed as a lizard dressed as a german barmaid, running all sorts of fruits through an industrial juicer. Her namebadge says 'rumAndJuicer'."
-
-Instead of asking rumAndJuicer about "juice":
-	say "The lizardwoman smiles at you. 'RUM AND JUICE! Juice juice rum, rum rum juice juice.' She points at the juicer, throwing three pineapples into it, and producing a large cup of pineapple juice. It's periwinkle, inexplicably. 'JUICE!' she says to you.";
-	now the player has pineappleJuice.
-	
-Instead of asking rumAndJuicer about "fruit":
-	say "The lizardwoman smiles at you. 'RUM AND JUICE! Juice juice rum, rum rum juice juice.' She points at the juicer, throwing three pineapples into it, and producing a large cup of pineapple juice. It's periwinkle, inexplicably. 'JUICE!' she says to you.";
-	now the player has pineappleJuice.	
-
-[rummerAndJuice]
-rummerAndJuice is a bot.
-rummerAndJuice is a person in P2B. The description of rummerAndJuice is "There is an incredibly depressed looking bot with its name written out in LEDs across its forehead. It says 'My Name is rummerAndJuice! Wooooooo'. The robot does not say 'Wooooo'. The robot is throwing bottles of rum around like it was programmed to juggle or star in 'Cocktail'. Meanwhile it is rolling back and forth on a huge barrel of rum.";
-
-Instead of asking rummerAndJuice about "rum":
-	say "When you ask about rum, the robot's dull sad eyes seem to dim even further. It says, 'rum rum rum rum rum rum rum. juice. rum rum.' It does a jaw-dropping flip, twist and juggles four bottles with its right arm while it pours your a cup of rum.";
-	now the player has rum.
-	
-Instead of giving the pineappleJuice to the rummerAndJuice:
-	say "The robot looks furious that you'd try to give it your juice. It bleeps at your angrily, 'RUM RUM RUM RUM RUM RUM. RUM RUM RUM RUM RUM RUM RUM! Juice. JUICE!' It gestures so emphatically that it nearly drops a bottle. It appears to not want your juice.";
-	
-Instead of giving the rum to the rumAndJuicer:
-	say "The bartender giggles at you. She drinks your rum, and starts singing, 'RUM! AND JUICE AND RUM AND JUICE AND RUM AND JUICE AND RUM! AND JUICE! AND RUM AND JUICE AND RUM AND JUICE!";
-	now the rum is nowhere.
-
 [Aframe]
 Aframe is a man.
 AFrame is a person in the Space Lounge. AFrame is male. The description of AFrame is "Aframe is looking pretty sharp there wearing [a list of unconcealed things worn by Aframe] with his usual aplomb."
@@ -765,6 +727,7 @@ AFrame carries a pin.
 After asking the AFrame about "love":
 	say "Ooo-la-la-you wanna be my Lady Gaga?!.";
 	now Aframe is a co-conspirator.
+	
 
 [bartender]
 The bartender is a person in the Space Lounge. The bartender is female. The description of the bartender is "The bartender is [one of]serving some smoothies[or]cleaning the blender[or]making a neon yellow smoothie[or]making a glow in the dark smoothie[or]standing there looking you over[or]talking with a friend[or]dancing[at random]."
@@ -806,6 +769,7 @@ Instead of giving the 3dPrinterBluePrint to the 3dPrinter:
 	
 The 3dPrinterFilament is an object.
 The description of the 3dPrinterFilament is "3dPrinterFilament".
+The 3dPrinterFilament is in P1D.
 
 Instead of giving the 3dPrinterFilament to the 3dPrinter:
 	now the 3dPrinter has the 3dPrinterFilament;
@@ -1440,12 +1404,14 @@ CardboardBoxRobot is a wanderer.
 The description of DungeonMaster is "A guy in cargo shorts, a t-shirt, and a stained open kimono. He's holding a big pile of ancient tomes with strange runes on it. You imagine he could easily just have all of that information on a digital device. He glares at you through his smeared glasses.".
 
 DungeonMaster is an enemy.
+DungeonMaster is a wanderer.
 
 DungeonMaster is in Elevator1.
 
 DungeonMaster is a wanderer.
 
-[every turn:
+[
+every turn:
 	if a wanderer (called the currentWanderer) is in a room (called the Current Space)
 	begin;
 	let next space be a random room which is adjacent to
@@ -1454,7 +1420,7 @@ DungeonMaster is a wanderer.
 	if CardboardBoxRobot is visible, say "[currentWanderer] heads to [the next
 space].";
 	move currentWanderer to next space;
-	if currentWanderer is visible, say "[currentWanderer] arrives from [the
+	say "[currentWanderer] arrives from [the
 current space].";
 	end if.
 ]
@@ -1492,21 +1458,22 @@ To move (pawn - a person) tidily to (target - a room):
     now the last location of the pawn is the holder of the pawn; 
     move the pawn to the target.
 
+[
 Every turn: 
     let current location be the location of CardboardBoxRobot; 
     let next location be a random room which is adjacent to the current location; 
     if CardboardBoxRobot is visible, say "CardboardBoxRobot heads to [the next location]."; 
-    move CardboardBoxRobot tidily to next location; 
+    move CardboardBoxRobot tidily to next location; ]
 [    if CardboardBoxRobot is visible, say "CardboardBoxRobot arrives from [the current location]."]
 
-[
+
 Every turn when the remainder after dividing the turn count by 3 is 0:
-	repeat with currentWanderer running through wanderers:
+	repeat with currentWanderer	 running through wanderers:
 		let currentSpace be the location of the currentWanderer;
 		let nextSpace be a random room which is adjacent to the location of the currentWanderer;
 		let path be the best route from the currentSpace to nextSpace;
 		if currentWanderer is visible, say "[currentWanderer] heads [path].";
-		move currentWanderer to the nextSpace.]
+		move currentWanderer to the nextSpace.
 [		say "[currentWanderer] went to [nextSpace]".]
 
 Table of PartierSecondLevelDown Movement 
