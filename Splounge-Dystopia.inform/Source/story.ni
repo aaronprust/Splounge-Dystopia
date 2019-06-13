@@ -101,10 +101,10 @@ It flips to StayP2.
 
 P2B is a room. "This room is chaotic, filled to the brim with people drinking and talking and laughing. Outside the room, someone in the hallway is chanting 'Rum and Juice and Rum and Juice!' Everyone in the room seems to be having a great time.".
 P2C is a room. "This room is full of people doing lots of research. Is this a party room? They're looking in encyclopedias and dictionaries and reviewing video tape and yeah, I guess this is pretty nerdy. It looks like you could take part in a trivia contest if you went South, but it seems like the sort of thing that you can't get out of once you start.".
-P2D is a room. "Partyroom2D".
-P2N is a room. "Partyroom2N".
-P2O is a room. "Partyroom2O".
-P2P is a room. "Partyroom2P"
+P2D is a room. "Dystopia(tm). The walls are covered with EVA tile, there are projections running across every surface. Neon lights blink phrases onto the walls and ceiling, maybe they're philosophical ideas, maybe political hypnosis, maybe product placement... maybe all of them?".
+P2N is a room. "This room is themed around the popular fantasy series, Perry Hotter. They have cranes that deliver mail to the teenage witches, or you could try a drink of margarineMead. Yum!".
+P2O is a room. "Vice City. The room echoes with pachinko, video games, claw games, rhythm games, and more. They are serving lots of beer, and in the corner there are VR headsets. This place seems huge. How did they fit all this into such a small hotel room? You check your head to make sure you're not already wearing a headset. It seems that this room is actually real.".
+P2P is a room. "The scent of curry is rich in the air, and dieties in brightly colored silks parade past you in unison to an upbeat song. Your heart swells and you feel like anything is possible in here. Ah yes, the Bollywood Room. You feel like something special might happen to you in this room. A fight, finding your true love, discovering your true nature, SOMETHING."
 
 H2F is a room. "This is the hallway outside the 2nd Floor Elevator. There are lots of posters here, too. There's one here that says 'House of Toast'. There's a great big piano here, and [one of]it's playing itself. Sounds like Radiohead. A woman in a big blue dress walks past and slaps a fly that has landed on her cheek. Odd.[or]a bunch of intoxicated teenangers are singing lyrics from a musical about the invention of the Turing Test very loudly. [or]a small cybernetic animal is running up and down the keys, while a congoer dressed as a cat is attempting to hit it with a large foam hammer. [or]a woman dressed entirely in ghostly sequins is playing the most haunting melody you have ever heard in your life. It is chilling. You wonder if you have long to live.[at random]
 	You can hear the din of the maddening crowd to the East of here.".
@@ -151,11 +151,11 @@ GA is a room. "GardencourtA".
 GB is a room. "GardencourtB".
 GC is a room. "GardencourtC".
 
-P1B is a room. "P1B".
+P1B is a room. "There's a big sign that says 'Cow Asylum' on this party room. There are lots of sexy congoers dancing to loud music, wearing Very Little. Maybe this is your scene, maybe it's not. A lot of them seem to have udders or hooves. You're not sure if they're costume pieces or whether they're genetically modified humans.".
 P1C is a room. "Campaign Convergence. They're electing a villian to be the President of Convergence. It's pretty corrupt. You can vote as many times as you like, bribe the poll workers, and stuff the ballot box outright.".
-P1D is a room. "P1D".
+P1D is a room. "There are three teleporters in the outer part of this party room. They don't seem to be functional, but congoers are lined up to take selfies on them. You imagine what would happen if it suddenly started functioning, destroying their bodies here and making them out of new molecules somewhere else, and somehow restarting their consciousnesses in the new body. Creepy. There's a food simulator here, too, kicking out little cubes of 'food'. Welcome to the Star Trek room.".
 P1N is a room. "House of Toast! It's a big shiny red room. It is a celebration of the The Maillard reaction on bread. You could have just about anything you could dream of on toooooast. A sign above the bar says Choose Up to 3 Toppings.".
-P1O is a room. "P1O".
+P1O is a room. "This is a really chill Tea House. There are long pieces of cybersilk pulsing slowly with bioluminescent light. There are a few low tables made of a fragrant wood that evokes memories of an ancient forest where a fox watches you between enormous ancient ferns. You've never been to that forest. Strange.".
 P1P is a room. "Generic Favorite Video Game Room. OH. WOW. You LOVE this game. It has all of your favorite video game elements and characters. This room is now a tribute to your favorite game. They have the style pretty spot on, with items you recognize from the more popular levels. I bet they'd get an obscure joke you'd make about Generic Favorite Video Game!"
 
 H1G is a room. "You stand in this hallway with the strong sense that you've been here before. You've looked Up those stairs to the second floor, you've looked East into the Garden Court, you've seen the hallways South and West of here..... You've DONE this before. You've BEEN here before.".
