@@ -557,6 +557,20 @@ A blah is a smoothie.
 A pineappleJuice is a smoothie.
 A rum is a smoothie.
 
+A rumAndJuice is a smoothie. The description of a rumAndJuice is "rumAndJuice".
+
+Instead of drinking a rumAndJuice:
+	now the rum is nowhere;
+	say "You drink this wonderful concoction and feel amazing!";
+	increase the current hit points of the player by 15;
+
+Instead of inserting the rum into the pineappleJuice: say "You are doing some alchemy - NOICE"; remove rum from play; remove pineappleJuice from play; now the player has rumAndJuice.
+
+Instead of inserting the pineappleJuice into the rum: say "You are doing some alchemy - NOICE"; remove rum from play; remove pineappleJuice from play; now the player has rumAndJuice.
+
+Understand "combine [other things] with/and [something]" as inserting it into.
+Understand "mix [other things] with/and [something]" as inserting it into.
+
 Some smoothies in BehindtheBar are defined by Table 1.2. The description of a smoothie is "[description]"
 
 Instead of drinking a smoothie (called the drink):
