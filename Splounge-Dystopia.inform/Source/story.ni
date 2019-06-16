@@ -378,9 +378,9 @@ Instead of examining the switched on securityReadout:
 
 [Veranda Walkway]
 
-The black rod is an object. The description of the black rod is "A three foot black rod with a rusty star on one end lies nearby."
+The teleporterWand is an object. The description of the teleporterWand is "This looks like a voice activated teleporter. It kind of works like magic - you say the proper incantation and it takes you to the set location matching the incantation."
 
-The black rod is in the H2K.
+The teleporterWand is in the P1P.
 
 The 3dPrinterBluePrint is an object. The description of the 3dPrinterBluePrint is "This may be what your roommate was looking for! It is blue and it has a lovely print on it. In the corner, it also explains how to add printer filament to your roommate in some detail.".
 
@@ -525,25 +525,25 @@ Casting xyzzy is an action applying to nothing.
 Casting yzxxy is an action applying to nothing.
 
 Check casting xyzzy:
-    if the player does not have the black rod, say "You are unable to articulate the second 'z' separately from the first, and the spell fails in a disdainful puff. If only you had some sort of magical item to focus your arcane arts upon to increase your attunement to the fey realm." instead;
-if the player has the black rod, say "you feel a whooshy sound enter your eyeball sockets and then your tummy flips over your groiny-place. WHOOOOOAAAA suddenly you find yourself trasported to the...
+    if the player does not have the teleporterWand, say "You are unable to articulate the second 'z' separately from the first, and the spell fails in a disdainful puff. If only you had some sort of teleporterWand to focus your arcane arts upon to increase your attunement to the fey realm." instead;
+if the player has the teleporterWand, say "you feel a whooshy sound enter your eyeball sockets and then your tummy flips over your groiny-place. WHOOOOOAAAA suddenly you find yourself trasported to the...
 
 ";
 
 Report casting xyzzy:
-    say "Under the influence of the black rod, you pronounced 'xyzzy' as Xhi-zee. You understand now that the purpose of the black rod is to bring people here, to the Secret Room."
+    say "Holding the teleporterWand, you pronounced 'xyzzy' as Xhi-zee. You understand now that the purpose of the teleporterWand is to bring people here, to the Secret Room."
 
 Carry out casting xyzzy:
 	move the player to The Secret Room.
 
 Check casting xyzzy:
-    if the player does not have the black rod, say "You are unable to articulate the second 'x' separately from the first, and the spell fails in a disdainful puff. If only you had the black rod." instead;
-if the player has the black rod, say "you feel a whooshy sound enter your eyeball sockets and then your tummy flips over your groiny-place. WHOOOOOAAAA suddenly you find yourself trasported to the...
+    if the player does not have the teleporterWand, say "You are unable to articulate the second 'x' separately from the first, and the spell fails in a disdainful puff. If only you had a teleporterWand." instead;
+if the player has the teleporterWand, say "you feel a whooshy sound enter your eyeball sockets and then your tummy flips over your groiny-place. WHOOOOOAAAA suddenly you find yourself trasported to the...
 
 ";
 
 Report casting yzxxy:
-    say "Under the influence of the black rod, you pronounced 'yzxxy' as Wizex-zi. You are glad there is some way out of that Secret Room!"
+    say "Holding the teleporterWand, you pronounced 'yzxxy' as Wizex-zi. You are glad there is some way out of that Secret Room!"
 
 Carry out casting yzxxy:
 	move the player to The Space Lounge.
@@ -1304,7 +1304,7 @@ Every turn when the location is The End (this is the end1 rule):
 	now the closed question mode is false;
 	If the score is greater than 50:
 		now the player has the quizzinator1;
-		move the player to P2D;
+		move the player to P2C;
 	otherwise:
 		now the player has the quizzinator2;
 		move the player to P2D.
