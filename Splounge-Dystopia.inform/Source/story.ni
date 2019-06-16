@@ -551,13 +551,22 @@ Carry out casting yzxxy:
 [Items]
 Instead of telling someone about something, try asking the noun about it. Instead of answering the noun that something, try asking the noun about it.
 
+[BadgeRibbons]
+A badgeRibbon is a kind of thing.
+A perryHotterBadgeRibbon is a badgeRibbon.
+
 [Smoothie]
 A smoothie is a kind of thing.
 A blah is a smoothie.
 A pineappleJuice is a smoothie.
 A rum is a smoothie.
-
+A margarineMead is a smoothie. The description of a margarineMead is "margarineMead".
 A rumAndJuice is a smoothie. The description of a rumAndJuice is "rumAndJuice".
+
+Instead of drinking a margarineMead:
+	now the margarineMead is nowhere;
+	say "This drink didn't sound very appealing to start with, and drinking it makes you feel kind of queasy.";
+	decrease the current hit points of the player by 10;
 
 Instead of drinking a rumAndJuice:
 	now the rum is nowhere;
@@ -743,6 +752,34 @@ Instead of giving the pineappleJuice to the rummerAndJuice:
 Instead of giving the rum to the rumAndJuicer:
 	say "The bartender giggles at you. She drinks your rum, and starts singing, 'RUM! AND JUICE AND RUM AND JUICE AND RUM AND JUICE AND RUM! AND JUICE! AND RUM AND JUICE AND RUM AND JUICE!";
 	now the rum is nowhere.
+
+[Dystopians]
+Dystopian1 is a man.
+Dystopian1 is a person in P2D. The description of Dystopian1 is "Dystopian1 is wearing a black turtleneck and black jeans. They have black rimmed glasses and seem to be staring into space, but also reading something in the middle of the air at the same time. They turn and look at you intensely."
+
+Dystopian2 is a woman.
+Dystopian2 is a person in P2D. The description of Dystopian2 is "Dystopian2 is wearing a black turtleneck and black jeans. They have black rimmed glasses and seem to be staring into space, but also reading something in the middle of the air at the same time. They turn and look at you intensely."
+
+Dystopian3 is a woman.
+Dystopian3 is a person in P2D. The description of Dystopian3 is "Dystopian3 is wearing a black turtleneck and black jeans. They have black rimmed glasses and seem to be staring into space, but also reading something in the middle of the air at the same time. They turn and look at you intensely."
+
+Dystopian4 is a man.
+Dystopian4 is a person in P2D. The description of Dystopian4 is "Dystopian4 is wearing a black turtleneck and black jeans. They have black rimmed glasses and seem to be staring into space, but also reading something in the middle of the air at the same time. They turn and look at you intensely."
+
+[PerryHotter]
+PerryHotter is a man.
+PerryHotter is a person in P2N. The description of PerryHotter is "Perry Hotter is a young witch. If you were younger yourself, you might have a crush on him. He's got a scar under his left eye in the shape of a crescent moon, and has sort of a nerdy, boyish handsomeness going for him. He's a bit flustered whenever anyone talks to him."
+
+Persephone is a woman.
+Persephone is a person in P2N. The description of Persephone is "Persephone is a young witch. She's got her hair up in lots of braids and is furiously taking notes onto a scroll from a big ancient tome in her lap. She's a take-no-shit sort of young witch, and occasionally takes a big chug of margarineMead"
+
+Instead of asking Persephone about "margarineMead":
+	say "Persephone looks up from her enormous book, chugs the rest of her margarineMead, and waves a stick at you. She says, 'Meadifloum Appear-Oh'. You discover there's a big glass beer stein filled with greasy sweet smelling alcohol. She waves her stick again, repeats the incantantion, and points it at her own mug. Refilled. Magical.";
+	now the player has margarineMead.
+	
+Instead of asking Persephone about "book":
+	say "You ask Persephone about the old tome she's transcribing from. 'ACTually, it's a grimoire.' she says. 'I suppose you want something for interacting with me. Take this and leave me alone.'.";
+	now the player has perryHotterBadgeRibbon.
 
 [Aframe]
 Aframe is a man.
