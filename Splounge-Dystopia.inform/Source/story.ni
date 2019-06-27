@@ -355,8 +355,6 @@ There is a comfy looking chair inside the Space Lounge.  The comfy looking chair
 
 [The description of the comfy looking chair is "The chair looks seriously comfortable, it's all soft and squishy looking. 'SPYUMMY', your butt thinks.".]
 
-The black ninja outfit is in the Space Lounge.
-
 A glittery box is on the bar. The description of the glittery box is "Time slows down, you feel as if you are gazing into the cosmos itself. Your eyeballs can hardly stay on it, it's like your gaze just keeps sliding off."
 
 The box is an openable container. The box is closed.
@@ -581,21 +579,21 @@ A blah is a smoothie.
 A pineappleJuice is a smoothie.
 A rum is a smoothie.
 A margarineMead is a smoothie. The description of a margarineMead is "margarineMead".
-A rumAndJuice is a smoothie. The description of a rumAndJuice is "rumAndJuice".
+A rumNJuice is a smoothie. The description of a rumNJuice is "rumNJuice".
 
 Instead of drinking a margarineMead:
 	now the margarineMead is nowhere;
 	say "This drink didn't sound very appealing to start with, and drinking it makes you feel kind of queasy.";
 	decrease the current hit points of the player by 10;
 
-Instead of drinking a rumAndJuice:
+Instead of drinking a rumNJuice:
 	now the rum is nowhere;
 	say "You drink this wonderful concoction and feel amazing!";
 	increase the current hit points of the player by 15;
 
-Instead of inserting the rum into the pineappleJuice: say "You are doing some alchemy - NOICE"; remove rum from play; remove pineappleJuice from play; now the player has rumAndJuice.
+Instead of inserting the rum into the pineappleJuice: say "You are doing some alchemy - NOICE"; remove rum from play; remove pineappleJuice from play; now the player has rumNJuice.
 
-Instead of inserting the pineappleJuice into the rum: say "You are doing some alchemy - NOICE"; remove rum from play; remove pineappleJuice from play; now the player has rumAndJuice.
+Instead of inserting the pineappleJuice into the rum: say "You are doing some alchemy - NOICE"; remove rum from play; remove pineappleJuice from play; now the player has rumNJuice.
 
 Understand "combine [other things] with/and [something]" as inserting it into.
 Understand "mix [other things] with/and [something]" as inserting it into.
@@ -789,8 +787,25 @@ Dystopian4 is a person in P2D. The description of Dystopian4 is "Dystopian4 is w
 
 [PerryHotter]
 PerryHotter is a man.
-PerryHotter is a person in P2N. The description of PerryHotter is "Perry Hotter is a young witch. If you were younger yourself, you might have a crush on him. He's got a scar under his left eye in the shape of a crescent moon, and has sort of a nerdy, boyish handsomeness going for him. He's a bit flustered whenever anyone talks to him."
+PerryHotter is a person in P2N. The description of PerryHotter is "PerryHotter is a young witch. If you were younger yourself, you might have a crush on him. He's got a scar under his left eye in the shape of a crescent moon, and has sort of a nerdy, boyish handsomeness going for him. He's a bit flustered whenever anyone talks to him."
 
+ProfessorBumblebore is a man.
+ProfessorBumblebore is a person in P2N. The description of ProfessorBumblebor is "ProfessorBumblebore is an old witch dude with a big white beard and flowing brown robes. YAWWWWWWWWWWWN. Talk about stereotypical. He's probably got a quest for you. yawwwwwwwwwwwwwwwwwn. Maybe you should ask him about it. sNORRRRRRRRRRRRE."
+
+Instead of asking ProfessorBumblebore about "quest":
+	say "ProfessorBumblebore squints down at you, with a predictable twinkle in his eye. '[player's full name], if I'm not mistaken.' Of course he would know your name. OF COURSE. 'I do indeed have a quest for you. I need you to bring me a series of objects. First, bring me a drink. I'm quite parched.'"
+	
+Instead of giving the margarineMead to ProfessorBumblebore:
+	now ProfessorBumblebore has the margarineMead;
+	say "The old man sniffs the mug skeptically. 'This looks like shit. You expect me to drink this?' He throws the beverage over his shoulder. 'Get me a rumNJuice.'";
+	now the margarineMead is nowhere.
+
+Instead of giving the rumNJuice to ProfessorBumblebore:
+	now ProfessorBumblebore has the rumNJuice;
+	say "The bearded man chuckles affably and quaffs the cocktail. 'That's more like it.' he says, 'Here's a little something to help you in your mischief.' He waves a branch at you and you feel like your inventory is heavier. 'NOW THEN,' he says, 'Next on the list! Get me a INSERT BOFFER ITEM HERE'";
+	now the rumNJuice is nowhere;
+	now the player has black ninja outfit.
+	
 Persephone is a woman.
 Persephone is a person in P2N. The description of Persephone is "Persephone is a young witch. She's got her hair up in lots of braids and is furiously taking notes onto a scroll from a big ancient tome in her lap. She's a take-no-shit sort of young witch, and occasionally takes a big chug of margarineMead"
 
@@ -893,7 +908,7 @@ A cosplayer is a person in Mainstage. The cosplayer is female. The cosplayer car
 
 [Boffer]
 The boffer is a person.
-The boffer is in the Garden Court.
+The boffer is in GA.
 The boffer has a number called maximum hit points.
 The boffer has a number called current hit points.
 The maximum hit points of the boffer is 30.
@@ -903,16 +918,14 @@ The boffer carries a nanocarbon blade.
 The boffer carries a weapon called a nanocarbon staff. The description of the nanocarbon staff is "Nanocarbon staff, looks just like oldwood. Looks like it can be switched between stun and realdammo."
 The description of the boffer is "Standard boffer looking bloke, wearing simple leather armor and wielding a staff and smiling at you menacingly."
 
-Persuasion rule for asking the boffer to try doing something:
+Instead of saying hello to the boffer:
 	If the boffer is neutralla:
-		say "Hey there, wanna fight?!'";
-		persuasion fails;
+		say "'Hey there, wanna fight?!'";
 	Otherwise if the boffer is an enemy:
-		say "I think maybe we oughta fight with some real weapons, whatcha think?!'";
-		persuasion fails;
+		say "'I think maybe we oughta fight with some real weapons, whatcha think?!'";
 	Otherwise if the boffer is a co-conspirator:
-		say "Looks like you need some help, here take this.";
-		persuasion succeeds.
+		say "'Looks like you need some help, here take this.";
+		move the nanocarbon staff to the player;
 
 [Security Bot]
 A securityBot is a person. The description of the securityBot is "Looks like a standard securityBot. A floating ball of plastimetal about 3 feet in diameter with a bunch of creepy robot arms sticking out all over with cameras and sensors and whatever else all those things are. Is that a toothbrush? It's pretty unnerving to look at."
