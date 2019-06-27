@@ -38,16 +38,18 @@ H3A is a room. "Oh! This is the hallway outside your hotel room. Cool! It's pret
 H3B is a room. "This is further down the hallway from your hotel room. You don't know who your neighbors are. You can hear them playing some sort of music game, but when you knock, they can't hear you, and don't answer.".
 H3C is a room. "This is at the end of the hallway from your hotel room. There's a pile of trash down here- you wonder why the hotel staff hasn't picked it up. Then again, you're not about to pick it up either.".
 Elevator3 is a room. "You step into the elevator. It's up on the same floor as your room. The elevator attendant is a skeleton, so I guess you're going to have to pick the floor yourself.".
-The Floating Courtyard is a room. "This is amazing - you are up above everything and can see so much up here! There's a pool down below, and a fenced in courtyard with some kind of securityGate system surrounding it, and Consuite.".
+The Floating Courtyard is a room. "This is amazing - you are up above everything and can see so much up here! There's a pool down below, and a fenced in courtyard with some kind of securityGate system surrounding it, and Consuite. Nobles float about on their leviChairs.".
 
 [Floor 2]
 
 Elevator2 is a room. "[one of]The elevator is pretty grimy looking; there is condensation forming on the lights.[or]The walls of the elevator are covered in flyers for upcoming parties and holoPrograms coming out.[or]The elevator shudders a bit as it begins moving.[at random] [one of]There is an arnoldConanBarbarian[or]There is a bored-looking geneSpliceMinotaur[or]There are a few youngBadgers[at random] [one of]and a fireMario in the elevator with you.[or]and a turboRetroCyborg in the elevator with you.[or]and a raverGargoyle in the elevator with you.[or]and a solarPunk in the elevator with you.[at random] They get out without talking to you and disappear into the crowd.".
 
 The Space Lounge is a room. "You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.".
-The BehindtheBar is a room. "There are two chairs facing a curved glass surface. You look through the window and see a galaxy of stars spread out, vast, in front of you. To all your sides: below, above, left and right the outside surface of the hotel . It appears part of it had been broken off at one point. It also appears the Space Lounge is a shuttlecraft.".
+The BehindtheBar is a room. "There are two chairs facing a curved glass surface. You look through the window and see a galaxy of stars spread out, vast, in front of you. To all your sides: below, above, left and right are vast walls stretching out. It kind of looks like it is the OUTSIDE of the con hotel! It appears part of it had been broken off at one point. It also appears the Space Lounge is actually a shuttlecraft. There's an old photograph of what looks like an oldSchoolConGoer with a handwritten note that says, 'Thanks for the laughs, doll. I'll see you again soon.' It is signed 'zxyyz'".
 Consuite is a room. "The vast wasteland of the hungry: ConSuite. It's sticky and smells like centuries of soda and rice. The scavvers eye you with a hungry look in their eyes. Best not to stay too long.".
 Registration is a room. "Registration: Bureaucracy Station. Lines of congoers stand waiting to talk to Con employees. It looks like everyone has been here a long time. The signs above their stations read: Credits, Cash, Lost & Found, Info, Merch, Security, Volunteers, and Questions.".
+
+The SmoothieStorage is a room. 
 
 The spaceLoungeEngine is a switched off device in the BehindTheBar. It is fixed in place.
 The detachmentInterface is a switched off device in the BehindTheBar. It is fixed in place.
@@ -205,7 +207,7 @@ The Lower Tower Connector is a room. "The Lower Tower Connector - connection bet
 The Upper Tower Connector is a room. "The Upper Tower Connector - connection between the short and tall towers.".]
 
 [Doors and Backdrops]
-The spaceLoungeDoor is a door. The spaceLoungeDoor is lockable and unlocked. The securityKey unlocks the spaceLoungeDoor. The description of the spaceLoungeDoor is "The spaceLoungeDoor has a small window. It looks like the door has a lock mechanism that looks like it could be manipulated by a standard tetral-inverse double helix securityKey."
+The spaceLoungeDoor is a door. The spaceLoungeDoor is lockable and unlocked. The securityKey unlocks the spaceLoungeDoor. The description of the spaceLoungeDoor is "The spaceLoungeDoor has a small window, and now that you look closer it looks kind of like this door is two doors schmooshed together. It looks like the door has a lock mechanism that looks like it could be manipulated by a standard tetral-inverse double helix securityKey."
 
 The greenRoomDoor is a door. The greenRoomDoor is lockable and locked. The greenRoomKey unlocks the greenRoomDoor. The description of the greenRoomDoor is "This door is green and has a big thumbpad thing.".
 
@@ -239,16 +241,17 @@ Before entering the comfy looking chair:
 		increase the score by 100;
 		move the player to the ----;
 		switch to cyoa at the MeditativeMasterPage.
+		
+The description of the comfy looking chair is "The comfy looking chair is kind of an insanely comfy looking chair.".
 
-
-Instead of getting off the comfy chair for the first time, unless meditativeMaster is true, say "You just can't get up, you are way too comfortable! Maybe if you just stayed here in this [noun] forever you would be better off than whatever else you were going to do. Does it really matter?".
+Instead of getting off the comfy chair for the first time, unless meditativeMaster is true, say "You just can't get up, you are way too comfortable! Maybe if you just stayed here in this [noun] forever you would be better off than whatever else you were going to do. Does it really matter? Anyway, you could probably 'get up from chair' if you tried it enough...".
 
 Instead of getting off the comfy chair for the second time:
 	If meditativeMaster is false:
-		say "You try to heave yourself up, but the soft lusciousness of the [noun] envelopes you and pulls you back into its comfy folds. Oooooo...so comfy...so sooooooofffffft...";
+		say "You try to heave yourself up, but the soft lusciousness of the [noun] envelopes you and pulls you back into its comfy folds. Oooooo...so comfy...so sooooooofffffft... oh even trying to 'get up from chair' might not work but you could always try I suppose...";
 		now the test-variable is true.
 
-Instead of doing something other than looking or getting off when the player is on the comfy looking chair,  unless meditativeMaster is true, say "You try to do something but you can really just look around while sitting in this insanely comfy chair."
+Instead of doing something other than looking or getting off when the player is on the comfy looking chair,  unless meditativeMaster is true, say "You can't really do much but look around while sitting in this insanely comfy chair. You could 'get up from chair' if you wanted though but it might take some doing."
 
 Instead of entering the comfy looking chair the second time, unless the player is on the comfy looking chair,  unless meditativeMaster is true, say "'Hey Wait!' your subconscious jumps forth remembering the tempting softness - you decide not not to sit on that [noun], it's so comfy you might never get up again! It looks seriously comfy though...maybe just for a little tiny sliver of a moment you could get kinda comfy..."
 
@@ -360,7 +363,7 @@ Instead of taking the glittery box, say "OOOHhhhhhh! You get a funny tingle when
 
 The securityReadout is in the glittery box.
 
-In the box is a bowl. In the bowl is a note. The description of the note is "Cast the secret spell xyzzy"
+A bowl is in P1O. In the bowl is a note. The description of the note is "Cast the secret spell xyzzy"
 
 The crazy looking gun is in the glittery box. The description of the crazy looking gun is "That gun is so crazy looking! It's kind of like totally blowing your mind."
 
@@ -388,7 +391,7 @@ The MisprintedTurboEncabulator is an object. The description of the MisprintedTu
 
 The 3dPrinterBluePrint is in the QS.
 
-The floating dolphin is a vehicle in H2K. The description of the floating dolphin is "Oh crap - the floating dolphin's survellance cam is honing in on you! You better get out of here, somewhere where the floating dolphin camera can't see you." The dolphin is locked. The dolphin code unlocks the floating dolphin. The description of the dolphin code is "It is fish shaped, and vibrates - readout screen says 'Status optimal'."
+The floating dolphin is a vehicle in GC. The description of the floating dolphin is "Oh crap - the floating dolphin's survellance cam is honing in on you! You better get out of here, somewhere where the floating dolphin camera can't see you." The dolphin is locked. The dolphin code unlocks the floating dolphin. The description of the dolphin code is "It is fish shaped, and vibrates - readout screen says 'Status optimal'."
 
 Rule for describing the interior of the floating dolphin:
 	Say "The floating dolphin is transparent, but tints everything outside very faintly lavender." instead.
@@ -400,9 +403,9 @@ After entering the floating dolphin:
 	say "Go up!"
 
 [The Secret Room]
-There is a book in the Secret Room. The description of the book is "'yzxxy' is the title, and the contents just say 'Your Future Lies in Space' over and over again."
+There is a book in the Floating Courtyard. The description of the book is "'yzxxy' is the title, and the contents just say 'Your Future Lies in Space' over and over again."
 
-The dolphin code is in the Secret Room.
+The dolphin code is in the Pool.
 
 [The Player]
 
@@ -437,6 +440,8 @@ statement
 "Oh, [player's full name] eh!? I've heard a you."
 "[player's full name]!? Har har har! Musta been one-a them vat babies huh?"
 "Hey, do you know [player's full name]? They have the same name as you!"
+"[player's full name]!? I used to have a Tribble named [player's full name]!"
+"[player's full name]!? That's pretty unique!"
 
 After reading a command when collecting names:
 	if the number of words in the player's command is greater than 5:
@@ -502,14 +507,16 @@ Understand "shoot [gun] at [something ungunlike]" as shooting it with (with noun
 Understand "shoot [something ungunlike] with [gun]" as shooting it with. Understand "shoot [something] with [something]" as shooting it with.
 Understand "shoot [something] at [something]" as shooting it with (with nouns reversed). Understand "fire [gun] at [something ungunlike]" as shooting it with (with nouns reversed). Understand "fire at [something ungunlike] with [gun]" as shooting it with. Understand "fire at [something] with [something]" as shooting it with.
 
-Carry out shooting something with something:
-    say "ZAP! [The noun] twinkles out of existence! [if something is part of the noun][The list of things which are part of the noun] clatters to the ground! [end if][paragraph break]";
-    now every thing which is part of the noun is in the location;
-    now the noun is nowhere.
-
 Instead of shooting the bartender with the gun: say "The weird ray somehow seems to bend around the bartender and disperses into a cloud of neon-swirled rainbow shards. She looks at you with a strange smirky side-eye. She must be wearing some kind of personal ray-deflector device. 'splick', you admire-think."
 
 Instead of shooting the spaceLoungeDoor with the gun: say "The crazy gun's ray just bounces off the spaceLoungeDoor, it doesn't seem to be able to affect it."
+
+Instead of shooting something with the gun: say "The weird ray somehow seems to bend around the [noun] and disperses into a cloud of neon-swirled rainbow shards."
+
+Instead of shooting the Glowing Sphere with the gun: say "ZAP! [The noun] twinkles out of existence! [if something is part of the noun][The list of things which are part of the noun] clatters to the ground! [end if][paragraph break]";
+    now every thing which is part of the noun is in the location;
+    now the noun is in the Green Room.
+
 
 [Instead of shooting: say "Uhm are you nuts? You don't even know what this gun thing does and besides if you draw too much attention to yourself you'll be swarmed by security in seconds. It's probably out of batteries anyway. In a pinch you might be able to use it to scare the crap out of someone though, this gun is so crazy looking anyone would do anything rather than get shot by something like it."
 ]
@@ -519,32 +526,45 @@ Understand "xyzzy" or "say xyzzy" or "cast xyzzy" as casting xyzzy.
 
 Understand "yzxxy" or "say yzxxy" or "cast yzxxy" as casting yzxxy.
 
+Understand "zxyyz" or "say zxyyz" or "cast zxyyz" as casting zxyyz.
+
+
 Casting xyzzy is an action applying to nothing.
 Casting yzxxy is an action applying to nothing.
+Casting zxyyz is an action applying to nothing.
 
-Check casting xyzzy:
-    if the player does not have the teleporterWand, say "You are unable to articulate the second 'z' separately from the first, and the spell fails in a disdainful puff. If only you had some sort of teleporterWand to focus your arcane arts upon to increase your attunement to the fey realm." instead;
-if the player has the teleporterWand, say "you feel a whooshy sound enter your eyeball sockets and then your tummy flips over your groiny-place. WHOOOOOAAAA suddenly you find yourself trasported to the...
-
-";
 
 Report casting xyzzy:
-    say "Holding the teleporterWand, you pronounced 'xyzzy' as Xhi-zee. You understand now that the purpose of the teleporterWand is to bring people here, to the Secret Room."
+	now the player is in the Floating Courtyard.
 
-Carry out casting xyzzy:
-	move the player to The Secret Room.
+[Carry out casting xyzzy:
+	move the player to The Floating Courtyard.]
+
+[Carry out casting yzxxy:
+	move the player to BehindTheBar.]
+
+
+Report casting yzxxy:
+	now the player is in the BehindTheBar.
+
+Report casting zxyyz:
+	now the player is in the MyRoom.
+	
+
+Check casting zxyyz:
+    if the player does not have the teleporterWand, say "You are unable to articulate the second 'y' separately from the first, and the spell fails in a disdainful puff. If only you had a teleporterWand." instead;
+if the player has the teleporterWand, say "Holding the teleporterWand, you pronounced 'zxyyz' as Zi-eXy-yiZ.. You feel a whooshy sound enter your eyeball sockets and then your tummy flips over your groiny-place. WHOOOOOAAAA suddenly you find yourself trasported to the...Your Bedroom(?)!";
+
+
+Check casting yzxxy:
+    if the player does not have the teleporterWand, say "You are unable to articulate the second 'x' separately from the first, and the spell fails in a disdainful puff. If only you had a teleporterWand." instead;
+if the player has the teleporterWand, say "Holding the teleporterWand, you pronounced 'yzxxy' as Yiz-ix-zee. You feel a whooshy sound enter your eyeball sockets and then your tummy flips over your groiny-place. WHOOOOOAAAA suddenly you find yourself trasported to ...Your Bedroom(?)!";
+
+
 
 Check casting xyzzy:
     if the player does not have the teleporterWand, say "You are unable to articulate the second 'x' separately from the first, and the spell fails in a disdainful puff. If only you had a teleporterWand." instead;
-if the player has the teleporterWand, say "you feel a whooshy sound enter your eyeball sockets and then your tummy flips over your groiny-place. WHOOOOOAAAA suddenly you find yourself trasported to the...
-
-";
-
-Report casting yzxxy:
-    say "Holding the teleporterWand, you pronounced 'yzxxy' as Wizex-zi. You are glad there is some way out of that Secret Room!"
-
-Carry out casting yzxxy:
-	move the player to The Space Lounge.
+if the player has the teleporterWand, say "Holding the teleporterWand, you pronounced 'xyzzy' as Xhi-zee. You feel a whooshy sound enter your eyeball sockets and then your tummy flips over your groiny-place. WHOOOOOAAAA suddenly you find yourself trasported to the...Floating Courtyard!";
 
 [Items]
 Instead of telling someone about something, try asking the noun about it. Instead of answering the noun that something, try asking the noun about it.
@@ -578,7 +598,7 @@ Instead of inserting the pineappleJuice into the rum: say "You are doing some al
 Understand "combine [other things] with/and [something]" as inserting it into.
 Understand "mix [other things] with/and [something]" as inserting it into.
 
-Some smoothies in BehindtheBar are defined by Table 1.2. The description of a smoothie is "[description]"
+Some smoothies in SmoothieStorage are defined by Table 1.2. The description of a smoothie is "[description]"
 
 Instead of drinking a smoothie (called the drink):
     now the drink is nowhere;
@@ -615,8 +635,9 @@ hanShotFirst	"Coffee shot with a shot of espresso."
 lunarBurn	"It's a shadowy color swirling with moonlight. The glass is cool to the touch."
 solarFreeze	"Glowing like a sunflower on a sunny day, this drink is quite beautiful. Dazzling."
 battleStarChillactica	"It looks kind of like a Cylon, in that it looks like a regular drink. Could be any drink in fact. Even ones that would seem totally impossible continuity-wise."
-goodnightAstronaut	"It's a glass of orange juice, with a rare Spherb that has been known to induce transcendental states of being."
 escapeVelociTea	"A nice warm cup of tea. Perfection."
+
+A goodnightAstronaut is a smoothie. The description of the goodnightAstronaut is "It's a glass of orange juice, with a rare Spherb that has been known to induce transcendental states of being.". A goodnightAstronaut is on the bar.
 
 
 A description of a smoothie usually is "This thing is like taking a bath in frozen unicorn snot. Amazing."
@@ -628,7 +649,7 @@ Instead of giving the mcGuffin to the bartender:
 
 Instead of giving the coin to the bartender:
 	move the coin to the bartender;
-	let the target smoothie be a random smoothie in the BehindtheBar;
+	let the target smoothie be a random smoothie in the SmoothieStorage;
 	now the player has the target smoothie;
 	say "She accepts with a smile and slides you a [target smoothie]. It looks friggin delicious."
 
@@ -838,11 +859,11 @@ The bartender carries the behindTheBarKey.
 
 Instead of giving the TurboEncabulator to the bartender:
 	now the bartender has the TurboEncabulator;
-	say "I'll this old bucket of rust going now."
+	say "I'll get this old bucket of rust going now."
 
 Instead of giving the coin to the bartender:
 	move the coin to the bartender;
-	let the target smoothie be a random smoothie in the BehindtheBar;
+	let the target smoothie be a random smoothie in the SmoothieStorage;
 	now the player has the target smoothie;
 	say "She accepts with a smile and slides you a smoothie. It looks friggin delicious."
 
