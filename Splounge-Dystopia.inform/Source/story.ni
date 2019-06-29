@@ -1645,11 +1645,41 @@ A circleWanderer can be hangingOut or walkingAround.
 
 A circleWanderer has a number called circleWandererGoal. The circleWandererGoal of a circleWanderer is usually 1.
 
-drunkPartier is a circleWanderer.
-drunkPartier is walkingAround.
-drunkPartier is in H1K.
-The circleWandererGoal of drunkPartier is 1.
-The description of drunkPartier is "This guy is pretty drunk. You think you should probably not talk to him. You can tell he totally wants to talk to someone too but he can barely stand up.".
+cyberSlug is a circleWanderer.
+cyberSlug is walkingAround.
+cyberSlug is in TN.
+The circleWandererGoal of cyberSlug is 2.
+The description of cyberSlug is "I think this is a costume. It's an enormous slimy blob with circuits running through it. It's both pretty and gross at the same time.".
+
+gothicLolitaWreckitRalph is a circleWanderer.
+gothicLolitaWreckitRalph is walkingAround.
+gothicLolitaWreckitRalph is in GB.
+The circleWandererGoal of gothicLolitaWreckitRalph is 4.
+The description of gothicLolitaWreckitRalph is "gothicLolitaWreckitRalph!!!! SO CUUUUUUUUUUTE! YOU NEED TO HAVE A PICTURE WITH IT!".
+
+fanDubJasonBourne is a circleWanderer.
+fanDubJasonBourne is walkingAround.
+fanDubJasonBourne is in P1D.
+The circleWandererGoal of fanDubJasonBourne is 4.
+The description of fanDubJasonBourne is "Okay, so, this is kind of a deep dive costume. This guy is a fanDubJasonBourne, and his costume references a spy but somehow crappily translated into Finnish by an eight-year old with a limited vocabulary. You only know this is a thing because you watched 'A Star is Bourne' in an illegal bar in Theater Nippon last year.".
+
+miniMedusa is a circleWanderer.
+miniMedusa is hangingOut.
+miniMedusa is in H1A.
+The circleWandererGoal of miniMedusa is 3.
+The description of miniMedusa is "You look at the tiny cosplayer. She's just so little! The teeny snakes on her tiny head wave around hypnotically. You can't look away from them! You're just fro- waaaaait a second.".
+
+hyperSloth is a circleWanderer.
+hyperSloth is hangingOut.
+hyperSloth is in H1B.
+The circleWandererGoal of hyperSloth is 1.
+The description of hyperSloth is "The speed of the hyperSloth is BLOWING YOUR MIND. It has a lot of badge ribbons but doesn't seem to be handing any out.".
+
+retroCubeDancer is a circleWanderer.
+retroCubeDancer is hangingOut.
+retroCubeDancer is in H1C.
+The circleWandererGoal of retroCubeDancer is 2.
+The description of retroCubeDancer is "This person's costume is so Old School. You haven't seen something like this in years. So- backstory- at one point it was really popular to make costumes based on horror movie architecture, and this person's costume is based on 'the cube'. It's hard to explain. It's like trying to explain an in-joke. Anyhow, their moves are SUPER SWEET.".
 
 arnoldConanBarbarian is a circleWanderer.
 arnoldConanBarbarian is hangingOut.
@@ -1657,12 +1687,77 @@ arnoldConanBarbarian is in H1D.
 The circleWandererGoal of arnoldConanBarbarian is 2.
 The description of arnoldConanBarbarian is "You know this barbarian cosplay pretty well from watching the faded ancient Conan disks some of the early founders saved. He's ripped and has a giant sword. Looks like The Arnold too.".
 
+furryTrainEngineer is a circleWanderer.
+furryTrainEngineer is hangingOut.
+furryTrainEngineer is in H1E.
+The circleWandererGoal of furryTrainEngineer is 3.
+The description of furryTrainEngineer is "She's a train engineer! With a tail and ears!".
+
+blastoOrangeMan is a circleWanderer.
+blastoOrangeMan is hangingOut.
+blastoOrangeMan is in H1G.
+The circleWandererGoal of blastoOrangeMan is 4.
+The description of blastoOrangeMan is "blastoOrangeMan is a children's book character from Korea. In the books, blastoOrangeMan punches an increasingly larger pieces of architecture, and getting candy. This cosplayer doesn't seem to be punching anything.".
+
+comicBookLad is a circleWanderer.
+comicBookLad is hangingOut.
+comicBookLad is in H1H.
+The circleWandererGoal of comicBookLad is 3.
+The description of comicBookLad is "comicBookLad has a pile of comic books that he does not look up from. He's wearing tweedy knickerbockers, and has a feather in his cap.".
+
+stephanieSuperHero is a circleWanderer.
+stephanieSuperHero is hangingOut.
+stephanieSuperHero is in H1I.
+The circleWandererGoal of stephanieSuperHero is 1.
+The description of stephanieSuperHero is "Honestly, stephanieSuperHero is just a lady named Stephanie. Her super power is not giving a shit.".
+
+plasticTeapotMan is a circleWanderer.
+plasticTeapotMan is hangingOut.
+plasticTeapotMan is in H1J.
+The circleWandererGoal of plasticTeapotMan is 4.
+The description of plasticTeapotMan is "This guy is dressed up like an enormous plastic teapot. You don't get the reference, but a lot of other congoers seem to be super excited by it.".
+
+drunkPartier is a circleWanderer.
+drunkPartier is walkingAround.
+drunkPartier is in H1K.
+The circleWandererGoal of drunkPartier is 1.
+The description of drunkPartier is "This guy is pretty drunk. You think you should probably not talk to him. You can tell he totally wants to talk to someone too but he can barely stand up.".
+
+evilQueen is a circleWanderer.
+evilQueen is walkingAround.
+evilQueen is in H1L.
+The circleWandererGoal of evilQueen is 2.
+The description of evilQueen is "This lady is super elegant and evil looking. She's got a great big cowl, dramatic eye makeup, and lonnnnnnng fingernails. She's been working on her evil laugh, and it sends shivvers up your spine".
+
+quiddichSeeker is a circleWanderer.
+quiddichSeeker is walkingAround.
+quiddichSeeker is in H1M.
+The circleWandererGoal of quiddichSeeker is 3.
+The description of quiddichSeeker is "This gal's costume is pretty great. She's got the broom, she's got the cloak, and she's got a golden snitch attached to a wire about ten feet out in front of her. She does keep hitting people with it, though. Whoops.".
+
+holoSquirrel is a circleWanderer.
+holoSquirrel is walkingAround.
+holoSquirrel is in H1N.
+The circleWandererGoal of holoSquirrel is 3.
+The description of holoSquirrel is "Oooooh, she's SEE-THROUGH. How does she do it? You wave your hand through the holoSquirrel and she looks at you as if you just did something really rude.".
+
 geneSpliceMinotaur is a circleWanderer.
 geneSpliceMinotaur is walkingAround.
 geneSpliceMinotaur is in H1O.
 The circleWandererGoal of geneSpliceMinotaur is 4.
 The description of geneSpliceMinotaur is "Whoa cool that's one of those CRISPR folks - all editing their own genome to cosplay all the time. Gotta respect the commitment. This one one looks like a giant minotaur! Kinda scary.".
 
+beefMindFoxDog is a circleWanderer.
+beefMindFoxDog is walkingAround.
+beefMindFoxDog is in H1P.
+The circleWandererGoal of beefMindFoxDog is 1.
+The description of beefMindFoxDog is "beefMindFoxDog is an obscure character from a boardgame from a indie publisher who went out of business ten years ago. It's a frog, basically.".
+
+soupMonster is a circleWanderer.
+soupMonster is walkingAround.
+soupMonster is in H1Q.
+The circleWandererGoal of soupMonster is 2.
+The description of soupMonster is "soupMonster is a 5th level Chowderbeast. It casts broth at you. You feel unsatiated.".
 
 Table of CircleWandererCharacters
 name	currentGoalRow	startingLocation
