@@ -1,5 +1,7 @@
 "Splounge-Dystopia" by Aaron Prust
 
+Release along with an interpreter.
+
 When play begins: say "In the early 2000s, mewonkind's folly led to the breakdown of society and the restructuring of general cultural and technological vector-goals. At some point interest-tribes formed into coherent anarcho-syndicates, creating new economic models which began to isolate themselves in order to maximize survival attributes and minimize unknown variable influences. It was around that time the blast doors went down. Nobody's sure how long exactly; it's been hundreds of season renewals and a ton of spin-offs and crossovers since then though. At least that's what you were taught in data-download segment 2-histori-political info part 27A while syncing the standard edu-packets. Who the hell knows for real though, right?
 
 Whatevs. Feels like just another day in the MASSIVE HIVE KNOWN as CONvergence."
@@ -790,7 +792,7 @@ PerryHotter is a man.
 PerryHotter is a person in P2N. The description of PerryHotter is "PerryHotter is a young witch. If you were younger yourself, you might have a crush on him. He's got a scar under his left eye in the shape of a crescent moon, and has sort of a nerdy, boyish handsomeness going for him. He's a bit flustered whenever anyone talks to him."
 
 ProfessorBumblebore is a man.
-ProfessorBumblebore is a person in P2N. The description of ProfessorBumblebor is "ProfessorBumblebore is an old witch dude with a big white beard and flowing brown robes. YAWWWWWWWWWWWN. Talk about stereotypical. He's probably got a quest for you. yawwwwwwwwwwwwwwwwwn. Maybe you should ask him about it. sNORRRRRRRRRRRRE."
+ProfessorBumblebore is a person in P2N. The description of ProfessorBumblebore is "ProfessorBumblebore is an old witch dude with a big white beard and flowing brown robes. YAWWWWWWWWWWWN. Talk about stereotypical. He's probably got a quest for you. yawwwwwwwwwwwwwwwwwn. Maybe you should ask him about it. sNORRRRRRRRRRRRE."
 
 Instead of asking ProfessorBumblebore about "quest":
 	say "ProfessorBumblebore squints down at you, with a predictable twinkle in his eye. '[player's full name], if I'm not mistaken.' Of course he would know your name. OF COURSE. 'I do indeed have a quest for you. I need you to bring me a series of objects. First, bring me a drink. I'm quite parched.'"
@@ -1069,6 +1071,12 @@ After wearing the black ninja outfit:
 Carry out wearing the black ninja outfit for the first time:
   now the current ninja points of the player is 50.
 
+
+A personalEnemy is a kind of person.
+
+Bill is a person. The description of Bill is "Bill".
+Bob is a person. The description of Bob is "Bob".
+Bill is a person. The description of Bill is "Bill".
 
 
 When play begins:
@@ -1644,11 +1652,14 @@ A circleWanderer is a kind of person.
 
 A circleWanderer can be hangingOut or walkingAround.
 
-[A circleWanderer has a number called currentCircleWandererGoal. The currentCircleWandererGoal of a circleWanderer is usually 1.
-]
-
-
 A circleWanderer has a number called circleWandererGoal. The circleWandererGoal of a circleWanderer is usually 1.
+
+A circleWanderer2 is a kind of person.
+
+A circleWanderer2 can be hangingOut or walkingAround.
+
+A circleWanderer2 has a number called circleWandererGoal. The circleWandererGoal of a circleWanderer2 is usually 1.
+
 
 drunkPartier is a circleWanderer.
 drunkPartier is walkingAround.
@@ -1700,8 +1711,17 @@ Every turn when arnoldConanBarbarian is walkingAround:
 			]
 
 [increment the circleWandererGoal of currentWanderer;
-	]
+	]	
 	
+
+biotechWarrior is a circleWanderer2.
+biotechWarrior is walkingAround.
+biotechWarrior is in H2D.
+The circleWandererGoal of drunkPartier is 1.
+The description of biotechWarrior is "Whoa - a biotechWarrior! Most of that tech has since been outlawed but this one musta been grandfathered in. They look pretty old anyway - onea them grey-hairs. You'd think with all that biotech they'd CRISP their hair to youthen it or smthng but hey style is personal, right?".
+
+
+
 Every turn:
 	repeat with currentWanderer running through all the circleWanderers:
 		if a random chance of 1 in 5 succeeds:
@@ -1717,6 +1737,23 @@ Every turn:
 				increase the circleWandererGoal of currentWanderer by 1;
 				if the circleWandererGoal of currentWanderer is greater than four:
 					now the circleWandererGoal of currentWanderer is 1.
+					
+Every turn:
+	repeat with currentWanderer2 running through all the circleWanderer2s:
+		if a random chance of 1 in 5 succeeds:
+			choose row circleWandererGoal of currentWanderer2 from the Table of PartierFirstLevelDown Movement;
+			let thePlaceToGo be the destination entry;
+			let wandererSpace be the location of currentWanderer2;
+			if wandererSpace is not thePlaceToGo:
+				let the way be the best route from the location of currentWanderer2 to the location of the destination entry, using doors;
+				try currentWanderer2 going the way;
+			if currentWanderer2 is visible, say "[currentWanderer2] heads to [the destination entry].";
+			if currentWanderer2 is in the destination entry:
+				[say "[currentWanderer] is in the [destination entry] and the circleWandererGoal of currentWanderer is [circleWandererGoal of currentWanderer]";]
+				increase the circleWandererGoal of currentWanderer2 by 1;
+				if the circleWandererGoal of currentWanderer2 is greater than four:
+					now the circleWandererGoal of currentWanderer2 is 1.
+
 
 
 [
