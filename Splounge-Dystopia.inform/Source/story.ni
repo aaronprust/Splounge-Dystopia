@@ -106,7 +106,7 @@ P2C is a room. "This room is full of people doing lots of research. Is this a pa
 P2D is a room. "Dystopia(tm). The walls are covered with EVA tile, there are projections running across every surface. Neon lights blink phrases onto the walls and ceiling, maybe they're philosophical ideas, maybe political hypnosis, maybe product placement... maybe all of them?".
 P2N is a room. "This room is themed around the popular fantasy series, Perry Hotter. They have cranes that deliver mail to the teenage witches, or you could try a drink of margarineMead. Yum!".
 P2O is a room. "Vice City. The room echoes with pachinko, video games, claw games, rhythm games, and more. They are serving lots of beer, and in the corner there are VR headsets. This place seems huge. How did they fit all this into such a small hotel room? You check your head to make sure you're not already wearing a headset. It seems that this room is actually real.".
-P2P is a room. "The scent of curry is rich in the air, and dieties in brightly colored silks parade past you in unison to an upbeat song. Your heart swells and you feel like anything is possible in here. Ah yes, the Bollywood Room. You feel like something special might happen to you in this room. A fight, finding your true love, discovering your true nature, SOMETHING."
+P2P is a room. "The scent of curry is rich in the air, and deities in brightly colored silks parade past you in unison to an upbeat song. Your heart swells and you feel like anything is possible in here. Ah yes, the Bollywood Room. You feel like something special might happen to you in this room. A fight, finding your true love, discovering your true nature, SOMETHING."
 
 H2F is a room. "This is the hallway outside the 2nd Floor Elevator. There are lots of posters here, too. There's one here that says 'House of Toast'. There's a great big piano here, and [one of]it's playing itself. Sounds like Radiohead. A woman in a big blue dress walks past and slaps a fly that has landed on her cheek. Odd.[or]a bunch of intoxicated teenangers are singing lyrics from a musical about the invention of the Turing Test very loudly. [or]a small cybernetic animal is running up and down the keys, while a congoer dressed as a cat is attempting to hit it with a large foam hammer. [or]a woman dressed entirely in ghostly sequins is playing the most haunting melody you have ever heard in your life. It is chilling. You wonder if you have long to live.[at random]
 	You can hear the din of the maddening crowd to the East of here.".
@@ -884,11 +884,15 @@ After asking the 3DPrinter about "Quantum Sandbox",
 
 'It moves around from year to year, but it's usually east of the pool.'"
 
+After asking the 3DPrinter about "Filament",
+		say "Your roommate looks embarrassed, and then admits, 'I think I traded my last spool of filament to some junkies in F2E2 for a double-mocha-sprinkle-frappucino-color-changing-unicorn-skim-venti-short shot. It was totally worth it. It's flavor-changing, too. But, I don't know how I'm going to print this blueprint without any filament." 
+
 Instead of giving the 3dPrinterBluePrint to the 3dPrinter:
 	move the 3dPrinterBluePrint to the 3dPrinter;
 	now friendToBots is true;
 	say "Your roommate is overjoyed! The 3dPrinter reads the blueprint again and again and...and then your roommate stops.";
-	say "Your roommate reads the note in the corner about filament. It opens all of its bags and throws around its clothes as it searches for something.".
+	say "Your roommate reads the note in the corner about filament. It opens all of its bags and throws around its clothes as it searches for something.";
+	say "'I am embarassed to say, friend, I'm all out of Filament! could you find me some?'".
 	
 The 3dPrinterFilament is an object.
 The description of the 3dPrinterFilament is "3dPrinterFilament".
@@ -897,10 +901,6 @@ Instead of giving the 3dPrinterFilament to the 3dPrinter:
 	now the 3dPrinter has the 3dPrinterFilament;
 	say "The 3dPrinter says, 'I MAKEDED THIS FOR YOU!' and hands you a small item.";
 	move the MisprintedTurboEncabulator to the player.
-
-
-[geneSpliceMinotaur]
-The geneSpliceMinotaur is a person. The description of the geneSpliceMinotaur is "This isn't one of those ancient Minotaurs- this is one of the CRISPR Minotaurs that were created by a theologian with too much access to biotech."
 
 [Cosplayer]
 A cosplayer is a person in Mainstage. The cosplayer is female. The cosplayer carries the greenRoomKey. The description of the cosplayer is "She's got all kinds of neon makeup or tattoos or projections - her face is like mask. It's very mesmerizing.".
@@ -1637,14 +1637,11 @@ Every turn:
 		increase current goal of arnoldConanBarbarian by 1.
 
 ]
+The target score is a number variable. The target score is 23.
 
 A circleWanderer is a kind of person.
 
 A circleWanderer can be hangingOut or walkingAround.
-
-[A circleWanderer has a number called currentCircleWandererGoal. The currentCircleWandererGoal of a circleWanderer is usually 1.
-]
-
 
 A circleWanderer has a number called circleWandererGoal. The circleWandererGoal of a circleWanderer is usually 1.
 
@@ -1653,9 +1650,6 @@ drunkPartier is walkingAround.
 drunkPartier is in H1K.
 The circleWandererGoal of drunkPartier is 1.
 The description of drunkPartier is "This guy is pretty drunk. You think you should probably not talk to him. You can tell he totally wants to talk to someone too but he can barely stand up.".
-
-
-The target score is a number variable. The target score is 23.
 
 arnoldConanBarbarian is a circleWanderer.
 arnoldConanBarbarian is hangingOut.
@@ -1667,8 +1661,7 @@ geneSpliceMinotaur is a circleWanderer.
 geneSpliceMinotaur is walkingAround.
 geneSpliceMinotaur is in H1O.
 The circleWandererGoal of geneSpliceMinotaur is 4.
-
-[The description of geneSpliceMinotaur is "Whoa cool that's one of those CRISPR folks - all editing their own genome to cosplay all the time. Gotta respect the commitment. This one one looks like a giant minotaur! Kinda scary.".]
+The description of geneSpliceMinotaur is "Whoa cool that's one of those CRISPR folks - all editing their own genome to cosplay all the time. Gotta respect the commitment. This one one looks like a giant minotaur! Kinda scary.".
 
 
 Table of CircleWandererCharacters
