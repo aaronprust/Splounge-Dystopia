@@ -136,22 +136,21 @@ H2I is a room. "The crowd continues widdershins around the second floor above ga
 	If you want to go with the flow of congoers, you should keep walking South. If you go against the flow, you may be caught by a Badger. You could always duck into Registration, off to the West.".
 
 [Floor 1]
-Elevator1 is a room. "You're in an elevator. It's up on the first floor.".
+Elevator1 is a room. "You're in an elevator. It's up on the first floor. People are waiting to get on. There's a giant duck with a pool ring and a zombie wearing a hawaiian shirt in line, just chatting.".
 
-Mainstage is a room. "There are a bunch of ravers in here, the lights are low and the music is bumping!".
-QS is a room. "Quantum Sandbox. The kids are ransacking the joint for spare pinball parts.".
-The Green Room is a room. "Greenroom".
-Convergence Central is a room. "There are people all over this large open room.".
-Engine Room is a room. "Engine Room".
-The Pool is a room. "Pool".
-Volden is a room. "Volden".
-Cinema Rex is a room. "Cinema Rex".
-The Art Show is a room. "Art Show".
-Theater Nippon is a room. "Theater Nippon".
-F2E2 is a room. "F2E2".
-GA is a room. "GardencourtA".
-GB is a room. "GardencourtB".
-GC is a room. "GardencourtC".
+Mainstage is a room. "There are a bunch of ravers in here, the lights are low and the music is bumping! You can't really hear anyone- if you want to have a conversation, you'll need to go North out into Convergence Central. There's a locked door on the East side of the room and a big sign that says VIP ONLY.".
+QS is a room. "Quantum Sandbox. The kids are ransacking the joint for spare pinball parts. The first floor hallway is just to the West of here.".
+The Green Room is a room. "There are some important looking people here. Probably they're really famous. They look famous. Can you look famous and not be famous? No one here will talk to you. You can hear the throbbing rhythms coming from Mainstage just West of here.".
+Convergence Central is a room. "There are people all over this large open room. People are standing in a line to get into Mainstage to the South from here. There are cosplayers from all your favorite shows! Miner Minors 2525, JoBack ManHorse, and Stephanie Galaxie! The elevator lobby is just East of here.".
+The Pool is a room. "The Pool appears, as if it were a vast sparkling mirage. The blue water sparkles enticingly, and mermaids and mermen recline, feeding each other long pieces of wet seaweed. They're beautiful, but you see they've got at least three rows of razor sharp teeth, as one merman unhinges his jaw to eat a water lily.".
+Volden is a room. "Volden. If you've got a sticker that says you've worked 30 years, you can get in here and get free food and massages! You.... don't have that sort of sticker, but you can stare at people getting free food and massages. The food smells like real food. It's weird, like, you didn't realize other food didn't smell real until you smelled this, and now you're wondering if you hallucinated all that other food.".
+Cinema Rex is a room. "They're showing Home Alone 342 in Cinema Rex right now. It's a 48 hour epic art film playing on the the themes of alienation and colonization of the Horsehead Nebula, and has one of the best lazer gun fights by famed choreographer Lizzie Langebot9000. They've got free popcorn, but no butter.".
+AS is a room. "At one point, Art Show was kind of a cute DIY venture, but now it's a wild artist commune. There are paintings on every wall, you have to crawl through enormous sculptures to cartoon goddesses and projections of 3D hypertextual literature. There are people here dressed entirely in a sickly shade of green pointing at a corner of the room where nothing is happening. If you stayed here a while, eventually, they'd point at another thing. It's pretty weird, but kind of emotionally moving somehow. It's really your thing.".
+Theater Nippon is a room. "You enter Theater Nippon, and are disoriented. Stalls of vendors are hawking steaming noodles, buns, and alien vegetables and fish on sticks. Narrow alleys lead through the room to hidden bars and libraries and science labs. They're projecting anime on every surface. It's all encompassing, the smells of the noodles and beer, the sounds of vendors hawking their wares or inviting you into gambling parlors... it's hard to believe that just East of here is the Convergence Hallway.".
+F2E2 is a room. "Coffee Junkies are all over this room snorting Folgers and Nescafe off the tables, fiends are injecting cold brew, and sex workers are bathing in vats of perfumed tea, offering to let you sip their bathwater for obscene amounts of creds or criminal favors- You'll never find a more wretched hive of scum and villany than F2E2. West of here is the first floor hallway.".
+GA is a room. "Here you are in the Garden Court! Boffer fights are scheduled for this area for the next 40 years. There's more Garden Court just South of here, or you could get back into the first floor hallway circuit by going North or West.".
+GB is a room. "You're not certain why they call this the Garden Court. Nothing grows here. There are photo meetups happening in this section of the Garden Court, and it looks like there are people fighting in the section of Garden Court just North of here. You could get back into the hallway by going West, or there's more Garden Court just South of here.".
+GC is a room. "People are sitting at tables here in Garden Court. It seems to be a meeting point for people. North of here, there are folks getting their photos taken, and West and South of here are the Hallways of the first floor.".
 
 P1B is a room. "There's a big sign that says 'Cow Asylum' on this party room. There are lots of sexy congoers dancing to loud music, wearing Very Little. Maybe this is your scene, maybe it's not. A lot of them seem to have udders or hooves. You're not sure if they're costume pieces or whether they're genetically modified humans.".
 P1C is a room. "Campaign Convergence. They're electing a villian to be the President of Convergence. It's pretty corrupt. You can vote as many times as you like, bribe the poll workers, and stuff the ballot box outright.".
@@ -164,7 +163,7 @@ H1G is a room. "You stand in this hallway with the strong sense that you've been
 H1H is a room. "This hallway smells warm and bitter, as if aeons of coffee steam has stained the very ceiling and carpet. Oh! There's F2E2 to the East. That's probably what you're smelling. You could also go South, or North to see more of the first floor party rooms or the Pool or Garden Court, or Up the stairs to the second floor.".
 H1L is a room. "Oh, this hallway feels nice, like you're surrounded and supported by people who care about you and think that you're amazing and want you to do good work. If you went East, you would be in Volden, the place where they give Convergence Volunteers backrubs and treats and a quiet place to sit in all this madness. You could also go North or South from here, around the Garden Court circle, or you could take the stairs Up from here to the second floor.".
 H1M is a room. "Hey player. This is the Southest and the Westest of all hallways on the first floor. You're going to have to reconfigure and go East or go North or go Up from here. Re. Pro. Gram. Ming. Okay. You've got all the facilities you need to get where you're going. Good luck, player.".
-H1F is a room. "This hallway is outside of the elevators, so you could go North and then head up to one of the other floors. Alternatively, there's a hallway to the East that leads around the first floor- party rooms, programming rooms, all that. Oh, and there's a door that says 'Engine Room' to the West of here.".
+H1F is a room. "This hallway is outside of the elevators, so you could go North and then head up to one of the other floors. Alternatively, there's a hallway to the East that leads around the first floor- party rooms, programming rooms, all that.".
 H1A is a room. "Okay. SO! The plan is we're going to 'do the circle', that is, go around the Garden Court circuit over and over again. It's more fun than it sounds. We're going to see a lot of people in costumes, we're going to peek our heads in at all the party rooms, see Garden Court and the pool, see if there's a party that we want to join. It'll be great. Go East to continue past all the party rooms, go South to maybe get to the elevator or Garden Court or whatever. WOOOOOOOOOOO!".
 H1B is a room. "This is a hallway. It's not like the other hallways. This one is poorly lit somehow, in spite of the fact that it's part of the brightly lit, open nature of the first floor of the hotel. Why is it so dark in here? You can see the light coming from the party room to the North of here, and also a dim light from Garden Court just South of here. The lights seem to be working normally in the hallways East and West of here. Weird. Someone should call maintenance.".
 H1C is a room. "The flow of geeks and nerds continues clockwise around the first floor of the con. You think you recognize someone, but you don't know where you know them from. Work? School? Church? Do you have a church? No. Convergence is the only church now. Out-of-context person has disappeared while you were asking yourself philosophical questions, and now you won't have to do that awkward 'Heyyyy...... YOU.' thing. You could go North into the Campaign Convergence party room, continue East around the first floor, or fight the flow and go West.".
@@ -1385,6 +1384,7 @@ H2B is north of P2B.
 H2C is north of P2C.
 H2D is north of P2D.
 H2H is north of H2J.
+AS is east of H2H.
 H2L is south of H2J.
 Consuite is east of H2J.
 H2J is north of H2L.
@@ -1407,10 +1407,8 @@ The spaceLoungeDoor is east of the Space Lounge and west of H2K.
 The greenRoomDoor is east of Mainstage and west of the Green Room.
 Registration is west of H2I.
 
-The Engine Room is west of H1F.
 Elevator1 is north of H1F.
 H1G is east of H1F.
-The Engine Room is west of H1F.
 H1F is south of Elevator1.
 H1A is north of H1G.
 H1I is south of H1G.
