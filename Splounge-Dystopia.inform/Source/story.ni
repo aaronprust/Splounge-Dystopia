@@ -1682,6 +1682,13 @@ A circleWanderer can be hangingOut or walkingAround.
 
 A circleWanderer has a number called circleWandererGoal. The circleWandererGoal of a circleWanderer is usually 1.
 
+A circleWanderer2 is a kind of person.
+
+A circleWanderer2 can be hangingOut or walkingAround.
+
+A circleWanderer2 has a number called circleWandererGoal. The circleWandererGoal of a circleWanderer2 is usually 1.
+
+
 cyberSlug is a circleWanderer.
 cyberSlug is walkingAround.
 cyberSlug is in TN.
@@ -1832,7 +1839,11 @@ biotechWarrior is in H2D.
 The circleWandererGoal of drunkPartier is 1.
 The description of biotechWarrior is "Whoa - a biotechWarrior! Most of that tech has since been outlawed but this one musta been grandfathered in. They look pretty old anyway - onea them grey-hairs. You'd think with all that biotech they'd CRISP their hair to youthen it or smthng but hey style is personal, right?".
 
-
+giantTardis is a circleWanderer2.
+giantTardis is walkingAround.
+giantTardis is in H2K.
+The circleWandererGoal of giantTardis is 2.
+The description of giantTardis is "This person(?) is in a giant TARDIS costume. It kind of fills the hallway. It's making the cool sounds from the holoRecordings too, really a stellar costume! I mean, it's not like it could be the REAL TARDIS or anything...".
 
 Every turn:
 	repeat with currentWanderer running through all the circleWanderers:
