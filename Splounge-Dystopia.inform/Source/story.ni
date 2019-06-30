@@ -27,6 +27,8 @@ The maximum score is 1000.
 
 Understand "get up from [thing]" as getting off.
 
+Understand "talk to [someone]" as a mistake ("To start a conversation, try to ASK [the noun] ABOUT something or TELL [the noun] ABOUT something."). 
+
 The container interior rule is listed before the room description body text rule in the carry out looking rules.
 This is the container interior rule:
 	if the actor is the player and the player is in an enterable thing (called current cage), carry out the describing the interior activity with the current cage.
@@ -35,7 +37,7 @@ Describing the interior of something is an activity.
 [Room Descriptions. See each individual room section for items, people, and rules.]
 
 [Floor 3]
-MyRoom is a room. "This is your place! You've got a bunch of nice junk around here, all kinds of old comics and fun figures from all the best neuroHolos. You've really moved in! You've got posters up everywhere- over the door, on the ceiling, over the windows....".
+MyRoom is a room. "This is your place! You've got a bunch of nice junk around here, all kinds of old comics and fun figures from all the best neuroHolos. You've really moved in! You've got posters up everywhere - over the door, on the ceiling, over the windows....".
 H3A is a room. "Oh! This is the hallway outside your hotel room. Cool! It's pretty quiet. The elevator is just North of here.".
 H3B is a room. "This is further down the hallway from your hotel room. You don't know who your neighbors are. You can hear them playing some sort of music game, but when you knock, they can't hear you, and don't answer.".
 H3C is a room. "This is at the end of the hallway from your hotel room. There's a pile of trash down here- you wonder why the hotel staff hasn't picked it up. Then again, you're not about to pick it up either.".
