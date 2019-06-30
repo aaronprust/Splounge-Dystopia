@@ -112,7 +112,7 @@ P2N is a room. "This room is themed around the popular fantasy series, Perry Hot
 P2O is a room. "Vice City. The room echoes with pachinko, video games, claw games, rhythm games, and more. They are serving lots of beer, and in the corner there are VR headsets. This place seems huge. How did they fit all this into such a small hotel room? You check your head to make sure you're not already wearing a headset. It seems that this room is actually real.".
 P2P is a room. "The scent of curry is rich in the air, and deities in brightly colored silks parade past you in unison to an upbeat song. Your heart swells and you feel like anything is possible in here. Ah yes, the Bollywood Room. You feel like something special might happen to you in this room. A fight, finding your true love, discovering your true nature, SOMETHING."
 
-H2F is a room. "This is the hallway outside the 2nd Floor Elevator. There are lots of posters here, too. There's one here that says 'House of Toast'. There's a great big piano here, and [one of]it's playing itself. Sounds like Radiohead. A woman in a big blue dress walks past and slaps a fly that has landed on her cheek. Odd.[or]a bunch of intoxicated teenangers are singing lyrics from a musical about the invention of the Turing Test very loudly. [or]a small cybernetic animal is running up and down the keys, while a congoer dressed as a cat is attempting to hit it with a large foam hammer. [or]a woman dressed entirely in ghostly sequins is playing the most haunting melody you have ever heard in your life. It is chilling. You wonder if you have long to live.[at random]
+Elevator Lobby 2 is a room. "This is the hallway outside the 2nd Floor Elevator. There are lots of posters here, too. There's one here that says 'House of Toast'. There's a great big piano here, and [one of]it's playing itself. Sounds like Radiohead. A woman in a big blue dress walks past and slaps a fly that has landed on her cheek. Odd.[or]a bunch of intoxicated teenangers are singing lyrics from a musical about the invention of the Turing Test very loudly. [or]a small cybernetic animal is running up and down the keys, while a congoer dressed as a cat is attempting to hit it with a large foam hammer. [or]a woman dressed entirely in ghostly sequins is playing the most haunting melody you have ever heard in your life. It is chilling. You wonder if you have long to live.[at random]
 	You can hear the din of the maddening crowd to the East of here.".
 H2G is a room. "The crowd goes one direction around the hallway here, counter-clockwise around the garden court. It's strictly enforced, you know! If you go North from here, a badger might catch you and lock you up! Scary. There are also some stairs going down. There doesn't seem to be any rules about whether you go up or down these stairs.
 
@@ -167,7 +167,7 @@ H1G is a room. "You stand in this hallway with the strong sense that you've been
 H1H is a room. "This hallway smells warm and bitter, as if aeons of coffee steam has stained the very ceiling and carpet. Oh! There's F2E2 to the East. That's probably what you're smelling. You could also go South, or North to see more of the first floor party rooms or the Pool or Garden Court, or Up the stairs to the second floor.".
 H1L is a room. "Oh, this hallway feels nice, like you're surrounded and supported by people who care about you and think that you're amazing and want you to do good work. If you went East, you would be in Volden, the place where they give Convergence Volunteers backrubs and treats and a quiet place to sit in all this madness. You could also go North or South from here, around the Garden Court circle, or you could take the stairs Up from here to the second floor.".
 H1M is a room. "Hey player. This is the Southest and the Westest of all hallways on the first floor. You're going to have to reconfigure and go East or go North or go Up from here. Re. Pro. Gram. Ming. Okay. You've got all the facilities you need to get where you're going. Good luck, player.".
-H1F is a room. "This hallway is outside of the elevators, so you could go North and then head up to one of the other floors. Alternatively, there's a hallway to the East that leads around the first floor- party rooms, programming rooms, all that.".
+Elevator Lobby 1 is a room. "This hallway is outside of the elevators, so you could go North and then head up to one of the other floors. Alternatively, there's a hallway to the East that leads around the first floor- party rooms, programming rooms, all that.".
 H1A is a room. "Okay. SO! The plan is we're going to 'do the circle', that is, go around the Garden Court circuit over and over again. It's more fun than it sounds. We're going to see a lot of people in costumes, we're going to peek our heads in at all the party rooms, see Garden Court and the pool, see if there's a party that we want to join. It'll be great. Go East to continue past all the party rooms, go South to maybe get to the elevator or Garden Court or whatever. WOOOOOOOOOOO!".
 H1B is a room. "This is a hallway. It's not like the other hallways. This one is poorly lit somehow, in spite of the fact that it's part of the brightly lit, open nature of the first floor of the hotel. Why is it so dark in here? You can see the light coming from the party room to the North of here, and also a dim light from Garden Court just South of here. The lights seem to be working normally in the hallways East and West of here. Weird. Someone should call maintenance.".
 H1C is a room. "The flow of geeks and nerds continues clockwise around the first floor of the con. You think you recognize someone, but you don't know where you know them from. Work? School? Church? Do you have a church? No. Convergence is the only church now. Out-of-context person has disappeared while you were asking yourself philosophical questions, and now you won't have to do that awkward 'Heyyyy...... YOU.' thing. You could go North into the Campaign Convergence party room, continue East around the first floor, or fight the flow and go West.".
@@ -1389,17 +1389,17 @@ Every turn when the location is The End (this is the end1 rule):
 
 [Map]
 Mainstage is south of Convergence Central.
-H2F is east of Convergence Central.
+Elevator Lobby 2 is east of Convergence Central.
 Convergence Central is north of Mainstage.
-Elevator2 is north of H2F.
-H2G is east of H2F.
-Convergence Central is west of H2F.
-H2F is south of Elevator2.
+Elevator2 is north of Elevator Lobby 2.
+H2G is east of Elevator Lobby 2.
+Convergence Central is west of Elevator Lobby 2.
+Elevator Lobby 2 is south of Elevator2.
 Elevator3 is up from Elevator2.
 Elevator1 is down from Elevator2.
 H2A is north of H2G.
 H2I is south of H2G.
-H2F is west of H2G.
+Elevator Lobby 2 is west of H2G.
 H1G is down from H2G.
 H2G is south of H2A.
 H2B is east of H2A.
@@ -1446,13 +1446,13 @@ The spaceLoungeDoor is east of the Space Lounge and west of H2K.
 The greenRoomDoor is east of Mainstage and west of the Green Room.
 Registration is west of H2I.
 
-Elevator1 is north of H1F.
-H1G is east of H1F.
-H1F is south of Elevator1.
+Elevator1 is north of Elevator Lobby 1.
+H1G is east of Elevator Lobby 1.
+Elevator Lobby 1 is south of Elevator1.
 H1A is north of H1G.
 H1I is south of H1G.
 GA is east of H1G.
-H1F is west of H1G.
+Elevator Lobby 1 is west of H1G.
 H2G is up from H1G.
 H1G is south of H1A.
 H1B is east of H1A.
@@ -1482,12 +1482,12 @@ H1J is west of QS.
 H1L is west of Volden.
 P1P is south of H1P.
 H1Q is east of H1P.
-P1O is south of H1O.
+Tea House is south of H1O.
 H1I is north of H1K.
 H1K is north of H1M.
 H1N is east of H1M.
 H1P is east of H1O.
-P1N is south of H1N.
+House of Toast is south of H1N.
 H1N is west of H1O.
 H1Q is south of H1L.
 GB is south of GA.
@@ -1495,9 +1495,9 @@ GC is south of GB.
 H1K is west of GC.
 H1I is west of GB.
 H1N is south of GC.
-H3A is south of Elevator3.
-H3B is south of H3A.
-MyRoom is east of H3A.
+Elevator Lobby 3 is south of Elevator3.
+H3B is south of Elevator Lobby 3.
+MyRoom is east of Elevator Lobby 3.
 H3C is south of H3B.
 Cinema Rex is west of H1I.
 Theater Nippon is west of H1K.
