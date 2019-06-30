@@ -122,7 +122,7 @@ H2D is a room. "Here you are, outside of a party room. Will this be a good party
 H2E is a room. "Ah, you've entered the northeast corner of the upper ring of the CON circuit. This is the sort of corner you could meet your soul mate in. Or maybe just a superhero who is really sad because they drank too much and they're that kind of drunk. Anyhow. The flow of time and the crowd continue. You can follow them West past the party rooms, or go South against the grain and perhaps find yourself at the mercy of the Badgers.".
 H2H is a room. "You once watched a scary movie with lots of hallways. The hotel in that movie had creepy wallpaper and carpet. This hallway isn't like that. It's just a hallway full of cool people in costumes walking around talking to each other. You could talk to one of them. If you felt like it.
 
-	You can continue on the circuit by walking North, go Down to the first floor, or be the kind of asshole who walks directly into the crowd and go South. You'd probably get in trouble for that.".
+	You can continue on the circuit by walking North, go Down to the first floor, East into the Art Show, or be the kind of asshole who walks directly into the crowd and go South. You'd probably get in trouble for that.".
 H2J is a room. "There are probably one million people in the hallway here, waiting to go into Consuite, to the East. Some people have given up waiting for a bowl of rice or a slice of pizza, and are just staring deadeyed through the costumes, bodies, and souls of you and the other Congoers. You could enter the sticky fray of Consuite to the East, continue North around the upper ring of the tall tower, or go South and risk being flayed alive by the Badger. I heard the ginger went against the flow and was flayed alive by a Badger.
 
 	Allegedly.".
@@ -146,7 +146,7 @@ The Green Room is a room. "There are some important looking people here. Probabl
 Convergence Central is a room. "There are people all over this large open room. People are standing in a line to get into Mainstage to the South from here. There are cosplayers from all your favorite shows! Miner Minors 2525, JoBack ManHorse, and Stephanie Galaxie! The elevator lobby is just East of here.".
 The Pool is a room. "The Pool appears, as if it were a vast sparkling mirage. The blue water sparkles enticingly, and mermaids and mermen recline, feeding each other long pieces of wet seaweed. They're beautiful, but you see they've got at least three rows of razor sharp teeth, as one merman unhinges his jaw to eat a water lily.".
 Volden is a room. "Volden. If you've got a sticker that says you've worked 30 years, you can get in here and get free food and massages! You.... don't have that sort of sticker, but you can stare at people getting free food and massages. The food smells like real food. It's weird, like, you didn't realize other food didn't smell real until you smelled this, and now you're wondering if you hallucinated all that other food.".
-Cinema Rex is a room. "They're showing Home Alone 342 in Cinema Rex right now. It's a 48 hour epic art film playing on the the themes of alienation and colonization of the Horsehead Nebula, and has one of the best lazer gun fights by famed choreographer Lizzie Langebot9000. They've got free popcorn, but no butter.".
+Cinema Rex is a room. "They're showing Home Alone 342 in Cinema Rex right now. It's a 48 hour epic art film playing on the the themes of alienation and colonization of the Horsehead Nebula, and has one of the best lazer gun fights by famed choreographer Lizzie Langebot9000. On the wall is a poster for a movie called 'DarkCity'. They've got free popcorn, but no butter.".
 AS is a room. "At one point, Art Show was kind of a cute DIY venture, but now it's a wild artist commune. There are paintings on every wall, you have to crawl through enormous sculptures to cartoon goddesses and projections of 3D hypertextual literature. There are people here dressed entirely in a sickly shade of green pointing at a corner of the room where nothing is happening. If you stayed here a while, eventually, they'd point at another thing. It's pretty weird, but kind of emotionally moving somehow. It's really your thing.".
 Theater Nippon is a room. "You enter Theater Nippon, and are disoriented. Stalls of vendors are hawking steaming noodles, buns, and alien vegetables and fish on sticks. Narrow alleys lead through the room to hidden bars and libraries and science labs. They're projecting anime on every surface. It's all encompassing, the smells of the noodles and beer, the sounds of vendors hawking their wares or inviting you into gambling parlors... it's hard to believe that just East of here is the Convergence Hallway.".
 F2E2 is a room. "Coffee Junkies are all over this room snorting Folgers and Nescafe off the tables, fiends are injecting cold brew, and sex workers are bathing in vats of perfumed tea, offering to let you sip their bathwater for obscene amounts of creds or criminal favors- You'll never find a more wretched hive of scum and villany than F2E2. West of here is the first floor hallway.".
@@ -182,30 +182,6 @@ H1I is a room. "You are the hub of hallways! It's Hallwaylicious! You could go E
 [Unknown Floor]
 The Secret Room is a room. "You are in the Secret Room. DON'T TELL ANYONE YOU WERE EVER HERE! It's really dark, you can't see much.".
 The Staging Area is a room. "Staging Area".
-
-
-[The Floor Changer is a room. "Elevators, escalators, and stairwell.".]
-[The Upper Northside Hallway is a room. "A hallway filled with freaks and nerds.".]
-[The Upper Southside Hallway is a room. "This hallway is NUTS - there are signs everywhere and lights and sounds flashing. From this hallway you can get into a bunch of Party Rooms".]
-[The Veranda Walkway is a room. "Outside the Space Lounge you look out into the larger Raditree Building to see the pool under a high ceiling. Consuite lies beyond the pool in the main courtyard. Boffers beat each other up in the fenced in section of the courtyard. There's a floating platform above the pool.".]
-[After going to the Veranda Walkway:
-	say "As you enter the Veranda Walkway you see a floating dolphin surveillance pod.";
-	if the player is not wearing a stealthing, say "Uh oh, you aren't wearing any kind of stealthing, there is a good chance that surveillance pod saw you.";
-	otherwise say "Sweet, it seems like your [a list of stealthings worn by the player] shielded you from detection. [paragraph break]";
-	now the player is in the Veranda Walkway.]
-[Room 233 is a room. "Room 233".
-Lower Southside Hallway is a room. "Lower Southside Hallway (party rooms)".
-The Lower Floor Changer is a room. "Lower elevators, escalators and stairwell lower level".
-Lower Northside Hallway is a room. "Lower Northside Hallway (party rooms)".
-The Elevator Line is a room. "You are waiting for an elevator!".
-The Stairwell Floor 1 is a room. "Stairwell Floor 1".
-The Stairwell Floor 2 is a room. "Stairwell Floor 2".
-The Garden Court is a room. "Garden Court".
-Room 205 is a room. "Room 205".
-The Front Desk is a room. "The Front Desk".
-Crescent Kitchen is a room. "Food and Beer for sale".
-The Lower Tower Connector is a room. "The Lower Tower Connector - connection between the short and tall towers.".
-The Upper Tower Connector is a room. "The Upper Tower Connector - connection between the short and tall towers.".]
 
 [Doors and Backdrops]
 The spaceLoungeDoor is a door. The spaceLoungeDoor is lockable and unlocked. The securityKey unlocks the spaceLoungeDoor. The description of the spaceLoungeDoor is "The spaceLoungeDoor has a small window, and now that you look closer it looks kind of like this door is two doors schmooshed together. It looks like the door has a lock mechanism that looks like it could be manipulated by a standard tetral-inverse double helix securityKey."
@@ -386,7 +362,7 @@ The teleporterWand is in the P1P.
 
 The 3dPrinterBluePrint is an object. The description of the 3dPrinterBluePrint is "This may be what your roommate was looking for! It is blue and it has a lovely print on it. In the corner, it also explains how to add printer filament to your roommate in some detail.".
 
-The TurboEncabulator is an object. The description of the TurboEncabulator is "This looks like a base plate of prefabulated amulite, surmounted by a malleable logarithmic casing in such a way that the two main spurving bearings were in a direct line with the panametric fan. The latter consisted simply of six hydrocoptic marzlevanes, so fitted to the ambifacient lunar waneshaft that side fumbling was effectively prevented. The main winding was of the normal lotus-o-deltoid type placed in panendermic semi-boloid slots in the stator, every seventh conductor being connected by a nonreversible tremmie pipe to the differential girdlespring on the 'up' end of the grammeters."
+The TurboEncabulator is an object. The description of the TurboEncabulator is "This looks like a base plate of prefabulated amulite, surmounted by a malleable logarithmic casing in such a way that the two main spurving bearings were in a direct line with the panametric fan. The latter consisted simply of six hydrocoptic marzlevanes, so fitted to the ambifacient lunar waneshaft that side fumbling was effectively prevented. The main winding was of the normal lotus-o-deltoid type placed in panendermic semi-boloid slots in the stator, every seventh conductor being connected by a nonreversible tremmie pipe to the differential girdlespring on the 'up' end of the grammeters. Imprinted on its every side is the logo for Cinema Rex."
 
 The MisprintedTurboEncabulator is an object. The description of the MisprintedTurboEncabulator is "This looks like a base plate of prefabulated amulite, surmounted by a malleable logarithmic casing in such a way that the two main spurving bearings were in a direct line with the panametric fan. The latter consisted simply of six hydrocoptic marzlevanes, so fitted to the ambifacient lunar waneshaft that side fumbling was effectively prevented. The main winding was of the normal lotus-o-deltoid type placed in panendermic semi-boloid slots in the stator, every seventh conductor being connected by a nonreversible tremmie pipe to the differential girdlespring on the 'up' end of the grammeters. The panametric fan doesn't seem to move on this one."
 
@@ -463,7 +439,6 @@ Rule for constructing the status line when collecting names: do nothing.
 The player carries a message receiver. The description of the message receiver is "Dear [player's forename], [paragraph break]You really should meet me tonight in the Space Lounge...you're gonna be pumped! -AFrame".
 
 The player carries a coin.
-The player carries a mcGuffin.
 
 [The player is in the Garden Court.]
 The player is in MyRoom.
@@ -574,13 +549,11 @@ Instead of telling someone about something, try asking the noun about it. Instea
 A badgeRibbon is a kind of thing.
 A perryHotterBadgeRibbon is a badgeRibbon.
 
-[Smoothie]
-A smoothie is a kind of thing.
-A blah is a smoothie.
-A pineappleJuice is a smoothie.
-A rum is a smoothie.
-A margarineMead is a smoothie. The description of a margarineMead is "margarineMead".
-A rumNJuice is a smoothie. The description of a rumNJuice is "rumNJuice".
+[Booze]
+A booze is a kind of thing.
+A margarineMead is a booze. The description of a margarineMead is "margarineMead".
+A rumNJuice is a booze. The description of a rumNJuice is "rumNJuice".
+A rum is a booze.
 
 Instead of drinking a margarineMead:
 	now the margarineMead is nowhere;
@@ -591,6 +564,11 @@ Instead of drinking a rumNJuice:
 	now the rum is nowhere;
 	say "You drink this wonderful concoction and feel amazing!";
 	increase the current hit points of the player by 15;
+
+[Smoothie]
+A smoothie is a kind of thing.
+A blah is a smoothie.
+A pineappleJuice is a smoothie.
 
 Instead of inserting the rum into the pineappleJuice: say "You are doing some alchemy - NOICE"; remove rum from play; remove pineappleJuice from play; now the player has rumNJuice.
 
@@ -643,8 +621,8 @@ A goodnightAstronaut is a smoothie. The description of the goodnightAstronaut is
 
 A description of a smoothie usually is "This thing is like taking a bath in frozen unicorn snot. Amazing."
 
-Instead of giving the mcGuffin to the bartender:
-	move the mcGuffin to the bartender;
+Instead of giving the TurboEncabulator to the bartender:
+	move the TurboEncabulator to the bartender;
 	move the behindTheBarKey to the player;
 	say "She looks pretty serious all the sudden. 'Wow, now that it's time to leave I'm not ready. What's it going to be like out there? What if we can't resupply our sensory stimulants or dowlod our fundoms? Anyway, whatever happens is going to be supesciting.'"
 
@@ -773,6 +751,41 @@ Instead of giving the rum to the rumAndJuicer:
 	say "The bartender giggles at you. She drinks your rum, and starts singing, 'RUM! AND JUICE AND RUM AND JUICE AND RUM AND JUICE AND RUM! AND JUICE! AND RUM AND JUICE AND RUM AND JUICE!";
 	now the rum is nowhere.
 
+[coffeeJunkie]
+coffeeJunkie is a woman.
+coffeeJunkie is a person in F2E2. The description of coffeeJunkie is "This lady is strung out on coffee. Her eyes are red and dry. She looks like she hasn't slept in decades."
+
+Instead of asking coffeeJunkie about "filament":
+	say "'This shit? Sure. Take it. I can't get high off this.'";
+	now the player has Filament.
+	
+Instead of asking coffeeJunkie about something:
+	say "She whispers to you, 'I can see through time!'".
+
+[Cinema Rex]
+MovieAttendant is a woman.
+MovieAttendant is a person in Cinema Rex. The description of MovieAttendant is "MovieAttendant gazing, wide-eyed at the screen. She gasps occasionally, and nods. You think maybe she hasn't seen the movie before, but then you see her mouthing every word of dialogue along with the film."
+
+Instead of giving the turboencabulator to the MovieAttendant:
+	say "The MovieAttendant is startled when you try to talk to her, but looks at the turboencabulator closely. She pulls you aside and pushes it back into your hands.";
+	say "'Where did you get this?! No. Don't tell me. I can't know. You need to talk to AFrame about this.'";
+	say "She points at the movie poster on the wall. It looks ancient. It looks like a man is screaming, pinned against a clock, which is strangely blurred as if it was moving very quickly. The name of the movie is DarkCity.";
+	say "'Ask. Aframe. About DarkCity.' She looks around. 'You need to go now.'".
+
+Instead of asking the MovieAttendant about "turboencabulator":
+	say "The MovieAttendant is startled when you try to talk to her, but looks at the turboencabulator closely. She pulls you aside.";
+	say "'Where did you get this?! No. Don't tell me. I can't know. You need to talk to AFrame about this.'";
+	say "She points at the movie poster on the wall. It looks ancient. It looks like a man is screaming, pinned against a clock, which is strangely blurred as if it was moving very quickly. The name of the movie is DarkCity.";
+	say "'Ask. Aframe. About DarkCity.' She looks around. 'You need to go now.'".
+	
+Instead of asking the MovieAttendant about "DarkCity":
+	say "The MovieAttendant pulls you aside.";
+	say "She points at the movie poster on the wall. It looks ancient. It looks like a man is screaming, pinned against a clock, which is strangely blurred as if it was moving very quickly. The name of the movie is DarkCity.";
+	say "'Ask. Aframe. About DarkCity.' She looks around. 'You need to go now.'".
+	
+Instead of asking the MovieAttendant about something:
+	say "'SHHHHHHHHHHHHHHHH.'".
+
 [Dystopians]
 Dystopian1 is a man.
 Dystopian1 is a person in P2D. The description of Dystopian1 is "Dystopian1 is wearing a black turtleneck and black jeans. They have black rimmed glasses and seem to be staring into space, but also reading something in the middle of the air at the same time. They turn and look at you intensely."
@@ -806,7 +819,15 @@ Instead of giving the rumNJuice to ProfessorBumblebore:
 	say "The bearded man chuckles affably and quaffs the cocktail. 'That's more like it.' he says, 'Here's a little something to help you in your mischief.' He waves a branch at you and you feel like your inventory is heavier. 'NOW THEN,' he says, 'Next on the list! Get me a INSERT BOFFER ITEM HERE'";
 	now the rumNJuice is nowhere;
 	now the player has black ninja outfit.
-	
+
+Instead of giving a smoothie to ProfessorBumblebore:
+	say "The cliched grizzled wizard looks at the smoothie doubtfully . 'This doesn't even have alcohol in it, does it? I will will not have anything to do with this.' He hands you back the smoothie".
+
+Instead of giving the rum to ProfessorBumblebore:
+	now ProfessorBumblebore has the rum;
+	say "ProfessorBumblebore chuckles. 'I'm not some baby-wizard trying to get trashed in HagWorts. Mix this with something and make me a proper drink.' He pours the beverage into a trite sort of crystal ball. A puff of smoke suddenly plumes out of it.".
+	now the rum is nowhere.
+
 Persephone is a woman.
 Persephone is a person in P2N. The description of Persephone is "Persephone is a young witch. She's got her hair up in lots of braids and is furiously taking notes onto a scroll from a big ancient tome in her lap. She's a take-no-shit sort of young witch, and occasionally takes a big chug of margarineMead"
 
@@ -823,9 +844,21 @@ Aframe is a man.
 AFrame is a person in the Space Lounge. AFrame is male. The description of AFrame is "Aframe is looking pretty sharp there wearing [a list of unconcealed things worn by Aframe] with his usual aplomb."
 
 Instead of asking Aframe about "DarkCity":
-	say "When you mention DarkCity, Aframe's eyes light up. He smiles and looks around the room for a second, before stepping closer to you. 'Have you seen DarkCity? That's just like what's happening here in the hotel', he says - 'except for there are no annoying floating Tim Burton aliens. The RaddiShariTree was hosting the longest CONvergence ever, 364 days, and after the collapse of civilization, we closed the blast doors and had ConstantCon. With the development of anti-grav tech, the SonTonDoubleTree was launched into space. We lost the short tower, and people forgot over time that there was anything beyond these walls. We've outgrown this building, but the shuttlecraft isn't working. But we need a TurboEncabulator or a RetroEncabulator. Honestly, even a MicroEncabulator would work. If you give one to the Bartender, she'll be able to launch the SpaceLoungeShuttle. Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
+	say "When you mention DarkCity, Aframe's eyes light up. He smiles and looks around the room for a second, before stepping closer to you. 'Have you seen DarkCity? That's just like what's happening here in the hotel', he says - 'except for there are no annoying floating Tim Burton aliens.'";
+	say "'The RaddiShariTree was hosting the longest CONvergence ever, 364 days, and after the collapse of civilization, we closed the blast doors and had ConstantCon. With the development of anti-grav tech, the SonTonDoubleTree was launched into space. We lost the short tower, and people forgot over time that there was anything beyond these walls. We've outgrown this building, but the shuttlecraft isn't working.'"; 
+	say "'But we need a TurboEncabulator or a RetroEncabulator. Honestly, even a MicroEncabulator would work. If you give one to the Bartender, she'll be able to launch the SpaceLoungeShuttle.' Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
 	now Aframe is a co-conspirator;
 	now Aframe is in the Secret Room.
+
+Instead of asking Aframe about "TurboEncabulator":
+	say "Aframe says, 'Yeahhhhhh, I haven't seen one of those in several hundred years. We're going to have to figure out a way to make one.'"
+
+Instead of asking Aframe about "RetroEncabulator":
+	say "Aframe says, 'Yeahhhhhh, I haven't seen one of those in several hundred years. We're going to have to figure out a way to make one.'"
+
+Instead of asking Aframe about "MicroEncabulator":
+	say "Aframe says, 'Yeahhhhhh, I haven't seen one of those in several hundred years. We're going to have to figure out a way to make one.'"
+
 Aframe is neutralla.
 Persuasion rule for asking AFrame to try doing something:
 	If Aframe is neutralla:
@@ -858,10 +891,6 @@ After asking the AFrame about "love":
 The bartender is a person in the Space Lounge. The bartender is female. The description of the bartender is "The bartender is [one of]serving some smoothies[or]cleaning the blender[or]making a neon yellow smoothie[or]making a glow in the dark smoothie[or]standing there looking you over[or]talking with a friend[or]dancing[at random]."
 The bartender carries the behindTheBarKey.
 
-Instead of giving the TurboEncabulator to the bartender:
-	now the bartender has the TurboEncabulator;
-	say "I'll get this old bucket of rust going now."
-
 Instead of giving the coin to the bartender:
 	move the coin to the bartender;
 	let the target smoothie be a random smoothie in the SmoothieStorage;
@@ -893,16 +922,16 @@ Instead of giving the 3dPrinterBluePrint to the 3dPrinter:
 	move the 3dPrinterBluePrint to the 3dPrinter;
 	now friendToBots is true;
 	say "Your roommate is overjoyed! The 3dPrinter reads the blueprint again and again and...and then your roommate stops.";
-	say "Your roommate reads the note in the corner about filament. It opens all of its bags and throws around its clothes as it searches for something.";
+	say "Your roommate opens all of its bags and throws around its clothes as it searches for something.";
 	say "'I am embarassed to say, friend, I'm all out of Filament! could you find me some?'".
 	
-The 3dPrinterFilament is an object.
-The description of the 3dPrinterFilament is "3dPrinterFilament".
+The Filament is an object.
+The description of the Filament is "This is a spool of extra special plasti-unobtanium-silk. Your roommate probably knows what to do with it. Give it to your roommate!".
 
-Instead of giving the 3dPrinterFilament to the 3dPrinter:
-	now the 3dPrinter has the 3dPrinterFilament;
+Instead of giving the Filament to the 3dPrinter:
+	now the 3dPrinter has the Filament;
 	say "The 3dPrinter says, 'I MAKEDED THIS FOR YOU!' and hands you a small item.";
-	move the MisprintedTurboEncabulator to the player.
+	move the TurboEncabulator to the player.
 
 [Cosplayer]
 A cosplayer is a person in Mainstage. The cosplayer is female. The cosplayer carries the greenRoomKey. The description of the cosplayer is "She's got all kinds of neon makeup or tattoos or projections - her face is like mask. It's very mesmerizing.".
@@ -1165,7 +1194,7 @@ Qn	Correct
 "In which film did someone get offered a choice between two pills and then didn't take both of them like they should have?"	"The Matrix"
 "In which movie did the main character die from super disturbing eye bulging decompression after helmet face plate breakage in the opening scene then but it turned out was just a dream? (or was it a premonition? or was it an implanted memory?)"	"Total Recall"
 "This movie has a sail boat smash into the end of a fake world. Everyone watching just goes totally nuts."	"The Truman Show"
-"This film has annoying gothy villians but a super cool reveal that everyone was in a giant space habitat the WHOLE TIME?!"	"Dark City"
+"This film has annoying gothy villians but a super cool reveal that everyone was in a giant space habitat the WHOLE TIME?!"	"DarkCity"
 
 The expected answer is a text that varies.
 
