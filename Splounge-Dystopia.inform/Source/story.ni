@@ -49,13 +49,16 @@ The Floating Courtyard is a room. "This is amazing - you are up above everything
 Elevator2 is a room. "[one of]The elevator is pretty grimy looking; there is condensation forming on the lights.[or]The walls of the elevator are covered in flyers for upcoming parties and holoPrograms coming out.[or]The elevator shudders a bit as it begins moving.[at random] [one of]There is an arnoldConanBarbarian[or]There is a bored-looking geneSpliceMinotaur[or]There are a few youngBadgers[at random] [one of]and a fireMario in the elevator with you.[or]and a turboRetroCyborg in the elevator with you.[or]and a raverGargoyle in the elevator with you.[or]and a solarPunk in the elevator with you.[at random] They get out without talking to you and disappear into the crowd.".
 
 The Space Lounge is a room. "You are in the Space Lounge. It's dim and glowy all over with pulsating colors and subtle hypnotic sounds.".
-The BehindtheBar is a room. "There are two chairs facing a curved glass surface. You look through the window and see a galaxy of stars spread out, vast, in front of you. To all your sides: below, above, left and right are vast walls stretching out. It kind of looks like it is the OUTSIDE of the con hotel! It appears part of it had been broken off at one point. It also appears the Space Lounge is actually a shuttlecraft. There's an old photograph of what looks like an oldSchoolConGoer with a handwritten note that says, 'Thanks for the laughs, doll. I'll see you again soon.' It is signed 'zxyyz'".
+The BehindtheBar is a room. "There are two chairs facing a curved glass surface. You look through the window and see a galaxy of stars spread out, vast, in front of you. To all your sides: below, above, left and right are vast walls stretching out. It kind of looks like it is the OUTSIDE of the con hotel! It appears part of it had been broken off at one point. It also appears the Space Lounge is actually a shuttlecraft. There's an old photograph of what looks like an oldSchoolConGoer with a handwritten note that says, 'Thanks for the laughs, doll. I'll see you again soon.' It is signed 'zxyyz'.
+
+There's a panel on the lower side that says 'Airlock must be closed and engine on before the Detachment Interface will FUNction. (Safety Third! (Fun First, Danger Second))".
 Consuite is a room. "The vast wasteland of the hungry: ConSuite. It's sticky and smells like centuries of soda and rice. The scavvers eye you with a hungry look in their eyes. Best not to stay too long.".
 Registration is a room. "Registration: Bureaucracy Station. Lines of congoers stand waiting to talk to Con employees. It looks like everyone has been here a long time. The signs above their stations read: Credits, Cash, Lost & Found, Info, Merch, Security, Volunteers, and Questions.".
 
 The SmoothieStorage is a room. 
 
 The spaceLoungeEngine is a switched off device in the BehindTheBar. It is fixed in place.
+
 The detachmentInterface is a switched off device in the BehindTheBar. It is fixed in place.
 
 The description of the detachmentInterface is "A physical switch labeled 'Detachment Interface'."
@@ -65,36 +68,36 @@ The description of the spaceLoungeEngine is "A physical switch with a two dimens
 readyToLaunch is a truth state that varies. readyToLaunch is false.
 
 Instead of examining the switched on spaceLoungeEngine:
-	say "The screen reads: [fixed letter spacing]";
-	say line break;
+	say "A voice says:";
 	if the spaceLoungeDoor is locked:
 		say "Airlock locked, ready for detachment sequence.";
 		now the readyToLaunch is true;
 	if the spaceLoungeDoor is open:
 		say "Airlock open, not ready for detachment sequence.";
-	say variable letter spacing;
-	say paragraph break.
 
 
 Instead of switching on the detachmentInterface:
 	if the readyToLaunch is false:
-		say "You try to move this lever but it seems locked in place. [readyToLaunch]";
+		say "You try to move this lever but it seems locked in place. It's probably because it can't detach if the engine isn't on or the airlock isn't locked. [readyToLaunch]";
 	if the readyToLaunch is true:
 		say "You feel something large sliding on the other end of the Space Lounge. It suddenly feels like the whole Space Lounge bobbed a bit. The shuttecraft seems free of the hotel.";
-	switch to cyoa at AdventuresInSpacePage.
+		switch to cyoa at AdventuresInSpacePage.
 
 AdventuresInSpacePage is a page.
 "Even though you didn't know until today that the entire CONvergence hotel was in space, and you also did not know that the Space Lounge was a shuttlecraft, detaching the Space Lounge has left you feeling light and happy. You're exhilarated by the options you have spread out before you. You could coast the spaceways, searching of signs of new civilizations and unknown lifeforms. Or, you could look for another hotel, find a new home (base). Or you could redock, and find out how your discoveries could affect the lives of everyone you've ever met."
 
-SearchForNewLifeRoom is a room. "End of Story for Explore."
-
 SearchForNewLife is a page.
 "You search for new life. It's pretty awesome. You almost die like almost every other week. Maybe you get to play a baseball game in peace once and awhile. Most of the time even your holosuites try to kill you."
-The cdesc is "Explore.". It is for AdventuresInSpacePage. It is an end-page.
+The cdesc is "Explore.". It is for AdventuresInSpacePage. It is an end-page. It flips to SearchForNewLife2.
+
+ SearchForNewLife2 is a page.
+    "...you even have an orchestral theme song...."
+     It is an end-page.
+
 
 SearchForNewHotel is a page.
 "You search for a new hotel. All you want is a new place to call home. It takes almost eight years, but eventually after a lifetime of struggle and noble stoic-ness you finally find a new hotel. Something...majestic...something new.."
-The cdesc is "New Home.". It is for AdventuresInSpacePage. It is an end-page. Now the player is in the Secret Room.
+The cdesc is "New Home.". It is for AdventuresInSpacePage. It is an end-page. Now the player is in the ----.
 
 Stay is a page.
 "You decide to stay. You're not ready to leave your home, and there's some more room parties you haven't fully checked out."
@@ -186,12 +189,13 @@ The Secret Room is a room. "You are in the Secret Room. DON'T TELL ANYONE YOU WE
 The Staging Area is a room. "Staging Area".
 
 [Doors and Backdrops]
-The spaceLoungeDoor is a door. The spaceLoungeDoor is lockable and unlocked. The securityKey unlocks the spaceLoungeDoor. The description of the spaceLoungeDoor is "The spaceLoungeDoor has a small window, and now that you look closer it looks kind of like this door is two doors schmooshed together. It looks like the door has a lock mechanism that looks like it could be manipulated by a standard tetral-inverse double helix securityKey."
+The spaceLoungeDoor is a door. The spaceLoungeDoor is lockable and unlocked. The airlockKey unlocks the spaceLoungeDoor. The description of the spaceLoungeDoor is "The spaceLoungeDoor has a small window, and now that you look closer it looks kind of like this door is two doors schmooshed together. It looks like the door has a lock mechanism that looks like it could be manipulated by a standard tetral-inverse double helix airlockKey."
 
 The greenRoomDoor is a door. The greenRoomDoor is lockable and locked. The greenRoomKey unlocks the greenRoomDoor. The description of the greenRoomDoor is "This door is green and has a big thumbpad thing.".
 
-The behindTheBarDoor is a door. The behindTheBarDoor is lockable and locked. The behindTheBarKey unlocks the behindTheBarDoor. The description of the behindTheBarDoor is "Looks like an access door for Splounge workers".
+The behindTheBarDoor is a door. The behindTheBarDoor is lockable and locked. The cockpitKey unlocks the behindTheBarDoor. The description of the behindTheBarDoor is "Looks like an access door for Splounge workers".
 
+The description of the cockpitKey is "This is a super cool looking old-school kind of cockpitKey.".
 [Objects]
 The description of a thing is usually "[The noun] is kind of an average looking [noun]."
 
@@ -254,23 +258,6 @@ Every turn:
 		move the player to the ----;
 		switch to cyoa at the MeditativeMasterPage.
 
-[CrystalizationPage is a page.
-"You relax and let your body slip away, your thoughts of this life seem distant. You begin to see flashing colors, blobs of darkness...flashes of geometry...feelings of motion. Patterns of laser like forms begin to crystalize - ordinary reality life existence to cosmic intelligence sentient perspectives. Your mind is on a crystalization trajectory you can see now.".
-The cdesc is "Crystalization". It is for MeditativeMasterPage.]
-
-[DisintegrationPage is a page.
-"You take one last look at the Splounge and the weird creatures that inhabit it. The humanoid form is beginning to look alien to you, your consciouness feels more like a tadpole than a person but even as you think that your sense of scale vanishes and your your body feels both like it is growing huge and shrinking to microscopic size at the same time. The infinitely large and unimaginably small connect here in the absence of value, you realize. You feel a sense of relaxation deeper than you've known before as you let your consciousness disconnect from your body. You close your eyes and enter the darkness behind your eyes.
-
-A Void subsumes you, your senses fizzle away and a great nothingness stretches infinitely before you.".
-The cdesc is "Disintegration.". It is for MeditativeMasterPage.]
-
-[ExpansionPage is a page.
-"Expansion description".
-The cdesc is "Expansion.". It is for MeditativeMasterPage.]
-
-[choose a random row from the Table of Comfy Chair Thoughts;
-		say "[thought entry][paragraph break]".]
-
 Every turn:
 	If not in CYOA mode:
 		If the player is in ----:
@@ -298,7 +285,7 @@ The cdesc is "Expansion". It is for MeditativeMasterPage. It is an end-page. It 
 
 CrystalizationPage is a page.
 "You relax and let your body slip away, your thoughts of this life seem distant. You begin to see flashing colors, blobs of darkness...flashes of geometry...feelings of motion. Patterns of laser-like forms begin to create structure, then more structure built upon that - from the lowest ordinary reality life existence up to cosmic intelligence sentience perspectives. Your mind is on a crystalization trajectory you can see now."
-The cdesc is "Crystalization". It is for MeditativeMasterPage. It is an end-page. Now the player is in the Secret Room.
+The cdesc is "Crystalization". It is for MeditativeMasterPage. It is an end-page. Now the player is in the ----.
 
 DisintegrationPage is a page.
 "You take one last look at the Splounge and the weird creatures that inhabit it. The humanoid form is beginning to look alien to you, your consciouness feels more like a tadpole than a person but even as you think that your sense of scale vanishes and your your body feels like it is both growing huge and microscopic at the same time. The infinitely large and unimaginably small connect here in this place place of meaningless numbers. You feel a sense of relaxation deeper than you've known before as you let your consciousness disconnect from your body. You close your eyes and enter the darkness behind your eyes.
@@ -326,12 +313,12 @@ A person can be a co-conspirator, neutralla or an enemy.
 [Space Lounge]
 There is a bar inside the Space Lounge. The bar is fixed in place. The bar is a supporter. The description of the bar is "The bar is black and long, covered in some sort of non-stick nano-surface."
 
-The Glowing Sphere is an object. The securityKey is part of the glowing sphere. The description of the glowing sphere is "OOOOoooo glowy-sphere thingie! Its purple soft glow makes you feel safe and secure. It looks like there's some sort of encased helix-key as a component to the glowy-ness." The glowing sphere is on the bar.
+The Glowing Sphere is an object. The airlockKey is part of the glowing sphere. The description of the glowing sphere is "OOOOoooo glowy-sphere thingie! Its purple soft glow makes you feel safe and secure. It looks like there's some sort of encased helix-key as a component to the glowy-ness. It's probably an airlock key for a shuttlecraft or smthng. 'If you could shoot the sphere with a blast of rainbow particles it would destabilize the sphere's energy matrix leaving the key intact no-prob. Then you could get that airlockKey.', your techGeek brain implant thinks." The glowing sphere is on the bar.
 
 The glowing sphere is fixed in place.
 
-A securityKey is an object.
-The description of the securityKey is "This looks like a standard tetral-inverse double helix securityKey with triple-blind encryption. Probably used to access airlocks n-schtoff."
+A airlockKey is an object.
+The description of the airlockKey is "This looks like a standard tetral-inverse double helix airlockKey with triple-blind encryption. Probably used to access airlocks n-schtoff."
 
 There is a smooth bench inside the Space Lounge. The description of the bench is "Cool smooth bench."
 
@@ -351,7 +338,7 @@ A bowl is in P1O. In the bowl is a note. The description of the note is "Cast th
 
 The crazy looking gun is in the glittery box. The description of the crazy looking gun is "That gun is so crazy looking! It's kind of like totally blowing your mind."
 
-The securityReadout is a device. The description of the securityReadout is "The screen is blank."
+The securityReadout is a device. The securityReadout is switched on. The description of the securityReadout is "The screen is blank."
 Instead of examining the switched on securityReadout:
 	say "The screen reads: [fixed letter spacing]";
 	say line break;
@@ -367,13 +354,13 @@ The teleporterWand is an object. The description of the teleporterWand is "This 
 
 The teleporterWand is in the P1P.
 
-The 3dPrinterBluePrint is an object. The description of the 3dPrinterBluePrint is "This may be what your roommate was looking for! It is blue and it has a lovely print on it. In the corner, it also explains how to add printer filament to your roommate in some detail.".
+The bluePrint is an object. The description of the bluePrint is "This may be what your roommate was looking for! It is blue and it has a lovely print on it. In the corner, it also explains how to add printer filament to your roommate in some detail.".
 
 The TurboEncabulator is an object. The description of the TurboEncabulator is "This looks like a base plate of prefabulated amulite, surmounted by a malleable logarithmic casing in such a way that the two main spurving bearings were in a direct line with the panametric fan. The latter consisted simply of six hydrocoptic marzlevanes, so fitted to the ambifacient lunar waneshaft that side fumbling was effectively prevented. The main winding was of the normal lotus-o-deltoid type placed in panendermic semi-boloid slots in the stator, every seventh conductor being connected by a nonreversible tremmie pipe to the differential girdlespring on the 'up' end of the grammeters. Imprinted on its every side is the logo for Cinema Rex."
 
 The MisprintedTurboEncabulator is an object. The description of the MisprintedTurboEncabulator is "This looks like a base plate of prefabulated amulite, surmounted by a malleable logarithmic casing in such a way that the two main spurving bearings were in a direct line with the panametric fan. The latter consisted simply of six hydrocoptic marzlevanes, so fitted to the ambifacient lunar waneshaft that side fumbling was effectively prevented. The main winding was of the normal lotus-o-deltoid type placed in panendermic semi-boloid slots in the stator, every seventh conductor being connected by a nonreversible tremmie pipe to the differential girdlespring on the 'up' end of the grammeters. The panametric fan doesn't seem to move on this one."
 
-The 3dPrinterBluePrint is in the QS.
+The bluePrint is in the QS.
 
 The floating dolphin is a vehicle in GC. The description of the floating dolphin is "Oh crap - the floating dolphin's survellance cam is honing in on you! You better get out of here, somewhere where the floating dolphin camera can't see you." The dolphin is locked. The dolphin code unlocks the floating dolphin. The description of the dolphin code is "It is fish shaped, and vibrates - readout screen says 'Status optimal'."
 
@@ -630,8 +617,8 @@ A description of a smoothie usually is "This thing is like taking a bath in froz
 
 Instead of giving the TurboEncabulator to the bartender:
 	move the TurboEncabulator to the bartender;
-	move the behindTheBarKey to the player;
-	say "She looks pretty serious all the sudden. 'Wow, now that it's time to leave I'm not ready. What's it going to be like out there? What if we can't resupply our sensory stimulants or dowlod our fundoms? Anyway, whatever happens is going to be supesciting.'"
+	move the cockpitKey to the player;
+	say "She looks pretty serious all the sudden. 'Wow, now that it's time to leave I'm not ready. What's it going to be like out there? What if we can't resupply our sensory stimulants or dowlod our fundoms? Anyway, whatever happens is going to be supesciting. Anyhoo - I'll plug this into the SpaceLoungeShuttle. Here's a key for the cockpit - you should be able to get this old tug moving again!'"
 
 Instead of giving the coin to the bartender:
 	move the coin to the bartender;
@@ -762,12 +749,12 @@ Instead of giving the rum to the rumAndJuicer:
 coffeeJunkie is a woman.
 coffeeJunkie is a person in F2E2. The description of coffeeJunkie is "This lady is strung out on coffee. Her eyes are red and dry. She looks like she hasn't slept in decades."
 
-Instead of asking coffeeJunkie about "filament":
+Instead of asking the coffeeJunkie about "filament":
 	say "'This shit? Sure. Take it. I can't get high off this.'";
 	now the player has Filament.
+
 	
-Instead of asking coffeeJunkie about something:
-	say "She whispers to you, 'I can see through time!'".
+The Filament is in SmoothieStorage.
 
 [Cinema Rex]
 MovieAttendant is a woman.
@@ -853,7 +840,15 @@ AFrame is a person in the Space Lounge. AFrame is male. The description of AFram
 Instead of asking Aframe about "DarkCity":
 	say "When you mention DarkCity, Aframe's eyes light up. He smiles and looks around the room for a second, before stepping closer to you. 'Have you seen DarkCity? That's just like what's happening here in the hotel', he says - 'except for there are no annoying floating Tim Burton aliens.'";
 	say "'The RaddiShariTree was hosting the longest CONvergence ever, 364 days, and after the collapse of civilization, we closed the blast doors and had ConstantCon. With the development of anti-grav tech, the SonTonDoubleTree was launched into space. We lost the short tower, and people forgot over time that there was anything beyond these walls. We've outgrown this building, but the shuttlecraft isn't working.'"; 
-	say "'But we need a TurboEncabulator or a RetroEncabulator. Honestly, even a MicroEncabulator would work. If you give one to the Bartender, she'll be able to launch the SpaceLoungeShuttle.' Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
+	say "'But we need a TurboEncabulator or a RetroEncabulator. Honestly, even a MicroEncabulator would work. If you give one to the Bartender, she'll be able to fix the SpaceLoungeShuttle.' Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
+	now Aframe is a co-conspirator;
+	now Aframe is in the Secret Room.
+
+
+Instead of giving the turboencabulator to Aframe:
+	say "When you try to give the TurboEncabulator to Aframe, his eyes light up. He smiles and looks around the room for a second, before stepping closer to you. 'Have you seen DarkCity? That's just like what's happening here in the hotel', he says - 'except for there are no annoying floating Tim Burton aliens.'";
+	say "'The RaddiShariTree was hosting the longest CONvergence ever, 364 days, and after the collapse of civilization, we closed the blast doors and had ConstantCon. With the development of anti-grav tech, the SonTonDoubleTree was launched into space. We lost the short tower, and people forgot over time that there was anything beyond these walls. We've outgrown this building, but the shuttlecraft isn't working.'"; 
+	say "'But we needed a TurboEncabulator or a RetroEncabulator to fix the shuttlecraft engine. Honestly, even a MicroEncabulator would work. If you give one to the Bartender, she'll be able to fix the SpaceLoungeShuttle.' Then he looks around again and slowly fades from view, like all the color faded to grey, then all the outlines of his features just slowly alpha-fade to zero. He also shrank somehow too. Your mind drifts a bit into thoughts about 4D movement and that Aframe might be some kind of hyperdimensional being.";
 	now Aframe is a co-conspirator;
 	now Aframe is in the Secret Room.
 
@@ -896,7 +891,7 @@ After asking the AFrame about "love":
 
 [bartender]
 The bartender is a person in the Space Lounge. The bartender is female. The description of the bartender is "The bartender is [one of]serving some smoothies[or]cleaning the blender[or]making a neon yellow smoothie[or]making a glow in the dark smoothie[or]standing there looking you over[or]talking with a friend[or]dancing[at random]."
-The bartender carries the behindTheBarKey.
+The bartender carries the cockpitKey.
 
 Instead of giving the coin to the bartender:
 	move the coin to the bartender;
@@ -923,10 +918,10 @@ After asking the 3DPrinter about "Quantum Sandbox",
 'It moves around from year to year, but it's usually east of the pool.'"
 
 After asking the 3DPrinter about "Filament",
-		say "Your roommate looks embarrassed, and then admits, 'I think I traded my last spool of filament to some junkies in F2E2 for a double-mocha-sprinkle-frappucino-color-changing-unicorn-skim-venti-short shot. It was totally worth it. It's flavor-changing, too. But, I don't know how I'm going to print this blueprint without any filament." 
+		say "Your roommate looks embarrassed, and then admits, 'I think I traded my last spool of filament		 to some junkies in F2E2 for a double-mocha-sprinkle-frappucino-color-changing-unicorn-skim-venti-short shot. It was totally worth it. It's flavor-changing, too. But, I don't know how I'm going to print this blueprint without any filament." 
 
-Instead of giving the 3dPrinterBluePrint to the 3dPrinter:
-	move the 3dPrinterBluePrint to the 3dPrinter;
+Instead of giving the bluePrint to the 3dPrinter:
+	move the bluePrint to the 3dPrinter;
 	now friendToBots is true;
 	say "Your roommate is overjoyed! The 3dPrinter reads the blueprint again and again and...and then your roommate stops.";
 	say "Your roommate opens all of its bags and throws around its clothes as it searches for something.";
