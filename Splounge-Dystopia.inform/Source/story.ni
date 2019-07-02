@@ -286,8 +286,13 @@ You can see the paths open to you here at the cusp of this intense Lucidic Story
 Those paths fall into three basic realms:"
 
 ExpansionPage is a page.
-"Your mind grasps the expansive consciousness path and it is as though in an instant you can feel your senses reach beyond the ten normally accessible to humans. It as though the entire CON hotel becomes translucent by to you by choice - you can see through it as though it were an engineering cutaway - except you can control where your focus is - sweeping around it is like you have this mega-3D vision and can look at anything. You find to your surprise that the entire hotel is floating in deep space. You hadn't really thought about world beyond the hotel walls and had assumed you were still on Earth. It's crazy - it looks like part of the hotel was chopped off and heavy blast-shielding was put there, with an enormous engine attached to the bottom. You can also see that the Space Lounge is actually a converted shuttlecraft attached to the side of the hotel."
-The cdesc is "Expansion". It is for MeditativeMasterPage. It is an end-page.
+"Your mind grasps the expansive consciousness path and it is as though in an instant you can feel your senses reach beyond the ten normally accessible to humans. It as though the entire CON hotel becomes translucent by to you by choice - you can see through it as though it were an engineering cutaway - except you can control where your focus is - sweeping around it is like you have this mega-3D vision and can look at anything. You find to your surprise that the entire hotel is floating in deep space. You hadn't really thought about the world beyond the hotel walls and had assumed you were still on Earth. It's crazy - it looks like part of the hotel was chopped off and heavy blast-shielding was put there, with an enormous engine attached to the bottom. You can also see that the Space Lounge is actually a converted shuttlecraft attached to the side of the hotel."
+The cdesc is "Expansion". It is for MeditativeMasterPage. It is an end-page. It flips to ExpansionStay.
+
+ ExpansionStay is a page.
+    "You think maybe you oughta use your new knowledge to check out this hotel in space thing..."
+     It is an end-page.
+
 
 CrystalizationPage is a page.
 "You relax and let your body slip away, your thoughts of this life seem distant. You begin to see flashing colors, blobs of darkness...flashes of geometry...feelings of motion. Patterns of laser-like forms begin to create structure, then more structure built upon that - from the lowest ordinary reality life existence up to cosmic intelligence sentience perspectives. Your mind is on a crystalization trajectory you can see now."
@@ -616,7 +621,7 @@ solarFreeze	"Glowing like a sunflower on a sunny day, this drink is quite beauti
 battleStarChillactica	"It looks kind of like a Cylon, in that it looks like a regular drink. Could be any drink in fact. Even ones that would seem totally impossible continuity-wise."
 escapeVelociTea	"A nice warm cup of tea. Perfection."
 
-A goodnightAstronaut is a smoothie. The description of the goodnightAstronaut is "It's a glass of orange juice, with a rare Spherb that has been known to induce transcendental states of being.". A goodnightAstronaut is on the bar.
+A goodnightAstronaut is a smoothie. The description of the goodnightAstronaut is "It's a glass of orange juice, with a rare Spherb that has been known to induce transcendental states of being. You think if you drank this and sat in an insanely comfy chair you'd probably be able to dramatically improve your mind.". A goodnightAstronaut is on the bar.
 
 
 A description of a smoothie usually is "This thing is like taking a bath in frozen unicorn snot. Amazing."
